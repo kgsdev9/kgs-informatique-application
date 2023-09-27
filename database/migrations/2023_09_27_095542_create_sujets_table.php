@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('catgory_forum_forums', function (Blueprint $table) {
+        Schema::create('sujets', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
         });
@@ -22,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('catgory_forum_forums');
+        Schema::dropIfExists('sujets');
     }
 };
