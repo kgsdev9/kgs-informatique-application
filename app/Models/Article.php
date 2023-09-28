@@ -24,6 +24,10 @@ class Article extends Model
         return self::published()->where('id', '>', $this->id)->orderBy('id')->first();
     }
 
+    public function categoryarticle() {
+        return $this->belongsTo(CategoryArticle::class, 'categoryarticle_id');
+    }
+
     public function previousArticle(): ?Article
     {
         return self::published()->where('id', '<', $this->id)->orderByDesc('id')->first();

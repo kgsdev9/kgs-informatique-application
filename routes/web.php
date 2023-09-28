@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('/articles', function() {
-    return view('articles.article');
-});
+
+Route::get('/articles', [HomeController::class, 'articles'])->name('articles');
+
+
