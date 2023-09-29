@@ -22,3 +22,9 @@ Route::get('/articles', [HomeController::class, 'articles'])->name('articles');
 Route::get('/home', function () {
     return view('home');
 });
+
+
+Route::get('/articles/{id}', [HomeController::class, 'show'])->name('article.detail');
+
+
+

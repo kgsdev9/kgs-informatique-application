@@ -5,10 +5,15 @@ namespace App\Http\Controllers\Home;
 use App\Http\Controllers\Controller;
 use App\Services\ArticleService;
 use App\Services\CategoryArticleService;
-use Illuminate\Http\Request;
+use App\Traits\ImplementeServiceExterne;
+;
 
 class HomeController extends Controller
 {
+
+    use ImplementeServiceExterne;
+
+
     protected $categoryArticleService;
     protected $articleService;
 
@@ -33,6 +38,13 @@ class HomeController extends Controller
         return view('articles.article', [
             'allArticles' => $this->articleService->all()
         ]);
+    }
+
+
+    public function show($id)  {
+        $this->countView($id);
+
+            
     }
 
 
