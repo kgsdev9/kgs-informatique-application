@@ -167,7 +167,7 @@
                     @endforeach
 
                     <div class="d-flex">
-                        {!! $allArticles->links() !!}
+                        {!! $allArticles->links('pagination::tailwind') !!}
                     </div>
 
 

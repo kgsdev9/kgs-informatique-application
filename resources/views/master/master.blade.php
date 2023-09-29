@@ -12,7 +12,8 @@
         <style>
 
         </style>
-         @vite('resources/css/app.css')
+         {{-- @vite('resources/css/app.css') --}}
+         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     </head>
     <body class="antialiased">
 

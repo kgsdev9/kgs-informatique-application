@@ -1,7 +1,10 @@
 <?php
 
+use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Home\HomeController;
+use App\Http\Controllers\Provider\ProviderController;
 use Illuminate\Support\Facades\Route;
+use Laravel\Socialite\Facades\Socialite;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,10 +24,13 @@ Route::get('/articles', [HomeController::class, 'articles'])->name('articles');
 
 Route::get('/home', function () {
     return view('home');
-});
+})->middleware('guest');
 
-
+Route::get('/login', [AuthController::class, 'login'])->name('login')->middleware('guest');
 Route::get('/articles/{id}', [HomeController::class, 'show'])->name('article.detail');
 
+
+Route::get('/auth/{provider}/redirect', [ProviderController::class, 'redirect']);
+Route::get('/auth/{provider}/callback', [ProviderController::class, 'callback']);
 
 

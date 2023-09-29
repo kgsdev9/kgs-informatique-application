@@ -18,9 +18,11 @@ class ArticleFactory extends Factory
     {
         return [
             'title' => fake()->text($maxNbChars = 200),
+            'view' => 1,
+            'slug' => fake()->text($maxNbChars = 200),
             'description' => fake()->paragraph($nbSentences= 3, true),
             'image' => fake()->title(),
-            'categoryarticle_id' => rand(15,27),
+            'categoryarticle_id' => rand(1,13),
             'user_id' => rand(1,10),
         ];
     }
