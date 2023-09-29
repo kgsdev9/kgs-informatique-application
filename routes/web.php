@@ -17,7 +17,9 @@ use Laravel\Socialite\Facades\Socialite;
 |
 */
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
+
+
+Route::get('/', [HomeController::class ,'index'])->name('home');
 
 
 Route::get('/articles', [HomeController::class, 'articles'])->name('articles');

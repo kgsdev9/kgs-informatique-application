@@ -12,6 +12,7 @@
         "laravel/socialite": "^5.9",
         "laravel/tinker": "^2.8",
         "livewire/livewire": "^3.0",
+        "mckenziearts/laravel-notify": "^2.4",
         "tinymce/tinymce": "^6.7"
     },
     "require-dev": {

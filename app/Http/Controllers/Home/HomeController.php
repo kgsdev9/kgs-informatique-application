@@ -29,6 +29,7 @@ class HomeController extends Controller
      */
     public function index()
     {
+    
         return view('welcome', [
             'allCategories'=> $this->categoryArticleService->takeCategoryRamdomOrder()
         ]);
@@ -44,7 +45,7 @@ class HomeController extends Controller
     public function show($id)  {
         $this->countView($id);
 
-            
+
     }
 
 

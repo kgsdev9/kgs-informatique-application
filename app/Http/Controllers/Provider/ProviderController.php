@@ -35,7 +35,7 @@ class ProviderController extends Controller
         ]);
 
         Auth::login($user);
-
+        notify()->success('Welcome to Laravel Notify ⚡️');
         return redirect('/home');
 
 
