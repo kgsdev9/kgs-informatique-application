@@ -52,13 +52,22 @@
                             </div>
 
 
+                            <div class="flex items-center justify-center px-2">
+                                <a href="https://laravelshopper.io" target="_blank" class="flex items-center">
+
+                                <img class="h-12 logo-dark" src="{{asset('eub.png')}}"  alt="Laravel Shopper">
+                                </a>
+                                </div>
+
+
+
 
 
 
             </div>
             <div class="mt-6 text-center lg:mt-10">
-            <a class="text-sm leading-5 text-flag-green hover:text-green-600 hover:underline" href="https://laravel.cm/sponsors">
-            Votre logo ici ?
+            <a class="text-sm leading-5 text-flag-green hover:text-green-600 hover:underline" href="#">
+            En savoir plus ?
             </a>
             </div>
             </div>
@@ -100,12 +109,13 @@
 
 <aside class="py-10 sm:py-16  lg:py-20">
 	<div class="px-4 mx-auto max-w-8xl">
-		<h2 class="mb-4 text-2xl md:text-4xl font-bold tracking-tight text-gray-900 md:font-extrabold lg:leading-none dark:text-white md:text-center lg:mb-7">Sign up for our newsletter</h2>
+		<h2 class="mb-4 text-2xl md:text-4xl font-bold tracking-tight text-gray-900 md:font-bold lg:leading-none dark:text-white md:text-center lg:mb-7">Partager c'est aider les autres et s'aider soi-meme </h2>
 		<p class="mb-4 text-base text-gray-500 md:mb-6 dark:text-gray-400 md:text-center md:text-xl lg:px-20 xl:px-56">
-			Do you want to get notified when a new component is added to Flowbite? Sign up for our newsletter and you will be among the first to find out about new features, components, versions, and tools.
+			La transformation digital ne peut s'effectuer sans
+donner des reperes à cette nouvelle génération.
 		</p>
 		<div class="mb-4">
-			
+
 		</div>
 		<p class="text-sm text-gray-500 md:text-center dark:text-gray-400 font-normal">
 			By subscribing, you agree with ConvertKit's
@@ -125,7 +135,7 @@
 	<div class="mx-auto w-full max-w-8xl px-4 py-8 lg:py-24">
 		<div class="grid items-center grid-cols-1 gap-6 lg:grid-cols-2 xl:gap-32">
 			<div class="mb-5 lg:mb-0">
-				<h2 class="text-3xl font-extrabold leading-tight text-gray-900 dark:text-white lg:text-4xl mb-4">Upgrade to Flowbite Pro</h2>
+				<h2 class="text-3xl font-bold leading-tight text-gray-900 dark:text-white lg:text-4xl mb-4">Les derniers articles publiées </h2>
 				<p class="text-lg text-gray-500 dark:text-gray-400 mb-4 md:mb-6">
 					You will get access to hundreds of pages and components built with Tailwind CSS for application, marketing, and e-commerce user interfaces including the Figma design files based on the Flowbite UI component library.
 				</p>

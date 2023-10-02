@@ -105,7 +105,7 @@
                 </div>
 
                 @guest
-                <a href="#"  class="hidden xl:inline-flex items-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ml-1 sm:ml-3">Inscription</a>
+                <a href="#"  class="text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">It Connect</a>
                 @else
                 <a href="#"  class="hidden xl:inline-flex items-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ml-1 sm:ml-3">Dashboard</a>
                 @endguest
@@ -117,7 +117,7 @@
 
            @yield('content')
 
-          {{-- <footer class="bg-skin-footer" aria-labelledby="footerHeading">
+         <footer class="bg-skin-footer" aria-labelledby="footerHeading">
             <h2 id="footerHeading" class="sr-only">Footer</h2>
             <div class="max-w-7xl mx-auto px-4 sm:px-6">
                 <div class="py-12 lg:py-16 lg:grid lg:grid-cols-3 lg:gap-8">
@@ -165,7 +165,7 @@
                                 <div class="w-full">
                                     <div class="">
                                         <div class="relative ">
-                                            <input name="EMAIL" type="email" id="EMAIL" class="bg-skin-input shadow-sm focus:ring-flag-green focus:border-flag-green block w-full placeholder-skin-input focus:outline-none focus:placeholder-skin-input-focus text-skin-base sm:text-sm border-skin-input rounded-md w-full block" autocomplete="email" required="required" placeholder="Entrer votre adresse email" aria-label="Adresse E-mail">
+                                            <input name="EMAIL" type="email" id="EMAIL" class="formkit-input bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" autocomplete="email" required="required" placeholder="Entrer votre adresse email" aria-label="Adresse E-mail">
                                         </div>
                                     </div>
                                     <input type="hidden" name="b_0642d391e4785535c232a8c66_6ff87af677" tabindex="-1" value="">
@@ -249,7 +249,7 @@
                     </div>
                 </div>
             </div>
-        </footer> --}}
+        </footer>
 
         @notifyJs
          @livewireScripts
