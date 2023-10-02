@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories; 
+namespace App\Repositories;
 
 use App\Models\CategoryArticle;
 
@@ -14,7 +14,7 @@ public function __construct(CategoryArticle $categoryArticle)
 }
 
     public function takeCategoryRamdomOrder() {
-        return $this->categoryArticle->inRandomOrder()->take(20)->get();
+        return $this->categoryArticle->inRandomOrder()->take(8)->get();
     }
 
 }

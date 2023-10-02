@@ -3,6 +3,7 @@
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Home\HomeController;
 use App\Http\Controllers\Provider\ProviderController;
+use App\Livewire\Article;
 use Illuminate\Support\Facades\Route;
 use Laravel\Socialite\Facades\Socialite;
 
@@ -36,3 +37,4 @@ Route::get('/auth/{provider}/redirect', [ProviderController::class, 'redirect'])
 Route::get('/auth/{provider}/callback', [ProviderController::class, 'callback']);
 
 
+Route::get('/articles-testing-livewire', Article::class)->name('testing.article');

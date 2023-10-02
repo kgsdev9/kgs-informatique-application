@@ -11,13 +11,13 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
          {{-- @vite('resources/css/app.css') --}}
-
+        @livewireStyles
     </head>
-    <body class="antialiased">
+    <body >
 
 
         <header class="sticky top-0 z-40 flex-none w-full mx-auto bg-white border-b border-gray-200 dark:border-gray-600 dark:bg-gray-800">
-            <div id='banner' tabIndex='-1'class='z-50 flex justify-center w-full px-4 py-3 border border-b border-gray-200 bg-gray-50 dark:border-gray-600 lg:py-4 dark:bg-gray-700'>
+            <div id='banner' tabIndex='-1'class='z-50 flex justify-center w-full px-4 py-3 border border-b border-gray-200 bg-black-900 dark:border-gray-600 lg:py-4 dark:bg-gray-700'>
                 <div class='items-center md:flex'>
                   <p class='text-sm font-medium text-gray-900 md:my-0 dark:text-white'>
                     <span class='bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 hidden md:inline'>Annonce</span>
@@ -39,8 +39,8 @@
                 </button>
                 <div class="flex items-center justify-between">
                   <a href="{{route('home')}}" class="flex">
-                    <img src="#" class="h-8 mr-3" alt="KGS informatique" />
-                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">KGS</span>
+                    {{-- <img src="#" class="h-8 mr-3" alt="KGS informatique" /> --}}
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">KGS Informatique</span>
                   </a>
                 </div>
                 <div id="docsearch" class="hidden md:flex ml-6 xl:ml-20"></div>
@@ -252,5 +252,6 @@
         </footer> --}}
 
         @notifyJs
+         @livewireScripts
     </body>
 </html>
