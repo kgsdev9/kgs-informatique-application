@@ -38,3 +38,13 @@ Route::get('/auth/{provider}/callback', [ProviderController::class, 'callback'])
 
 
 Route::get('/articles-testing-livewire', Article::class)->name('testing.article');
+
+
+Route::get('/admin/dashboard', function() {
+    return view('admin.index');
+});
+
+
+Route::get('/discutions', function() {
+    return view('discution');
+});

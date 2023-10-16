@@ -40,7 +40,7 @@
                 <div class="flex items-center justify-between">
                   <a href="{{route('home')}}" class="flex">
                     {{-- <img src="#" class="h-8 mr-3" alt="KGS informatique" /> --}}
-                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">KGS Informatique</span>
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">KGS Info</span>
                   </a>
                 </div>
                 <div id="docsearch" class="hidden md:flex ml-6 xl:ml-20"></div>
@@ -105,7 +105,7 @@
                 </div>
 
                 @guest
-                <a href="#"  class="text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">It Connect</a>
+                <a href="#"  class="text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Connexion</a>
                 @else
                 <a href="#"  class="hidden xl:inline-flex items-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ml-1 sm:ml-3">Dashboard</a>
                 @endguest
@@ -117,139 +117,65 @@
 
            @yield('content')
 
-         <footer class="bg-skin-footer" aria-labelledby="footerHeading">
-            <h2 id="footerHeading" class="sr-only">Footer</h2>
-            <div class="max-w-7xl mx-auto px-4 sm:px-6">
-                <div class="py-12 lg:py-16 lg:grid lg:grid-cols-3 lg:gap-8">
-                    <div class="space-y-4">
-                        <img class="h-12 w-auto sm:h-16 logo-white" src="#" alt="Laravel.cm">
-                        <img class="h-12 w-auto sm:h-16 logo-dark" src="#" alt="Laravel.cm">
-                        <p class="inline-flex items-center flex-wrap text-sm text-skin-base">
-                            <a href="#" class="underline text-skin-inverted font-medium">Laravel Country Logomarks</a>
-                            <span class="ml-1.5">par Caneco</span>
-                            <img class="ml-2 h-6 w-6 rounded-full" src="https://avatars.githubusercontent.com/u/502041" alt="Caneco profile">
+           <footer class="justify-self-end pt-16 pb-8 lg:pt-24 lg:pb-10">
+            <div class="px-4 mx-auto max-w-8xl lg:px-4">
+                <div class="grid gap-12 lg:grid-cols-6 lg:gap-18">
+                    <div class="col-span-2">
+                        <a class="flex mb-6" href="/">
+                            <span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;">
+                                <span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2732%27%20height=%2733%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span>
+                                <img alt="Flowbite Logo" src="/images/logo.svg" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;" srcset="/images/logo.svg 1x, /images/logo.svg 2x">
+                            </span>
+                            <span class="self-center ml-3 text-2xl font-semibold text-gray-900 dark:text-white">KGS INFORMATIQUE</span>
+                        </a>
+                        <p class="text-gray-600 dark:text-gray-400">
+                          KGS Informatique est une plateforme de d'informaticien et  développeurs informatique pour l'entraide
                         </p>
                     </div>
-                    <div class="mt-12 grid grid-cols-2 gap-8 lg:mt-0">
-                        <div>
-                            <h3 class="text-sm font-semibold text-skin-muted tracking-wider uppercase">Ressources</h3>
-                            <ul class="mt-4 space-y-4">
-                                <li><a href="https://laravel.cm/a-propos" class="inline-flex items-center text-base text-skin-base hover:text-skin-menu-hover" title="A propos">A propos</a></li>
-                                <li>
-                                    <a href="#" class="inline-flex items-center text-base text-skin-base hover:text-skin-menu-hover" title="Podcasts">Podcasts<span class="inline-flex ml-2 text-xs leading-4 text-green-800 bg-green-100 py-0.5 px-1.5 rounded-full">Bientôt</span></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="inline-flex items-center text-base text-skin-base hover:text-skin-menu-hover" title="Jobs">Jobs<span class="inline-flex ml-2 text-xs leading-4 text-green-800 bg-green-100 py-0.5 px-1.5 rounded-full">Bientôt</span></a>
-                                </li>
-                                <li><a href="https://laravel.cm/sponsors" class="inline-flex items-center text-base text-skin-base hover:text-skin-menu-hover" title="Sponsors">Sponsors</a></li>
-                                <li><a href="https://github.com/caneco/laravel-country-logomarks/blob/main/src/cm/README.md" class="inline-flex items-center text-base text-skin-base hover:text-skin-menu-hover" title="Branding">Branding</a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 class="text-sm font-semibold text-skin-muted tracking-wider uppercase">Légal</h3>
-                            <ul class="mt-4 space-y-4">
-                                <li><a href="https://laravel.cm/terms" class="inline-flex items-center text-base text-skin-base hover:text-skin-menu-hover" title="Conditions d’utilisation">Conditions d’utilisation</a></li>
-                                <li><a href="https://laravel.cm/privacy" class="inline-flex items-center text-base text-skin-base hover:text-skin-menu-hover" title="Confidentialité">Confidentialité</a></li>
-                                <li><a href="https://laravel.cm/rules" class="inline-flex items-center text-base text-skin-base hover:text-skin-menu-hover" title="Code de conduite">Code de conduite</a></li>
-                                <li><a href="https://laravel.cm/faq" class="inline-flex items-center text-base text-skin-base hover:text-skin-menu-hover" title="FAQ">FAQ</a></li>
-                            </ul>
-                        </div>
+                    <div>
+                        <h3 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">Resources</h3>
+                        <ul>
+                            <li class="mb-4"><a href="https://flowbite.com/docs/getting-started/introduction/" class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Documentation</a></li>
+                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="/blocks/">Flowbite Blocks</a></li>
+                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="/icons/">Flowbite Icons</a></li>
+                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="/figma/">Flowbite Figma</a></li>
+                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="/pro/">Pro version</a></li>
+                        </ul>
                     </div>
-                    <div class="mt-12 lg:mt-0">
-                        <div class="sm:max-w-lg lg:max-w-none">
-                            <h3 class="text-sm font-semibold text-skin-muted tracking-wider uppercase">Rejoignez nous</h3>
-                            <p class="mt-4 text-base text-skin-base">
-                                Rejoignez notre newsletter recevez des tutoriels, articles et podcasts sur le design et la programmation web.
-                            </p>
-                            <form aria-labelledby="newsletter-headline" action="https://laravelcm.us4.list-manage.com/subscribe/post?u=0642d391e4785535c232a8c66&amp;id=6ff87af677" method="POST" id="mc-embedded-subscribe-form" class="mt-4 sm:flex" name="mc-embedded-subscribe-form" target="_blank" novalidate="">
-                                <div class="w-full">
-                                    <div class="">
-                                        <div class="relative ">
-                                            <input name="EMAIL" type="email" id="EMAIL" class="formkit-input bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" autocomplete="email" required="required" placeholder="Entrer votre adresse email" aria-label="Adresse E-mail">
-                                        </div>
-                                    </div>
-                                    <input type="hidden" name="b_0642d391e4785535c232a8c66_6ff87af677" tabindex="-1" value="">
-                                </div>
-                                <div class="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:shrink-0">
-                                    <button class="button inline-flex items-center justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-body focus:ring-green-500 block w-full" type="submit">S'inscrire</button>
-                                </div>
-                            </form>
-                        </div>
-                        <p class="mt-6 text-base text-skin-base">
-                            Ou intégrez nos différentes plateformes de communication
-                        </p>
-                        <div class="mt-4 sm:flex sm:items-center sm:space-x-4">
-                            <a href="https://laravel.cm/discord" class="inline-flex items-center px-4 py-2 text-base text-skin-base font-medium bg-skin-body hover:bg-skin-card-muted rounded-md">
-                                <svg class="h-5 w-5 mr-2" fill="#5865F2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 146 146">
-                                    <path d="M107.75 125.001s-4.5-5.375-8.25-10.125c16.375-4.625 22.625-14.875 22.625-14.875-5.125 3.375-10 5.75-14.375 7.375-6.25 2.625-12.25 4.375-18.125 5.375-12 2.25-23 1.625-32.375-.125-7.125-1.375-13.25-3.375-18.375-5.375-2.875-1.125-6-2.5-9.125-4.25-.375-.25-.75-.375-1.125-.625-.25-.125-.375-.25-.5-.375-2.25-1.25-3.5-2.125-3.5-2.125s6 10 21.875 14.75c-3.75 4.75-8.375 10.375-8.375 10.375-27.625-.875-38.125-19-38.125-19 0-40.25 18-72.875 18-72.875 18-13.5 35.125-13.125 35.125-13.125l1.25 1.5c-22.5 6.5-32.875 16.375-32.875 16.375s2.75-1.5 7.375-3.625c13.375-5.875 24-7.5 28.375-7.875.75-.125 1.375-.25 2.125-.25 7.625-1 16.25-1.25 25.25-.25 11.875 1.375 24.625 4.875 37.625 12 0 0-9.875-9.375-31.125-15.875l1.75-2S110 19.626 128 33.126c0 0 18 32.625 18 72.875 0 0-10.625 18.125-38.25 19zM49.625 66.626c-7.125 0-12.75 6.25-12.75 13.875s5.75 13.875 12.75 13.875c7.125 0 12.75-6.25 12.75-13.875.125-7.625-5.625-13.875-12.75-13.875zm45.625 0c-7.125 0-12.75 6.25-12.75 13.875s5.75 13.875 12.75 13.875c7.125 0 12.75-6.25 12.75-13.875s-5.625-13.875-12.75-13.875z" fill-rule="nonzero"></path>
-                                </svg>
-                                Discord
-                            </a>
-                            <a href="https://laravel.cm/slack" class="inline-flex items-center px-4 py-2 text-base text-skin-base font-medium bg-skin-body hover:bg-skin-card-muted rounded-md">
-                                <svg class="h-5 w-5 mr-2" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <g clip-path="url(#clip0)" fill-rule="evenodd" clip-rule="evenodd">
-                                        <path d="M7.333 0a2 2 0 100 4h2V2a2.001 2.001 0 00-2-2zm0 5.333H2a2 2 0 000 4h5.333a2 2 0 100-4z" fill="#36C5F0"></path>
-                                        <path d="M20 7.333a2 2 0 00-4 0v2h2a2 2 0 002-2zm-5.333 0V2a2 2 0 00-4 0v5.333a2 2 0 104 0z" fill="#2EB67D"></path>
-                                        <path d="M12.666 20a2 2 0 100-3.999h-2v2c-.001 1.102.895 1.998 2 2zm0-5.334H18a2 2 0 000-4h-5.333a2 2 0 000 4z" fill="#ECB22E"></path>
-                                        <path d="M0 12.666a2 2 0 004 0v-2H2a2 2 0 00-2 2zm5.333 0V18a2 2 0 104 0v-5.332a2 2 0 00-4-.002z" fill="#E01E5A"></path>
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0">
-                                            <path fill="#fff" d="M0 0h20v20H0z"></path>
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                                Slack
-                            </a>
-                            <a href="https://laravel.cm/telegram" class="inline-flex items-center mt-4 sm:mt-0 px-4 py-2 text-base text-skin-base font-medium bg-skin-body hover:bg-skin-card-muted rounded-md">
-                                <svg class="h-5 w-5 mr-2" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <path d="M10 20c5.523 0 10-4.477 10-10S15.523 0 10 0 0 4.477 0 10s4.477 10 10 10z" fill="#34AADF"></path>
-                                    <path d="M4.162 9.913s5-2.052 6.734-2.774c.665-.29 2.919-1.214 2.919-1.214s1.04-.405.954.578c-.03.404-.26 1.82-.492 3.352-.346 2.168-.722 4.538-.722 4.538s-.058.665-.55.78c-.49.116-1.3-.404-1.444-.52-.116-.087-2.168-1.387-2.92-2.023-.202-.173-.433-.52.03-.925 1.04-.954 2.283-2.139 3.034-2.89.347-.347.694-1.156-.751-.173a246.647 246.647 0 01-4.075 2.745s-.463.29-1.33.03-1.879-.608-1.879-.608-.693-.433.492-.896z" fill="#fff"></path>
-                                </svg>
-                                Telegram
-                            </a>
-                        </div>
+                    <div>
+                        <h3 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">Help &amp; support</h3>
+                        <ul>
+                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="/contact/">Contact us</a></li>
+                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="/dashboard/support/">Support center</a></li>
+                            <li class="mb-4 flex items-center">
+                                <a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="/work-with-us/">Work with us</a>
+                                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ml-2">New</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">Follow us</h3>
+                        <ul>
+                            <li class="mb-4"><a href="https://discord.gg/4eeurUVvTy" rel="noreferrer nofollow" class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Discord</a></li>
+                            <li class="mb-4"><a href="https://github.com/themesberg" rel="noreferrer nofollow" class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Github</a></li>
+                            <li class="mb-4"><a href="https://twitter.com/zoltanszogyenyi" rel="noreferrer nofollow" class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Twitter</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">Legal</h3>
+                        <ul>
+                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="/license/">License (EULA)</a></li>
+                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="/privacy-policy/">Privacy policy</a></li>
+                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="/terms-and-conditions/">Terms &amp; conditions</a></li>
+                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="/brand/">Brand guideline</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="border-t border-skin-base py-6 sm:flex sm:items-center sm:justify-between lg:py-8">
-                    <p class="text-base text-center leading-6 text-skin-muted lg:text-left">
-                        © 2018 - 2023 Laravel Cameroun. Tous droits réservés.
-                    </p>
-                    <div class="mt-4 flex justify-center space-x-6 sm:mt-0 lg:justify-start">
-                        <a href="https://laravel.cm/twitter" class="text-skin-muted hover:text-skin-base">
-                            <span class="sr-only">Twitter</span>
-                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
-                            </svg>
-                        </a>
-                        <a href="https://laravel.cm/facebook" class="text-skin-muted hover:text-skin-base">
-                            <span class="sr-only">Facebook</span>
-                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path>
-                            </svg>
-                        </a>
-                        <a href="https://laravel.cm/linkedin" class="text-skin-muted hover:text-skin-base">
-                            <span class="sr-only">LinkedIn</span>
-                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M19 0H5a5 5 0 00-5 5v14a5 5 0 005 5h14a5 5 0 005-5V5a5 5 0 00-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"></path>
-                            </svg>
-                        </a>
-                        <a href="https://laravel.cm/github" class="text-skin-muted hover:text-skin-base">
-                            <span class="sr-only">GitHub</span>
-                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
-                            </svg>
-                        </a>
-                        <a href="https://laravel.cm/youtube" class="text-skin-muted hover:text-skin-base">
-                            <span class="sr-only">YouTube</span>
-                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0C.488 3.45.029 5.804 0 12c.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0C23.512 20.55 23.971 18.196 24 12c-.029-6.185-.484-8.549-4.385-8.816zM9 16V8l8 3.993L9 16z"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+                <hr class="my-8 border-gray-200 dark:border-gray-700 lg:my-12">
+                <span class="block font-normal text-center text-gray-600 dark:text-gray-400">© 2022-2023 KGS INFORMATIQUE™ est une marque déposée. Tous droits réservés.</span>
             </div>
         </footer>
+
 
         @notifyJs
          @livewireScripts

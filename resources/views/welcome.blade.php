@@ -2,28 +2,38 @@
 
 @section('content')
 
-<div class="mx-auto max-w-3xl px-4 pb-16 pt-28 sm:pt-32 lg:pt-10">
-	<div class="flex justify-center">
-		<a href="#" class="inline-flex items-center p-1 pr-2 font-sans text-white bg-green-700 rounded-full sm:text-base lg:text-sm xl:text-base">
-			<span class="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-flag-green rounded-full">⚡️ BuyMyCofee</span>
-			<span class="ml-4 hidden text-sm sm:block">Acheter un petit café pour le travail et le travail professionel que je vous livre </span>
 
-			<svg class="w-5 h-5 ml-2 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-				<path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+<section class="py-4 bg-white dark:bg-gray-900 lg:pt-12 lg:pb-16">
+	<div class="px-4 mx-auto max-w-8xl lg:px-4 lg:text-center">
+		<a class="inline-flex items-center justify-between px-1 py-1 pr-4 mb-5 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200" role="alert" href="/icons/">
+			<span class="text-xs bg-blue-700 dark:bg-blue-600 rounded-full text-white px-4 py-1.5 mr-3">Guy Stephane</span>
+			<span class="mr-2 text-sm font-bold">Fondé par Kahouo guy stephane </span>
+			<svg class="w-2.5 h-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+				<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"></path>
 			</svg>
 		</a>
-	</div>
-	<div class="mt-10 text-center">
-		<h1 class="text-4xl font-bold tracking-tight font-heading text-skin-primary sm:leading-none lg:text-6xl">KGS Informatique</h1>
-		<p class="mt-3 text-base text-skin-inverted sm:mt-5 sm:text-lg lg:text-xl">
-			Bienvenue dans la plus grande et populaire communauté d'informaticien et developpeur de la cote d'ivoire
+        <h1 class="text-4xl font-bold tracking-tight font-heading text-skin-primary sm:leading-none lg:text-6xl">
+           KGS INFORMATIQUE
+            </h1>
+
+		<p class="mb-10 text-lg font-normal text-gray-500 dark:text-gray-400 lg:text-center lg:text-xl xl:px-60 mt-2">
+            La plus grande communauté d'information et de développeur de cote d'ivoire,
+            nous croyons aux partages, à la connaissance réeele fondée sur principe
 		</p>
-		<div class="mt-10 sm:flex sm:items-center sm:justify-center gap-x-6">
-			<a href="{{route('login')}}" class="button inline-flex items-center justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-body focus:ring-green-500 w-full text-base font-medium sm:w-auto">Nous Rejoindre</a>
-			<a href="{{route('articles')}}" class="button inline-flex justify-center py-2 px-4 border border-skin-base rounded-md shadow-sm bg-skin-button text-sm text-skin-base hover:bg-skin-button-hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-body focus:ring-green-500 w-full mt-3 text-base font-medium sm:mt-0 sm:ml-3 sm:shrink-0 sm:inline-flex sm:items-center sm:w-auto">Participer avec nous </a>
+		<div class="flex flex-col mb-8 md:flex-row lg:justify-center">
+			<a href="#" class="text-white bg-blue-700 hover:bg-blue-800 dark:bg-blue-600 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-base px-6 py-2.5 text-center md:mr-5 mb-3 md:mb-0 inline-flex items-center justify-center">Nos Articles </a>
+			<a href="#components" class="text-gray-600 bg-white-100 hover:bg-gray-100 hover:text-blue-600 border border-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:border-gray-700 font-medium rounded-lg text-base px-6 py-2.5 text-center inline-flex justify-center items-center">
+				<svg class="w-3.5 h-3.5 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
+					<path d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z"></path>
+				</svg>
+				<span class="ml-2">Nous Réjoindre </span>
+			</a>
 		</div>
+
+		<iframe allowfullscreen="" title="YouTube video player" src="https://www.youtube.com/embed/KF9Awj74dMw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="relative w-full max-w-4xl mx-auto mt-12 border border-gray-300 shadow-2xl rounded-3xl lg:mt-20 dark:border-gray-700 yt-video"></iframe>
 	</div>
-</div>
+</section>
+
 
 
 
@@ -32,7 +42,7 @@
 
         <div class="max-w-7xl mx-auto px-4 py-10 lg:py-12 xl:pb-14">
             <p class="text-center text-lg font-medium leading-8 text-skin-inverted-muted">
-                Les partenaires de kgs informatique et les sponsors
+                Nous partagéons les memes valeurs comme d'autres communautés comme
             </p>
             <div class="mt-5 flex items-center justify-center flex-wrap gap-8">
 
@@ -117,13 +127,7 @@ donner des reperes à cette nouvelle génération.
 		<div class="mb-4">
 
 		</div>
-		<p class="text-sm text-gray-500 md:text-center dark:text-gray-400 font-normal">
-			By subscribing, you agree with ConvertKit's
-			<a rel="nofollow noopener noreferrer" class="text-blue-600 dark-text-blue-400 hover:underline" href="https://convertkit.com/terms">Terms of Service</a>
-			 and
-			<a class="text-blue-600 dark-text-blue-400 hover:underline" rel="nofollow noopener noreferrer" href="https://convertkit.com/privacy">Privacy Policy</a>
-			.
-		</p>
+
 	</div>
 </aside>
 
@@ -135,44 +139,44 @@ donner des reperes à cette nouvelle génération.
 	<div class="mx-auto w-full max-w-8xl px-4 py-8 lg:py-24">
 		<div class="grid items-center grid-cols-1 gap-6 lg:grid-cols-2 xl:gap-32">
 			<div class="mb-5 lg:mb-0">
-				<h2 class="text-3xl font-bold leading-tight text-gray-900 dark:text-white lg:text-4xl mb-4">Les derniers articles publiées </h2>
+				<h2 class="text-3xl font-bold leading-tight text-gray-900 dark:text-white lg:text-4xl mb-4">Nous partagéons des connaissances dans le domaine de l'informatique  </h2>
 				<p class="text-lg text-gray-500 dark:text-gray-400 mb-4 md:mb-6">
-					You will get access to hundreds of pages and components built with Tailwind CSS for application, marketing, and e-commerce user interfaces including the Figma design files based on the Flowbite UI component library.
+					Fondé dans l'optique d'aider, et de promouvoir la l'entraide entre informaticien
 				</p>
 				<ul class="mb-6 list-inside list-none space-y-4 font-medium text-gray-900 dark:text-white lg:mb-8">
 					<li class="flex items-center gap-2">
 						<svg class="h-5 w-5 shrink-0 rounded-full bg-blue-100 p-1 text-blue-700 dark:text-blue-600 dark:bg-gray-700" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M4.99992 8.29289L4.64637 7.93934L1.35697 4.64995C1.26295 4.56044 1.13776 4.51096 1.00786 4.51209C0.876764 4.51323 0.751358 4.56582 0.658654 4.65852C0.56595 4.75122 0.513365 4.87663 0.512226 5.00773C0.511097 5.13763 0.560568 5.26282 0.650079 5.35684L4.64642 9.35318C4.64644 9.3532 4.64645 9.35322 4.64647 9.35323C4.74023 9.44693 4.86736 9.49957 4.99992 9.49957C5.13248 9.49957 5.25961 9.44693 5.35337 9.35323L4.99992 8.29289ZM4.99992 8.29289L5.35347 7.93934L12.6464 0.646393C12.6464 0.646376 12.6465 0.646358 12.6465 0.64634C12.7402 0.552638 12.8674 0.5 12.9999 0.5C13.1325 0.5 13.2597 0.552658 13.3534 0.646393C13.4471 0.740146 13.4997 0.867253 13.4997 0.999786C13.4997 1.13234 13.4471 1.25947 13.3534 1.35323C13.3533 1.35325 13.3533 1.35327 13.3533 1.35329L5.35342 9.35318L4.99992 8.29289Z" stroke="currentColor"></path>
 						</svg>
-						Support for React and TypeScript components (on-going development)
+						Nous partegons des conseils profesionneles en informatique
 					</li>
 					<li class="flex items-center gap-2">
 						<svg class="h-5 w-5 shrink-0 rounded-full bg-blue-100 p-1 text-blue-700 dark:text-blue-600 dark:bg-gray-700" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M4.99992 8.29289L4.64637 7.93934L1.35697 4.64995C1.26295 4.56044 1.13776 4.51096 1.00786 4.51209C0.876764 4.51323 0.751358 4.56582 0.658654 4.65852C0.56595 4.75122 0.513365 4.87663 0.512226 5.00773C0.511097 5.13763 0.560568 5.26282 0.650079 5.35684L4.64642 9.35318C4.64644 9.3532 4.64645 9.35322 4.64647 9.35323C4.74023 9.44693 4.86736 9.49957 4.99992 9.49957C5.13248 9.49957 5.25961 9.44693 5.35337 9.35323L4.99992 8.29289ZM4.99992 8.29289L5.35347 7.93934L12.6464 0.646393C12.6464 0.646376 12.6465 0.646358 12.6465 0.64634C12.7402 0.552638 12.8674 0.5 12.9999 0.5C13.1325 0.5 13.2597 0.552658 13.3534 0.646393C13.4471 0.740146 13.4997 0.867253 13.4997 0.999786C13.4997 1.13234 13.4471 1.25947 13.3534 1.35323C13.3533 1.35325 13.3533 1.35327 13.3533 1.35329L5.35342 9.35318L4.99992 8.29289Z" stroke="currentColor"></path>
 						</svg>
-						Templates and components available in Figma
+                        Des téchniques et des solutions aux problemes que la communauté rencontre
 					</li>
 					<li class="flex items-center gap-2">
 						<svg class="h-5 w-5 shrink-0 rounded-full bg-blue-100 p-1 text-blue-700 dark:text-blue-600 dark:bg-gray-700" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M4.99992 8.29289L4.64637 7.93934L1.35697 4.64995C1.26295 4.56044 1.13776 4.51096 1.00786 4.51209C0.876764 4.51323 0.751358 4.56582 0.658654 4.65852C0.56595 4.75122 0.513365 4.87663 0.512226 5.00773C0.511097 5.13763 0.560568 5.26282 0.650079 5.35684L4.64642 9.35318C4.64644 9.3532 4.64645 9.35322 4.64647 9.35323C4.74023 9.44693 4.86736 9.49957 4.99992 9.49957C5.13248 9.49957 5.25961 9.44693 5.35337 9.35323L4.99992 8.29289ZM4.99992 8.29289L5.35347 7.93934L12.6464 0.646393C12.6464 0.646376 12.6465 0.646358 12.6465 0.64634C12.7402 0.552638 12.8674 0.5 12.9999 0.5C13.1325 0.5 13.2597 0.552658 13.3534 0.646393C13.4471 0.740146 13.4997 0.867253 13.4997 0.999786C13.4997 1.13234 13.4471 1.25947 13.3534 1.35323C13.3533 1.35325 13.3533 1.35327 13.3533 1.35329L5.35342 9.35318L4.99992 8.29289Z" stroke="currentColor"></path>
 						</svg>
-						Pre-order for Vue, Svelte, and Angular pro components
+						Nous nous aidons à grandir dans le monde de l'informatique
 					</li>
 					<li class="flex items-center gap-2">
 						<svg class="h-5 w-5 shrink-0 rounded-full bg-blue-100 p-1 text-blue-700 dark:text-blue-600 dark:bg-gray-700" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M4.99992 8.29289L4.64637 7.93934L1.35697 4.64995C1.26295 4.56044 1.13776 4.51096 1.00786 4.51209C0.876764 4.51323 0.751358 4.56582 0.658654 4.65852C0.56595 4.75122 0.513365 4.87663 0.512226 5.00773C0.511097 5.13763 0.560568 5.26282 0.650079 5.35684L4.64642 9.35318C4.64644 9.3532 4.64645 9.35322 4.64647 9.35323C4.74023 9.44693 4.86736 9.49957 4.99992 9.49957C5.13248 9.49957 5.25961 9.44693 5.35337 9.35323L4.99992 8.29289ZM4.99992 8.29289L5.35347 7.93934L12.6464 0.646393C12.6464 0.646376 12.6465 0.646358 12.6465 0.64634C12.7402 0.552638 12.8674 0.5 12.9999 0.5C13.1325 0.5 13.2597 0.552658 13.3534 0.646393C13.4471 0.740146 13.4997 0.867253 13.4997 0.999786C13.4997 1.13234 13.4471 1.25947 13.3534 1.35323C13.3533 1.35325 13.3533 1.35327 13.3533 1.35329L5.35342 9.35318L4.99992 8.29289Z" stroke="currentColor"></path>
 						</svg>
-						Access to over 430+ custom SVG icons in outline and solid styles
+						Acces gratuit pour tous
 					</li>
 				</ul>
 				<div class="items-center lg:flex">
-					<a class="block w-full sm:w-auto sm:inline-block mb-3 sm:mb-0 text-white bg-blue-700 dark:bg-blue-600 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-base px-5 py-2.5 text-center inline-block mr-4" href="/pro/">Explore Flowbite Pro</a>
-					<a class="block w-full sm:w-auto sm:inline-block text-gray-600 bg-white hover:bg-gray-100 hover:text-blue-600 border border-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:bg-gray-900 dark:hover:text-white border dark:border-gray-700 font-medium rounded-lg text-base px-6 py-2.5 text-center inline-flex justify-center items-center" href="/pro/#pricing">Pricing &amp; FAQ</a>
+					<a class="block w-full sm:w-auto sm:inline-block mb-3 sm:mb-0 text-white bg-blue-700 dark:bg-blue-600 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-base px-5 py-2.5 text-center inline-block mr-4" href="#">Forum</a>
+					<a class="block w-full sm:w-auto sm:inline-block text-gray-600 bg-white hover:bg-gray-100 hover:text-blue-600 border border-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:bg-gray-900 dark:hover:text-white border dark:border-gray-700 font-medium rounded-lg text-base px-6 py-2.5 text-center inline-flex justify-center items-center" href="">Discution </a>
 				</div>
 			</div>
 			<div class="max-w-full isolate flex flex-col items-start gap-4 self-stretch">
 				<div class="grid sm:grid-cols-2 gap-6">
-					<a class="rounded-lg border border-gray-300 bg-white px-4 py-3.5 text-base font-medium text-gray-500 placeholder:py-3.5 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-400 dark:hover:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-700 sm:gap-6" href="/figma/">
+					<a class="rounded-lg border border-gray-300 bg-white px-4 py-3.5 text-base font-medium text-gray-500 placeholder:py-3.5 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-400 dark:hover:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-700 sm:gap-6" href="">
 						<div class="flex items-center justify-between mb-4">
 							<img src="/images/technologies/figma.svg" class="w-8 h-8 rounded-lg" alt="Figma logo">
 							<span class="bg-gray-100 text-gray-500 text-xs font-semibold mr-2 px-2 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 hidden sm:flex">v2.6.0</span>
