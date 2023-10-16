@@ -135,26 +135,26 @@
                     <div>
                         <h3 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">Resources</h3>
                         <ul>
-                            <li class="mb-4"><a href="https://flowbite.com/docs/getting-started/introduction/" class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Documentation</a></li>
-                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="/blocks/">Flowbite Blocks</a></li>
-                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="/icons/">Flowbite Icons</a></li>
-                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="/figma/">Flowbite Figma</a></li>
-                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="/pro/">Pro version</a></li>
+                            <li class="mb-4"><a href="https://flowbite.com/docs/getting-started/introduction/" class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Politique</a></li>
+                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="#">Forums</a></li>
+                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="#">Astuces</a></li>
+                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="#">Articles</a></li>
+                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="#">Discutions </a></li>
                         </ul>
                     </div>
                     <div>
-                        <h3 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">Help &amp; support</h3>
+                        <h3 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">Associations </h3>
                         <ul>
-                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="/contact/">Contact us</a></li>
-                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="/dashboard/support/">Support center</a></li>
+                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="/contact/">CDG COCODYU </a></li>
+                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="/dashboard/support/">DJANGO GIRL </a></li>
                             <li class="mb-4 flex items-center">
-                                <a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="/work-with-us/">Work with us</a>
-                                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ml-2">New</span>
+                                <a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="/work-with-us/">EHUB</a>
+                                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ml-2">JOURNNE DU CODE </span>
                             </li>
                         </ul>
                     </div>
                     <div>
-                        <h3 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">Follow us</h3>
+                        <h3 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">NOS PAGES </h3>
                         <ul>
                             <li class="mb-4"><a href="https://discord.gg/4eeurUVvTy" rel="noreferrer nofollow" class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Discord</a></li>
                             <li class="mb-4"><a href="https://github.com/themesberg" rel="noreferrer nofollow" class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Github</a></li>
@@ -164,10 +164,10 @@
                     <div>
                         <h3 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">Legal</h3>
                         <ul>
-                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="/license/">License (EULA)</a></li>
-                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="/privacy-policy/">Privacy policy</a></li>
-                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="/terms-and-conditions/">Terms &amp; conditions</a></li>
-                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="/brand/">Brand guideline</a></li>
+                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="/license/">Politique d'utilisation</a></li>
+                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="/privacy-policy/">A propos de nous </a></li>
+                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="/terms-and-conditions/">Termes &amp; conditions</a></li>
+                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="/brand/">Contact</a></li>
                         </ul>
                     </div>
                 </div>
