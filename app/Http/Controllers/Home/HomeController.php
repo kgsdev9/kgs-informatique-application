@@ -29,9 +29,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-    
+
         return view('welcome', [
-            'allCategories'=> $this->categoryArticleService->takeCategoryRamdomOrder()
+            'allCategories'=> $this->categoryArticleService->takeCategoryRamdomOrder(),
+            'articlesTake' => $this->articleService->takeArticleLimited()
         ]);
     }
 

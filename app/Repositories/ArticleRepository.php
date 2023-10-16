@@ -19,4 +19,13 @@ public function __construct(Article $article)
     }
 
 
+    public function takeArticleLimited() {
+        return $this->article
+                    ->take(4)
+                    ->inRandomOrder()
+                    ->orderByDesc('created_at')
+                    ->get();
+    }
+
+    
 }

@@ -17,4 +17,10 @@ public function __construct(ArticleRepository $articleRepository)
         return $this->articleRepository->all();
     }
 
+    public function takeArticleLimited() {
+        return $this->articleRepository->takeArticleLimited();
+
+    }
+
+
 }
