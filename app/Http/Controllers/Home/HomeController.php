@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Home;
 
 use App\Http\Controllers\Controller;
 use App\Services\ArticleService;
-use App\Services\CategoryArticleService;
+use App\Services\TagService;
 use App\Traits\ImplementeServiceExterne;
 ;
 
@@ -14,12 +14,12 @@ class HomeController extends Controller
     use ImplementeServiceExterne;
 
 
-    protected $categoryArticleService;
+    protected $tagService;
     protected $articleService;
 
-    public function __construct(CategoryArticleService $categoryArticleService, ArticleService $articleService)
+    public function __construct(TagService $tagService, ArticleService $articleService)
     {
-     $this->categoryArticleService = $categoryArticleService;
+     $this->tagService = $tagService;
      $this->articleService = $articleService;
      }
 
@@ -31,7 +31,7 @@ class HomeController extends Controller
     {
 
         return view('welcome', [
-            'allCategories'=> $this->categoryArticleService->takeCategoryRamdomOrder(),
+            'allCategories'=> $this->tagService->takeCategoryRamdomOrder(),
             'articlesTake' => $this->articleService->takeArticleLimited()
         ]);
     }

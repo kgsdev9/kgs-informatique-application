@@ -145,9 +145,9 @@
                     <div>
                         <h3 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">NOS PAGES </h3>
                         <ul>
-                            <li class="mb-4"><a href="https://discord.gg/4eeurUVvTy" rel="noreferrer nofollow" class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Discord</a></li>
-                            <li class="mb-4"><a href="https://github.com/themesberg" rel="noreferrer nofollow" class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Github</a></li>
-                            <li class="mb-4"><a href="https://twitter.com/zoltanszogyenyi" rel="noreferrer nofollow" class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Twitter</a></li>
+                            <li class="mb-4"><a href="#" rel="noreferrer nofollow" class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Discord</a></li>
+                            <li class="mb-4"><a href="#" rel="noreferrer nofollow" class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Github</a></li>
+                            <li class="mb-4"><a href="#" rel="noreferrer nofollow" class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Twitter</a></li>
                         </ul>
                     </div>
                     <div>

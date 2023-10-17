@@ -19,8 +19,6 @@ return new class extends Migration
             $table->string('image');
             $table->integer('view');
             $table->unsignedBigInteger('user_id');
-            $table->unsignedBigInteger('categoryarticle_id');
-            $table->foreign('categoryarticle_id')->references('id')->on('category_articles');
             $table->timestamps();
         });
     }

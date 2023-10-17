@@ -1,11 +1,12 @@
 <?php
 
+use App\Http\Controllers\Article\ArticleController;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Home\HomeController;
 use App\Http\Controllers\Provider\ProviderController;
 use App\Livewire\Article;
 use Illuminate\Support\Facades\Route;
-use Laravel\Socialite\Facades\Socialite;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +19,9 @@ use Laravel\Socialite\Facades\Socialite;
 |
 */
 
+Route::resources([
+ 'article' => ArticleController::class
+]);
 
 
 Route::get('/', [HomeController::class ,'index'])->name('home');

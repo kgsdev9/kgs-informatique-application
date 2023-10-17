@@ -24,8 +24,8 @@ class Article extends Model
         return self::published()->where('id', '>', $this->id)->orderBy('id')->first();
     }
 
-    public function categoryarticle() {
-        return $this->belongsTo(CategoryArticle::class, 'categoryarticle_id');
+    public function articletags() {
+        return $this->belongsToMany(Tag::class, 'article_tag', 'article_id', 'tag_id');
     }
 
     public function previousArticle(): ?Article

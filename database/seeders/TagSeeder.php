@@ -6,15 +6,14 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class CategoryArticleSeeder extends Seeder
+class TagSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-
-        DB::table('category_articles')->insert([
+        DB::table('tags')->insert([
             ['name'=> 'Laravel',
              'slug' => 'laravel'
             ],
