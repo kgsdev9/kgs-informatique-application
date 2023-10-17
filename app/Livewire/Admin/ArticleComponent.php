@@ -18,14 +18,14 @@ class ArticleComponent extends Component
     protected $rules = [
         'title' => 'required',
         'description' => 'required',
-        'image' => 'required'
+        // 'image' => 'required'
     ];
 
 
     public function resetFields(){
         $this->title = '';
         $this->description = '';
-        $this->image = '';
+        // $this->image = '';
         $this->tag_id = '';
     }
 
@@ -48,7 +48,7 @@ class ArticleComponent extends Component
             'title'=> $this->title,
             'slug'=> $this->title,
             'description'=> $this->description,
-            'image' => $this->image,
+            'image' => "testedddddd",
             'user_id'=> 1,
         ]);
 
@@ -56,6 +56,6 @@ class ArticleComponent extends Component
 
         $this->resetFields();
 
-      
+
     }
 }

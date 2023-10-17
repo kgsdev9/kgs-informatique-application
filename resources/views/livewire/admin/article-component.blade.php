@@ -6,20 +6,14 @@
         <div>@error('title') {{ $message }} @enderror</div>
 
 
+        <textarea  id="default" wire:model="description"></textarea>
 
-        <textarea  wire:model="description" id="" cols="30" rows="10"></textarea>
         <div>@error('description') {{ $message }} @enderror</div>
-        <input type="file" wire:model="image">
+        {{-- <input type="file" wire:model="image"> --}}
         <div>@error('image') {{ $message }} @enderror</div>
 
-
-        @if ($image)
-        Photo Preview:
-        <img src="{{ $image->temporaryUrl() }}">
-    @endif
-
         <div wire:ignore>
-        <select wire:model="tag_id">
+        <select wire:model="tag_id[]">
             @foreach ($allTags as $value)
                 <option value="{{$value->id}}">{{$value->name}}</option>
             @endforeach

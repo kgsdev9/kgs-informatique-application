@@ -7,8 +7,8 @@
 <section class="py-4 bg-white dark:bg-gray-900 lg:pt-12 lg:pb-16">
 	<div class="px-4 mx-auto max-w-8xl lg:px-4 lg:text-center">
 		<a class="inline-flex items-center justify-between px-1 py-1 pr-4 mb-5 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200" role="alert" href="/icons/">
-			<span class="text-xs bg-blue-700 dark:bg-blue-600 rounded-full text-white px-4 py-1.5 mr-3">Guy Stephane</span>
-			<span class="mr-2 text-sm font-bold">Fondé par Kahouo guy stephane </span>
+			<span class="text-xs bg-blue-700 dark:bg-blue-600 rounded-full text-white px-4 py-1.5 mr-3">KGS</span>
+			<span class="mr-2 text-sm font-bold">La perfection se trouve dans la pratique </span>
 			<svg class="w-2.5 h-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
 				<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"></path>
 			</svg>
@@ -18,8 +18,9 @@
             </h1>
 
 		<p class="mb-10 text-lg font-normal text-gray-500 dark:text-gray-400 lg:text-center lg:text-xl xl:px-60 mt-2">
-            La plus grande communauté d'information et de développeur de cote d'ivoire,
-            nous croyons aux partages, à la connaissance réeele fondée sur principe
+            La plus grande communauté d'informaticien et  développeur de cote d'ivoire,
+            fondé par Guy stephane Kahouo, Développeur D'application Backend Senior
+
 		</p>
 		<div class="flex flex-col mb-8 md:flex-row lg:justify-center">
 			<a href="#" class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Nos Articles </a>
