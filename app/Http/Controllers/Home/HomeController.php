@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Services\ArticleService;
 use App\Services\TagService;
 use App\Traits\ImplementeServiceExterne;
-;
+use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
@@ -24,6 +24,14 @@ class HomeController extends Controller
      }
 
 
+     public function merci() {
+        $article = "";
+        return view('merci', compact('article'));
+     }
+
+     public function okay(Request $request){
+        dd($request->all());
+     }
     /**
      * Display a listing of the resource.
      */

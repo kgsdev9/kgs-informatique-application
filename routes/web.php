@@ -5,6 +5,7 @@ use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Home\HomeController;
 use App\Http\Controllers\Provider\ProviderController;
 use App\Livewire\Article;
+use App\Livewire\ArticleRessource;
 use Illuminate\Support\Facades\Route;
 
 
@@ -27,7 +28,7 @@ Route::resources([
 Route::get('/', [HomeController::class ,'index'])->name('home');
 
 
-Route::get('/articles', [HomeController::class, 'articles'])->name('articles');
+// Route::get('/articles', [HomeController::class, 'articles'])->name('articles');
 
 Route::get('/home', function () {
     return view('home');
@@ -41,8 +42,6 @@ Route::get('/auth/{provider}/redirect', [ProviderController::class, 'redirect'])
 Route::get('/auth/{provider}/callback', [ProviderController::class, 'callback']);
 
 
-Route::get('/articles-testing-livewire', Article::class)->name('testing.article');
-
 
 Route::get('/dashboard', function() {
     return view('admin.index');
@@ -53,7 +52,4 @@ Route::get('/discutions', function() {
     return view('discution');
 });
 
-
-Route::get('/test', function() {
-    return view('test');
-});
+Route::get('/article-ressource', ArticleRessource::class);

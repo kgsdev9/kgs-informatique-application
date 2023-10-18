@@ -180,7 +180,7 @@ donner des reperes à cette nouvelle génération.
 			<div class="max-w-full isolate flex flex-col items-start gap-4 self-stretch">
 				<div class="grid sm:grid-cols-2 gap-6">
                     @foreach ($articlesTake as $article)
-                    <a class="rounded-lg border border-gray-300 bg-white px-4 py-3.5 text-base font-medium text-gray-500 placeholder:py-3.5 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-400 dark:hover:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-700 sm:gap-6" href="">
+                    <a class="rounded-lg border border-gray-300 bg-white px-4 py-3.5 text-base font-medium text-gray-500 placeholder:py-3.5 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-400 dark:hover:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-700 sm:gap-6" href="{{route('article.show', $article->id)}}">
 						<div class="flex items-center justify-between mb-4">
 							<img src="/images/technologies/figma.svg" class="w-8 h-8 rounded-lg" alt="Figma logo">
 							<span class="bg-gray-100 text-gray-500 text-xs font-semibold mr-2 px-2 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 hidden sm:flex">PHP</span>

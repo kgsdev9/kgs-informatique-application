@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Article;
 
 use App\Http\Controllers\Controller;
+use App\Models\Article;
 use Illuminate\Http\Request;
 
 class ArticleController extends Controller
@@ -12,7 +13,7 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        //
+        return view('articles.article');
     }
 
     /**
@@ -28,15 +29,21 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // dd($request->all());
+        Article::create([
+            'title'=> $request->input('name'),
+            'description'=> $request->input('description'),
+        ]);
+
+        dd('merci');
     }
 
     /**
      * Display the specified resource.
      */
     public function show(string $id)
-    {
-        //
+    {   $ressource=  Article::find($id);
+        return view('articles.show', compact('ressource'));
     }
 
     /**

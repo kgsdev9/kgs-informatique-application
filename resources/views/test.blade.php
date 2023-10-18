@@ -9,7 +9,8 @@
 </head>
 <body>
     <h3>Advanced Text Editor</h3>
-    <form action="" method="post">
+    <form action="/okay" method="post">
+        @csrf
         <textarea name="textarea" id="default"  ></textarea>
         <input type="submit" value="submit">
     </form>

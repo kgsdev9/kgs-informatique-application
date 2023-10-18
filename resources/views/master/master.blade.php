@@ -5,14 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Bienvenue sur KGS INFORMATIQUE </title>
-        @notifyCss
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="{{asset('css.css')}}">
         @livewireStyles
     </head>
-    <body >
+    <body class="antialiased">
         <header class="sticky top-0 z-40 flex-none mx-auto w-full bg-white dark:bg-gray-900 ">
             <div id="banner" tabindex="-1" class="z-50 flex justify-center w-full px-4 py-3 border border-b border-gray-200 bg-gray-50 dark:border-gray-600 lg:py-4 dark:bg-gray-700">
                 <div class="items-center md:flex">
@@ -165,8 +164,6 @@
             </div>
         </footer>
 
-
-        @notifyJs
          @livewireScripts
     </body>
 </html>
