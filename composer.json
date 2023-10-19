@@ -13,6 +13,7 @@
         "laravel/tinker": "^2.8",
         "livewire/livewire": "^3.0",
         "mckenziearts/laravel-notify": "^2.4",
+        "pharaonic/livewire-select2": "^1.2",
         "sinnbeck/markdom": "^2.0",
         "tinymce/tinymce": "^6.7"
     },

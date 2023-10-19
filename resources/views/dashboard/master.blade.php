@@ -1,108 +1,236 @@
 
-<main class="grow">
-	<main class="pt-6 pb-8 bg-white lg:pb-16 dark:bg-gray-900">
-		<div class="flex justify-between px-4 mx-auto max-w-8xl">
-			<div class="hidden mb-6 xl:block lg:w-80">
-                <div class="sticky top-36">
-                    <aside>
-                        <div class="p-6 mb-6 font-medium text-gray-500 bg-white rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
-                            <h1 class="mb-2 font-bold text-gray-900 uppercase dark:text-white">KGS INFORMATIQUE</h1>
-                            <p class="text-sm text-gray-500 dark:text-gray-400">
-                                Veuillez vous conformer à la charte de kgs informatique
-                            </p>
-                        </div>
-                        <div class="p-6 mb-6 font-medium text-gray-500 bg-white rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
-                            <h4 class="mb-4 font-bold text-gray-900 uppercase dark:text-white">Mes Actions </h4>
-                            <a class="inline-flex justify-center items-center p-5 mb-4 w-full text-base font-medium text-gray-500 bg-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-700 dark:hover:bg-gray-600 dark:hover:text-white" href="/docs/getting-started/introduction/">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Mon profile</title>
 
-                                <span class="w-full">Mes articles </span>
-                                <svg class="ml-3 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                                </svg>
-                            </a>
-                            <a class="inline-flex justify-center items-center p-5 mb-4 w-full text-base font-medium text-gray-500 bg-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-700 dark:hover:bg-gray-600 dark:hover:text-white" href="/figma/">
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Webestica.com">
+	<meta name="description" content="Bootstrap based News, Magazine and Blog Theme">
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="assets/images/favicon.ico">
 
-                                <span class="w-full">Mes disuctions</span>
-                                <svg class="ml-3 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                                </svg>
-                            </a>
-                            <a href="#" class="inline-flex justify-center items-center p-5 w-full text-base font-medium text-gray-500 bg-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-700 dark:hover:bg-gray-600 dark:hover:text-white">
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com/">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&amp;family=Rubik:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <script src="https://cdn.tiny.cloud/1/ewnwdlukikfd20zuefy426z7slixkeng4g2wsxxikjsyfa5k/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" type="text/css" href="{{asset('dashboard/vendor/font-awesome/css/all.min.css')}}">
+    <link rel="stylesheet" href="{{asset('dashboard/vendor/bootstrap-icons/bootstrap-icons.css')}}">
+    <link rel="stylesheet" href="{{asset('dashboard/vendor/overlay-scrollbar/css/OverlayScrollbars.min.css')}}">
+	<!-- Theme CSS -->
+    <link rel="stylesheet" href="{{asset('dashboard/css/style.css')}}">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" type="text/css">
+    @livewireStyles
+</head>
 
-                                <span class="w-full">Mes sujets </span>
-                                <svg class="ml-3 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                                </svg>
-                            </a>
-                        </div>
+<body>
+<!-- =======================
+Header START -->
+<header class="navbar-light navbar-sticky header-static border-bottom navbar-dashboard">
+	<!-- Logo Nav START -->
+	<nav class="navbar navbar-expand-xl">
+		<div class="container">
+			<!-- Logo START -->
+			<a class="navbar-brand me-3" href="index-2.html">
+				<img class="navbar-brand-item light-mode-item" src="assets/images/logo.svg" alt="logo">
+				<img class="navbar-brand-item dark-mode-item" src="assets/images/logo-light.svg" alt="logo">
+			</a>
+			<!-- Logo END -->
 
-                    </aside>
-                </div>
-            </div>
+			<!-- Responsive navbar toggler -->
+			<button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="text-body h6 d-none d-sm-inline-block">Menu</span>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<!-- Main navbar START -->
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav navbar-nav-scroll mx-auto">
+
+					<!-- Nav item 1 Demos -->
+					<li class="nav-item"><a class="nav-link" href="/"><i class="bi bi-house-door me-1"></i>Retourner à l'accueil</a></li>
+
+					<!-- Nav item 2 Post -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="postMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-pencil me-1"></i>Articles</a>
+
+					</li>
+
+					<!-- Nav item 3 Pages -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-folder me-1"></i>Mes discutions </a>
+
+					</li>
+
+                    <li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-folder me-1"></i>Mes Sujets </a>
+
+					</li>
+				</ul>
 
 
-			<div class="w-full max-w-2xl mx-auto">
-				<div class="flex items-center justify-between py-4 border-t border-b border-gray-200 dark:border-gray-700 not-format">
-					<span class="text-sm font-bold text-gray-900 lg:mb-0 dark:text-white">Publier un article</span>
-                    <span class="text-sm font-bold text-gray-900 lg:mb-0 dark:text-white">Publier une discution</span>
-                    <span class="text-sm font-bold text-gray-900 lg:mb-0 dark:text-white">Publier un sujet </span>
-				</div>
-				<div class="divide-y divide-gray-200 dark:divide-gray-700">
-					<article class="py-6">
-						<div class="flex items-center justify-between mb-3 text-gray-500">
-							<div>
-								<a class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 hover:bg-blue-200 dark:hover:bg-blue-300 dark:text-blue-800 mb-2" href="/blog/tag/flowbite/">#Flowbite</a>
-							</div>
-							<span class="text-sm">Published <time datetime="1677146503000">8 months ago</time></span>
-						</div>
-						<h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white hover:underline"><a href="/blog/state-of-flowbite-2022/">State of Flowbite: learn more about our results from 2022 and what we plan to build this year</a></h2>
-						<p class="mb-5 text-gray-500 dark:text-gray-400">
-							Learn more about the results, achievements and plans for the future by reading the "State of Flowbite 2022" including the open-source development of the Flowbite Library, the release of new UI components, features, and more.
-						</p>
-						<div class="flex items-center justify-between">
-							<a class="flex items-center space-x-2" href="/blog/author/zoltan/">
-								<img class="rounded-full w-7 h-7" src="https://www.gravatar.com/avatar/be85a3bc61ad70c85c9b3411dc07cb2d?s=250&amp;r=x&amp;d=mp" alt="Zoltán Szőgyényi profile picture">
-								<span class="font-medium dark:text-white">Zoltán Szőgyényi</span>
-							</a>
-							<a class="inline-flex items-center font-medium text-blue-600 hover:underline dark:text-blue-500" href="/blog/state-of-flowbite-2022/">
-								Read more
-								<svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-									<path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-								</svg>
-							</a>
-						</div>
-					</article>
-				</div>
 			</div>
+		  <!-- Main navbar END -->
 
-			<aside class="hidden lg:block lg:w-80" aria-labelledby="sidebar-label">
-				<div class="sticky top-36">
-					<h3 id="sidebar-label" class="sr-only">Sidebar</h3>
-					<div class="lg:ml-auto">
-						<script src="//cdn.carbonads.com/carbon.js?serve=CK7D4KQE&amp;placement=flowbitedesign"></script>
-					</div>
+			<!-- Nav right START -->
+			<div class="nav flex-nowrap align-items-center">
 
-					<div class="p-6 mb-6 font-medium text-gray-500 bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
-						<h4 class="mb-4 font-bold text-gray-900 uppercase dark:text-white">AUTEURS DE LA COMMUNAUTE</h4>
-						<ul class="space-y-4 text-gray-500 dark:text-gray-400">
-							<li>
-								<a class="flex items-start" href="/blog/author/david/">
-									<div class="mr-3 shrink-0">
-										<img class="w-6 h-6 mt-1 rounded-full" src="https://publisher.flowbite.com/content/images/2022/12/david-dumont-profile-picture.jpeg" alt="David Dumont profile picture">
-									</div>
-									<div class="mr-3">
-										<span class="block font-medium text-gray-900 dark:text-white">David Dumont</span>
-										<span class="text-sm">Co-founder at Suncel: a CMS for Next.js apps and websites.</span>
-									</div>
-								</a>
-							</li>
-						</ul>
-					</div>
+
+
+				<!-- Profile dropdown START -->
+				<div class="nav-item ms-2 ms-md-3 dropdown">
+					<!-- Avatar -->
+					<a class="avatar avatar-sm p-0" href="#" id="profileDropdown" role="button" data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false">
+						<img class="avatar-img rounded-circle" src="assets/images/avatar/03.jpg" alt="avatar">
+					</a>
+
+					<!-- Profile dropdown START -->
+					<ul class="dropdown-menu dropdown-animation dropdown-menu-end shadow pt-3" aria-labelledby="profileDropdown">
+						<!-- Profile info -->
+						<li class="px-3">
+							<div class="d-flex align-items-center">
+								<!-- Avatar -->
+								<div class="avatar me-3">
+									<img class="avatar-img rounded-circle shadow" src="assets/images/avatar/03.jpg" alt="avatar">
+								</div>
+								<div>
+									<a class="h6 mt-2 mt-sm-0" href="#"> Louis Ferguson</a>
+									<p class="small m-0">example@gmail.com</p>
+								</div>
+							</div>
+							<hr>
+						</li>
+						<!-- Links -->
+						<li><a class="dropdown-item" href="#"><i class="bi bi-person fa-fw me-2"></i>Edit Profile</a></li>
+						<li><a class="dropdown-item" href="#"><i class="bi bi-gear fa-fw me-2"></i>Account Settings</a></li>
+						<li><a class="dropdown-item" href="#"><i class="bi bi-info-circle fa-fw me-2"></i>Help</a></li>
+						<li><a class="dropdown-item" href="#"><i class="bi bi-power fa-fw me-2"></i>Sign Out</a></li>
+						<li class="dropdown-divider mb-2"></li>
+						<li>
+							<div class="align-items-center text-center py-0">
+								<span class="me-3">mode:</span>
+								<div class="btn-group theme-icon-active" role="group" aria-label="Default button group">
+									<button type="button" class="btn btn-light btn-sm mb-0" data-bs-theme-value="light">
+										<svg width="16" height="16" fill="currentColor" class="bi bi-brightness-high-fill fa-fw mode-switch" viewBox="0 0 16 16">
+											<path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+											<use href="#"></use>
+										</svg>
+									</button>
+									<button type="button" class="btn btn-light btn-sm mb-0" data-bs-theme-value="dark">
+										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill fa-fw mode-switch" viewBox="0 0 16 16">
+											<path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+											<path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+											<use href="#"></use>
+										</svg>
+									</button>
+									<button type="button" class="btn btn-light btn-sm mb-0 active" data-bs-theme-value="auto">
+										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-half fa-fw mode-switch" viewBox="0 0 16 16">
+											<path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+											<use href="#"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<!-- Profile dropdown END -->
 				</div>
-			</aside>
+				<!-- Profile dropdown END -->
+
+			<!-- Nav right END -->
+			</div>
 		</div>
-	</main>
-</main>
+	</nav>
+	<!-- Logo Nav END -->
+</header>
+<!-- =======================
+Header END -->
+
+<!-- **************** MAIN CONTENT START **************** -->
+    @yield('master')
+<!-- **************** MAIN CONTENT END **************** -->
+
+<!-- =======================
+Footer START -->
+<footer class="mb-3">
+  <div class="container">
+    <div class="card card-body bg-light">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-lg-6">
+          <!-- Copyright -->
+          <div class="text-center text-lg-start">©2023 <a href="https://www.webestica.com/" class="text-reset btn-link" target="_blank">Webestica</a>. All rights reserved
+          </div>
+        </div>
+        <div class="col-lg-6 d-sm-flex align-items-center justify-content-center justify-content-lg-end">
+          <!-- Language switcher -->
+          <div class="dropup me-0 me-sm-3 mt-3 mt-md-0 text-center text-sm-end">
+            <a class="dropdown-toggle text-body" href="#" role="button" id="languageSwitcher" data-bs-toggle="dropdown" aria-expanded="false">
+              English Edition
+            </a>
+            <ul class="dropdown-menu min-w-auto" aria-labelledby="languageSwitcher">
+              <li><a class="dropdown-item" href="#">English</a></li>
+              <li><a class="dropdown-item" href="#">German </a></li>
+              <li><a class="dropdown-item" href="#">French</a></li>
+            </ul>
+          </div>
+          <!-- Links -->
+          <ul class="nav text-center text-sm-end justify-content-center justify-content-center mt-3 mt-md-0">
+            <li class="nav-item"><a class="nav-link" href="#">Terms</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Privacy</a></li>
+            <li class="nav-item"><a class="nav-link pe-0" href="#">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- =======================
+Footer END -->
+
+<!-- Back to top -->
+<div class="back-top"><i class="bi bi-arrow-up-short"></i></div>
+
+<!-- =======================
+JS libraries, plugins and custom scripts -->
+
+<!-- Bootstrap JS -->
+
+<script src="{{asset('dashboard/vendor/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
+<!-- Vendors -->
 
 
+<script src="{{asset('dashboard/vendor/overlay-scrollbar/js/OverlayScrollbars.min.js')}}"></script>
+<!-- Template Functions -->
 
+<script src="{{asset('dashboard/js/functions.js')}}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+@livewireScripts
+
+<!-- Way 1 -->
+<x:pharaonic-select2::scripts />
+<!-- Way 2 : Vendor Publishing REQURIED -->
+<script src="{{ asset('vendor/pharaonic/pharaonic.select2.min.js') }}"></script>
+<script>
+    tinymce.init({
+      selector: 'textarea',
+      plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
+      toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+    });
+  </script>
+
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script>
+  $(document).ready(function() {
+      $('.select2-multiple').select2({
+          placeholder: "Selectionner un tag",
+          allowClear: true
+      });
+
+  });
+</script>
+</body>
+</html>

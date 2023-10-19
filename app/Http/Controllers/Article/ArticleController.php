@@ -14,7 +14,7 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        return view('articles.article', []);
+        return view('dashboard.articles.liste');
     }
 
     /**
@@ -33,19 +33,15 @@ class ArticleController extends Controller
     public function store(Request $request)
     {
        $article  = Article::create([
-            'title'=> $request->input('name')?? 'le resultat',
+            'title'=> $request->input('title')?? 'le resultat',
             'slug' => \Str::slug($request->input('title')),
             'description'=> $request->input('description'),
             'user_id' => 1
         ]);
 
-        foreach($request->tag_id as $key => $value) {
-            if($key != 0) {
-            $article->articletags()->attach((array)$key);
-            }
+        $article->articletags()->sync($request->tag_id);
+        return redirect()->route('article.index', ['success' => true]);
 
-        }
-    dd('merci');
     }
 
     /**
