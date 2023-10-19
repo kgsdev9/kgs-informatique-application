@@ -25,7 +25,7 @@ class Article extends Model
 
     public function nextArticle(): ?Article
     {
-        return self::published()->where('id', '>', $this->id)->orderBy('id')->first();
+        return $this->where('id', '>', $this->id)->orderBy('id')->first();
     }
 
     public function articletags() {
@@ -34,7 +34,7 @@ class Article extends Model
 
     public function previousArticle(): ?Article
     {
-        return self::published()->where('id', '<', $this->id)->orderByDesc('id')->first();
+        return $this->where('id', '<', $this->id)->orderByDesc('id')->first();
     }
 
 }

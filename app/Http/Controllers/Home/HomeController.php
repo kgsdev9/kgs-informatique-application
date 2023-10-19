@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Home;
 
 use App\Http\Controllers\Controller;
+use App\Models\Article;
 use App\Services\ArticleService;
 use App\Services\TagService;
 use App\Traits\ImplementeServiceExterne;
@@ -47,8 +48,12 @@ class HomeController extends Controller
 
     public function show($id)  {
         $this->countView($id);
+    }
 
 
+    public function articleTag($id) {
+       $ressource =  Article::where('id', '=',$id)->get();
+       dd($ressource);
     }
 
 

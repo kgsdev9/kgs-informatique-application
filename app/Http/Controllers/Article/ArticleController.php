@@ -49,7 +49,9 @@ class ArticleController extends Controller
      */
     public function show(string $id)
     {   $ressource=  Article::find($id);
-        return view('dashboard.articles.show', compact('ressource'));
+        $url = url()->current();
+        $allTags = Tag::take(5)->inRandomOrder()->get();
+        return view('dashboard.articles.show', compact('ressource', 'url', 'allTags'));
     }
 
     /**

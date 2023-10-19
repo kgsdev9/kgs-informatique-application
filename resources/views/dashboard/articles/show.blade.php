@@ -25,60 +25,60 @@
                                         <img class="w-8 h-8 mt-1 rounded-full" src="https://www.gravatar.com/avatar/be85a3bc61ad70c85c9b3411dc07cb2d?s=250&amp;r=x&amp;d=mp" alt="Zoltán Szőgyényi profile picture">
                                     </div>
                                     <div class="mr-3">
-                                        <span class="block font-medium text-gray-900 dark:text-white">Zoltán Szőgyényi</span>
+                                        <span class="block font-medium text-gray-900 dark:text-white">Guy Stephane Kahouo </span>
                                     </div>
                                 </a>
                                 <p class="mb-4 text-sm text-gray-500 dark:text-gray-400">
-                                    Open-source contributor. Currently building Flowbite.
+                                   Informaticien développeur d'application Senior
                                 </p>
                                 <dl>
                                     <div class="mb-4">
                                         <dt class="mb-2 text-sm font-bold text-gray-900 uppercase dark:text-white">
-                                            Location
+                                            Localisation
                                         </dt>
                                         <dd class="inline-flex items-center text-sm text-gray-500 dark:text-gray-400">
                                             <svg aria-hidden="true" class="w-3 h-3 mr-2 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
                                             </svg>
-                                            Budapest, Hungary
+                                           Abidjan, Cote d'ivoire
                                         </dd>
                                     </div>
                                     <div class="mb-4">
                                         <dt class="mb-2 text-sm font-bold text-gray-900 uppercase dark:text-white">
-                                            Follow on Twitter
+                                           Suivre sur  Twitter
                                         </dt>
                                         <dd class="text-sm text-gray-500 dark:text-gray-400 hover:underline">
-                                            <a href="https://twitter.com/@zoltanszogyenyi" class="inline-flex items-center">
+                                            <a href="https://twitter.com/@guystephanekahouo" class="inline-flex items-center">
                                                 <svg aria-hidden="true" class="w-3 h-3 mr-2 text-gray-500 dark:text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                     <path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
                                                 </svg>
-                                                @zoltanszogyenyi
+                                                @guystephanekahouo
                                             </a>
                                         </dd>
                                     </div>
                                     <dt class="mb-2 text-sm font-bold text-gray-900 uppercase dark:text-white">
-                                        Website
+                                        Site web
                                     </dt>
                                     <dd class="text-sm text-gray-500 dark:text-gray-400 hover:underline">
-                                        <a href="https://flowbite.com" rel="nofollow noreferrer" class="inline-flex items-center">
+                                        <a href="https://kgsinformatique.tech/" rel="nofollow noreferrer" class="inline-flex items-center">
                                             <svg aria-hidden="true" class="w-3 h-3 mr-2 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" d="M4.083 9h1.946c.089-1.546.383-2.97.837-4.118A6.004 6.004 0 004.083 9zM10 2a8 8 0 100 16 8 8 0 000-16zm0 2c-.076 0-.232.032-.465.262-.238.234-.497.623-.737 1.182-.389.907-.673 2.142-.766 3.556h3.936c-.093-1.414-.377-2.649-.766-3.556-.24-.56-.5-.948-.737-1.182C10.232 4.032 10.076 4 10 4zm3.971 5c-.089-1.546-.383-2.97-.837-4.118A6.004 6.004 0 0115.917 9h-1.946zm-2.003 2H8.032c.093 1.414.377 2.649.766 3.556.24.56.5.948.737 1.182.233.23.389.262.465.262.076 0 .232-.032.465-.262.238-.234.498-.623.737-1.182.389-.907.673-2.142.766-3.556zm1.166 4.118c.454-1.147.748-2.572.837-4.118h1.946a6.004 6.004 0 01-2.783 4.118zm-6.268 0C6.412 13.97 6.118 12.546 6.03 11H4.083a6.004 6.004 0 002.783 4.118z" clip-rule="evenodd"></path>
                                             </svg>
-                                            https://flowbite.com
+                                            https://kgsinformatique.tech/
                                         </a>
                                     </dd>
                                 </dl>
                             </div>
 
                             <div class="p-6 mb-6 text-gray-500 bg-white rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
-                                <h4 class="mb-4 font-bold text-gray-900 uppercase dark:text-white">Become an author</h4>
+                                <h4 class="mb-4 font-bold text-gray-900 uppercase dark:text-white">Publier un article </h4>
                                 <p class="mb-2 text-sm text-gray-500 dark:text-gray-400">
-                                    Do you want to contribute by writing guest posts on this blog?
+                                    Voulez-vous contribuer en écrivant des articles invités sur ce blog ?
                                 </p>
                                 <p class="mb-4 text-sm text-gray-500 dark:text-gray-400">
-                                    Please contact us and send us a resume of previous articles that you have written.
+                                    Personnellement je suis une personne exigence, donc assurez que vous publier quelque chose de pro
                                 </p>
-                                <a class="text-white block text-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 w-full" href="/contact/">Get in touch</a>
+                                <a class="text-white block text-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 w-full" href="#">C'est parti </a>
                             </div>
                         </aside>
                     </div>
@@ -91,7 +91,29 @@
                         @endforeach
 
                     </a></div>
-                    <div class="flex items-center justify-between"><aside aria-label="Share social media"><a href="https://twitter.com/intent/tweet?text=State of Flowbite: learn more about our results from 2022 and what we plan to build this year - Flowbite Blog https://flowbite.com/blog/state-of-flowbite-2022/" class="inline-flex items-center px-3 py-2 mr-2 text-xs font-medium text-gray-900 no-underline bg-white border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><svg class="w-4 h-4 mr-2" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg> Tweet</a><a href="https://www.facebook.com/sharer/sharer.php?u=https://flowbite.com/blog/state-of-flowbite-2022/" class="inline-flex items-center px-3 py-2 mr-2 text-xs font-medium text-gray-900 no-underline bg-white border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><svg class="w-4 h-4 mr-2" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg> Share</a><button type="button" class="inline-flex items-center px-3 py-2 text-xs font-medium text-gray-900 no-underline bg-white border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" class="w-4 h-4 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>Copy URL</button></aside></div>
+                    <div class="flex items-center justify-between">
+                        <aside aria-label="Share social media">
+                            <a href="https://twitter.com/intent/tweet?text={{$url}}" class="inline-flex items-center px-3 py-2 mr-2 text-xs font-medium text-gray-900 no-underline bg-white border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                                <svg class="w-4 h-4 mr-2" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                                </svg>
+                                 Tweet
+                            </a>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=#{{$url}}" target="_blank" class="inline-flex items-center px-3 py-2 mr-2 text-xs font-medium text-gray-900 no-underline bg-white border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                                <svg class="w-4 h-4 mr-2" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path>
+                                </svg>
+                                 Share
+                            </a>
+                            <button type="button" class="inline-flex items-center px-3 py-2 text-xs font-medium text-gray-900 no-underline bg-white border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" class="w-4 h-4 mr-2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                                </svg>
+                                Copy URL
+                            </button>
+                        </aside>
+                    </div>
+
                     <article class="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
                         <p class="lead">{!! $ressource->description !!}</p>
                     </article>
@@ -105,52 +127,44 @@
                         <div class="p-6 pb-4 mt-6 mb-6 font-medium text-gray-500 bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
                             <h4 class="mb-4 font-bold text-gray-900 uppercase dark:text-white">Catégories Récommandés </h4>
                             <div class="flex flex-wrap">
-                                <a class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 hover:bg-blue-200 dark:hover:bg-blue-300 dark:text-blue-800 mb-2" href="/blog/tag/alpine-js/">#Alpine.js</a>
-                                <a class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 hover:bg-blue-200 dark:hover:bg-blue-300 dark:text-blue-800 mb-2" href="/blog/tag/angular/">#Angular</a>
-                                <a class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 hover:bg-blue-200 dark:hover:bg-blue-300 dark:text-blue-800 mb-2" href="/blog/tag/flowbite/">#Flowbite</a>
-                                <a class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 hover:bg-blue-200 dark:hover:bg-blue-300 dark:text-blue-800 mb-2" href="/blog/tag/laravel/">#Laravel</a>
-                                <a class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 hover:bg-blue-200 dark:hover:bg-blue-300 dark:text-blue-800 mb-2" href="/blog/tag/next-js/">#Next.js</a>
-                                <a class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 hover:bg-blue-200 dark:hover:bg-blue-300 dark:text-blue-800 mb-2" href="/blog/tag/tailwind-css/">#Tailwind CSS</a>
+                                @foreach ($allTags as $categorie)
+                                <a class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 hover:bg-blue-200 dark:hover:bg-blue-300 dark:text-blue-800 mb-2" href="{{route('article.tag', $categorie->id)}}">#{{$categorie->name}}</a>
+                                @endforeach
                             </div>
                         </div>
 
                         <div class="p-6 mb-6 font-medium text-gray-500 bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
-                            <h4 class="mb-4 font-bold text-gray-900 uppercase dark:text-white">Les auteurs de la communautés</h4>
+                            <h4 class="mb-4 font-bold text-gray-900 uppercase dark:text-white">Article </h4>
+                            @php
+                            $next = $ressource->nextArticle();
+                            $previous = $ressource->previousArticle();
+                            @endphp
+                             @if($next || $previous)
                             <ul class="space-y-4 text-gray-500 dark:text-gray-400">
+                                @if($next)
                                 <li>
-                                    <a class="flex items-start" href="/blog/author/david/">
-                                        <div class="mr-3 shrink-0">
-                                            <img class="w-6 h-6 mt-1 rounded-full" src="https://publisher.flowbite.com/content/images/2022/12/david-dumont-profile-picture.jpeg" alt="David Dumont profile picture">
-                                        </div>
+                                    <a class="flex items-start" href="{{route('article.show', $next)}}">
+
                                         <div class="mr-3">
-                                            <span class="block font-medium text-gray-900 dark:text-white">David Dumont</span>
-                                            <span class="text-sm">Co-founder at Suncel: a CMS for Next.js apps and websites.</span>
+                                            <span class="block font-medium text-gray-900 dark:text-white">Suivant </span>
+                                            <span class="text-sm">{{ $next->title }}</span>
                                         </div>
                                     </a>
                                 </li>
+                                @endif
+                                @if($previous)
                                 <li>
-                                    <a class="flex items-start" href="/blog/author/harikrishna/">
-                                        <div class="mr-3 shrink-0">
-                                            <img class="w-6 h-6 mt-1 rounded-full" src="https://publisher.flowbite.com/content/images/2022/11/Author-Headshot.jpg" alt="Harikrishna Kundariya profile picture">
-                                        </div>
+                                    <a class="flex items-start" href="{{route('article.show', $previous)}}">
+
                                         <div class="mr-3">
-                                            <span class="block font-medium text-gray-900 dark:text-white">Harikrishna Kundariya</span>
-                                            <span class="text-sm">Marketer, developer, IoT, ChatBot &amp; Blockchain savvy, CEO of eSparkBiz.</span>
+                                            <span class="block font-medium text-gray-900 dark:text-white">Précedent </span>
+                                            <span class="text-sm">{{ $previous->title }}</span>
                                         </div>
                                     </a>
                                 </li>
-                                <li>
-                                    <a class="flex items-start" href="/blog/author/rich/">
-                                        <div class="mr-3 shrink-0">
-                                            <img class="w-6 h-6 mt-1 rounded-full" src="https://publisher.flowbite.com/content/images/2023/01/1605304654466.jpg" alt="Rich Klein profile picture">
-                                        </div>
-                                        <div class="mr-3">
-                                            <span class="block font-medium text-gray-900 dark:text-white">Rich Klein</span>
-                                            <span class="text-sm">Technical writer, web developer, and customer success specialist.</span>
-                                        </div>
-                                    </a>
-                                </li>
+                                @endif
                             </ul>
+                            @endif
                         </div>
                     </div>
                 </aside>
