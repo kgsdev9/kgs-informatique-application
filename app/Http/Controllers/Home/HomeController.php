@@ -23,14 +23,8 @@ class HomeController extends Controller
      $this->articleService = $articleService;
      }
 
-
-     public function merci() {
-        $article = "";
-        return view('merci', compact('article'));
-     }
-
-     public function okay(Request $request){
-        dd($request->all());
+     public function article() {
+            return view('art');
      }
     /**
      * Display a listing of the resource.

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Article;
 
 use App\Http\Controllers\Controller;
 use App\Models\Article;
+use App\Models\Tag;
 use Illuminate\Http\Request;
 
 class ArticleController extends Controller
@@ -13,7 +14,7 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        return view('articles.article');
+        return view('articles.article', []);
     }
 
     /**
@@ -21,7 +22,9 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        return view('articles.create');
+        return view('dashboard.articles.create', [
+            'allTags'=> Tag::all()
+        ]);
     }
 
     /**
@@ -30,12 +33,16 @@ class ArticleController extends Controller
     public function store(Request $request)
     {
         // dd($request->all());
-        Article::create([
-            'title'=> $request->input('name'),
-            'description'=> $request->input('description'),
+       $article  = Article::create([
+            'title'=> $request->input('name')?? 'le resultat',
+            'description'=> $request->input('desciption'),
+            'image'=> 'image',
+            'user_id' => 1
         ]);
 
-        dd('merci');
+    $article->articletags()->sync($request->tag_id);
+
+    dd('merci');
     }
 
     /**
@@ -43,7 +50,7 @@ class ArticleController extends Controller
      */
     public function show(string $id)
     {   $ressource=  Article::find($id);
-        return view('articles.show', compact('ressource'));
+        return view('dashboard.articles.show', compact('ressource'));
     }
 
     /**

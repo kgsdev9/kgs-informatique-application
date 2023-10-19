@@ -186,7 +186,7 @@ donner des reperes à cette nouvelle génération.
 							<span class="bg-gray-100 text-gray-500 text-xs font-semibold mr-2 px-2 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 hidden sm:flex">PHP</span>
 						</div>
 						<h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">{{Str::limit($article->title, 50)}}</h3>
-                        {{Str::limit($article->description, 56)}}
+                        {{Str::limit( $article->description, 56)}}
 					</a>
 
                     @endforeach

@@ -43,7 +43,7 @@ Route::get('/auth/{provider}/callback', [ProviderController::class, 'callback'])
 
 
 
-Route::get('/dashboard', function() {
+Route::get('/dashboards', function() {
     return view('admin.index');
 });
 
@@ -53,3 +53,7 @@ Route::get('/discutions', function() {
 });
 
 Route::get('/article-ressource', ArticleRessource::class);
+
+//les pages de la vues
+
+Route::get('/articles', [HomeController::class ,'article'])->name('article');
