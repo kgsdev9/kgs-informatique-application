@@ -15,7 +15,6 @@ class Article extends Model
         'slug',
         'image',
         'user_id',
-        'categoryarticle_id'
     ];
 
 

@@ -44,7 +44,7 @@ Route::get('/auth/{provider}/callback', [ProviderController::class, 'callback'])
 
 
 Route::get('/dashboards', function() {
-    return view('admin.index');
+    return view('dashboard.index');
 });
 
 

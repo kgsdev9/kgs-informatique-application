@@ -1,169 +1,108 @@
 
-<!DOCTYPE html>
-<html lang="en">
+<main class="grow">
+	<main class="pt-6 pb-8 bg-white lg:pb-16 dark:bg-gray-900">
+		<div class="flex justify-between px-4 mx-auto max-w-8xl">
+			<div class="hidden mb-6 xl:block lg:w-80">
+                <div class="sticky top-36">
+                    <aside>
+                        <div class="p-6 mb-6 font-medium text-gray-500 bg-white rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
+                            <h1 class="mb-2 font-bold text-gray-900 uppercase dark:text-white">KGS INFORMATIQUE</h1>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">
+                                Veuillez vous conformer à la charte de kgs informatique
+                            </p>
+                        </div>
+                        <div class="p-6 mb-6 font-medium text-gray-500 bg-white rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
+                            <h4 class="mb-4 font-bold text-gray-900 uppercase dark:text-white">Mes Actions </h4>
+                            <a class="inline-flex justify-center items-center p-5 mb-4 w-full text-base font-medium text-gray-500 bg-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-700 dark:hover:bg-gray-600 dark:hover:text-white" href="/docs/getting-started/introduction/">
 
-<head>	<!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="keywords" content="">
-<meta name="author" content="Codescandy">
+                                <span class="w-full">Mes articles </span>
+                                <svg class="ml-3 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                            <a class="inline-flex justify-center items-center p-5 mb-4 w-full text-base font-medium text-gray-500 bg-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-700 dark:hover:bg-gray-600 dark:hover:text-white" href="/figma/">
 
-<script>
-    // Render blocking JS:
-    if (localStorage.theme) document.documentElement.setAttribute("data-theme", localStorage.theme);
-    </script>
+                                <span class="w-full">Mes disuctions</span>
+                                <svg class="ml-3 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="inline-flex justify-center items-center p-5 w-full text-base font-medium text-gray-500 bg-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-700 dark:hover:bg-gray-600 dark:hover:text-white">
 
-<!-- Favicon icon-->
-<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon/favicon.ico">
+                                <span class="w-full">Mes sujets </span>
+                                <svg class="ml-3 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </div>
 
-<script src="https://cdn.tiny.cloud/1/ewnwdlukikfd20zuefy426z7slixkeng4g2wsxxikjsyfa5k/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
-<!-- Libs CSS -->
-<link href="{{asset('dashboard/fonts/feather/feather.css')}}" rel="stylesheet" />
-<link href="{{asset('dashboard/libs/bootstrap-icons/font/bootstrap-icons.css')}}" rel="stylesheet" />
-<link href="{{asset('dashboard/libs/@mdi/font/css/materialdesignicons.min.css')}}" rel="stylesheet">
-<link rel="stylesheet" href="{{asset('dashboard/libs/simplebar/dist/simplebar.min.css')}}">
-<!-- Theme CSS -->
-<link rel="stylesheet" href="{{asset('dashboard/css/theme.min.css')}}">
-	<link rel="canonical" href="#">
-	<title>MON DASHBOARD</title>
-</head>
+                    </aside>
+                </div>
+            </div>
 
-<body>
-	<!-- Page Content -->
 
-	<main>
-		<section class="pt-5 pb-5">
-			<div class="container">
-				<!-- User info -->
-				<div class="row align-items-center">
-					<div class="col-xl-12 col-lg-12 col-md-12 col-12">
-						<!-- Bg -->
-
-						<div class="card px-4 pt-2 pb-4 shadow-sm rounded-top-0 rounded-bottom-0 rounded-bottom-md-2 ">
-							<div class="d-flex align-items-end justify-content-between  ">
-
-								<div>
-									<a href="/" class="btn btn-primary d-none d-md-block">Retouner à l'accueil</a>
-
-								</div>
-
-                                <div>
-									<a href="#" class="btn btn-primary d-none d-md-block">Créer une discution </a>
-
-								</div>
-
-                                <div>
-									<a href="#" class="btn btn-primary d-none d-md-block">Créer un article</a>
-
-								</div>
-							</div>
-						</div>
-					</div>
+			<div class="w-full max-w-2xl mx-auto">
+				<div class="flex items-center justify-between py-4 border-t border-b border-gray-200 dark:border-gray-700 not-format">
+					<span class="text-sm font-bold text-gray-900 lg:mb-0 dark:text-white">Publier un article</span>
+                    <span class="text-sm font-bold text-gray-900 lg:mb-0 dark:text-white">Publier une discution</span>
+                    <span class="text-sm font-bold text-gray-900 lg:mb-0 dark:text-white">Publier un sujet </span>
 				</div>
-
-				<!-- Content -->
-
-				<div class="row mt-0 mt-md-4">
-					@include('dashboard.slide-bar')
-					<div class="col-lg-9 col-md-8 col-12">
-						<div class="row">
-							<div class="col-lg-4 col-md-12 col-12">
-								<!-- Card -->
-								<div class="card mb-4">
-									<div class="p-4">
-										<span class="fs-6 text-uppercase fw-semibold">Revenue</span>
-										<h2 class="mt-4 fw-bold mb-1 d-flex align-items-center h1 lh-1">
-											$467.34
-										</h2>
-										<span class="d-flex justify-content-between align-items-center">
-											<span>Earning this month</span>
-											<span class="badge bg-sucess ms-2">$203.23</span>
-										</span>
-									</div>
-								</div>
+				<div class="divide-y divide-gray-200 dark:divide-gray-700">
+					<article class="py-6">
+						<div class="flex items-center justify-between mb-3 text-gray-500">
+							<div>
+								<a class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 hover:bg-blue-200 dark:hover:bg-blue-300 dark:text-blue-800 mb-2" href="/blog/tag/flowbite/">#Flowbite</a>
 							</div>
-
-							<div class="col-lg-4 col-md-12 col-12">
-								<!-- Card -->
-								<div class="card mb-4">
-									<div class="p-4">
-										<span class="fs-6 text-uppercase fw-semibold">students Enrollments</span>
-										<h2 class="mt-4 fw-bold mb-1 d-flex align-items-center h1 lh-1">
-											12,000
-										</h2>
-										<span class="d-flex justify-content-between align-items-center">
-											<span>New this month</span>
-											<span class="badge bg-info ms-2">120+</span>
-										</span>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-12 col-12">
-								<!-- Card -->
-								<div class="card mb-4">
-									<div class="p-4">
-										<span class="fs-6 text-uppercase fw-semibold">Courses Rating</span>
-										<h2 class="mt-4 fw-bold mb-1 d-flex align-items-center h1 lh-1">
-											4.80
-										</h2>
-										<span class="d-flex justify-content-between align-items-center">
-											<span>Rating this month</span>
-											<span class="badge bg-warning ms-2">10+</span>
-										</span>
-									</div>
-								</div>
-							</div>
+							<span class="text-sm">Published <time datetime="1677146503000">8 months ago</time></span>
 						</div>
-						<!-- Card -->
-
-						<!-- Card -->
-
-						@yield('dashboard')
-					</div>
+						<h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white hover:underline"><a href="/blog/state-of-flowbite-2022/">State of Flowbite: learn more about our results from 2022 and what we plan to build this year</a></h2>
+						<p class="mb-5 text-gray-500 dark:text-gray-400">
+							Learn more about the results, achievements and plans for the future by reading the "State of Flowbite 2022" including the open-source development of the Flowbite Library, the release of new UI components, features, and more.
+						</p>
+						<div class="flex items-center justify-between">
+							<a class="flex items-center space-x-2" href="/blog/author/zoltan/">
+								<img class="rounded-full w-7 h-7" src="https://www.gravatar.com/avatar/be85a3bc61ad70c85c9b3411dc07cb2d?s=250&amp;r=x&amp;d=mp" alt="Zoltán Szőgyényi profile picture">
+								<span class="font-medium dark:text-white">Zoltán Szőgyényi</span>
+							</a>
+							<a class="inline-flex items-center font-medium text-blue-600 hover:underline dark:text-blue-500" href="/blog/state-of-flowbite-2022/">
+								Read more
+								<svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+								</svg>
+							</a>
+						</div>
+					</article>
 				</div>
 			</div>
-		</section>
+
+			<aside class="hidden lg:block lg:w-80" aria-labelledby="sidebar-label">
+				<div class="sticky top-36">
+					<h3 id="sidebar-label" class="sr-only">Sidebar</h3>
+					<div class="lg:ml-auto">
+						<script src="//cdn.carbonads.com/carbon.js?serve=CK7D4KQE&amp;placement=flowbitedesign"></script>
+					</div>
+
+					<div class="p-6 mb-6 font-medium text-gray-500 bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
+						<h4 class="mb-4 font-bold text-gray-900 uppercase dark:text-white">AUTEURS DE LA COMMUNAUTE</h4>
+						<ul class="space-y-4 text-gray-500 dark:text-gray-400">
+							<li>
+								<a class="flex items-start" href="/blog/author/david/">
+									<div class="mr-3 shrink-0">
+										<img class="w-6 h-6 mt-1 rounded-full" src="https://publisher.flowbite.com/content/images/2022/12/david-dumont-profile-picture.jpeg" alt="David Dumont profile picture">
+									</div>
+									<div class="mr-3">
+										<span class="block font-medium text-gray-900 dark:text-white">David Dumont</span>
+										<span class="text-sm">Co-founder at Suncel: a CMS for Next.js apps and websites.</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</aside>
+		</div>
 	</main>
+</main>
 
 
 
-	<!-- Scripts -->
-	<!-- Libs JS -->
-
-<script src="{{asset('dashboard/libs/jquery/dist/jquery.min.js')}}"></script>
-<script src="{{asset('dashboard/libs/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
-
-
-<!-- Theme JS -->
-<script src="{{asset('dashboard/libs/simplebar/dist/simplebar.min.js')}}"></script>
-<script src="{{asset('dashboard/js/theme.min.js')}}"></script>
-
-	<script src="{{asset('dashboard/libs/apexcharts/dist/apexcharts.min.js')}}"></script>
-    <script src="{{asset('dashboard/js/vendors/chart.js')}}"></script>
-</body>
-
-<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-<script>
-//   $(document).ready(function() {
-//       $('.select2-multiple').select2({
-//           placeholder: "Selectionner plusieurs spécialités",
-//           allowClear: true
-//       });
-
-//   });
-
-$(document).ready(function() {
-    $('.select2-multiple').select2();
-});
-</script>
-
-<script>
-    tinymce.init({
-      selector: 'textarea',
-      plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
-      toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
-    });
-  </script>
-
-</html>

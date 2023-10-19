@@ -10,8 +10,9 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="{{asset('css.css')}}">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-        @stack('style')
-        @livewireStyles
+        {{-- @vite('resources/css/app.css')
+        @vite('resources/js/app.js') --}}
+        <script src="https://cdn.tiny.cloud/1/ewnwdlukikfd20zuefy426z7slixkeng4g2wsxxikjsyfa5k/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
     </head>
     <body class="antialiased" style="font-family: 'Inter', sans-serif;">
         <header class="sticky top-0 z-40 flex-none mx-auto w-full bg-white dark:bg-gray-900 ">
@@ -165,7 +166,13 @@
                 <span class="block font-normal text-center text-gray-600 dark:text-gray-400">© 2022-2023 KGS INFORMATIQUE™ est une marque déposée. Tous droits réservés.</span>
             </div>
         </footer>
-
          @livewireScripts
+         <script>
+            tinymce.init({
+              selector: 'textarea',
+              plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
+              toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+            });
+          </script>
     </body>
 </html>

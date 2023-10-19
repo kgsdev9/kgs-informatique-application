@@ -1,13 +1,14 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-      "./resources/**/*.blade.php",
+module.exports = {
+    content: [
+    "./resources/**/*.blade.php",
     "./resources/**/*.js",
     "./resources/**/*.vue",
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
-
+    "./node_modules/tw-elements/dist/js/**/*.js"
+    ],
+    theme: {
+      extend: {},
+    },
+    darkMode: "class",
+    plugins: [require("tw-elements/dist/plugin.cjs")]
+  }

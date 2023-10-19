@@ -32,16 +32,19 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
-        // dd($request->all());
        $article  = Article::create([
             'title'=> $request->input('name')?? 'le resultat',
-            'description'=> $request->input('desciption'),
-            'image'=> 'image',
+            'slug' => \Str::slug($request->input('title')),
+            'description'=> $request->input('description'),
             'user_id' => 1
         ]);
 
-    $article->articletags()->sync($request->tag_id);
+        foreach($request->tag_id as $key => $value) {
+            if($key != 0) {
+            $article->articletags()->attach((array)$key);
+            }
 
+        }
     dd('merci');
     }
 

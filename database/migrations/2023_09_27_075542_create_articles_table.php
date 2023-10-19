@@ -16,9 +16,11 @@ return new class extends Migration
             $table->string('title');
             $table->string('slug')->unique();
             $table->text('description');
-            $table->string('image');
-            $table->integer('view');
+            $table->string('image')->nullable();
+            $table->string('mini_description')->nullable();
+            $table->integer('view')->nullable();
             $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
     }
