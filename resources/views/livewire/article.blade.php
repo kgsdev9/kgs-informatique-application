@@ -68,27 +68,28 @@
 
                     <div class="divide-y divide-gray-200 dark:divide-gray-700">
 
-                        @foreach ($allArticles as $value)
+                        @foreach ($posts as $value)
                         <article class="py-6">
                             <div class="flex items-center justify-between mb-3 text-gray-500">
                                 <div>
                                     <a class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 hover:bg-blue-200 dark:hover:bg-blue-300 dark:text-blue-800 mb-2" href="{{route('article.detail', $value->id)}}">
-                                       dd
-
+                                        @foreach ($value->articletags as $reponse)
+                                            {{$reponse->name}}
+                                        @endforeach
                                     </a>
                                 </div>
-                                <span class="text-sm"> <time datetime="1677146503000"> {{$value->created_at->diffForHumans()}}</time></span>
+                                <span class="text-sm"> <time > {{$value->created_at->diffForHumans()}}</time></span>
                             </div>
                             <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white hover:underline"><a href="/blog/state-of-flowbite-2022/">{{$value->title}}</a></h2>
                             <p class="mb-5 text-gray-500 dark:text-gray-400">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae officiis veniam tempora tempore doloribus, consequuntur blanditiis nisi et, exercitationem natus est sint sed commodi, non laudantium provident. Nemo, consequatur quam.
                             </p>
                             <div class="flex items-center justify-between">
-                                <a class="flex items-center space-x-2" href="/blog/author/zoltan/">
+                                <a class="flex items-center space-x-2" href="{{route('article.show', $value->id)}}">
                                     <img class="rounded-full w-7 h-7" src="{{asset('kgs.jpg')}}" alt="Zoltán Szőgyényi profile picture">
                                     <span class="font-medium dark:text-white">KGS INFORMATIQUE</span>
                                 </a>
-                                <a class="inline-flex items-center font-medium text-blue-600 hover:underline dark:text-blue-500" href="/blog/state-of-flowbite-2022/">
+                                <a class="inline-flex items-center font-medium text-blue-600 hover:underline dark:text-blue-500" href="{{route('article.show', $value->id)}}">
                                     Lire la suite
                                     <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
@@ -98,10 +99,14 @@
                         </article>
                         @endforeach
 
-                        <div class="d-flex">
-                            {!! $allArticles->links('pagination::tailwind') !!}
-                        </div>
 
+                        @if ($hasMorePages)
+                        <div class="flex items-center justify-center mt-6">
+
+                            <button  wire:click="loadPosts"  class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Charger plus</button>
+
+                        </div>
+                    @endif
 
                     </div>
                 </div>
@@ -131,12 +136,12 @@
                                             <img class="w-6 h-6 mt-1 rounded-full" src="https://publisher.flowbite.com/content/images/2022/12/david-dumont-profile-picture.jpeg" alt="David Dumont profile picture">
                                         </div>
                                         <div class="mr-3">
-                                            <span class="block font-medium text-gray-900 dark:text-white">David Dumont</span>
-                                            <span class="text-sm">Co-founder at Suncel: a CMS for Next.js apps and websites.</span>
+                                            <span class="block font-medium text-gray-900 dark:text-white">KGS Informatique</span>
+                                            <span class="text-sm">Fondateur de la plateforme kgs informatique .</span>
                                         </div>
                                     </a>
                                 </li>
-                        
+
                             </ul>
                         </div>
                     </div>
