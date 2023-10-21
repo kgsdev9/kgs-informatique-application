@@ -25,7 +25,7 @@ class HomeController extends Controller
      }
 
      public function article() {
-            return view('art');
+            return view('home.article.article');
      }
     /**
      * Display a listing of the resource.

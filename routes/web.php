@@ -54,9 +54,10 @@ Route::get('/discutions', function() {
 
 Route::get('/article-ressource', ArticleRessource::class);
 
-//les pages de la vues
-
-Route::get('/articles', [HomeController::class ,'article'])->name('article');
-
 
 Route::get('/get-article-by-tag/{id}', [HomeController::class, 'articleTag'])->name('article.tag');
+
+
+//mes pages visiteurs
+Route::get('/articles', [HomeController::class ,'article'])->name('article');
+

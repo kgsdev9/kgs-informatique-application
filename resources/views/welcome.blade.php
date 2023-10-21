@@ -1,9 +1,6 @@
 @extends('master.master')
 
 @section('content')
-
-
-
 <section class="py-4 bg-white dark:bg-gray-900 lg:pt-12 lg:pb-16">
 	<div class="px-4 mx-auto max-w-8xl lg:px-4 lg:text-center">
 		<a class="inline-flex items-center justify-between px-1 py-1 pr-4 mb-5 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200" role="alert" href="/icons/">

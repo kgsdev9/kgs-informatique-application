@@ -3,7 +3,7 @@
 namespace App\Livewire;
 
 use App\Models\Article as Post;
-use App\Models\CategoryArticle;
+use App\Models\Tag;
 use Livewire\Component;
 
 class Article extends Component
@@ -13,16 +13,15 @@ class Article extends Component
     public $category = 1 ;
 
     public function test() {
-        dd('merci');    
+        dd('merci');
     }
 
 
     public function render()
     {
             return view('livewire.article', [
-                'allArticles'=> Post::where('categoryarticle_id', $this->category)
-                ->paginate(18),
-                'categories' => CategoryArticle::all()
+                'allArticles'=> Post::paginate(13),
+                'allTags' => Tag::all()
             ])->extends('master.master')->section('content');
     }
 
