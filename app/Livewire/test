@@ -1,0 +1,26 @@
+
+    // public $posts;
+
+    // public $pageNumber = 1;
+
+    // public $allTags ;
+
+    // public $hasMorePages;
+
+    // public function mount()
+    // {
+    //     $this->posts = new Collection();
+    //     $this->allTags = Tag::all();
+    //     $this->loadPosts();
+    // }
+
+    // public function loadPosts()
+    // {
+    //     $posts = Post::orderByDesc('created_at')->paginate(13, ['*'], 'page', $this->pageNumber);
+
+    //     $this->pageNumber += 1;
+
+    //     $this->hasMorePages = $posts->hasMorePages();
+
+    //     $this->posts->push(...$posts->items());
+    // }

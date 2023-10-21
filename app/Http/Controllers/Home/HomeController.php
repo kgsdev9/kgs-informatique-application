@@ -39,6 +39,11 @@ class HomeController extends Controller
         ]);
     }
 
+    public function topic() {
+        
+        return view('home.sujets.sujet');
+    }
+
     public function articles() {
         return view('articles.article', [
             'allArticles' => $this->articleService->all()

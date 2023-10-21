@@ -59,5 +59,5 @@ Route::get('/get-article-by-tag/{id}', [HomeController::class, 'articleTag'])->n
 
 
 //mes pages visiteurs
-Route::get('/articles', [HomeController::class ,'article'])->name('article');
-
+Route::get('/articles', [HomeController::class ,'article'])->name('articles.index');
+Route::get('/les-suejts', [HomeController::class, 'topic'])->name('topic.index');
