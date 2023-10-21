@@ -98,17 +98,15 @@
                             </div>
                         </article>
                         @endforeach
+                    </div>
 
+                    @if ($hasMorePages)
+                    <div class="flex items-center justify-center mt-6">
 
-                        @if ($hasMorePages)
-                        <div class="flex items-center justify-center mt-6">
-
-                            <button  wire:click="loadPosts"  class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Charger plus</button>
-
-                        </div>
-                    @endif
+                        <button  wire:click="loadPosts"  class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Charger plus</button>
 
                     </div>
+                @endif
                 </div>
                 <aside class="hidden lg:block lg:w-80" aria-labelledby="sidebar-label">
                     <div class="sticky top-36">

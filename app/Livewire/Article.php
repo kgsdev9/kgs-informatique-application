@@ -11,23 +11,18 @@ class Article extends Component
 {
 
 
-    // public $category = 1 ;
-
-    // public function test() {
-    //     dd('merci');
-    // }
-
-
     public $posts;
 
     public $pageNumber = 1;
+
+    public $allTags ;
 
     public $hasMorePages;
 
     public function mount()
     {
         $this->posts = new Collection();
-
+        $this->allTags = Tag::all();
         $this->loadPosts();
     }
 
@@ -42,15 +37,9 @@ class Article extends Component
         $this->posts->push(...$posts->items());
     }
 
-
-
     public function render()
     {
-
-            return view('livewire.article', [
-                // 'allArticles'=> $query->orderByDesc('created_at')->paginate(13),
-                'allTags' => Tag::all()
-            ]);
+         return view('livewire.article');
     }
 
 
