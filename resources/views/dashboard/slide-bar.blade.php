@@ -1,37 +1,109 @@
-<div class="hidden mb-6 xl:block lg:w-80">
-    <div class="sticky top-36">
-        <aside>
-            <div class="p-6 mb-6 font-medium text-gray-500 bg-white rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
-                <h1 class="mb-2 font-bold text-gray-900 uppercase dark:text-white">KGS INFORMATIQUE</h1>
-                <p class="text-sm text-gray-500 dark:text-gray-400">
-                    Veuillez vous conformer à la charte de kgs informatique
-                </p>
-            </div>
-            <div class="p-6 mb-6 font-medium text-gray-500 bg-white rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
-                <h4 class="mb-4 font-bold text-gray-900 uppercase dark:text-white">Mes Actions </h4>
-                <a class="inline-flex justify-center items-center p-5 mb-4 w-full text-base font-medium text-gray-500 bg-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-700 dark:hover:bg-gray-600 dark:hover:text-white" href="/docs/getting-started/introduction/">
-
-                    <span class="w-full">Mes articles </span>
-                    <svg class="ml-3 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                    </svg>
+<nav class="navbar-vertical navbar">
+    <div class="vh-100" data-simplebar>
+        <!-- Brand logo -->
+        <a class="navbar-brand" href="../../index.html">
+            <img src="../../assets/images/brand/logo/logo-inverse.svg" alt="" >
+        </a>
+        <!-- Navbar nav -->
+        <ul class="navbar-nav flex-column" id="sideNavbar">
+            <li class="nav-item">
+                <a class="nav-link" href="#"
+                    data-bs-toggle="collapse" data-bs-target="#navDashboard" aria-expanded="false"
+                    aria-controls="navDashboard">
+                    <i class="nav-icon fe fe-home me-2"></i> Dashboards
                 </a>
-                <a class="inline-flex justify-center items-center p-5 mb-4 w-full text-base font-medium text-gray-500 bg-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-700 dark:hover:bg-gray-600 dark:hover:text-white" href="/figma/">
 
-                    <span class="w-full">Mes disuctions</span>
-                    <svg class="ml-3 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                    </svg>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  collapsed " href="#"
+                    data-bs-toggle="collapse" data-bs-target="#navCourses" aria-expanded="false"
+                    aria-controls="navCourses">
+                    <i class="nav-icon fe fe-book me-2"></i>Annuaire Utilisateurs
                 </a>
-                <a href="#" class="inline-flex justify-center items-center p-5 w-full text-base font-medium text-gray-500 bg-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-700 dark:hover:bg-gray-600 dark:hover:text-white">
-
-                    <span class="w-full">Mes sujets </span>
-                    <svg class="ml-3 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                    </svg>
+                <div id="navCourses" class="collapse "
+                    data-bs-parent="#sideNavbar">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link "
+                                href="admin-course-overview.html">
+                                All Courses
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link "
+                                href="admin-course-category.html">
+                                Courses Category
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link "
+                                href="admin-course-category-single.html">
+                                Category Single
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <!-- Nav item -->
+            <li class="nav-item">
+                <a class="nav-link   collapsed " href="#"
+                    data-bs-toggle="collapse" data-bs-target="#navProfile" aria-expanded="false"
+                    aria-controls="navProfile">
+                    <i class="nav-icon fe fe-user me-2"></i> Annuaire Emploi
                 </a>
-            </div>
+                <div id="navProfile" class="collapse "
+                    data-bs-parent="#sideNavbar">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link "
+                                href="">
+                                Nouvelle offre
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link "
+                                href="">Liste des emplois</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
 
-        </aside>
+            <!-- Nav item -->
+            <li class="nav-item ">
+                <a class="nav-link   collapsed  " href=""
+                   >
+                    Annuaire lieu
+                </a>
+
+            </li>
+            <!-- Nav item -->
+            <li class="nav-item ">
+                <a class="nav-link   collapsed  " href=""
+                    >
+                    <i class="nav-icon fe fe-file me-2"></i> Contrats
+                </a>
+
+            </li>
+
+            <!-- Nav item -->
+            <li class="nav-item">
+                <a class="nav-link  collapsed " href=""
+                    >
+                    <i class="nav-icon fe fe-lock me-2"></i>Blogs
+                </a>
+
+            </li>
+            <!-- Nav item -->
+            <li class="nav-item">
+                <a class="nav-link  collapsed " href="#"
+                    data-bs-toggle="collapse" data-bs-target="#navecommerce" aria-expanded="false"
+                    aria-controls="navecommerce">
+                    <i class="nav-icon fe fe-shopping-bag me-2"></i> Formations
+                </a>
+
+            </li>
+            <!-- Nav item -->
+        </ul>
+
     </div>
-</div>
+</nav>

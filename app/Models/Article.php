@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Builder;
 
 class Article extends Model
 {
@@ -36,5 +37,18 @@ class Article extends Model
     {
         return $this->where('id', '<', $this->id)->orderByDesc('id')->first();
     }
+
+
+    public function getFiledSearch(Builder $query): Builder
+    {
+        return $query->where(function ($query): void {
+            $query->where('title')
+                ->orWhereNull('approved_at')
+                ->orWhereNull('published_at')
+                ->orWhereNotNull('declined_at');
+        });
+    }
+
+
 
 }

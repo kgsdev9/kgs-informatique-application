@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Home;
 
 use App\Http\Controllers\Controller;
 use App\Models\Article;
+use App\Models\Topic;
 use App\Services\ArticleService;
 use App\Services\TagService;
 use App\Traits\ImplementeServiceExterne;
@@ -40,7 +41,7 @@ class HomeController extends Controller
     }
 
     public function topic() {
-        
+
         return view('home.sujets.sujet');
     }
 

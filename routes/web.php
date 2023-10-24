@@ -4,7 +4,6 @@ use App\Http\Controllers\Article\ArticleController;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Home\HomeController;
 use App\Http\Controllers\Provider\ProviderController;
-use App\Livewire\Article;
 use App\Livewire\ArticleRessource;
 use Illuminate\Support\Facades\Route;
 
@@ -43,7 +42,7 @@ Route::get('/auth/{provider}/callback', [ProviderController::class, 'callback'])
 
 
 
-Route::get('/dashboards', function() {
+Route::get('/ssssss', function() {
     return view('dashboard.index');
 });
 
@@ -60,4 +59,6 @@ Route::get('/get-article-by-tag/{id}', [HomeController::class, 'articleTag'])->n
 
 //mes pages visiteurs
 Route::get('/articles', [HomeController::class ,'article'])->name('articles.index');
-Route::get('/les-suejts', [HomeController::class, 'topic'])->name('topic.index');
+Route::get('/forums', [HomeController::class, 'topic'])->name('topic.index');
+
+

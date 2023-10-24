@@ -33,11 +33,11 @@
                                         <div  class="mt-5 space-y-1">
                                             @foreach ($allTags as $value)
 
-
-                                            <button wire:click="filterCategory({{$value->id}})" type="button" class="group px-2 py-1.5 flex items-center text-base font-medium text-skin-inverted-muted/80 hover:text-skin-inverted rounded-md font-sans">
-                                               
+                                            <button wire:click="add()">test</button>
+                                            <div class="group px-2 py-1.5 flex items-center text-base font-medium text-skin-inverted-muted/80 hover:text-skin-inverted rounded-md font-sans">
+                                                <input  wire:model="tag_ids s" type="radio" value="{{$value->id}}" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
                                                 <span class="truncate ml-1.5">{{$value->name}}</span>
-                                            </button>
+                                            </div>
                                             @endforeach
                                         </div>
                                     </div>
@@ -80,7 +80,7 @@
                                 </div>
                                 <span class="text-sm"> <time > {{$value->created_at->diffForHumans()}}</time></span>
                             </div>
-                            <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white hover:underline"><a href="/blog/state-of-flowbite-2022/">{{$value->title}}</a></h2>
+                            <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white hover:underline"><a href="{{route('article.show', $value->id)}}">{{$value->title}}</a></h2>
                             <p class="mb-5 text-gray-500 dark:text-gray-400">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae officiis veniam tempora tempore doloribus, consequuntur blanditiis nisi et, exercitationem natus est sint sed commodi, non laudantium provident. Nemo, consequatur quam.
                             </p>
@@ -118,7 +118,7 @@
                     <div class="sticky top-36">
                         <h3 id="sidebar-label" class="sr-only">Sidebar</h3>
                         <div class="lg:ml-auto">
-                            <script id="_carbonads_js" src="//cdn.carbonads.com/carbon.js?serve=CK7D4KQE&amp;placement=flowbitedesign"></script>
+                            {{-- <script id="_carbonads_js" src="//cdn.carbonads.com/carbon.js?serve=CK7D4KQE&amp;placement=flowbitedesign"></script> --}}
                         </div>
                         <div class="p-6 pb-4 mt-6 mb-6 font-medium text-gray-500 bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
                             <h4 class="mb-4 font-bold text-gray-900 uppercase dark:text-white">Recommended topics</h4>

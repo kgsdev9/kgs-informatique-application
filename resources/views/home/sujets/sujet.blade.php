@@ -1,6 +1,6 @@
 @extends('master.master')
 @section('content')
 
-@include('livewire.sujet');
+@livewire('sujet');
 
 @endsection

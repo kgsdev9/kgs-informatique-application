@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: https://ogp.me/ns#">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://www.binaryboxtuts.com/xmlrpc.php">
+
+
+<!-- Search Engine Optimization by Rank Math - https://rankmath.com/ -->
+<title>How To Login with Facebook In Symfony 6 - Binaryboxtuts</title>
+<meta name="description" content="We will now install the packages that will do the Facebook login. install these packages - knpuniversity/oauth2-client-bundle and league/oauth2-facebook."/>
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+<link rel="canonical" href="https://www.binaryboxtuts.com/php-tutorials/how-to-login-with-facebook-in-symfony-6/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="How To Login with Facebook In Symfony 6 - Binaryboxtuts" />
+<meta property="og:description" content="We will now install the packages that will do the Facebook login. install these packages - knpuniversity/oauth2-client-bundle and league/oauth2-facebook." />
+<meta property="og:url" content="https://www.binaryboxtuts.com/php-tutorials/how-to-login-with-facebook-in-symfony-6/" />
+<meta property="og:site_name" content="Binaryboxtuts" />
+<meta property="article:publisher" content="https://www.facebook.com/Binaryboxtuts-113784997014413/?ref=nf&hc_ref=ARRQyNOGkOb4xOTv6AB3PcwMx92TftBk6cA5GwmHWO4wZHwn8QVIsi8E-Lnen5-8JvM" />
+<meta property="article:author" content="https://www.facebook.com/binarybox.tuts" />
+<meta property="article:tag" content="Facebook" />
+<meta property="article:tag" content="Login" />
+<meta property="article:tag" content="Registration" />
+<meta property="article:tag" content="Symfony 6" />
+<meta property="article:section" content="PHP" />
+<meta property="og:updated_time" content="2023-04-29T04:22:31+00:00" />
+<meta property="fb:app_id" content="632730480660734" />
+<meta property="og:image" content="https://www.binaryboxtuts.com/wp-content/uploads/how_to_login_with_facebook_in_symfony_6.jpg" />
+<meta property="og:image:secure_url" content="https://www.binaryboxtuts.com/wp-content/uploads/how_to_login_with_facebook_in_symfony_6.jpg" />
+<meta property="og:image:width" content="1024" />
+<meta property="og:image:height" content="663" />
+<meta property="og:image:alt" content="How To Login with Facebook In Symfony 6" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="article:published_time" content="2023-04-29T04:22:29+00:00" />
+<meta property="article:modified_time" content="2023-04-29T04:22:31+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="How To Login with Facebook In Symfony 6 - Binaryboxtuts" />
+<meta name="twitter:description" content="We will now install the packages that will do the Facebook login. install these packages - knpuniversity/oauth2-client-bundle and league/oauth2-facebook." />
+<meta name="twitter:site" content="@binaryboxtuts" />
+<meta name="twitter:creator" content="@binaryboxtuts" />
+<meta name="twitter:image" content="https://www.binaryboxtuts.com/wp-content/uploads/how_to_login_with_facebook_in_symfony_6.jpg" />
+<meta name="twitter:label1" content="Written by" />
+<meta name="twitter:data1" content="Binarytuts" />
+<meta name="twitter:label2" content="Time to read" />
+<meta name="twitter:data2" content="10 minutes" />
+<script type="application/ld+json" class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":["Person","Organization"],"@id":"https://www.binaryboxtuts.com/#person","name":"Binaryboxtuts","sameAs":["https://www.facebook.com/Binaryboxtuts-113784997014413/?ref=nf&amp;hc_ref=ARRQyNOGkOb4xOTv6AB3PcwMx92TftBk6cA5GwmHWO4wZHwn8QVIsi8E-Lnen5-8JvM","https://twitter.com/binaryboxtuts"],"logo":{"@type":"ImageObject","@id":"https://www.binaryboxtuts.com/#logo","url":"https://www.binaryboxtuts.com/wp-content/uploads/logo-copy.jpg","contentUrl":"https://www.binaryboxtuts.com/wp-content/uploads/logo-copy.jpg","caption":"Binaryboxtuts","inLanguage":"en-US","width":"1200","height":"1200"},"image":{"@type":"ImageObject","@id":"https://www.binaryboxtuts.com/#logo","url":"https://www.binaryboxtuts.com/wp-content/uploads/logo-copy.jpg","contentUrl":"https://www.binaryboxtuts.com/wp-content/uploads/logo-copy.jpg","caption":"Binaryboxtuts","inLanguage":"en-US","width":"1200","height":"1200"}},{"@type":"WebSite","@id":"https://www.binaryboxtuts.com/#website","url":"https://www.binaryboxtuts.com","name":"Binaryboxtuts","publisher":{"@id":"https://www.binaryboxtuts.com/#person"},"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://www.binaryboxtuts.com/wp-content/uploads/how_to_login_with_facebook_in_symfony_6.jpg","url":"https://www.binaryboxtuts.com/wp-content/uploads/how_to_login_with_facebook_in_symfony_6.jpg","width":"1024","height":"663","caption":"How To Login with Facebook In Symfony 6","inLanguage":"en-US"},{"@type":"WebPage","@id":"https://www.binaryboxtuts.com/php-tutorials/how-to-login-with-facebook-in-symfony-6/#webpage","url":"https://www.binaryboxtuts.com/php-tutorials/how-to-login-with-facebook-in-symfony-6/","name":"How To Login with Facebook In Symfony 6 - Binaryboxtuts","datePublished":"2023-04-29T04:22:29+00:00","dateModified":"2023-04-29T04:22:31+00:00","isPartOf":{"@id":"https://www.binaryboxtuts.com/#website"},"primaryImageOfPage":{"@id":"https://www.binaryboxtuts.com/wp-content/uploads/how_to_login_with_facebook_in_symfony_6.jpg"},"inLanguage":"en-US"},{"@type":"Person","@id":"https://www.binaryboxtuts.com/author/root/","name":"Binarytuts","description":"Lorem Ipsum sit amet dolor saan aabot ang bente pesos mo","url":"https://www.binaryboxtuts.com/author/root/","image":{"@type":"ImageObject","@id":"https://www.binaryboxtuts.com/wp-content/uploads/logo-copy-96x96.jpg","url":"https://www.binaryboxtuts.com/wp-content/uploads/logo-copy-96x96.jpg","caption":"Binarytuts","inLanguage":"en-US"}},{"@type":"BlogPosting","headline":"How To Login with Facebook In Symfony 6 - Binaryboxtuts","keywords":"Login,Registration,Symfony 6,facebook","datePublished":"2023-04-29T04:22:29+00:00","dateModified":"2023-04-29T04:22:31+00:00","articleSection":"PHP, Symfony","author":{"@id":"https://www.binaryboxtuts.com/author/root/","name":"Binarytuts"},"publisher":{"@id":"https://www.binaryboxtuts.com/#person"},"description":"We will now install the packages that will do the Facebook login. install these packages - knpuniversity/oauth2-client-bundle and league/oauth2-facebook.","name":"How To Login with Facebook In Symfony 6 - Binaryboxtuts","@id":"https://www.binaryboxtuts.com/php-tutorials/how-to-login-with-facebook-in-symfony-6/#richSnippet","isPartOf":{"@id":"https://www.binaryboxtuts.com/php-tutorials/how-to-login-with-facebook-in-symfony-6/#webpage"},"image":{"@id":"https://www.binaryboxtuts.com/wp-content/uploads/how_to_login_with_facebook_in_symfony_6.jpg"},"inLanguage":"en-US","mainEntityOfPage":{"@id":"https://www.binaryboxtuts.com/php-tutorials/how-to-login-with-facebook-in-symfony-6/#webpage"}}]}</script>
+<!-- /Rank Math WordPress SEO plugin -->
+
+<link rel="alternate" type="application/rss+xml" title="Binaryboxtuts &raquo; Feed" href="https://www.binaryboxtuts.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Binaryboxtuts &raquo; Comments Feed" href="https://www.binaryboxtuts.com/comments/feed/" />
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v8.20.1 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+							<script src="//www.googletagmanager.com/gtag/js?id=G-1NEECTT3JC"  data-cfasync="false" data-wpfc-render="false" type="text/javascript" async></script>
+			<script data-cfasync="false" data-wpfc-render="false" type="text/javascript">
+				var mi_version = '8.20.1';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+				
+								var disableStrs = [
+										'ga-disable-G-1NEECTT3JC',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if (__gtagTrackerIsOptedOut()) {
+					for (var index = 0; index < disableStrs.length; index++) {
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				if ('undefined' === typeof gaOptout) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if (mi_track_user) {
+					function __gtagDataLayer() {
+						dataLayer.push(arguments);
+					}
+
+					function __gtagTracker(type, name, parameters) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply(null, arguments);
+							return;
+						}
+
+						if (type === 'event') {
+														parameters.send_to = monsterinsights_frontend.v4_id;
+							var hookName = name;
+							if (typeof parameters['event_category'] !== 'undefined') {
+								hookName = parameters['event_category'] + ':' + name;
+							}
+
+							if (typeof MonsterInsightsDualTracker.trackers[hookName] !== 'undefined') {
+								MonsterInsightsDualTracker.trackers[hookName](parameters);
+							} else {
+								__gtagDataLayer('event', name, parameters);
+							}
+							
+						} else {
+							__gtagDataLayer.apply(null, arguments);
+						}
+					}
+
+					__gtagTracker('js', new Date());
+					__gtagTracker('set', {
+						'developer_id.dZGIzZG': true,
+											});
+										__gtagTracker('config', 'G-1NEECTT3JC', {"forceSSL":"true","link_attribution":"true"} );
+															window.gtag = __gtagTracker;										(function () {
+						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+						/* ga and __gaTracker compatibility shim. */
+						var noopfn = function () {
+							return null;
+						};
+						var newtracker = function () {
+							return new Tracker();
+						};
+						var Tracker = function () {
+							return null;
+						};
+						var p = Tracker.prototype;
+						p.get = noopfn;
+						p.set = noopfn;
+						p.send = function () {
+							var args = Array.prototype.slice.call(arguments);
+							args.unshift('send');
+							__gaTracker.apply(null, args);
+						};
+						var __gaTracker = function () {
+							var len = arguments.length;
+							if (len === 0) {
+								return;
+							}
+							var f = arguments[len - 1];
+							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
+								if ('send' === arguments[0]) {
+									var hitConverted, hitObject = false, action;
+									if ('event' === arguments[1]) {
+										if ('undefined' !== typeof arguments[3]) {
+											hitObject = {
+												'eventAction': arguments[3],
+												'eventCategory': arguments[2],
+												'eventLabel': arguments[4],
+												'value': arguments[5] ? arguments[5] : 1,
+											}
+										}
+									}
+									if ('pageview' === arguments[1]) {
+										if ('undefined' !== typeof arguments[2]) {
+											hitObject = {
+												'eventAction': 'page_view',
+												'page_path': arguments[2],
+											}
+										}
+									}
+									if (typeof arguments[2] === 'object') {
+										hitObject = arguments[2];
+									}
+									if (typeof arguments[5] === 'object') {
+										Object.assign(hitObject, arguments[5]);
+									}
+									if ('undefined' !== typeof arguments[1].hitType) {
+										hitObject = arguments[1];
+										if ('pageview' === hitObject.hitType) {
+											hitObject.eventAction = 'page_view';
+										}
+									}
+									if (hitObject) {
+										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+										hitConverted = mapArgs(hitObject);
+										__gtagTracker('event', action, hitConverted);
+									}
+								}
+								return;
+							}
+
+							function mapArgs(args) {
+								var arg, hit = {};
+								var gaMap = {
+									'eventCategory': 'event_category',
+									'eventAction': 'event_action',
+									'eventLabel': 'event_label',
+									'eventValue': 'event_value',
+									'nonInteraction': 'non_interaction',
+									'timingCategory': 'event_category',
+									'timingVar': 'name',
+									'timingValue': 'value',
+									'timingLabel': 'event_label',
+									'page': 'page_path',
+									'location': 'page_location',
+									'title': 'page_title',
+								};
+								for (arg in args) {
+																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
+										hit[gaMap[arg]] = args[arg];
+									} else {
+										hit[arg] = args[arg];
+									}
+								}
+								return hit;
+							}
+
+							try {
+								f.hitCallback();
+							} catch (ex) {
+							}
+						};
+						__gaTracker.create = newtracker;
+						__gaTracker.getByName = newtracker;
+						__gaTracker.getAll = function () {
+							return [];
+						};
+						__gaTracker.remove = noopfn;
+						__gaTracker.loaded = true;
+						window['__gaTracker'] = __gaTracker;
+					})();
+									} else {
+										console.log("");
+					(function () {
+						function __gtagTracker() {
+							return null;
+						}
+
+						window['__gtagTracker'] = __gtagTracker;
+						window['gtag'] = __gtagTracker;
+					})();
+									}
+			</script>
+				<!-- / Google Analytics by MonsterInsights -->
+		<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.binaryboxtuts.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3.2"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='maxwell-theme-fonts-css' href='https://www.binaryboxtuts.com/wp-content/fonts/08527639c0f3b5d2bd151d7a479bd41c.css?ver=20201110' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css' href='https://www.binaryboxtuts.com/wp-includes/css/dist/block-library/style.min.css?ver=6.3.2' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--primary: #33bbcc;--wp--preset--color--secondary: #008899;--wp--preset--color--tertiary: #005566;--wp--preset--color--accent: #cc3833;--wp--preset--color--highlight: #009912;--wp--preset--color--light-gray: #f0f0f0;--wp--preset--color--gray: #999999;--wp--preset--color--dark-gray: #303030;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='https://www.binaryboxtuts.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='cookie-law-info-css' href='https://www.binaryboxtuts.com/wp-content/plugins/cookie-law-info/legacy/public/css/cookie-law-info-public.css?ver=3.1.6' type='text/css' media='all' />
+<link rel='stylesheet' id='cookie-law-info-gdpr-css' href='https://www.binaryboxtuts.com/wp-content/plugins/cookie-law-info/legacy/public/css/cookie-law-info-gdpr.css?ver=3.1.6' type='text/css' media='all' />
+<link rel='stylesheet' id='toc-screen-css' href='https://www.binaryboxtuts.com/wp-content/plugins/table-of-contents-plus/screen.min.css?ver=2309' type='text/css' media='all' />
+<link rel='stylesheet' id='maxwell-stylesheet-css' href='https://www.binaryboxtuts.com/wp-content/themes/maxwell/style.css?ver=2.3.9' type='text/css' media='all' />
+<style id='maxwell-stylesheet-inline-css' type='text/css'>
+.site-description { position: absolute; clip: rect(1px, 1px, 1px, 1px); width: 1px; height: 1px; overflow: hidden; }
+</style>
+<link rel='stylesheet' id='maxwell-safari-flexbox-fixes-css' href='https://www.binaryboxtuts.com/wp-content/themes/maxwell/assets/css/safari-flexbox-fixes.css?ver=20200827' type='text/css' media='all' />
+<link rel='stylesheet' id='newsletter-css' href='https://www.binaryboxtuts.com/wp-content/plugins/newsletter/style.css?ver=8.0.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.binaryboxtuts.com/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min.js?ver=8.20.1' id='monsterinsights-frontend-script-js'></script>
+<script data-cfasync="false" data-wpfc-render="false" type="text/javascript" id='monsterinsights-frontend-script-js-extra'>/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[]","home_url":"https:\/\/www.binaryboxtuts.com","hash_tracking":"false","v4_id":"G-1NEECTT3JC"};/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.binaryboxtuts.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://www.binaryboxtuts.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1' id='jquery-migrate-js'></script>
+<script type='text/javascript' id='cookie-law-info-js-extra'>
+/* <![CDATA[ */
+var Cli_Data = {"nn_cookie_ids":[],"cookielist":[],"non_necessary_cookies":[],"ccpaEnabled":"","ccpaRegionBased":"","ccpaBarEnabled":"","strictlyEnabled":["necessary","obligatoire"],"ccpaType":"gdpr","js_blocking":"","custom_integration":"","triggerDomRefresh":"","secure_cookies":""};
+var cli_cookiebar_settings = {"animate_speed_hide":"500","animate_speed_show":"500","background":"#FFF","border":"#b1a6a6c2","border_on":"","button_1_button_colour":"#000","button_1_button_hover":"#000000","button_1_link_colour":"#fff","button_1_as_button":"1","button_1_new_win":"","button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#444","button_2_as_button":"","button_2_hidebar":"","button_3_button_colour":"#000","button_3_button_hover":"#000000","button_3_link_colour":"#fff","button_3_as_button":"1","button_3_new_win":"","button_4_button_colour":"#000","button_4_button_hover":"#000000","button_4_link_colour":"#62a329","button_4_as_button":"","button_7_button_colour":"#61a229","button_7_button_hover":"#4e8221","button_7_link_colour":"#fff","button_7_as_button":"1","button_7_new_win":"","font_family":"inherit","header_fix":"","notify_animate_hide":"1","notify_animate_show":"","notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":"","scroll_close_reload":"","accept_close_reload":"","reject_close_reload":"","showagain_tab":"","showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#000","show_once_yn":"","show_once":"10000","logging_on":"","as_popup":"","popup_overlay":"","bar_heading_text":"","cookie_bar_as":"banner","popup_showagain_position":"bottom-right","widget_position":"right"};
+var log_object = {"ajax_url":"https:\/\/www.binaryboxtuts.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.binaryboxtuts.com/wp-content/plugins/cookie-law-info/legacy/public/js/cookie-law-info-public.js?ver=3.1.6' id='cookie-law-info-js'></script>
+<!--[if lt IE 9]>
+<script type='text/javascript' src='https://www.binaryboxtuts.com/wp-content/themes/maxwell/assets/js/html5shiv.min.js?ver=3.7.3' id='html5shiv-js'></script>
+<![endif]-->
+<script type='text/javascript' src='https://www.binaryboxtuts.com/wp-content/themes/maxwell/assets/js/svgxuse.min.js?ver=1.2.6' id='svgxuse-js'></script>
+<link rel="https://api.w.org/" href="https://www.binaryboxtuts.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.binaryboxtuts.com/wp-json/wp/v2/posts/4446" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.binaryboxtuts.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.3.2" />
+<link rel='shortlink' href='https://www.binaryboxtuts.com/?p=4446' />
+<link rel="alternate" type="application/json+oembed" href="https://www.binaryboxtuts.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.binaryboxtuts.com%2Fphp-tutorials%2Fhow-to-login-with-facebook-in-symfony-6%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.binaryboxtuts.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.binaryboxtuts.com%2Fphp-tutorials%2Fhow-to-login-with-facebook-in-symfony-6%2F&#038;format=xml" />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5356927404983733" crossorigin="anonymous"></script>		<script>
+			document.documentElement.className = document.documentElement.className.replace( 'no-js', 'js' );
+		</script>
+				<style>
+			.no-js img.lazyload { display: none; }
+			figure.wp-block-image img.lazyloading { min-width: 150px; }
+							.lazyload, .lazyloading { opacity: 0; }
+				.lazyloaded {
+					opacity: 1;
+					transition: opacity 400ms;
+					transition-delay: 0ms;
+				}
+					</style>
+		<script>
+var errorQueue = []; 
+var timeout;
+window.onerror = function(msg, url, line) {
+	var errorMessage = [
+		'Message: ' + msg,
+		'URL: ' + url,
+		'Line: ' + line
+	].join(' - ');
+errorQueue.push(errorMessage); 
+if (errorQueue.length >= 5) { 
+	sendErrorsToServer();
+} else {
+	clearTimeout(timeout);
+	timeout = setTimeout(sendErrorsToServer, 5000); 
+}
+}
+function sendErrorsToServer() {
+if (errorQueue.length > 0) {
+var message = errorQueue.join(' | ');
+//console.log(message);
+var xhr = new XMLHttpRequest();
+var nonce = 'fdf135519d';
+// var ajaxurl = encodeURIComponent('https://www.binaryboxtuts.com/wp-admin/admin-ajax.php?action=log_js_error&_wpnonce=fdf135519d');
+var ajaxurl = 'https://www.binaryboxtuts.com/wp-admin/admin-ajax.php?action=log_js_error&_wpnonce=fdf135519d';
+xhr.open('POST', encodeURI(ajaxurl)); 
+xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+xhr.onload = function() {
+	if (200 === xhr.status) {
+	   try {
+		  //console.log(xhr.response);
+	   } catch (e) {
+		   console.log('error xhr not 200!');
+	   }
+	} else
+	   {
+		console.log('error 2');
+	}
+};
+xhr.send(encodeURI('action=bill_js_error_catched&_wpnonce=' + nonce + '&bill_js_error_catched=' + message));
+errorQueue = []; // Clear the error queue after sending
+}
+}
+window.addEventListener('beforeunload', sendErrorsToServer);
+</script><style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #ffffff; }
+</style>
+	<link rel="icon" href="https://www.binaryboxtuts.com/wp-content/uploads/2020/05/cropped-binarytuts-logo-1-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.binaryboxtuts.com/wp-content/uploads/2020/05/cropped-binarytuts-logo-1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.binaryboxtuts.com/wp-content/uploads/2020/05/cropped-binarytuts-logo-1-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.binaryboxtuts.com/wp-content/uploads/2020/05/cropped-binarytuts-logo-1-270x270.png" />
+		<style type="text/css" id="wp-custom-css">
+			body:not(.home) #page .header-image {
+  display: none;
+}
+		</style>
+		</head>
+
+<body class="post-template-default single single-post postid-4446 single-format-standard custom-background wp-custom-logo wp-embed-responsive post-layout-one-column">
+
+	
+	
+	<div id="page" class="hfeed site">
+
+		<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+		
+		<header id="masthead" class="site-header clearfix" role="banner">
+
+			<div class="header-main container clearfix">
+
+				<div id="logo" class="site-branding clearfix">
+
+					<a href="https://www.binaryboxtuts.com/" class="custom-logo-link" rel="home"><img width="64" height="64"   alt="Binaryboxtuts" decoding="async" data-src="https://www.binaryboxtuts.com/wp-content/uploads/2020/05/cropped-cropped-cropped-binarytuts-logo-1.png" class="custom-logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img width="64" height="64" src="https://www.binaryboxtuts.com/wp-content/uploads/2020/05/cropped-cropped-cropped-binarytuts-logo-1.png" class="custom-logo" alt="Binaryboxtuts" decoding="async" /></noscript></a>					
+			<p class="site-title"><a href="https://www.binaryboxtuts.com/" rel="home">Binaryboxtuts</a></p>
+
+							
+			<p class="site-description">Binaryboxtuts provide tutorials on Web Development and Programming, Learn about Laravel, Symfony, Codeigniter, Javascript other Technologies with our easy step-by-step tutorials</p>
+
+		
+				</div><!-- .site-branding -->
+
+				<div class="header-widgets clearfix">
+
+					
+				</div><!-- .header-widgets -->
+
+			</div><!-- .header-main -->
+
+			
+
+	<div id="main-navigation-wrap" class="primary-navigation-wrap">
+
+		
+		<button class="primary-menu-toggle menu-toggle" aria-controls="primary-menu" aria-expanded="false" >
+			<svg class="icon icon-menu" aria-hidden="true" role="img"> <use xlink:href="https://www.binaryboxtuts.com/wp-content/themes/maxwell/assets/icons/genericons-neue.svg#menu"></use> </svg><svg class="icon icon-close" aria-hidden="true" role="img"> <use xlink:href="https://www.binaryboxtuts.com/wp-content/themes/maxwell/assets/icons/genericons-neue.svg#close"></use> </svg>			<span class="menu-toggle-text">Navigation</span>
+		</button>
+
+		<div class="primary-navigation">
+
+			<nav id="site-navigation" class="main-navigation" role="navigation"  aria-label="Primary Menu">
+
+				<ul id="primary-menu" class="menu"><li id="menu-item-38" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-38"><a href="https://www.binaryboxtuts.com/">Home</a></li>
+<li id="menu-item-193" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-193"><a href="https://www.binaryboxtuts.com/php-tutorials/laravel-tutorials/">Laravel</a></li>
+<li id="menu-item-195" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-195"><a href="https://www.binaryboxtuts.com/php-tutorials/codeigniter-tutorials/">CodeIgniter</a></li>
+<li id="menu-item-1832" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-1832"><a href="https://www.binaryboxtuts.com/php-tutorials/symfony-tutorials/">Symfony</a></li>
+<li id="menu-item-4063" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4063"><a href="https://www.binaryboxtuts.com/reactjs-tutorials/">ReactJS</a></li>
+<li id="menu-item-4631" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4631"><a href="https://www.binaryboxtuts.com/vue-js-tutorials/">Vue.js</a></li>
+<li id="menu-item-4729" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4729"><a href="https://www.binaryboxtuts.com/angular-16/">Angular 16</a></li>
+<li id="menu-item-66" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66"><a href="https://www.binaryboxtuts.com/contact/">Contact Us</a></li>
+<li id="menu-item-39" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39"><a href="https://www.binaryboxtuts.com/about-binaryboxtuts/">About</a></li>
+</ul>			</nav><!-- #site-navigation -->
+
+		</div><!-- .primary-navigation -->
+
+	</div>
+
+
+
+		</header><!-- #masthead -->
+
+		
+		
+			<div id="headimg" class="header-image">
+
+			
+				<img  data-srcset="https://www.binaryboxtuts.com/wp-content/uploads/2020/05/cropped-header-scaled-2.jpg 1200w, https://www.binaryboxtuts.com/wp-content/uploads/2020/05/cropped-header-scaled-2-300x100.jpg 300w, https://www.binaryboxtuts.com/wp-content/uploads/2020/05/cropped-header-scaled-2-1024x340.jpg 1024w, https://www.binaryboxtuts.com/wp-content/uploads/2020/05/cropped-header-scaled-2-768x255.jpg 768w" width="1200" height="399" alt="Binaryboxtuts" data-src="https://www.binaryboxtuts.com/wp-content/uploads/2020/05/cropped-header-scaled-2.jpg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://www.binaryboxtuts.com/wp-content/uploads/2020/05/cropped-header-scaled-2.jpg" srcset="https://www.binaryboxtuts.com/wp-content/uploads/2020/05/cropped-header-scaled-2.jpg 1200w, https://www.binaryboxtuts.com/wp-content/uploads/2020/05/cropped-header-scaled-2-300x100.jpg 300w, https://www.binaryboxtuts.com/wp-content/uploads/2020/05/cropped-header-scaled-2-1024x340.jpg 1024w, https://www.binaryboxtuts.com/wp-content/uploads/2020/05/cropped-header-scaled-2-768x255.jpg 768w" width="1200" height="399" alt="Binaryboxtuts"></noscript>
+
+			
+			</div>
+
+		
+		<div id="content" class="site-content container clearfix">
+
+			
+	<section id="primary" class="content-single content-area">
+		<main id="main" class="site-main" role="main">
+
+		
+<article id="post-4446" class="post-4446 post type-post status-publish format-standard has-post-thumbnail hentry category-php-tutorials category-symfony-tutorials tag-facebook tag-login tag-registration tag-symfony-6">
+
+	<img width="850" height="550"   alt="How To Login with Facebook In Symfony 6" decoding="async" fetchpriority="high" data-srcset="https://www.binaryboxtuts.com/wp-content/uploads/how_to_login_with_facebook_in_symfony_6-850x550.jpg 850w, https://www.binaryboxtuts.com/wp-content/uploads/how_to_login_with_facebook_in_symfony_6-300x194.jpg 300w, https://www.binaryboxtuts.com/wp-content/uploads/how_to_login_with_facebook_in_symfony_6-768x497.jpg 768w, https://www.binaryboxtuts.com/wp-content/uploads/how_to_login_with_facebook_in_symfony_6-400x259.jpg 400w, https://www.binaryboxtuts.com/wp-content/uploads/how_to_login_with_facebook_in_symfony_6.jpg 1024w"  title="How To Login with Facebook In Symfony 6 1" data-src="https://www.binaryboxtuts.com/wp-content/uploads/how_to_login_with_facebook_in_symfony_6-850x550.jpg" data-sizes="(max-width: 850px) 100vw, 850px" class="attachment-post-thumbnail size-post-thumbnail wp-post-image lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img width="850" height="550" src="https://www.binaryboxtuts.com/wp-content/uploads/how_to_login_with_facebook_in_symfony_6-850x550.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="How To Login with Facebook In Symfony 6" decoding="async" fetchpriority="high" srcset="https://www.binaryboxtuts.com/wp-content/uploads/how_to_login_with_facebook_in_symfony_6-850x550.jpg 850w, https://www.binaryboxtuts.com/wp-content/uploads/how_to_login_with_facebook_in_symfony_6-300x194.jpg 300w, https://www.binaryboxtuts.com/wp-content/uploads/how_to_login_with_facebook_in_symfony_6-768x497.jpg 768w, https://www.binaryboxtuts.com/wp-content/uploads/how_to_login_with_facebook_in_symfony_6-400x259.jpg 400w, https://www.binaryboxtuts.com/wp-content/uploads/how_to_login_with_facebook_in_symfony_6.jpg 1024w" sizes="(max-width: 850px) 100vw, 850px" title="How To Login with Facebook In Symfony 6 1"></noscript>
+	<header class="entry-header">
+
+		<div class="entry-meta"><span class="meta-date"><a href="https://www.binaryboxtuts.com/php-tutorials/how-to-login-with-facebook-in-symfony-6/" title="4:22 AM" rel="bookmark"><time class="entry-date published updated" datetime="2023-04-29T04:22:29+00:00">April 29, 2023</time></a></span><span class="meta-category"> <a href="https://www.binaryboxtuts.com/php-tutorials/" rel="category tag">PHP</a> / <a href="https://www.binaryboxtuts.com/php-tutorials/symfony-tutorials/" rel="category tag">Symfony</a></span></div>
+		<h1 class="entry-title">How To Login with Facebook In Symfony 6</h1>
+		<div class="posted-by"> <img alt='Avatar photo'  data-srcset='https://www.binaryboxtuts.com/wp-content/uploads/logo-copy-64x64.jpg 2x'  height='32' width='32' decoding='async' data-src='https://www.binaryboxtuts.com/wp-content/uploads/logo-copy-32x32.jpg' class='avatar avatar-32 photo lazyload' src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==' /><noscript><img alt='Avatar photo' src='https://www.binaryboxtuts.com/wp-content/uploads/logo-copy-32x32.jpg' srcset='https://www.binaryboxtuts.com/wp-content/uploads/logo-copy-64x64.jpg 2x' class='avatar avatar-32 photo' height='32' width='32' decoding='async'/></noscript>Posted by <span class="meta-author"> <span class="author vcard"><a class="url fn n" href="https://www.binaryboxtuts.com/author/root/" title="View all posts by Binarytuts" rel="author">Binarytuts</a></span></span></div>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content clearfix">
+
+		<div class='code-block code-block-1' style='margin: 8px 0; clear: both;'>
+<!-- Display Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5356927404983733"
+     data-ad-slot="2299149374"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+<p>In this blog, We will show you how to log in with Facebook in Symfony 6. Most of the web apps today allow users to register or log in using their Facebook, Twitter, Google, and other accounts. This is made possible by using OAuth 2.</p>
+
+
+
+<p>What is&nbsp;<strong>Symfony</strong>?&nbsp;<strong>Symfony&nbsp;</strong>is a PHP framework to develop web applications, APIs, microservices, and web services. Symfony is one of the leading PHP frameworks for creating websites and web applications.</p>
+
+
+
+<p><strong>OAuth 2 </strong>&#8211; is a standard or protocol to implement authorization for any kind of software like desktop applications, mobile applications, and web applications.</p>
+
+
+
+<p><strong>Auth0</strong> &#8211; is a software product (cloud and on-prem), that implements the OAuth2 protocol. You can use Auth0 to simplify your authentication and authorization requirements.</p>
+
+
+
+<h2 class="wp-block-heading">Prerequisite:</h2>
+
+
+
+<ul>
+<li><a href="https://getcomposer.org/download/" target="_blank" rel="noreferrer noopener">Composer</a></li>
+
+
+
+<li><a href="https://symfony.com/download" target="_blank" rel="noreferrer noopener">Symfony CLI</a></li>
+
+
+
+<li>MySQL</li>
+
+
+
+<li>PHP &gt;= 8.0.2</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading"><strong>Step 1: Install Symfony </strong>6</h2>
+
+
+
+<p>First, select a folder in that you want Symfony to be installed then execute this command on Terminal or CMD to install:</p>
+
+
+
+<p>Install via composer:</p>
+
+
+<div class="wp-block-syntaxhighlighter-code "><pre class="brush: bash; title: ; notranslate" title="">
+composer create-project symfony/website-skeleton symfony-6-facebook-login
+</pre></div>
+
+
+<p>Install via Symfony CLI:</p>
+
+
+<div class="wp-block-syntaxhighlighter-code "><pre class="brush: bash; title: ; notranslate" title="">
+symfony new symfony-6-facebook-login --full
+</pre></div>
+
+
+<h2 class="wp-block-heading"><strong>Step 2: Set Database Configuration</strong></h2>
+
+
+
+<p>After installing, open the<strong>&nbsp;.env</strong>&nbsp;file and set the database configuration. We will be using MySQL in this tutorial. Uncomment the DATABASE_URL variable for MySQL and updates its configs. Make sure you commented out the other DATABASE_URL variables.</p>
+
+
+
+<p><strong><em>.env</em></strong></p>
+
+
+<div class="wp-block-syntaxhighlighter-code "><pre class="brush: bash; title: ; notranslate" title="">
+# In all environments, the following files are loaded if they exist,
+# the latter taking precedence over the former:
+#
+#  * .env                contains default values for the environment variables needed by the app
+#  * .env.local          uncommitted file with local overrides
+#  * .env.$APP_ENV       committed environment-specific defaults
+#  * .env.$APP_ENV.local uncommitted environment-specific overrides
+#
+# Real environment variables win over .env files.
+#
+# DO NOT DEFINE PRODUCTION SECRETS IN THIS FILE NOR IN ANY OTHER COMMITTED FILES.
+#
+# Run &quot;composer dump-env prod&quot; to compile .env files for production use (requires symfony/flex &gt;=1.2).
+# https://symfony.com/doc/current/best_practices.html#use-environment-variables-for-infrastructure-configuration
+ 
+###&gt; symfony/framework-bundle ###
+APP_ENV=dev
+APP_SECRET=37febf852b869d38be2030babb187e25
+###&lt; symfony/framework-bundle ###
+ 
+###&gt; symfony/mailer ###
+# MAILER_DSN=smtp://localhost
+###&lt; symfony/mailer ###
+ 
+###&gt; doctrine/doctrine-bundle ###
+# Format described at https://www.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/configuration.html#connecting-using-a-url
+# IMPORTANT: You MUST configure your server version, either here or in config/packages/doctrine.yaml
+#
+# DATABASE_URL=&quot;sqlite:///%kernel.project_dir%/var/data.db&quot;
+DATABASE_URL=&quot;mysql://db_user:db_password@127.0.0.1:3306/db_name?serverVersion=5.7&quot;
+# DATABASE_URL=&quot;postgresql://db_user:db_password@127.0.0.1:5432/db_name?serverVersion=13&amp;charset=utf8&quot;
+###&lt; doctrine/doctrine-bundle ###
+</pre></div>
+
+
+<p>After configuring the database, execute this command to create the database:</p>
+
+
+<div class="wp-block-syntaxhighlighter-code "><pre class="brush: bash; title: ; notranslate" title="">
+php bin/console doctrine:database:create
+</pre></div>
+
+
+<h2 class="wp-block-heading">Step 3: Install Packages</h2>
+
+
+
+<p>We will now install the packages that will do the Facebook login. install these packages &#8211; <strong><em>knpuniversity/oauth2-client-bundle</em></strong> and <strong><em>league/oauth2-facebook</em></strong>.</p>
+
+
+<div class="wp-block-syntaxhighlighter-code "><pre class="brush: bash; title: ; notranslate" title="">
+composer require knpuniversity/oauth2-client-bundle
+composer require league/oauth2-facebook
+</pre></div>
+
+
+<h2 class="wp-block-heading">Step 4: Configure The Provider</h2>
+
+
+
+<p>After successfully installing the packages. we will now configure the provider. In this tutorial here is the configuration for Facebook.</p>
+
+
+
+<p><strong><em>config\packages\knpu_oauth2_client.yaml</em></strong></p>
+
+
+<div class="wp-block-syntaxhighlighter-code "><pre class="brush: yaml; title: ; notranslate" title="">
+knpu_oauth2_client:
+    clients:
+        # the key &quot;facebook_main&quot; can be anything, it
+        # will create a service: &quot;knpu.oauth2.client.facebook_main&quot;
+        facebook_main:
+            # this will be one of the supported types
+            type: facebook
+            client_id: '%env(OAUTH_FACEBOOK_ID)%'
+            client_secret: '%env(OAUTH_FACEBOOK_SECRET)%'
+            # the route that you're redirected to after
+            # see the controller example below
+            redirect_route: connect_facebook_check
+            redirect_params: {}
+            graph_api_version: v2.12
+</pre></div>
+
+
+<p>Then add the <strong><em>OAUTH_FACEBOOK_ID </em></strong>and <strong><em>OAUTH_FACEBOOK_SECRET</em></strong> on the <strong><em>env </em></strong>file. You can get these by registering your app on <a href="https://developers.facebook.com/" data-type="URL" data-id="https://developers.facebook.com/" target="_blank" rel="noopener">developers.facebook.com</a></p>
+
+
+
+<p><strong><em>.env</em></strong></p>
+
+
+<div class="wp-block-syntaxhighlighter-code "><pre class="brush: plain; title: ; notranslate" title="">
+OAUTH_FACEBOOK_ID=fb_id
+OAUTH_FACEBOOK_SECRET=fb_secret
+</pre></div>
+
+
+<h2 class="wp-block-heading">Step 5: Create a Dashboard Controller</h2>
+
+
+
+<p>After setting up the database, we will then create a controller, this controller will be used by the authenticated user. </p>
+
+
+
+<p>To create a controller execute this command:</p>
+
+
+<div class="wp-block-syntaxhighlighter-code "><pre class="brush: bash; title: ; notranslate" title="">
+php bin/console make:controller Dashboard
+</pre></div>
+
+
+<p>After executing the command, open this file<strong><em> &#8216;src\Controller\DashboardController.php&#8217;</em></strong>,  and add this code:</p>
+
+
+
+<p> <strong><em>src\Controller\DashboardController</em>.php</strong></p>
+
+
+<div class="wp-block-syntaxhighlighter-code "><pre class="brush: php; title: ; notranslate" title="">
+&lt;?php
+
+namespace App\Controller;
+
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
+
+class DashboardController extends AbstractController
+{
+    #&#91;Route('/dashboard', name: 'dashboard')]
+    public function index(): Response
+    {
+        $this-&gt;denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
+        return $this-&gt;render('dashboard/index.html.twig', &#91;
+            'controller_name' =&gt; 'DashboardController',
+        ]);
+    }
+}
+
+</pre></div>
+
+
+<p>let&#8217;s update the twig file.</p>
+
+
+
+<p><strong><em>templates\dashboard\index.html.twig</em></strong></p>
+
+
+<div class="wp-block-syntaxhighlighter-code "><pre class="brush: xml; title: ; notranslate" title="">
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello DashboardController!{% endblock %}
+
+{% block body %}
+&lt;style&gt;
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+&lt;/style&gt;
+
+&lt;div class=&quot;example-wrapper&quot;&gt;
+    {% if app.user %}
+        &lt;div class=&quot;mb-3&quot;&gt;
+            You are logged in as {{ app.user.userIdentifier }}, &lt;a href=&quot;{{ path('app_logout') }}&quot;&gt;Logout&lt;/a&gt;
+        &lt;/div&gt;
+    {% endif %}
+
+    &lt;h1&gt;Hello {{ controller_name }}! ✅&lt;/h1&gt;
+
+    This friendly message is coming from:
+    &lt;ul&gt;
+        &lt;li&gt;Your controller at &lt;code&gt;&lt;a href=&quot;{{ 'C:/Users/STH ROCKS/Desktop/BLOG SOURCE CODE/SYMFONY 6/symfony-6-login-register-facebook/src/Controller/DashboardController.php'|file_link(0) }}&quot;&gt;src/Controller/DashboardController.php&lt;/a&gt;&lt;/code&gt;&lt;/li&gt;
+        &lt;li&gt;Your template at &lt;code&gt;&lt;a href=&quot;{{ 'C:/Users/STH ROCKS/Desktop/BLOG SOURCE CODE/SYMFONY 6/symfony-6-login-register-facebook/templates/dashboard/index.html.twig'|file_link(0) }}&quot;&gt;templates/dashboard/index.html.twig&lt;/a&gt;&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    
+&lt;/div&gt;
+{% endblock %}
+
+</pre></div>
+
+
+<h2 class="wp-block-heading">Step 6: Create a User Class</h2>
+
+
+
+<p>We will then create a user class, by using the <strong><em>make:user</em></strong> command &#8211; this command will create a User class for security and it will automatically update the <strong><em>security.yaml</em></strong>.</p>
+
+
+
+<p>Follow these steps:</p>
+
+
+<div class="wp-block-syntaxhighlighter-code "><pre class="brush: bash; title: ; notranslate" title="">
+php bin/console make:user       
+
+ The name of the security user class (e.g. User) &#91;User]:
+ &gt;
+
+ Do you want to store user data in the database (via Doctrine)? (yes/no) &#91;yes]:
+ &gt;
+
+ Enter a property name that will be the unique &quot;display&quot; name for the user (e.g. email, username, uuid) &#91;email]:
+ &gt;
+
+ Will this app need to hash/check user passwords? Choose No if passwords are not needed or will be checked/hashed by some other system (e.g. a single sign-on server).
+
+ Does this app need to hash/check user passwords? (yes/no) &#91;yes]:
+ &gt;
+
+ created: src/Entity/User.php
+ created: src/Repository/UserRepository.php
+ updated: src/Entity/User.php
+ updated: config/packages/security.yaml
+
+ 
+  Success! 
+ 
+
+ Next Steps:
+   - Review your new App\Entity\User class.
+   - Use make:entity to add more fields to your User entity and then run make:migration.
+   - Create a way to authenticate! See https://symfony.com/doc/current/security.html
+</pre></div>
+
+
+<h2 class="wp-block-heading">Step 7: Create a Migration File</h2>
+
+
+
+<p>Then we will create a migration file and then migrate it:</p>
+
+
+
+<p>Execute this command to create a migration file:</p>
+
+
+<div class="wp-block-syntaxhighlighter-code "><pre class="brush: bash; title: ; notranslate" title="">
+php bin/console make:migration
+</pre></div>
+
+
+<p>Then execute this command to run the migration the file:</p>
+
+
+<div class="wp-block-syntaxhighlighter-code "><pre class="brush: bash; title: ; notranslate" title="">
+php bin/console doctrine:migrations:migrate
+</pre></div>
+
+
+<h2 class="wp-block-heading">Step 8: Create a Login </h2>
+
+
+
+<p>To create a login on Symfony 6, we can use the <strong><em>make:auth</em></strong> command &#8211; this command can provide an empty authenticator or a full login form authentication process depending on what you have chosen.  </p>
+
+
+
+<p>Execute this command and follow the steps below:</p>
+
+
+<div class="wp-block-syntaxhighlighter-code "><pre class="brush: bash; title: ; notranslate" title="">
+php bin/console make:auth       
+
+ What style of authentication do you want? &#91;Empty authenticator]:
+  &#91;0] Empty authenticator
+  &#91;1] Login form authenticator
+ &gt; 1
+1
+
+ The class name of the authenticator to create (e.g. AppCustomAuthenticator):
+ &gt; AppCustomAuthenticator
+
+ Choose a name for the controller class (e.g. SecurityController) &#91;SecurityController]:
+ &gt;
+
+ Do you want to generate a '/logout' URL? (yes/no) &#91;yes]:
+ &gt;
+
+ created: src/Security/AppCustomAuthenticator.php
+ updated: config/packages/security.yaml
+ created: src/Controller/SecurityController.php
+ created: templates/security/login.html.twig
+
+           
+  Success! 
+           
+
+ Next:
+ - Customize your new authenticator.
+ - Finish the redirect &quot;TODO&quot; in the App\Security\AppCustomAuthenticator::onAuthenticationSuccess() method.
+ - Check the user's password in App\Security\AppCustomAuthenticator::checkCredentials().
+ - Review &amp; adapt the login template: templates/security/login.html.twig.
+</pre></div>
+
+
+<p>After following the steps above, open the file <strong><em>&#8216;src\Security\AppCustomAuthenticator.php&#8217;</em></strong> and update a part of the code:</p>
+
+
+
+<p> <strong><em>src\Security\AppCustomAuthenticator.php</em></strong></p>
+
+
+<div class="wp-block-syntaxhighlighter-code "><pre class="brush: php; title: ; notranslate" title="">
+public function onAuthenticationSuccess(Request $request, TokenInterface $token, string $firewallName): ?Response
+    {
+        if ($targetPath = $this-&gt;getTargetPath($request-&gt;getSession(), $firewallName)) {
+            return new RedirectResponse($targetPath);
+        }
+
+        // For example:
+        return new RedirectResponse($this-&gt;urlGenerator-&gt;generate('dashboard'));
+        // throw new \Exception('TODO: provide a valid redirect inside '.__FILE__);
+    }
+</pre></div>
+
+
+<p>We will update the <strong><em>SecurityController.php</em></strong>.</p>
+
+
+
+<p><strong><em>src\Controller\SecurityController.php</em></strong></p>
+
+
+<div class="wp-block-syntaxhighlighter-code "><pre class="brush: php; title: ; notranslate" title="">
+&lt;?php
+
+namespace App\Controller;
+
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
+
+class SecurityController extends AbstractController
+{
+    #&#91;Route(path: '/', name: 'app_login')]
+    public function login(AuthenticationUtils $authenticationUtils): Response
+    {
+        if ($this-&gt;getUser()) {
+            return $this-&gt;redirectToRoute('dashboard');
+        }
+
+        $error = $authenticationUtils-&gt;getLastAuthenticationError();
+        $lastUsername = $authenticationUtils-&gt;getLastUsername();
+        return $this-&gt;render('security/login.html.twig', &#91;'last_username' =&gt; $lastUsername, 'error' =&gt; $error]);
+    }
+
+    #&#91;Route(path: '/logout', name: 'app_logout')]
+    public function logout(): void
+    {
+        throw new \LogicException('This method can be blank - it will be intercepted by the logout key on your firewall.');
+    }
+}
+
+</pre></div>
+
+
+<p>Let&#8217;s update the twig file to add the Facebook login.</p>
+
+
+
+<p><strong><em>templates\security\login.html.twig</em></strong></p>
+
+
+<div class="wp-block-syntaxhighlighter-code "><pre class="brush: xml; title: ; notranslate" title="">
+{% extends 'base.html.twig' %}
+
+{% block title %}Log in!{% endblock %}
+
+{% block body %}
+&lt;form method=&quot;post&quot;&gt;
+    {% if error %}
+        &lt;div class=&quot;alert alert-danger&quot;&gt;{{ error.messageKey|trans(error.messageData, 'security') }}&lt;/div&gt;
+    {% endif %}
+
+    {% if app.user %}
+        &lt;div class=&quot;mb-3&quot;&gt;
+            You are logged in as {{ app.user.userIdentifier }}, &lt;a href=&quot;{{ path('app_logout') }}&quot;&gt;Logout&lt;/a&gt;
+        &lt;/div&gt;
+    {% endif %}
+
+    &lt;h1 class=&quot;h3 mb-3 font-weight-normal&quot;&gt;Please sign in&lt;/h1&gt;
+    &lt;label for=&quot;inputEmail&quot;&gt;Email&lt;/label&gt;
+    &lt;input type=&quot;email&quot; value=&quot;{{ last_username }}&quot; name=&quot;email&quot; id=&quot;inputEmail&quot; class=&quot;form-control&quot; autocomplete=&quot;email&quot; required autofocus&gt;
+    &lt;label for=&quot;inputPassword&quot;&gt;Password&lt;/label&gt;
+    &lt;input type=&quot;password&quot; name=&quot;password&quot; id=&quot;inputPassword&quot; class=&quot;form-control&quot; autocomplete=&quot;current-password&quot; required&gt;
+
+    &lt;input type=&quot;hidden&quot; name=&quot;_csrf_token&quot;
+           value=&quot;{{ csrf_token('authenticate') }}&quot;
+    &gt;
+
+    {#
+        Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
+        See https://symfony.com/doc/current/security/remember_me.html
+
+        &lt;div class=&quot;checkbox mb-3&quot;&gt;
+            &lt;label&gt;
+                &lt;input type=&quot;checkbox&quot; name=&quot;_remember_me&quot;&gt; Remember me
+            &lt;/label&gt;
+        &lt;/div&gt;
+    #}
+
+    &lt;button class=&quot;btn btn-lg btn-primary&quot; type=&quot;submit&quot;&gt;
+        Sign in
+    &lt;/button&gt;
+
+    &lt;a href=&quot;{{ path('connect_facebook_start') }}&quot;&gt;Login Using Facebook&lt;/a&gt;
+&lt;/form&gt;
+{% endblock %}
+
+</pre></div>
+
+
+<h2 class="wp-block-heading">Step 9: Create a Registration</h2>
+
+
+
+<p>After creating the Login we will then create the Registration. We can use the <strong><em>make:registration</em></strong> command.</p>
+
+
+
+<p> Execute this command and follow the steps below: </p>
+
+
+<div class="wp-block-syntaxhighlighter-code "><pre class="brush: bash; title: ; notranslate" title="">
+php bin/console make:registration
+
+ Creating a registration form for App\Entity\User
+
+ Do you want to add a @UniqueEntity validation annotation on your User class to make sure duplicate accounts aren't created? (yes/no) &#91;yes]:
+ &gt; 
+
+ Do you want to send an email to verify the user's email address after registration? (yes/no) &#91;yes]:
+ &gt; no
+
+ Do you want to automatically authenticate the user after registration? (yes/no) &#91;yes]:
+ &gt;
+
+ updated: src/Entity/User.php
+ created: src/Form/RegistrationFormType.php
+ created: src/Controller/RegistrationController.php
+ created: templates/registration/register.html.twig
+ 
+  Success! 
+ 
+
+ Next:
+ Make any changes you need to the form, controller &amp; template.
+
+ Then open your browser, go to &quot;/register&quot; and enjoy your new form!
+</pre></div>
+
+
+<h2 class="wp-block-heading">Step 10: Create a Facebook Controller</h2>
+
+
+
+<p>Now we will create the controller that will handle the Facebook login.</p>
+
+
+
+<p>To create a controller execute this command:</p>
+
+
+<div class="wp-block-syntaxhighlighter-code "><pre class="brush: plain; title: ; notranslate" title="">
+php bin/console make:controller Facebook
+</pre></div>
+
+
+<p>After executing the command, open this file<strong><em>&nbsp;‘src\Controller\FacebookController.php’</em></strong>, and add this code:</p>
+
+
+<div class="wp-block-syntaxhighlighter-code "><pre class="brush: php; title: ; notranslate" title="">
+&lt;?php
+
+namespace App\Controller;
+
+use KnpU\OAuth2ClientBundle\Client\ClientRegistry;
+use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Routing\Annotation\Route;
+use App\Entity\User;
+use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
+use Doctrine\ORM\EntityManagerInterface;
+use Symfony\Component\Security\Http\Authentication\UserAuthenticatorInterface;
+use App\Security\AppCustomAuthenticator;
+
+class FacebookController extends AbstractController
+{
+    #&#91;Route('/connect/facebook', name: 'connect_facebook_start')]
+    public function connectAction(ClientRegistry $clientRegistry)
+    {
+        if ($this-&gt;getUser()) {
+            return $this-&gt;redirectToRoute('dashboard');
+        }
+        return $clientRegistry
+            -&gt;getClient('facebook_main')
+            -&gt;redirect(&#91;],&#91;
+                'public_profile', 'email'
+        ]);
+    }
+
+   
+    #&#91;Route('/connect/facebook/check', name: 'connect_facebook_check')]
+    public function connectCheckAction(
+        Request $request, 
+        ClientRegistry $clientRegistry, 
+        UserPasswordHasherInterface $userPasswordHasher,
+        EntityManagerInterface $entityManager,
+        UserAuthenticatorInterface $userAuthenticator,
+        AppCustomAuthenticator $authenticator)
+    {
+        if ($this-&gt;getUser()) {
+            return $this-&gt;redirectToRoute('dashboard');
+        }
+
+        $client = $clientRegistry-&gt;getClient('facebook_main');
+        
+        try {
+            
+            $facebookUser = $client-&gt;fetchUser();
+
+            // check if email exist
+            $existingUser  = $entityManager-&gt;getRepository(User::class)
+                                -&gt;findOneBy(&#91;'email' =&gt; $facebookUser-&gt;getEmail()]);
+            if($existingUser){
+                return $userAuthenticator-&gt;authenticateUser(
+                    $existingUser,
+                    $authenticator,
+                    $request
+                );
+            }
+
+            $user = new User();
+            $user-&gt;setPassword(
+                $userPasswordHasher-&gt;hashPassword(
+                    $user,
+                    $facebookUser-&gt;getId()
+                )
+            );
+            $user-&gt;setEmail($facebookUser-&gt;getEmail());
+            $entityManager-&gt;persist($user);
+            $entityManager-&gt;flush();
+            return $userAuthenticator-&gt;authenticateUser(
+                $user,
+                $authenticator,
+                $request
+            );
+        } catch (IdentityProviderException $e) {
+            var_dump($e-&gt;getMessage()); die;
+        }
+    }
+}
+</pre></div>
+
+
+<h2 class="wp-block-heading">Step 11: Run the Application</h2>
+
+
+
+<p>After finishing the steps above, you can now run your application by executing the command below:</p>
+
+
+<div class="wp-block-syntaxhighlighter-code "><pre class="brush: bash; title: ; notranslate" title="">
+symfony server:start
+</pre></div>
+
+
+<p>After successfully running your app, open these URL&#8217;s in your browser:</p>
+
+
+
+<p>Login:</p>
+
+
+<div class="wp-block-syntaxhighlighter-code "><pre class="brush: plain; title: ; notranslate" title="">
+https://localhost:8000/
+</pre></div>
+
+
+<p>Register:</p>
+
+
+<div class="wp-block-syntaxhighlighter-code "><pre class="brush: plain; title: ; notranslate" title="">
+https://localhost:8000/register
+</pre></div>
+
+
+<p>Dashboard(If authenticated):</p>
+
+
+<div class="wp-block-syntaxhighlighter-code "><pre class="brush: plain; title: ; notranslate" title="">
+https://localhost:8000/dashboard
+</pre></div><div class='code-block code-block-3' style='margin: 8px 0; clear: both;'>
+<!-- Display Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5356927404983733"
+     data-ad-slot="2299149374"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<!-- AI CONTENT END 1 -->
+
+		
+	</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+
+		
+			<div class="entry-tags clearfix">
+				<span class="meta-tags">
+					<a href="https://www.binaryboxtuts.com/tag/facebook/" rel="tag">Facebook</a><a href="https://www.binaryboxtuts.com/tag/login/" rel="tag">Login</a><a href="https://www.binaryboxtuts.com/tag/registration/" rel="tag">Registration</a><a href="https://www.binaryboxtuts.com/tag/symfony-6/" rel="tag">Symfony 6</a>				</span>
+			</div><!-- .entry-tags -->
+
+						
+	<nav class="navigation post-navigation" aria-label="Posts">
+		<h2 class="screen-reader-text">Post navigation</h2>
+		<div class="nav-links"><div class="nav-previous"><a href="https://www.binaryboxtuts.com/php-tutorials/laravel-tutorials/laravel-10-qr-code-generator-tutorial/" rel="prev"><span class="nav-link-text">Previous Post</span><h3 class="entry-title">Laravel 10 QR Code Generator Tutorial</h3></a></div><div class="nav-next"><a href="https://www.binaryboxtuts.com/vue-js-tutorials/how-to-develop-vue-js-crud-app-using-a-rest-api/" rel="next"><span class="nav-link-text">Next Post</span><h3 class="entry-title">How To Develop Vue.js 3 CRUD App using a REST API</h3></a></div></div>
+	</nav>
+	</footer><!-- .entry-footer -->
+
+</article>
+
+<div id="comments" class="comments-area">
+
+	
+	
+	
+	
+</div><!-- #comments -->
+<div class='code-block code-block-4' style='margin: 8px 0; clear: both;'>
+<!-- Display Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5356927404983733"
+     data-ad-slot="2299149374"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+		</main><!-- #main -->
+	</section><!-- #primary -->
+
+	
+	<section id="secondary" class="sidebar widget-area clearfix" role="complementary">
+
+		<aside id="custom_html-6" class="widget_text widget widget_custom_html clearfix"><div class="textwidget custom-html-widget"><!-- Display Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5356927404983733"
+     data-ad-slot="2299149374"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div></aside><aside id="search-13" class="widget widget_search clearfix">
+<form role="search" method="get" class="search-form" action="https://www.binaryboxtuts.com/">
+	<label>
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" class="search-field"
+			placeholder="Search &hellip;"
+			value="" name="s"
+			title="Search for:" />
+	</label>
+	<button type="submit" class="search-submit">
+		<svg class="icon icon-search" aria-hidden="true" role="img"> <use xlink:href="https://www.binaryboxtuts.com/wp-content/themes/maxwell/assets/icons/genericons-neue.svg#search"></use> </svg>		<span class="screen-reader-text">Search</span>
+	</button>
+</form>
+</aside>
+		<aside id="recent-posts-11" class="widget widget_recent_entries clearfix">
+		<div class="widget-header"><h3 class="widget-title">Recent Posts</h3></div>
+		<ul>
+											<li>
+					<a href="https://www.binaryboxtuts.com/angular-16/how-to-develop-angular-16-crud-app-using-a-rest-api/">How To Develop Angular 16 CRUD App using a REST API</a>
+									</li>
+											<li>
+					<a href="https://www.binaryboxtuts.com/vue-js-tutorials/how-to-develop-login-and-registration-in-vue-js-app-using-api/">How To Develop Login And Registration in Vue.js App using API</a>
+									</li>
+											<li>
+					<a href="https://www.binaryboxtuts.com/vue-js-tutorials/how-to-develop-vue-js-crud-app-using-a-rest-api/">How To Develop Vue.js 3 CRUD App using a REST API</a>
+									</li>
+											<li>
+					<a href="https://www.binaryboxtuts.com/php-tutorials/how-to-login-with-facebook-in-symfony-6/" aria-current="page">How To Login with Facebook In Symfony 6</a>
+									</li>
+											<li>
+					<a href="https://www.binaryboxtuts.com/php-tutorials/laravel-tutorials/laravel-10-qr-code-generator-tutorial/">Laravel 10 QR Code Generator Tutorial</a>
+									</li>
+											<li>
+					<a href="https://www.binaryboxtuts.com/php-tutorials/laravel-10-starter-kit-how-to-install-laravel-breeze/">Laravel 10 Starter Kit &#8211; How to Install Laravel Breeze</a>
+									</li>
+											<li>
+					<a href="https://www.binaryboxtuts.com/php-tutorials/how-to-merge-pdf-files-in-laravel-10/">How To Merge PDF Files in Laravel 10</a>
+									</li>
+											<li>
+					<a href="https://www.binaryboxtuts.com/php-tutorials/symfony-tutorials/how-to-send-email-using-mailtrap-in-symfony-6/">How To Send Email Using Mailtrap In Symfony 6</a>
+									</li>
+					</ul>
+
+		</aside><aside id="custom_html-13" class="widget_text widget widget_custom_html clearfix"><div class="textwidget custom-html-widget"><!-- Display Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5356927404983733"
+     data-ad-slot="2299149374"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div></aside><aside id="newsletterwidget-4" class="widget widget_newsletterwidget clearfix"><div class="widget-header"><h3 class="widget-title">Newsletter</h3></div><div class="tnp tnp-subscription">
+<form method="post" action="https://www.binaryboxtuts.com/?na=s">
+
+<input type="hidden" name="nr" value="widget"><input type="hidden" name="nlang" value=""><div class="tnp-field tnp-field-email"><label for="tnp-1">Email</label>
+<input class="tnp-email" type="email" name="ne" id="tnp-1" value="" required></div>
+<div class="tnp-field tnp-privacy-field"><label><input type="checkbox" name="ny" required class="tnp-privacy"> By continuing, you accept the privacy policy</label></div><div class="tnp-field tnp-field-button"><input class="tnp-submit" type="submit" value="Subscribe" >
+</div>
+</form>
+</div>
+</aside><aside id="custom_html-14" class="widget_text widget widget_custom_html clearfix"><div class="textwidget custom-html-widget"><!-- Display Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5356927404983733"
+     data-ad-slot="2299149374"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div></aside><aside id="tag_cloud-3" class="widget widget_tag_cloud clearfix"><div class="widget-header"><h3 class="widget-title">Tags</h3></div><div class="tagcloud"><a href="https://www.binaryboxtuts.com/tag/ajax/" class="tag-cloud-link tag-link-150 tag-link-position-1" style="font-size: 15.567567567568pt;" aria-label="AJAX (7 items)">AJAX</a>
+<a href="https://www.binaryboxtuts.com/tag/angular-16/" class="tag-cloud-link tag-link-309 tag-link-position-2" style="font-size: 8pt;" aria-label="Angular 16 (1 item)">Angular 16</a>
+<a href="https://www.binaryboxtuts.com/tag/api/" class="tag-cloud-link tag-link-224 tag-link-position-3" style="font-size: 10.27027027027pt;" aria-label="API (2 items)">API</a>
+<a href="https://www.binaryboxtuts.com/tag/authentication/" class="tag-cloud-link tag-link-231 tag-link-position-4" style="font-size: 14.054054054054pt;" aria-label="Authentication (5 items)">Authentication</a>
+<a href="https://www.binaryboxtuts.com/tag/bootstrap/" class="tag-cloud-link tag-link-143 tag-link-position-5" style="font-size: 8pt;" aria-label="Bootstrap (1 item)">Bootstrap</a>
+<a href="https://www.binaryboxtuts.com/tag/codeigniter-3/" class="tag-cloud-link tag-link-184 tag-link-position-6" style="font-size: 14.054054054054pt;" aria-label="CodeIgniter 3 (5 items)">CodeIgniter 3</a>
+<a href="https://www.binaryboxtuts.com/tag/codeigniter-4/" class="tag-cloud-link tag-link-240 tag-link-position-7" style="font-size: 18.216216216216pt;" aria-label="CodeIgniter 4 (12 items)">CodeIgniter 4</a>
+<a href="https://www.binaryboxtuts.com/tag/composer/" class="tag-cloud-link tag-link-158 tag-link-position-8" style="font-size: 8pt;" aria-label="Composer (1 item)">Composer</a>
+<a href="https://www.binaryboxtuts.com/tag/crud/" class="tag-cloud-link tag-link-145 tag-link-position-9" style="font-size: 22pt;" aria-label="CRUD (25 items)">CRUD</a>
+<a href="https://www.binaryboxtuts.com/tag/csv/" class="tag-cloud-link tag-link-218 tag-link-position-10" style="font-size: 8pt;" aria-label="CSV (1 item)">CSV</a>
+<a href="https://www.binaryboxtuts.com/tag/datatable/" class="tag-cloud-link tag-link-155 tag-link-position-11" style="font-size: 10.27027027027pt;" aria-label="DataTable (2 items)">DataTable</a>
+<a href="https://www.binaryboxtuts.com/tag/email/" class="tag-cloud-link tag-link-289 tag-link-position-12" style="font-size: 11.783783783784pt;" aria-label="Email (3 items)">Email</a>
+<a href="https://www.binaryboxtuts.com/tag/facebook/" class="tag-cloud-link tag-link-301 tag-link-position-13" style="font-size: 8pt;" aria-label="Facebook (1 item)">Facebook</a>
+<a href="https://www.binaryboxtuts.com/tag/javascript/" class="tag-cloud-link tag-link-151 tag-link-position-14" style="font-size: 8pt;" aria-label="Javascript (1 item)">Javascript</a>
+<a href="https://www.binaryboxtuts.com/tag/jquery/" class="tag-cloud-link tag-link-152 tag-link-position-15" style="font-size: 8pt;" aria-label="JQuery (1 item)">JQuery</a>
+<a href="https://www.binaryboxtuts.com/tag/jwt/" class="tag-cloud-link tag-link-230 tag-link-position-16" style="font-size: 14.054054054054pt;" aria-label="JWT (5 items)">JWT</a>
+<a href="https://www.binaryboxtuts.com/tag/laravel/" class="tag-cloud-link tag-link-220 tag-link-position-17" style="font-size: 11.783783783784pt;" aria-label="Laravel (3 items)">Laravel</a>
+<a href="https://www.binaryboxtuts.com/tag/laravel-7/" class="tag-cloud-link tag-link-149 tag-link-position-18" style="font-size: 14.054054054054pt;" aria-label="Laravel 7 (5 items)">Laravel 7</a>
+<a href="https://www.binaryboxtuts.com/tag/laravel-8-2/" class="tag-cloud-link tag-link-229 tag-link-position-19" style="font-size: 19.72972972973pt;" aria-label="Laravel 8 (16 items)">Laravel 8</a>
+<a href="https://www.binaryboxtuts.com/tag/laravel-9/" class="tag-cloud-link tag-link-274 tag-link-position-20" style="font-size: 17.837837837838pt;" aria-label="Laravel 9 (11 items)">Laravel 9</a>
+<a href="https://www.binaryboxtuts.com/tag/laravel-10/" class="tag-cloud-link tag-link-298 tag-link-position-21" style="font-size: 11.783783783784pt;" aria-label="Laravel 10 (3 items)">Laravel 10</a>
+<a href="https://www.binaryboxtuts.com/tag/laravel-breeze/" class="tag-cloud-link tag-link-238 tag-link-position-22" style="font-size: 10.27027027027pt;" aria-label="Laravel Breeze (2 items)">Laravel Breeze</a>
+<a href="https://www.binaryboxtuts.com/tag/laravel-passport/" class="tag-cloud-link tag-link-221 tag-link-position-23" style="font-size: 11.783783783784pt;" aria-label="Laravel Passport (3 items)">Laravel Passport</a>
+<a href="https://www.binaryboxtuts.com/tag/login/" class="tag-cloud-link tag-link-249 tag-link-position-24" style="font-size: 16.198198198198pt;" aria-label="Login (8 items)">Login</a>
+<a href="https://www.binaryboxtuts.com/tag/lumen-9/" class="tag-cloud-link tag-link-277 tag-link-position-25" style="font-size: 8pt;" aria-label="Lumen 9 (1 item)">Lumen 9</a>
+<a href="https://www.binaryboxtuts.com/tag/mailtrap/" class="tag-cloud-link tag-link-290 tag-link-position-26" style="font-size: 13.045045045045pt;" aria-label="Mailtrap (4 items)">Mailtrap</a>
+<a href="https://www.binaryboxtuts.com/tag/multiple-file-upload/" class="tag-cloud-link tag-link-252 tag-link-position-27" style="font-size: 10.27027027027pt;" aria-label="Multiple File Upload (2 items)">Multiple File Upload</a>
+<a href="https://www.binaryboxtuts.com/tag/page-numbering/" class="tag-cloud-link tag-link-272 tag-link-position-28" style="font-size: 13.045045045045pt;" aria-label="Page Numbering (4 items)">Page Numbering</a>
+<a href="https://www.binaryboxtuts.com/tag/pagination/" class="tag-cloud-link tag-link-210 tag-link-position-29" style="font-size: 10.27027027027pt;" aria-label="Pagination (2 items)">Pagination</a>
+<a href="https://www.binaryboxtuts.com/tag/payment-gateway/" class="tag-cloud-link tag-link-236 tag-link-position-30" style="font-size: 10.27027027027pt;" aria-label="Payment Gateway (2 items)">Payment Gateway</a>
+<a href="https://www.binaryboxtuts.com/tag/pdf/" class="tag-cloud-link tag-link-268 tag-link-position-31" style="font-size: 18.720720720721pt;" aria-label="PDF (13 items)">PDF</a>
+<a href="https://www.binaryboxtuts.com/tag/php/" class="tag-cloud-link tag-link-182 tag-link-position-32" style="font-size: 19.099099099099pt;" aria-label="PHP (14 items)">PHP</a>
+<a href="https://www.binaryboxtuts.com/tag/qr-code/" class="tag-cloud-link tag-link-292 tag-link-position-33" style="font-size: 14.936936936937pt;" aria-label="QR Code (6 items)">QR Code</a>
+<a href="https://www.binaryboxtuts.com/tag/react/" class="tag-cloud-link tag-link-260 tag-link-position-34" style="font-size: 16.198198198198pt;" aria-label="React (8 items)">React</a>
+<a href="https://www.binaryboxtuts.com/tag/reactjs/" class="tag-cloud-link tag-link-296 tag-link-position-35" style="font-size: 11.783783783784pt;" aria-label="ReactJS (3 items)">ReactJS</a>
+<a href="https://www.binaryboxtuts.com/tag/registration/" class="tag-cloud-link tag-link-250 tag-link-position-36" style="font-size: 16.198198198198pt;" aria-label="Registration (8 items)">Registration</a>
+<a href="https://www.binaryboxtuts.com/tag/rest-api-2/" class="tag-cloud-link tag-link-226 tag-link-position-37" style="font-size: 16.828828828829pt;" aria-label="REST API (9 items)">REST API</a>
+<a href="https://www.binaryboxtuts.com/tag/single-page-application/" class="tag-cloud-link tag-link-263 tag-link-position-38" style="font-size: 13.045045045045pt;" aria-label="Single Page Application (4 items)">Single Page Application</a>
+<a href="https://www.binaryboxtuts.com/tag/spa/" class="tag-cloud-link tag-link-262 tag-link-position-39" style="font-size: 14.054054054054pt;" aria-label="SPA (5 items)">SPA</a>
+<a href="https://www.binaryboxtuts.com/tag/stripe/" class="tag-cloud-link tag-link-235 tag-link-position-40" style="font-size: 14.054054054054pt;" aria-label="Stripe (5 items)">Stripe</a>
+<a href="https://www.binaryboxtuts.com/tag/symfony-5/" class="tag-cloud-link tag-link-245 tag-link-position-41" style="font-size: 18.216216216216pt;" aria-label="Symfony 5 (12 items)">Symfony 5</a>
+<a href="https://www.binaryboxtuts.com/tag/symfony-6/" class="tag-cloud-link tag-link-280 tag-link-position-42" style="font-size: 17.837837837838pt;" aria-label="Symfony 6 (11 items)">Symfony 6</a>
+<a href="https://www.binaryboxtuts.com/tag/vue-js/" class="tag-cloud-link tag-link-306 tag-link-position-43" style="font-size: 10.27027027027pt;" aria-label="Vue.js (2 items)">Vue.js</a>
+<a href="https://www.binaryboxtuts.com/tag/xampp/" class="tag-cloud-link tag-link-157 tag-link-position-44" style="font-size: 10.27027027027pt;" aria-label="XAMPP (2 items)">XAMPP</a></div>
+</aside><aside id="custom_html-21" class="widget_text widget widget_custom_html clearfix"><div class="textwidget custom-html-widget"><!-- Display Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5356927404983733"
+     data-ad-slot="2299149374"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div></aside>
+	</section><!-- #secondary -->
+
+
+
+	</div><!-- #content -->
+
+	
+	<div id="footer" class="footer-wrap">
+
+		<footer id="colophon" class="site-footer container clearfix" role="contentinfo">
+
+			
+			<div id="footer-text" class="site-info">
+				
+	<pclass="credit-link">
+		WordPress Theme: Maxwell by ThemeZee.	</span>
+
+				</div><!-- .site-info -->
+
+		</footer><!-- #colophon -->
+
+	</div>
+
+</div><!-- #page -->
+
+<!--googleoff: all--><div id="cookie-law-info-bar" data-nosnippet="true"><span>This website uses cookies to improve your experience. We'll assume you're ok with this, but you can opt-out if you wish. <a role='button' class="cli_settings_button" style="margin:5px 20px 5px 20px">Cookie settings</a><a role='button' data-cli_action="accept" id="cookie_action_close_header" class="medium cli-plugin-button cli-plugin-main-button cookie_action_close_header cli_action_button wt-cli-accept-btn" style="margin:5px">ACCEPT</a> </span></div><div id="cookie-law-info-again" data-nosnippet="true"><span id="cookie_hdr_showagain">Privacy &amp; Cookies Policy</span></div><div class="cli-modal" data-nosnippet="true" id="cliSettingsPopup" tabindex="-1" role="dialog" aria-labelledby="cliSettingsPopup" aria-hidden="true">
+  <div class="cli-modal-dialog" role="document">
+	<div class="cli-modal-content cli-bar-popup">
+		  <button type="button" class="cli-modal-close" id="cliModalClose">
+			<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"></path><path d="M0 0h24v24h-24z" fill="none"></path></svg>
+			<span class="wt-cli-sr-only">Close</span>
+		  </button>
+		  <div class="cli-modal-body">
+			<div class="cli-container-fluid cli-tab-container">
+	<div class="cli-row">
+		<div class="cli-col-12 cli-align-items-stretch cli-px-0">
+			<div class="cli-privacy-overview">
+				<h4>Privacy Overview</h4>				<div class="cli-privacy-content">
+					<div class="cli-privacy-content-text">This website uses cookies to improve your experience while you navigate through the website. Out of these cookies, the cookies that are categorized as necessary are stored on your browser as they are essential for the working of basic functionalities of the website. We also use third-party cookies that help us analyze and understand how you use this website. These cookies will be stored in your browser only with your consent. You also have the option to opt-out of these cookies. But opting out of some of these cookies may have an effect on your browsing experience.</div>
+				</div>
+				<a class="cli-privacy-readmore" aria-label="Show more" role="button" data-readmore-text="Show more" data-readless-text="Show less"></a>			</div>
+		</div>
+		<div class="cli-col-12 cli-align-items-stretch cli-px-0 cli-tab-section-container">
+												<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="necessary" data-toggle="cli-toggle-tab">
+								Necessary							</a>
+															<div class="wt-cli-necessary-checkbox">
+									<input type="checkbox" class="cli-user-preference-checkbox"  id="wt-cli-checkbox-necessary" data-id="checkbox-necessary" checked="checked"  />
+									<label class="form-check-label" for="wt-cli-checkbox-necessary">Necessary</label>
+								</div>
+								<span class="cli-necessary-caption">Always Enabled</span>
+													</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="necessary">
+								<div class="wt-cli-cookie-description">
+									Necessary cookies are absolutely essential for the website to function properly. This category only includes cookies that ensures basic functionalities and security features of the website. These cookies do not store any personal information.								</div>
+							</div>
+						</div>
+					</div>
+																		</div>
+	</div>
+</div>
+		  </div>
+		  <div class="cli-modal-footer">
+			<div class="wt-cli-element cli-container-fluid cli-tab-container">
+				<div class="cli-row">
+					<div class="cli-col-12 cli-align-items-stretch cli-px-0">
+						<div class="cli-tab-footer wt-cli-privacy-overview-actions">
+						
+															<a id="wt-cli-privacy-save-btn" role="button" tabindex="0" data-cli-action="accept" class="wt-cli-privacy-btn cli_setting_save_button wt-cli-privacy-accept-btn cli-btn">SAVE &amp; ACCEPT</a>
+													</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+</div>
+<div class="cli-modal-backdrop cli-fade cli-settings-overlay"></div>
+<div class="cli-modal-backdrop cli-fade cli-popupbar-overlay"></div>
+<!--googleon: all--><script type='text/javascript' src='https://www.binaryboxtuts.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shCore.js?ver=3.0.9b' id='syntaxhighlighter-core-js'></script>
+<script type='text/javascript' src='https://www.binaryboxtuts.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushBash.js?ver=3.0.9b' id='syntaxhighlighter-brush-bash-js'></script>
+<script type='text/javascript' src='https://www.binaryboxtuts.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushYaml.js?ver=3.0.9b' id='syntaxhighlighter-brush-yaml-js'></script>
+<script type='text/javascript' src='https://www.binaryboxtuts.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPlain.js?ver=3.0.9b' id='syntaxhighlighter-brush-plain-js'></script>
+<script type='text/javascript' src='https://www.binaryboxtuts.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPhp.js?ver=3.0.9b' id='syntaxhighlighter-brush-php-js'></script>
+<script type='text/javascript' src='https://www.binaryboxtuts.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushXml.js?ver=3.0.9b' id='syntaxhighlighter-brush-xml-js'></script>
+<script type='text/javascript'>
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var corecssurl = "https://www.binaryboxtuts.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shCore.css?ver=3.0.9b";
+		if ( corecss.setAttribute ) {
+				corecss.setAttribute( "rel", "stylesheet" );
+				corecss.setAttribute( "type", "text/css" );
+				corecss.setAttribute( "href", corecssurl );
+		} else {
+				corecss.rel = "stylesheet";
+				corecss.href = corecssurl;
+		}
+		document.head.appendChild( corecss );
+		var themecssurl = "https://www.binaryboxtuts.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shThemeDefault.css?ver=3.0.9b";
+		if ( themecss.setAttribute ) {
+				themecss.setAttribute( "rel", "stylesheet" );
+				themecss.setAttribute( "type", "text/css" );
+				themecss.setAttribute( "href", themecssurl );
+		} else {
+				themecss.rel = "stylesheet";
+				themecss.href = themecssurl;
+		}
+		document.head.appendChild( themecss );
+	})();
+	SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.all();
+
+	// Infinite scroll support
+	if ( typeof( jQuery ) !== 'undefined' ) {
+		jQuery( function( $ ) {
+			$( document.body ).on( 'post-load', function() {
+				SyntaxHighlighter.highlight();
+			} );
+		} );
+	}
+</script>
+<script type='text/javascript' src='https://www.binaryboxtuts.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.8.1' id='swv-js'></script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/www.binaryboxtuts.com\/wp-json\/","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.binaryboxtuts.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.8.1' id='contact-form-7-js'></script>
+<script type='text/javascript' id='toc-front-js-extra'>
+/* <![CDATA[ */
+var tocplus = {"smooth_scroll":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.binaryboxtuts.com/wp-content/plugins/table-of-contents-plus/front.min.js?ver=2309' id='toc-front-js'></script>
+<script type='text/javascript' id='maxwell-navigation-js-extra'>
+/* <![CDATA[ */
+var maxwellScreenReaderText = {"expand":"Expand child menu","collapse":"Collapse child menu","icon":"<svg class=\"icon icon-expand\" aria-hidden=\"true\" role=\"img\"> <use xlink:href=\"https:\/\/www.binaryboxtuts.com\/wp-content\/themes\/maxwell\/assets\/icons\/genericons-neue.svg#expand\"><\/use> <\/svg>"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.binaryboxtuts.com/wp-content/themes/maxwell/assets/js/navigation.min.js?ver=20220224' id='maxwell-navigation-js'></script>
+<script type='text/javascript' src='https://www.google.com/recaptcha/api.js?render=6Lc7gPoUAAAAABgZYvnbaV6hbo4vb3DLv1E_GtQz&#038;ver=3.0' id='google-recaptcha-js'></script>
+<script type='text/javascript' src='https://www.binaryboxtuts.com/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2' id='wp-polyfill-inert-js'></script>
+<script type='text/javascript' src='https://www.binaryboxtuts.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.11' id='regenerator-runtime-js'></script>
+<script type='text/javascript' src='https://www.binaryboxtuts.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script type='text/javascript' id='wpcf7-recaptcha-js-extra'>
+/* <![CDATA[ */
+var wpcf7_recaptcha = {"sitekey":"6Lc7gPoUAAAAABgZYvnbaV6hbo4vb3DLv1E_GtQz","actions":{"homepage":"homepage","contactform":"contactform"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.binaryboxtuts.com/wp-content/plugins/contact-form-7/modules/recaptcha/index.js?ver=5.8.1' id='wpcf7-recaptcha-js'></script>
+<script type='text/javascript' src='https://www.binaryboxtuts.com/wp-content/plugins/wp-smushit/app/assets/js/smush-lazy-load.min.js?ver=3.14.2' id='smush-lazy-load-js'></script>
+
+</body>
+</html>
