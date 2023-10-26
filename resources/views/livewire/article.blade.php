@@ -31,12 +31,17 @@
                                     <div class="py-8">
                                         <h4 class="text-skin-inverted text-base leading-6 font-medium">Tous les tags</h4>
                                         <div  class="mt-5 space-y-1">
-                                            @foreach ($allTags as $value)
+                                            @foreach ($tags as $tag)
 
-                                            <button wire:click="add()">test</button>
+
                                             <div class="group px-2 py-1.5 flex items-center text-base font-medium text-skin-inverted-muted/80 hover:text-skin-inverted rounded-md font-sans">
-                                                <input  wire:model="tag_ids s" type="radio" value="{{$value->id}}" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                                <span class="truncate ml-1.5">{{$value->name}}</span>
+                                                <button wire:click="toggleTag({{$tag->id}})" type="button" class="group px-2 py-1.5 flex items-center text-base font-medium text-skin-inverted-muted/80 hover:text-skin-inverted rounded-md font-sans">
+                                                    <svg class="w-5 h-5" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                                                     <path d="M24 26H6c-2.2 0-4-1.8-4-4V8c0-2.2 1.8-4 4-4h18c2.2 0 4 1.8 4 4v14c0 2.2-1.8 4-4 4Z" fill="#A576FF" stroke="#A576FF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                      <path d="M5.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1ZM9.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1ZM13.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Z" fill="#E3FAFF" stroke="#E3FAFF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                         </svg>
+                                                              <span class="truncate ml-1.5">{{$tag->name}}</span>
+                                                                   </button>
                                             </div>
                                             @endforeach
                                         </div>
@@ -68,7 +73,7 @@
 
                     <div class="divide-y divide-gray-200 dark:divide-gray-700">
 
-                        @foreach ($posts as $value)
+                        @foreach ($articles as $value)
                         <article class="py-6">
                             <div class="flex items-center justify-between mb-3 text-gray-500">
                                 <div>
@@ -106,7 +111,7 @@
 
                     <nav aria-label="Page navigation example">
                         <ul class="inline-flex -space-x-px text-sm">
-                            {{$posts->links()}}
+                            {{-- {{$posts->links()}} --}}
                         </ul>
                     </nav>
 

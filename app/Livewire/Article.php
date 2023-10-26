@@ -12,54 +12,43 @@ class Article extends Component
 {
     use WithPagination;
 
+    public  $tag = null;
 
-    public $tag_id = "";
+    protected $queryString = [
+        'tag' => ['except' => ''],
+        'sortBy' => ['except' => 'recent'],
+    ];
 
+    public function toggleTag(string $tag): void
 
-    // public function testing() {
-    //     $articles = Article::with(['tags', 'user', 'user.transactions'])
-    //     ->withCount(['views', 'reactions'])
-    //     ->published()
-    //     ->notPinned()
-    //     ->orderByDesc('sponsored_at')
-    //     ->orderByDesc('published_at');
-
-    // $tags = Tag::whereHas('articles', function ($query): void {
-    //     $query->published();
-    // })->orderBy('name')->get();
-
-    // $selectedTag = Tag::where('slug', $this->tag)->first();
-
-    // if ($this->tag) {
-    //    $ressource =  Tag::with('articles')->find($this->id);
-    //    dd($ressource);
-    // }
-
-    // $articles->{$this->sortBy}();
-    // }
-
-    public function add($tag) {
-        dd('merci');
+    {
+        $this->tag = Tag::where('id', '=', $tag)->first();
     }
 
 
     public function render()
     {
-        $query = Post::query();
+        $articles = Post::with('articletags')->orderByDesc('created_at');
 
-        if($this->tag_id != "") {
-            dd('ss');
-            $tag =  Tag::where('id', '=', $this->tag_id)->first();
+            $tags = Tag::whereHas('articletags', function (): void {
+            })->orderBy('name')->get();
 
-            if($tag) {
+            $selectedTag = Tag::where('id', $this->tag)->first();
 
+            if ($this->tag) {
+                $posts = $articles->whereHas('articletags', function($q){
+                    $q->where('tag_id', $this->tag->id);
+
+          })->get();
+              
             }
-        }
+
 
 
          return view('livewire.article', [
-            'allTags'=> Tag::all(),
-            'posts' => $query->orderByDesc('created_at')->paginate(13)
+            'articles'=> $articles->paginate(10),
+            'tags' => $tags,
+            'selectedTag' => $selectedTag,
          ]);
     }
 
