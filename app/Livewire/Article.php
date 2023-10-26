@@ -36,11 +36,11 @@ class Article extends Component
             $selectedTag = Tag::where('id', $this->tag)->first();
 
             if ($this->tag) {
-                $posts = $articles->whereHas('articletags', function($q){
+                 $articles->whereHas('articletags', function($q){
                     $q->where('tag_id', $this->tag->id);
 
           })->get();
-              
+
             }
 
 

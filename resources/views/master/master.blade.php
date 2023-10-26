@@ -19,8 +19,8 @@
                 <div class="items-center md:flex">
                     <p class="text-sm font-medium text-gray-900 md:my-0 dark:text-white">
                         <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 hidden md:inline">Important</span>
-                        cette plateforme est en cours de développement  revenez plus tard
-                        <a class="inline-flex items-center ml-2 text-sm font-medium text-blue-600 md:ml-2 dark:text-blue-500 hover:underline" href="/blocks/">
+                        Etat d'avancement de la plateforme 60/100 revenez plus tard
+                        <a class="inline-flex items-center ml-2 text-sm font-medium text-blue-600 md:ml-2 dark:text-blue-500 hover:underline" href="#">
                             KGS
                             <svg class="w-3 h-3 ml-1.5 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"></path>
@@ -33,11 +33,11 @@
                 <div class="flex justify-between">
                     <div class="flex items-center">
                         <a class="flex items-center justify-between" href="/">
-                            <span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;">
+                            {{-- <span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;">
                                 <span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2732%27%20height=%2733%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span>
-                                <img alt="KGS" src="/images/logo.svg" decoding="async" data-nimg="intrinsic" class="h-8 flex-shrink-0" srcset="/images/logo.svg 1x, /images/logo.svg 2x" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;">
+                                <img alt="KGS" src="" decoding="async" data-nimg="intrinsic" class="h-8 flex-shrink-0" srcset="/images/logo.svg 1x, /images/logo.svg 2x" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;">
                                 <noscript></noscript>
-                            </span>
+                            </span> --}}
                             <span class="self-center ml-3 text-2xl font-semibold whitespace-nowrap dark:text-white">KGS</span>
                         </a>
 
@@ -65,8 +65,8 @@
                 </div>
                 <div class="flex items-center w-full lg:w-auto">
                     <ul class="flex flex-col py-2 lg:py-0 lg:flex-row lg:self-center collapse w-full lg:w-auto collapsed">
-                        <li><a class="block py-2 text-sm font-medium text-gray-900 lg:px-3 lg:py-0 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-500" href="#">Accueil</a></li>
-                        <li><a class="block py-2 text-sm font-medium text-gray-900 lg:px-3 lg:py-0 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-500" href="#">Articles</a></li>
+                        <li><a class="block py-2 text-sm font-medium text-gray-900 lg:px-3 lg:py-0 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-500" href="{{URL('/')}}">Accueil</a></li>
+                        <li><a class="block py-2 text-sm font-medium text-gray-900 lg:px-3 lg:py-0 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-500" href="{{route('articles.index')}}">Articles</a></li>
                         <li><a class="block py-2 text-sm font-medium text-gray-900 lg:px-3 lg:py-0 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-500" href="{{url('/forums')}}">Forum</a></li>
                         <li><a class="block py-2 text-sm font-medium text-gray-900 lg:px-3 lg:py-0 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-500" href="#">Formations </a></li>
                         <li><a class="block py-2 text-sm font-medium text-gray-900 lg:px-3 lg:py-0 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-500" href="#">Histoires</a></li>
@@ -144,10 +144,10 @@
                 <div class="grid gap-12 lg:grid-cols-6 lg:gap-18">
                     <div class="col-span-2">
                         <a class="flex mb-6" href="/">
-                            <span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;">
+                            {{-- <span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;">
                                 <span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2732%27%20height=%2733%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span>
                                 <img alt="Flowbite Logo" src="/images/logo.svg" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;" srcset="/images/logo.svg 1x, /images/logo.svg 2x">
-                            </span>
+                            </span> --}}
                             <span class="self-center ml-3 text-2xl font-semibold text-gray-900 dark:text-white">KGS INFORMATIQUE</span>
                         </a>
                         <p class="text-gray-600 dark:text-gray-400">
