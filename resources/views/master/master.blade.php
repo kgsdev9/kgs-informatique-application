@@ -157,7 +157,7 @@
                     <div>
                         <h3 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">Resources</h3>
                         <ul>
-                            <li class="mb-4"><a href="https://flowbite.com/docs/getting-started/introduction/" class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Politique</a></li>
+                            <li class="mb-4"><a href="#" class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Politique</a></li>
                             <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="#">Forums</a></li>
                             <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="#">Astuces</a></li>
                             <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="#">Articles</a></li>
@@ -167,10 +167,10 @@
                     <div>
                         <h3 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">Associations </h3>
                         <ul>
-                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="/contact/">CDG COCODYU </a></li>
-                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="/dashboard/support/">DJANGO GIRL </a></li>
+                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="#">GDG COCODY </a></li>
+                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="#">DJANGO GIRL </a></li>
                             <li class="mb-4 flex items-center">
-                                <a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="/work-with-us/">EHUB</a>
+                                <a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="#">EHUB</a>
                                 <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ml-2">JOURNNE DU CODE </span>
                             </li>
                         </ul>
@@ -186,10 +186,10 @@
                     <div>
                         <h3 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">Legal</h3>
                         <ul>
-                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="/license/">Politique d'utilisation</a></li>
-                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="/privacy-policy/">A propos de nous </a></li>
-                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="/terms-and-conditions/">Termes &amp; conditions</a></li>
-                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="/brand/">Contact</a></li>
+                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="#">Politique d'utilisation</a></li>
+                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="#">A propos de nous </a></li>
+                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="#">Termes &amp; conditions</a></li>
+                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="#">Contact</a></li>
                         </ul>
                     </div>
                 </div>

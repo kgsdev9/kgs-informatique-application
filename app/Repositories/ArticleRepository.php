@@ -20,12 +20,12 @@ public function __construct(Article $article)
 
 
     public function takeArticleLimited() {
-        return $this->article
+        return $this->article->with('articletags')
                     ->take(4)
                     ->inRandomOrder()
                     ->orderByDesc('created_at')
                     ->get();
     }
 
-    
+
 }
