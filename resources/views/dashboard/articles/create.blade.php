@@ -1,6 +1,6 @@
-@extends('dashboard.master')
+@extends('dashboard.layout')
 
-@section('master')
+@section('dashboard')
 <main>
 
     <!-- =======================
@@ -37,7 +37,7 @@
                         <!-- Post name -->
                         <div class="mb-3">
                           <label class="form-label">Catégories</label>
-                        <select name="tag_id[]"  id="select2-multiple" class="select2-multiple form-control" multiple>
+                           <select name="tag_id[]"  id="select2-multiple" class="select2-multiple" multiple>
                             @foreach ($allTags as $tag)
                             <option value="{{$tag->id}}">{{$tag->name}}</option>
                             @endforeach
@@ -55,9 +55,6 @@
                         <textarea class="form-control" name="description" rows="3" placeholder="Description de l'article"></textarea>
                     </div>
                   </div>
-
-
-
 
                     <!-- Create post button -->
                     <div class="col-md-12 text-start">
@@ -78,7 +75,18 @@
 
     </main>
 
+    @push('script')
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script>
+      $(document).ready(function() {
+          $('.select2-multiple').select2({
+              placeholder: "Selectionner plusieurs spécialités",
+              allowClear: true
+          });
 
+      });
+  </script>
+    @endpush
 
 @endsection
 

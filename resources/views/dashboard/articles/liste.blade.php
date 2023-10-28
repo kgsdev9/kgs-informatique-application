@@ -1,6 +1,6 @@
-@extends('dashboard.master')
+@extends('dashboard.layout')
+@section('dashboard')
 
-@section('master')
 @livewire('daqshboard.article')
-@include('dashboard.modals.articles.form')
+
 @endsection

@@ -15,6 +15,8 @@
 <link href="{{asset('ressources/libs/bootstrap-icons/font/bootstrap-icons.css')}}" rel="stylesheet" />
 <link href="{{asset('ressources/libs/@mdi/font/css/materialdesignicons.min.css')}}" rel="stylesheet">
 <link rel="stylesheet" href="{{asset('ressources/libs/simplebar/dist/simplebar.min.css')}}">
+<script src="https://cdn.tiny.cloud/1/ewnwdlukikfd20zuefy426z7slixkeng4g2wsxxikjsyfa5k/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+
 <!-- Theme CSS -->
 
 <link rel="stylesheet" href="{{asset('ressources/css/theme.min.css')}}">
@@ -258,7 +260,14 @@
 <script src="{{asset('ressources/js/theme.min.js')}}"></script>
 <script src="{{asset('ressources/libs/flatpickr/dist/flatpickr.min.js')}}"></script>
 <script src="{{asset('ressources/js/vendors/flatpickr.js')}}"></script>
-
+<script>
+    tinymce.init({
+      selector: 'textarea',
+      plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
+      toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+    });
+  </script>
+  @stack('script')
 </body>
 
 </html>
