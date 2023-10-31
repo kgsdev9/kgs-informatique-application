@@ -9,7 +9,7 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="{{asset('css.css')}}">
-
+        <link href="https://cdn.jsdelivr.net/npm/tom-select/dist/css/tom-select.css" rel="stylesheet" />
 
         <script src="https://cdn.tiny.cloud/1/ewnwdlukikfd20zuefy426z7slixkeng4g2wsxxikjsyfa5k/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
     </head>
@@ -205,5 +205,6 @@
               toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
             });
           </script>
+           @stack('script')
     </body>
 </html>

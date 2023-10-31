@@ -32,9 +32,11 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
+
        $article  = Article::create([
             'title'=> $request->input('title')?? 'le resultat',
             'slug' => \Str::slug($request->input('title')),
+            'mini_description' => $request->input('mini_description'),
             'description'=> $request->input('description'),
             'user_id' => 1
         ]);

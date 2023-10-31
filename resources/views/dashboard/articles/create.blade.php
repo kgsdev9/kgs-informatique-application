@@ -1,92 +1,162 @@
-@extends('dashboard.layout')
+@extends('master.master')
+ @section('content')
 
-@section('dashboard')
-<main>
+ <main class="grow">
+    <main class="pt-6 pb-8 bg-white lg:pb-16 dark:bg-gray-900">
+        <div class="flex justify-between px-4 mx-auto max-w-8xl">
+            <div class="hidden mb-6 xl:block lg:w-80">
+                <div class="sticky top-36">
+                    <aside>
 
-    <!-- =======================
-    Main contain START -->
-    <section class="py-4">
-        <div class="container">
-        <div class="row pb-4">
-                <div class="col-12">
-            <!-- Title -->
-                        <h1 class="mb-0 h2">Créer un article </h1>
+                        <div class="p-6 mb-6 font-medium text-gray-500 bg-white rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
+                            <h4 class="mb-4 font-bold text-gray-900 uppercase dark:text-white">Votre Espace de publication </h4>
+
+                            <aside class="sticky top-16 divide-y divide-skin-base">
+                                <div class="pb-8">
+                                    <h4 class="text-skin-inverted text-base leading-6 font-medium">KGS INFORMIQUE</h4>
+
+                                </div>
+                                <div class="py-8">
+                                    <h4 class="text-skin-inverted text-base leading-6 font-medium">Dashboard</h4>
+                                    <div class="mt-5 space-y-1">
+
+                                    </div>
+                                </div>
+                            </aside>
+
+
+                        </div>
+                        <div class="p-6 mb-6 text-gray-500 bg-white rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
+                            <h4 class="mb-4 font-bold text-gray-900 uppercase dark:text-white">Prendre contact </h4>
+                            <p class="mb-2 text-sm text-gray-500 dark:text-gray-400">
+                                Prendre contact avec nous
+                            </p>
+                            <p class="mb-4 text-sm text-gray-500 dark:text-gray-400">
+                                kgs informatique l'avenir et le futur dans le présent
+                            </p>
+                            <a class="text-white block text-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 w-full" href="#">C'est parti </a>
+                        </div>
+                    </aside>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <!-- Chart START -->
-                    <div class="card border">
-                        <!-- Card body -->
-                        <div class="card-body">
-                <!-- Form START -->
-                <form method="POST" action="{{route('article.store')}}">
-                    @csrf
-                  <!-- Main form -->
-                  <div class="row">
-                    <div class="col-12">
-                      <!-- Post name -->
-                      <div class="mb-3">
-                        <label class="form-label">Titre de l'article </label>
-                        <input required="" id="con-name" name="title" type="text" class="form-control" placeholder="Créer un article">
-                        <small>Votre titre doit pousser la communauté à réagir </small>
-                      </div>
-                    </div>
+            <div class="w-full max-w-2xl mx-auto">
+                <div class="pb-5 border-b border-skin-base">
+                    <h1 class="text-3xl leading-8 font-extrabold text-skin-inverted font-heading">Nouvelle publication</h1>
 
-                    <div class="col-12">
-                        <!-- Post name -->
-                        <div class="mb-3">
-                          <label class="form-label">Catégories</label>
-                           <select name="tag_id[]"  id="select2-multiple" class="select2-multiple" multiple>
-                            @foreach ($allTags as $tag)
-                            <option value="{{$tag->id}}">{{$tag->name}}</option>
-                            @endforeach
-
-                        </select>
-
-                        </div>
-                      </div>
-
-
-                  <!-- Short description -->
-                  <div class="col-12">
-                    <div class="mb-3">
-                        <label class="form-label">Short description </label>
-                        <textarea class="form-control" name="description" rows="3" placeholder="Description de l'article"></textarea>
-                    </div>
-                  </div>
-
-                    <!-- Create post button -->
-                    <div class="col-md-12 text-start">
-                      <button class="btn btn-primary w-100" type="submit">Publier l'article </button>
-                    </div>
-                  </div>
-                </form>
-                <!-- Form END -->
-                        </div>
-                    </div>
-                    <!-- Chart END -->
                 </div>
-        </div>
-        </div>
-    </section>
-    <!-- =======================
-    Main contain END -->
 
+                <div class="divide-y divide-gray-200 dark:divide-gray-700 mt-5">
+                    <form method="post" action="{{route('article.store')}}">
+                        @csrf
+                        <div class="mb-6">
+                        <label for="title" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Titre de  la publication </label>
+                        <input type="text" id="title" name="title" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Comment Créer un crud en python" required>
+                        </div>
+
+                        <div class="mb-6">
+                            <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Expliquer un peu l'objectif de votre publication </label>
+                               <input type="text" name="mini_description" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            </div>
+                            <div class="mb-6">
+                                <div class="w-1/3">
+
+                                    <label for="tag" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Les tags de l'article </label>
+                                    <div class="relative flex w-full">
+
+                                      <select
+                                        id="select-role"
+                                        name="tag_id[]"
+                                        multiple
+                                        placeholder="Select des tags..."
+                                        autocomplete="off"
+                                        class="block w-full rounded-sm cursor-pointer focus:outline-none"
+                                        multiple
+                                      >
+                                      @foreach ($allTags as $tag)
+                                      <option value="{{$tag->id}}">{{$tag->name}}</option>
+                                  @endforeach
+
+                                      </select>
+                                    </div>
+                                  </div>
+
+                            </div>
+                        <div class="mb-6">
+                        <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Expliquer , commenter et documenter votre publication  </label>
+                            <textarea name="description" class="form-control" id="" cols="30" rows="10"></textarea>
+
+                        </div>
+
+                        <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Enregistrer et publier l'article </button>
+                    </form>
+
+                </div>
+
+
+                <div class="flex items-center justify-center mt-6">
+
+
+                <nav aria-label="Page navigation example">
+                    <ul class="inline-flex -space-x-px text-sm">
+
+                    </ul>
+                </nav>
+
+
+                </div>
+
+            </div>
+            <aside class="hidden lg:block lg:w-80" aria-labelledby="sidebar-label">
+                <div class="sticky top-36">
+                    <h3 id="sidebar-label" class="sr-only">Sidebar</h3>
+                    <div class="lg:ml-auto">
+
+                    </div>
+                    <div class="p-6 pb-4 mt-6 mb-6 font-medium text-gray-500 bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
+                        <h4 class="mb-4 font-bold text-gray-900 uppercase dark:text-white">Categorie </h4>
+                        <div class="flex flex-wrap">
+                            <a class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 hover:bg-blue-200 dark:hover:bg-blue-300 dark:text-blue-800 mb-2" href="#">#Alpine.js</a>
+                            <a class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 hover:bg-blue-200 dark:hover:bg-blue-300 dark:text-blue-800 mb-2" href="#">#Angular</a>
+                            <a class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 hover:bg-blue-200 dark:hover:bg-blue-300 dark:text-blue-800 mb-2" href="#">#Flowbite</a>
+                            <a class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 hover:bg-blue-200 dark:hover:bg-blue-300 dark:text-blue-800 mb-2" href="#">#Laravel</a>
+                            <a class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 hover:bg-blue-200 dark:hover:bg-blue-300 dark:text-blue-800 mb-2" href="#">#Next.js</a>
+                            <a class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 hover:bg-blue-200 dark:hover:bg-blue-300 dark:text-blue-800 mb-2" href="#">#Tailwind CSS</a>
+                        </div>
+                    </div>
+                    <div class="p-6 mb-6 font-medium text-gray-500 bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
+                        <h4 class="mb-4 font-bold text-gray-900 uppercase dark:text-white">Disuction populaire</h4>
+                        <ul class="space-y-4 text-gray-500 dark:text-gray-400">
+                            <li>
+                                <a class="flex items-start" href="#">
+                                    <div class="mr-3 shrink-0">
+                                        <img class="w-6 h-6 mt-1 rounded-full" src="http://localhost:8000/logo-j2code_povnzd.png" alt="#">
+                                    </div>
+                                    <div class="mr-3">
+                                        <span class="block font-medium text-gray-900 dark:text-white">KGS Informatique</span>
+                                        <span class="text-sm">Fondateur de la plateforme kgs informatique .</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </div>
     </main>
+</main>
 
-    @push('script')
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+
+@push('script')
+ <script src="https://cdn.jsdelivr.net/npm/tom-select/dist/js/tom-select.complete.min.js"></script>
     <script>
-      $(document).ready(function() {
-          $('.select2-multiple').select2({
-              placeholder: "Selectionner plusieurs spécialités",
-              allowClear: true
-          });
-
+      new TomSelect('#select-role', {
+        maxItems: 3,
       });
-  </script>
-    @endpush
+    </script>
+
+@endpush
 
 @endsection
 
