@@ -77,8 +77,8 @@
                             </p>
                             <div class="flex items-center justify-between">
                                 <a class="flex items-center space-x-2" href="{{route('article.show', $value->id)}}">
-                                    <img class="rounded-full w-7 h-7" src="{{asset('kgs.jpg')}}" alt="Zoltán Szőgyényi profile picture">
-                                    <span class="font-medium dark:text-white">KGS INFORMATIQUE</span>
+                                  
+                                    <span class="font-medium dark:text-white">Posté par {{$value->owner->name}}</span>
                                 </a>
                                 <a class="inline-flex items-center font-medium text-blue-600 hover:underline dark:text-blue-500" href="{{route('article.show', $value->id)}}">
                                     Lire la suite

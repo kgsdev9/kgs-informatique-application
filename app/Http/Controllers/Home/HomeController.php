@@ -58,7 +58,7 @@ class HomeController extends Controller
 
 
     public function articleTag($id) {
-       $ressource =  Article::where('id', '=',$id)->get();
+       $ressource =  Article::where('slug', '=',$id)->get();
        dd($ressource);
     }
 

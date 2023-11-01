@@ -6,16 +6,23 @@ use App\Http\Controllers\Controller;
 use App\Models\Article;
 use App\Models\Tag;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ArticleController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth')->except('show');
+    }
+
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
         return view('dashboard.articles.liste', [
-            'allArticleForUser'=> Article::where('user_id','=', 1)->get()
+            'allArticleForUser'=> Article::where('user_id','=', Auth::user()->id)->get()
         ]);
     }
 
@@ -42,7 +49,7 @@ class ArticleController extends Controller
             'slug' => \Str::slug($request->input('title')),
             'mini_description' => $request->input('mini_description'),
             'description'=> $request->input('description'),
-            'user_id' => 1
+            'user_id' => Auth::user()->id
         ]);
 
         $article->articletags()->sync($request->tag_id);
@@ -54,7 +61,7 @@ class ArticleController extends Controller
      * Display the specified resource.
      */
     public function show(string $id)
-    {   $ressource=  Article::find($id);
+    {   $ressource=  Article::find($id);    
         $url = url()->current();
         $allTags = Tag::take(5)->inRandomOrder()->get();
         return view('dashboard.articles.show', compact('ressource', 'url', 'allTags'));
@@ -89,7 +96,7 @@ class ArticleController extends Controller
      */
     public function destroy(string $id)
     {
-     
+
         $article = Article::find($id);
         $article->articletags()->detach();
         $article->delete();

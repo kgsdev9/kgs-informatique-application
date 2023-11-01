@@ -26,9 +26,6 @@ Route::resources([
 
 Route::get('/', [HomeController::class ,'index'])->name('home');
 
-
-// Route::get('/articles', [HomeController::class, 'articles'])->name('articles');
-
 Route::get('/home', function () {
     return view('home');
 })->middleware('guest');

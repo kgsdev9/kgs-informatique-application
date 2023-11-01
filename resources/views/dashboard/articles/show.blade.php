@@ -18,9 +18,9 @@
                                 </p>
                             </div>
                             <div class="p-6 mb-6 text-gray-500 border border-gray-200 rounded-lg dark:border-gray-700 dark:text-gray-400">
-                                <a href="/blog/author/zoltan" class="flex items-center mb-4">
+                                <a href="#" class="flex items-center mb-4">
                                     <div class="mr-3 shrink-0">
-                                        <img class="w-8 h-8 mt-1 rounded-full" src="https://www.gravatar.com/avatar/be85a3bc61ad70c85c9b3411dc07cb2d?s=250&amp;r=x&amp;d=mp" alt="Zoltán Szőgyényi profile picture">
+                                        <img class="w-8 h-8 mt-1 rounded-full" src="{{asset('kgs.jpg')}}" alt="KGS">
                                     </div>
                                     <div class="mr-3">
                                         <span class="block font-medium text-gray-900 dark:text-white">Guy Stephane Kahouo </span>
@@ -41,6 +41,21 @@
                                            Abidjan, Cote d'ivoire
                                         </dd>
                                     </div>
+
+                                    <div class="mb-4">
+                                        <dt class="mb-2 text-sm font-bold text-gray-900 uppercase dark:text-white">
+                                            Contact
+                                        </dt>
+                                        <dd class="inline-flex items-center text-sm text-gray-500 dark:text-gray-400">
+                                            <svg aria-hidden="true" class="w-3 h-3 mr-2 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                                            </svg>
+                                          Telephone :  +225 07 68 36 58 66 <br>
+                                           Email: kahouoguystephane@gmail.com
+                                        </dd>
+                                    </div>
+
+
                                     <div class="mb-4">
                                         <dt class="mb-2 text-sm font-bold text-gray-900 uppercase dark:text-white">
                                            Suivre sur  Twitter
@@ -76,14 +91,14 @@
                                 <p class="mb-4 text-sm text-gray-500 dark:text-gray-400">
                                     Personnellement je suis une personne exigence, donc assurez que vous publier quelque chose de pro
                                 </p>
-                                <a class="text-white block text-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 w-full" href="#">C'est parti </a>
+                                <a class="text-white block text-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 w-full" href="{{route('article.create')}}">C'est parti </a>
                             </div>
                         </aside>
                     </div>
                 </div>
                 <div class="w-full max-w-2xl mx-auto">
                     <h1 class="mb-2 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">{{$ressource->title}}</h1>
-                    <div class="flex flex-wrap mb-4"><a class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 hover:bg-blue-200 dark:hover:bg-blue-300 dark:text-blue-800 mb-2" href="/blog/tag/flowbite/">
+                    <div class="flex flex-wrap mb-4"><a class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 hover:bg-blue-200 dark:hover:bg-blue-300 dark:text-blue-800 mb-2" href="#">
                         @foreach ($ressource->articletags as  $tag)
                             #{{$tag->name}}
                         @endforeach
@@ -120,7 +135,7 @@
                     <div class="sticky top-36">
                         <h3 id="sidebar-label" class="sr-only">Sidebar</h3>
                         <div class="lg:ml-auto">
-                            <script id="_carbonads_js" src="//cdn.carbonads.com/carbon.js?serve=CK7D4KQE&amp;placement=flowbitedesign"></script>
+                          
                         </div>
                         <div class="p-6 pb-4 mt-6 mb-6 font-medium text-gray-500 bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
                             <h4 class="mb-4 font-bold text-gray-900 uppercase dark:text-white">Catégories Récommandés </h4>
