@@ -16,7 +16,7 @@
 
 		<p class="mb-10 text-lg font-normal text-gray-500 dark:text-gray-400 lg:text-center lg:text-xl xl:px-60 mt-2">
             La plus grande communauté d'informaticien et  développeur de cote d'ivoire,
-            fondé par Guy stephane Kahouo, Développeur D'application Backend Senior
+            fondé par Guy stephane Kahouo,  Informaticien Développeur D'application
 
 		</p>
 		<div class="flex flex-col mb-8 md:flex-row lg:justify-center">
