@@ -14,7 +14,9 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        return view('dashboard.articles.liste');
+        return view('dashboard.articles.liste', [
+            'allArticleForUser'=> Article::where('user_id','=', 1)->get()
+        ]);
     }
 
     /**
@@ -26,6 +28,8 @@ class ArticleController extends Controller
             'allTags'=> Tag::all()
         ]);
     }
+
+
 
     /**
      * Store a newly created resource in storage.
@@ -60,8 +64,9 @@ class ArticleController extends Controller
      * Show the form for editing the specified resource.
      */
     public function edit(string $id)
-    {
-        //
+    {   $ressource = Article::find($id);
+        $allTags = Tag::all();
+        return view('dashboard.articles.edit', compact('ressource', 'allTags'));
     }
 
     /**
@@ -69,7 +74,14 @@ class ArticleController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        
+        $ressource = Article::find($id);
+        $ressource->title = $request->input('title');
+        $ressource->mini_description = $request->input('mini_description');
+        $ressource->description = $request->input('description');
+        $ressource->articletags()->sync($request->tag_id);
+        $ressource->update();
+        return redirect()->route('article.index', ['edited' => true]);
     }
 
     /**

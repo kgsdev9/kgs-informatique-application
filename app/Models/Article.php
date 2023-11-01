@@ -15,6 +15,7 @@ class Article extends Model
         'description',
         'slug',
         'image',
+        'mini_description',
         'user_id',
     ];
 

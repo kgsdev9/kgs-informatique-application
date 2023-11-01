@@ -41,46 +41,60 @@
             </div>
             <div class="w-full max-w-2xl mx-auto">
                 <div class="pb-5 border-b border-skin-base">
-                    <h1 class="text-3xl leading-8 font-extrabold text-skin-inverted font-heading">Liste de vos publications</h1>
+                    <h1 class="text-3xl leading-8 font-extrabold text-skin-inverted font-heading">Edition de la  publication</h1>
 
                 </div>
 
                 <div class="divide-y divide-gray-200 dark:divide-gray-700 mt-5">
+                    <form method="post" action="{{route('article.update', $ressource->id)}}">
+                        @method('PATCH')
+                        @csrf
+                        <div class="mb-6">
+                        <label for="title" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Titre de  la publication </label>
+                        <input type="text" id="title" name="title" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Comment Créer un crud en python" value="{{ $ressource->title}}" required>
+                        </div>
 
-                    @foreach ($allArticleForUser as $article)
+                        <div class="mb-6">
+                            <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Expliquer un peu l'objectif de votre publication </label>
+                               <input type="text" name="mini_description" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" value="{{ $ressource->mini_description}}">
+                            </div>
+                            <div class="mb-6">
+                                <div class="w-1/3">
 
+                                    <label for="tag" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Les tags de l'article </label>
+                                    <div class="relative flex w-full">
 
-                    <article class="flex max-w-xl flex-col items-start justify-between">
-                        <div class="flex items-center gap-x-4 text-xs">
-                          <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
-                          <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
+                                      <select
+                                        id="select-role"
+                                        name="tag_id[]"
+                                        multiple
+                                        placeholder="Select des tags..."
+                                        autocomplete="off"
+                                        class="block w-full rounded-sm cursor-pointer focus:outline-none"
+                                        multiple
+                                        >
+                                        @foreach ($allTags as $tag)
+                                        <option value="{{ $tag->id }}" @selected($ressource->articletags->contains($tag->id))
+                                            @class([
+                                            'bg-purple-600 text-white' => $ressource->articletags->contains($tag->id)
+                                            ])>
+                                            {{ $tag->name }}
+                                        </option>
+                                        @endforeach
+
+                                      </select>
+                                    </div>
+                                  </div>
+
+                            </div>
+                        <div class="mb-6">
+                        <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Expliquer , commenter et documenter votre publication  </label>
+                            <textarea name="description" class="form-control" id="" cols="30" rows="10">{{ $ressource->description}}</textarea>
+
                         </div>
-                        <div class="group relative">
-                          <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                            <a href="#">
-                              <span class="absolute inset-0"></span>
-                              {{$article->title}}
-                            </a>
-                          </h3>
-                          <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">{{$article->mini_description}}</p>
-                        </div>
-                        <div class="relative mt-8 flex items-center gap-x-4">
-                          <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80" alt="" class="h-10 w-10 rounded-full bg-gray-50">
-                          <div class="text-sm leading-6">
-                            <p class="font-semibold text-gray-900">
-                              <a href="#">
-                                <span class="absolute inset-0"></span>
-                                Michael Foster
-                              </a>
-                            </p>
-                            <p class="text-gray-600">Co-Founder / CTO</p>
-                          </div>
-                        </div>
-                        <div>
-                            <a href="{{route('article.edit' , $article->id)}}">Edition de l'article </a>
-                        </div>
-                      </article>
-                      @endforeach
+
+                        <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Enregistrer et publier l'article </button>
+                    </form>
 
                 </div>
 
@@ -140,22 +154,15 @@
 
 
 
-
-
-
-
-    @push('script')
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+@push('script')
+ <script src="https://cdn.jsdelivr.net/npm/tom-select/dist/js/tom-select.complete.min.js"></script>
     <script>
-      $(document).ready(function() {
-          $('.select2-multiple').select2({
-              placeholder: "Selectionner plusieurs spécialités",
-              allowClear: true
-          });
-
+      new TomSelect('#select-role', {
+        maxItems: 3,
       });
-  </script>
-    @endpush
+    </script>
+
+@endpush
 
 @endsection
 

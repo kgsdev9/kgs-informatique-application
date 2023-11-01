@@ -236,3 +236,10 @@
 
 @endsection
 
+
+@foreach ($attributes as $attribute)
+    <option value="{{ $attribute->id }}"
+        @if($product->attributes->contains('id',$attribute->id)) selected @endif >
+        {{ $attribute->title }}
+    </option>
+@endforeach

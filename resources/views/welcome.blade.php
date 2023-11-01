@@ -92,7 +92,7 @@
 
 
         <p class="mb-10 text-lg font-normal text-gray-500 dark:text-gray-400 lg:text-center lg:text-xl lg:px-64 lg:mb-16">
-            je vous propose un ensemble de technologie et  d'ensemble de bonne pratique  et une approche totalement differente  de ces librairies et framrwork jugées complexe
+          Cette plateforme abordéra dans les plus bréfs détails les téchnologies suivantes:
 
         </p>
         <div class="space-y-4 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-4 xl:gap-8 sm:space-y-0 md:mt-12">
