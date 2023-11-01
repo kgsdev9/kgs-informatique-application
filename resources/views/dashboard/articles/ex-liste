@@ -1,0 +1,161 @@
+@extends('master.master')
+ @section('content')
+
+ <main class="grow">
+    <main class="pt-6 pb-8 bg-white lg:pb-16 dark:bg-gray-900">
+        <div class="flex justify-between px-4 mx-auto max-w-8xl">
+            <div class="hidden mb-6 xl:block lg:w-80">
+                <div class="sticky top-36">
+                    <aside>
+
+                        <div class="p-6 mb-6 font-medium text-gray-500 bg-white rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
+                            <h4 class="mb-4 font-bold text-gray-900 uppercase dark:text-white">Votre Espace de publication </h4>
+
+                            <aside class="sticky top-16 divide-y divide-skin-base">
+                                <div class="pb-8">
+                                    <h4 class="text-skin-inverted text-base leading-6 font-medium">KGS INFORMIQUE</h4>
+
+                                </div>
+                                <div class="py-8">
+                                    <h4 class="text-skin-inverted text-base leading-6 font-medium">Dashboard</h4>
+                                    <div class="mt-5 space-y-1">
+
+                                    </div>
+                                </div>
+                            </aside>
+
+
+                        </div>
+                        <div class="p-6 mb-6 text-gray-500 bg-white rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
+                            <h4 class="mb-4 font-bold text-gray-900 uppercase dark:text-white">Prendre contact </h4>
+                            <p class="mb-2 text-sm text-gray-500 dark:text-gray-400">
+                                Prendre contact avec nous
+                            </p>
+                            <p class="mb-4 text-sm text-gray-500 dark:text-gray-400">
+                                kgs informatique l'avenir et le futur dans le présent
+                            </p>
+                            <a class="text-white block text-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 w-full" href="#">C'est parti </a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+            <div class="w-full max-w-2xl mx-auto">
+                <div class="pb-5 border-b border-skin-base">
+                    <h1 class="text-3xl leading-8 font-extrabold text-skin-inverted font-heading">Liste de vos publications</h1>
+
+                </div>
+
+                <div class="divide-y divide-gray-200 dark:divide-gray-700 mt-5">
+
+                    @foreach ($allArticleForUser as $article)
+
+
+                    <article class="flex max-w-xl flex-col items-start justify-between">
+                        <div class="flex items-center gap-x-4 text-xs">
+                          <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
+                          <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
+                        </div>
+                        <div class="group relative">
+                          <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                            <a href="#">
+                              <span class="absolute inset-0"></span>
+                              {{$article->title}}
+                            </a>
+                          </h3>
+                          <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">{{$article->mini_description}}</p>
+                        </div>
+                        <div class="relative mt-8 flex items-center gap-x-4">
+                          <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80" alt="" class="h-10 w-10 rounded-full bg-gray-50">
+                          <div class="text-sm leading-6">
+                            <p class="font-semibold text-gray-900">
+                              <a href="#">
+                                <span class="absolute inset-0"></span>
+                                Michael Foster
+                              </a>
+                            </p>
+                            <p class="text-gray-600">Co-Founder / CTO</p>
+                          </div>
+                        </div>
+                        <div>
+                            <a href="{{route('article.edit' , $article->id)}}">Edition de l'article </a>
+                        </div>
+                      </article>
+                      @endforeach
+
+                </div>
+
+
+                <div class="flex items-center justify-center mt-6">
+
+
+                <nav aria-label="Page navigation example">
+                    <ul class="inline-flex -space-x-px text-sm">
+
+                    </ul>
+                </nav>
+
+
+                </div>
+
+            </div>
+            <aside class="hidden lg:block lg:w-80" aria-labelledby="sidebar-label">
+                <div class="sticky top-36">
+                    <h3 id="sidebar-label" class="sr-only">Sidebar</h3>
+                    <div class="lg:ml-auto">
+
+                    </div>
+                    <div class="p-6 pb-4 mt-6 mb-6 font-medium text-gray-500 bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
+                        <h4 class="mb-4 font-bold text-gray-900 uppercase dark:text-white">Categorie </h4>
+                        <div class="flex flex-wrap">
+                            <a class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 hover:bg-blue-200 dark:hover:bg-blue-300 dark:text-blue-800 mb-2" href="#">#Alpine.js</a>
+                            <a class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 hover:bg-blue-200 dark:hover:bg-blue-300 dark:text-blue-800 mb-2" href="#">#Angular</a>
+                            <a class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 hover:bg-blue-200 dark:hover:bg-blue-300 dark:text-blue-800 mb-2" href="#">#Flowbite</a>
+                            <a class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 hover:bg-blue-200 dark:hover:bg-blue-300 dark:text-blue-800 mb-2" href="#">#Laravel</a>
+                            <a class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 hover:bg-blue-200 dark:hover:bg-blue-300 dark:text-blue-800 mb-2" href="#">#Next.js</a>
+                            <a class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 hover:bg-blue-200 dark:hover:bg-blue-300 dark:text-blue-800 mb-2" href="#">#Tailwind CSS</a>
+                        </div>
+                    </div>
+                    <div class="p-6 mb-6 font-medium text-gray-500 bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
+                        <h4 class="mb-4 font-bold text-gray-900 uppercase dark:text-white">Disuction populaire</h4>
+                        <ul class="space-y-4 text-gray-500 dark:text-gray-400">
+                            <li>
+                                <a class="flex items-start" href="#">
+                                    <div class="mr-3 shrink-0">
+                                        <img class="w-6 h-6 mt-1 rounded-full" src="http://localhost:8000/logo-j2code_povnzd.png" alt="#">
+                                    </div>
+                                    <div class="mr-3">
+                                        <span class="block font-medium text-gray-900 dark:text-white">KGS Informatique</span>
+                                        <span class="text-sm">Fondateur de la plateforme kgs informatique .</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+</main>
+
+
+
+
+
+
+
+    @push('script')
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script>
+      $(document).ready(function() {
+          $('.select2-multiple').select2({
+              placeholder: "Selectionner plusieurs spécialités",
+              allowClear: true
+          });
+
+      });
+  </script>
+    @endpush
+
+@endsection
+

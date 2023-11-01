@@ -11,8 +11,6 @@
                         <aside>
                             <div class="p-6 mb-6 font-medium text-gray-500 bg-white rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
                                 <h1 class="mb-2 font-bold text-gray-900 uppercase dark:text-white">KGS INFORMATIQUE
-
-
                                 </h1>
                                 <p class="text-sm text-gray-500 dark:text-gray-400">
 

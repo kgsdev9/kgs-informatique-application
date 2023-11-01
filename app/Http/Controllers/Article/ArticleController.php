@@ -74,7 +74,7 @@ class ArticleController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        
+
         $ressource = Article::find($id);
         $ressource->title = $request->input('title');
         $ressource->mini_description = $request->input('mini_description');
@@ -89,6 +89,10 @@ class ArticleController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+     
+        $article = Article::find($id);
+        $article->articletags()->detach();
+        $article->delete();
+        return redirect()->route('article.index', ['deleted'=> true]);
     }
 }

@@ -42,7 +42,7 @@ Route::get('/auth/{provider}/callback', [ProviderController::class, 'callback'])
 
 
 
-Route::get('/ssssss', function() {
+Route::get('/dashboard', function() {
     return view('dashboard.index');
 });
 
