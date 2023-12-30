@@ -59,3 +59,7 @@ Route::get('/articles', [HomeController::class ,'article'])->name('articles.inde
 Route::get('/forums', [HomeController::class, 'topic'])->name('topic.index');
 
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

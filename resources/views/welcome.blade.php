@@ -3,100 +3,27 @@
 @section('content')
 <main>
     <!-- Page Content -->
-    <section class="py-8 position-relative bg-cover" style="background-image: url(../../assets/images/background/gradient-bg.png)">
-        <!-- Image -->
-        <div class="container">
-            <div class="row align-items-center mb-6">
-                <div class="col-12 col-lg-7 order-md-2">
-                    <div class="mb-2 mb-md-0">
-                        <img src="../../assets/images/background/graphics.svg" alt="graphics" class="img-fluid mw-md-130">
-                    </div>
-                </div>
-                <div class="col-12 col-lg-5 order-md-1">
-                    <!-- Heading -->
-                    <h1 class="display-2 mb-5 fw-bold">Une Communauté une vision nouvelle</h1>
-                    <!-- list -->
-                    <ul class="list-unstyled fs-3 text-dark mb-6 fw-medium">
-                        <li class="mb-1 d-flex">
-                            <span class="me-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success mb-1" viewBox="0 0 16 16">
-                                    <path
-                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z">
-                                </svg>
-                            </span>
-                            <span>Le sens du partage, l'innovation</span>
-                        </li>
-                        <li class="mb-1 d-flex">
-                            <span class="me-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success mb-1" viewBox="0 0 16 16">
-                                    <path
-                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z">
-                                </svg>
-                            </span>
-                            <span>Répondre aux problematique complexe</span>
-                        </li>
-                        <li class="mb-1 d-flex">
-                            <span class="me-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success mb-1" viewBox="0 0 16 16">
-                                    <path
-                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z">
-                                </svg>
-                            </span>
-                            <span>Aider les developpeurs dans leurs prgoressions</span>
-                        </li>
-                    </ul>
-                    <!-- Buttons -->
-                    <div class="mb-8 mb-lg-0">
-                        <a href="#" class="btn btn-success me-3 mb-2 mb-lg-0">Nos Réalisations</a>
 
-                        <a href="#" class="text-nowrap btn-link">Consulter nos articles</a>
-                    </div>
-                </div>
-            </div>
+    <section class="py-8 bg-auto bg-light hero-graphics">
+        <div class="container my-lg-8">
             <!-- Hero Section -->
-            <!-- row -->
-            <div class="row mt-8">
-                <div class="offset-xl-1 col-xl-10 col-md-12 col-12">
-                    <!-- Heading -->
-                    <div class="text-center mb-6 px-md-8 fw-semibold">
-                        <span class="ls-md">NOUS COMMUNAUTÉ PARTENAIRE DE KGS INFORMATIQUE </span>
-                    </div>
-                    <!-- row -->
-                    <div class="row text-center">
-                        <!-- col -->
-                        <div class="col">
-                            <div class="mb-4 mb-lg-0">
-                                <img src="../../assets/images/brand/gray-logo-airbnb.svg" alt="logo">
-                            </div>
-                        </div>
-                        <!-- col -->
-                        <div class="col">
-                            <div class="mb-4 mb-lg-0">
-                                <img src="../../assets/images/brand/gray-logo-discord.svg" alt="logo">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="mb-4 mb-lg-0">
-                                <img src="../../assets/images/brand/gray-logo-intercom.svg" alt="logo">
-                            </div>
-                        </div>
-                        <!-- col -->
-                        <div class="col">
-                            <div class="mb-4 mb-lg-0">
-                                <img src="../../assets/images/brand/gray-logo-stripe.svg" alt="logo">
-                            </div>
-                        </div>
-                        <!-- col -->
-                        <div class="col">
-                            <div class="mb-4 mb-lg-0">
-                                <img src="../../assets/images/brand/gray-logo-netflix.svg" alt="logo">
-                            </div>
-                        </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-9 col-md-12">
+                    <div class="text-center">
+                        <h1 class="display-2 fw-bold mb-3 text-primary">
+                            <span class="text-dark px-3 px-md-0">Bienvenue sur kgs informatique</span>
+
+                        </h1>
+                        <p class="mb-6 h2 text-dark">Une communauté nouvelle et riche en connaissance téchnique </p>
+                        <a href="../pricing.html" class="btn btn-dark me-2">Nos Applications</a>
+                        <a href="../sign-up.html" class="btn btn-outline-warning">Articles</a>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- Client logo -->
 
     <section class="bg-white py-8">
@@ -111,7 +38,7 @@
                         <div class="col-md-12 px-lg-8 mb-8 mt-6">
                             <!-- text -->
 
-                            <span class="text-uppercase text-primary fw-semibold ls-md">Explorer nos catégories</span>
+                            <span class="text-uppercase text-dark fw-semibold ls-md">Explorer nos catégories</span>
                             <!-- heading -->
 
                             <h2 class="h1 fw-bold mt-3"></h2>
@@ -138,13 +65,10 @@
                                                 </h4>
                                                 <p class="mb-0 fs-6">
                                                     <span class="me-2">
-                                                        <span class="text-dark fw-medium">12</span>
-                                                        Courses
+                                                        <span class="text-dark fw-medium">{{count($category->articletags)}}</span>
+                                                       Articles
                                                     </span>
-                                                    <span>
-                                                        <span class="text-dark fw-medium">34</span>
-                                                        Hours
-                                                    </span>
+
                                                 </p>
                                             </div>
                                         </div>
@@ -170,7 +94,7 @@
                     <p class="lead px-lg-8 mb-6">aux forums, réagir avec notre communauté .</p>
                     <!-- button -->
                     <div class="d-grid d-md-block">
-                        <a href="../sign-up.html" class="btn btn-primary mb-2 mb-md-0">Consulter le forum</a>
+                        <a href="../sign-up.html" class="btn btn-outline-primary mb-2 mb-md-0">Consulter le forum</a>
                         <a href="../sign-up.html" class="btn btn-info">Articles</a>
                     </div>
                 </div>
@@ -231,7 +155,7 @@
                 <!-- Button -->
                 <div class="col-xl-12 col-lg-12 col-md-12 col-12 text-center mt-6">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-12 text-center mt-4">
-                        <a href="#" class="btn btn-primary">
+                        <a href="#" class="btn btn-outline-secondary">
                             Charger plus
                         </a>
                     </div>

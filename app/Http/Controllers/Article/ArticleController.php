@@ -61,7 +61,7 @@ class ArticleController extends Controller
      * Display the specified resource.
      */
     public function show(string $id)
-    {   $ressource=  Article::find($id);    
+    {   $ressource=  Article::find($id);
         $url = url()->current();
         $allTags = Tag::take(5)->inRandomOrder()->get();
         return view('dashboard.articles.show', compact('ressource', 'url', 'allTags'));

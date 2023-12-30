@@ -21,7 +21,7 @@
 <link rel="stylesheet" href="{{asset('assets/libs/bootstrap-icons/font/bootstrap-icons.min.css')}}">
 <link rel="stylesheet" href="{{asset('assets/libs/simplebar/dist/simplebar.min.css')}}">
 <!-- Theme CSS -->
-
+<script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="{{asset('assets/css/theme.min.css')}}">
 <link rel="canonical" href="kgsinformatique.tech">
 <title>Bienvenue sur kgs informatique</title>
@@ -68,7 +68,7 @@
                             </ul>
                         </div>
 
-                        <a href="#" class="btn btn-outline-warning ms-2 d-none d-lg-block">Mon Compte</a>
+                        <a href="#" class="btn btn-outline-secondary ms-2 d-none d-lg-block">Mon Compte</a>
                         <!-- Button -->
                         <button class="navbar-toggler collapsed ms-2 ms-lg-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="icon-bar top-bar mt-0"></span>
@@ -81,26 +81,26 @@
                 <!-- Collapse -->
                 <div class="collapse navbar-collapse" id="navbar-default">
                     <ul class="navbar-nav mx-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarLanding" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Accueil</a>
+                        <li class="nav-item">
+                            <a class="nav-link " href="/" hx-boost="true" id="navbarLanding" >Accueil</a>
 
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#">Articles</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/articles" hx-boost="true">Articles</a>
 
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Réalisations</a>
-
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Forum</a>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">Réalisations</a>
 
                         </li>
 
-                        <li class="nav-item dropdown dropdown-fullwidth">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Algorithme</a>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#" >Forum</a>
+
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" >Algorithme</a>
 
                         </li>
 
