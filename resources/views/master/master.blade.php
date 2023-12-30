@@ -2,13 +2,13 @@
 <!doctype html>
 <html lang="en" style="overflow-x: hidden">
     <head>
-        <link rel="stylesheet" href="../../assets/libs/odometer/themes/odometer-theme-default.css">
+        <link rel="stylesheet" href="assets/libs/odometer/themes/odometer-theme-default.css">
         <!-- Required meta tags -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="description" content="" />
 <meta name="keywords" content="" />
-<meta name="author" content="Codescandy" />
+<meta name="author" content="kgsinformatique" />
 
 <!-- Favicon icon-->
 <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon/favicon.ico" />
@@ -21,10 +21,11 @@
 <link rel="stylesheet" href="{{asset('assets/libs/bootstrap-icons/font/bootstrap-icons.min.css')}}">
 <link rel="stylesheet" href="{{asset('assets/libs/simplebar/dist/simplebar.min.css')}}">
 <!-- Theme CSS -->
+<link href="https://cdn.jsdelivr.net/npm/tom-select/dist/css/tom-select.css" rel="stylesheet" />
 <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="{{asset('assets/css/theme.min.css')}}">
 <link rel="canonical" href="kgsinformatique.tech">
-<title>Bienvenue sur kgs informatique</title>
+<title>Bienvenue sur Kgs Informatique</title>
 @livewireStyles
 </head>
 
@@ -67,8 +68,12 @@
                                 </li>
                             </ul>
                         </div>
+                        @guest
+                        <a href="{{route('login')}}" class="btn btn-outline-secondary ms-2 d-none d-lg-block">Mon Compte</a>
+                            @else
+                            <a href="/dashboard" hx-boost="true" class="btn btn-outline-secondary ms-2 d-none d-lg-block">Dashboard</a>
+                        @endguest
 
-                        <a href="#" class="btn btn-outline-secondary ms-2 d-none d-lg-block">Mon Compte</a>
                         <!-- Button -->
                         <button class="navbar-toggler collapsed ms-2 ms-lg-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="icon-bar top-bar mt-0"></span>
@@ -121,7 +126,7 @@
                 <div class="mb-4">
                         KGS INFORMATIQUE
                     <div class="mt-4">
-                        <p>Kgs informatique est une plateforme de partage de connaisssance et de contenus .</p>
+                        <p>KGS Informatique est une plateforme de partage de connaisssance et de contenus .</p>
                         <!-- social media -->
                         <div class="fs-4 mt-4">
                             <!--Facebook-->

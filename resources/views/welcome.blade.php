@@ -11,7 +11,7 @@
                 <div class="col-xl-7 col-lg-9 col-md-12">
                     <div class="text-center">
                         <h1 class="display-2 fw-bold mb-3 text-primary">
-                            <span class="text-dark px-3 px-md-0">Bienvenue sur kgs informatique</span>
+                            <span class="text-dark px-3 px-md-0">Bienvenue sur KGS Informatique</span>
 
                         </h1>
                         <p class="mb-6 h2 text-dark">Une communauté nouvelle et riche en connaissance téchnique </p>
