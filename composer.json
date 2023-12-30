@@ -12,10 +12,12 @@
         "laravel/socialite": "^5.9",
         "laravel/tinker": "^2.8",
         "laravel/ui": "^4.3",
+        "league/commonmark": "^2.4",
         "livewire/livewire": "^3.0",
         "mckenziearts/laravel-notify": "^2.4",
         "pharaonic/livewire-select2": "^1.2",
         "sinnbeck/markdom": "^2.0",
+        "spatie/yaml-front-matter": "^2.0",
         "tinymce/tinymce": "^6.7"
     },
     "require-dev": {

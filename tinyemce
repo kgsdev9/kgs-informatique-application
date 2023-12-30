@@ -1,0 +1,44 @@
+$ composer create-project laravel/laravel my-example-app
+$ cd my-example-app
+
+File: resources/views/components/head/tinymce-config.blade.php
+```
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+<script>
+   tinymce.init({
+     selector: 'textarea#myeditorinstance', // Replace this CSS selector to match the placeholder element for TinyMCE
+     plugins: 'powerpaste advcode table lists checklist',
+     toolbar: 'undo redo | blocks| bold italic | bullist numlist checklist | code | table'
+   });
+</script>
+```
+
+File: resources/views/components/forms/tinymce-editor.blade.php
+```
+<form method="post">
+   <textarea id="myeditorinstance">Hello, World!</textarea>
+</form>
+```
+
+File: resources/views/welcome.blade.php
+```
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TinyMCE in Laravel</title>
+    <!-- Insert the blade containing the TinyMCE configuration and source script -->
+    <x-head.tinymce-config/>
+</head>
+<body>
+    <h1>TinyMCE in Laravel</h1>
+    <!-- Insert the blade containing the TinyMCE placeholder HTML element -->
+    <x-forms.tinymce-editor/>
+</body>
+</html>
+```
+
+$ php artisan make:component Head/tinymceConfig
+$ php artisan make:component Forms/tinymceEditor
+$ php artisan serve

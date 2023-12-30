@@ -57,7 +57,7 @@
                                         <div class="d-flex">
                                             <a href="course-path-single.html">
                                                 <!-- Img -->
-                                                <img src="../assets/images/path/path-bootstrap.svg" alt="bootstrap" class="avatar-md">
+                                                <img src="{{Storage::url($category->image)}}" alt="bootstrap" class="avatar-md">
                                             </a>
                                             <div class="ms-3">
                                                 <h4 class="mb-1">

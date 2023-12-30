@@ -9,8 +9,6 @@
 <meta name="description" content="" />
 <meta name="keywords" content="" />
 <meta name="author" content="kgsinformatique" />
-
-<!-- Favicon icon-->
 <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon/favicon.ico" />
 
 <!-- darkmode js -->
@@ -24,12 +22,14 @@
 <link href="https://cdn.jsdelivr.net/npm/tom-select/dist/css/tom-select.css" rel="stylesheet" />
 <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="{{asset('assets/css/theme.min.css')}}">
+<script src="https://cdn.tiny.cloud/1/ewnwdlukikfd20zuefy426z7slixkeng4g2wsxxikjsyfa5k/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
 <link rel="canonical" href="kgsinformatique.tech">
 <title>Bienvenue sur Kgs Informatique</title>
-@livewireStyles
 </head>
 
-    <body class="bg-white overflow-hidden">
+    <body class="bg-white overflow-hidden" style="font-family: 'Inter', sans-serif;">
         <!-- Navbar -->
         <!-- navbar login -->
         <nav class="navbar navbar-expand-lg">
@@ -213,8 +213,16 @@
 <script src="{{asset('assets/libs/simplebar/dist/simplebar.min.js')}}"></script>
 <!-- Theme JS -->
 <script src="{{asset('assets/js/theme.min.js')}}"></script>
-<script src="{{asset('assets/libs/odometer/odometer.min.js')}}"></script>
+<script src="{{asset('post.js')}}"></script>
 
+<script>
+  tinymce.init({
+    selector: '#editor',
+    plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
+    toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+  });
+</script>
+@stack('script')
 @livewireScripts
 </body>
 </html>

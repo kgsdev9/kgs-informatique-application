@@ -1,3 +1,4 @@
-import './bootstrap';
-import { Select, initTE } from "tw-elements";
-initTE({ Select });
+import EditorJS from '@editorjs/editorjs';
+
+
+const editor = new EditorJS();

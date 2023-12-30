@@ -17,7 +17,8 @@
         "vite": "^4.4.9"
     },
     "dependencies": {
-        "@editorjs/editorjs": "^2.28.0",
+        "@editorjs/editorjs": "^2.28.2",
+        "@toast-ui/editor": "^3.2.2",
         "tw-elements": "^1.0.0"
     }
 }

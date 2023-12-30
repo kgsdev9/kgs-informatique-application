@@ -1,118 +1,194 @@
 @extends('master.master')
  @section('content')
 
- <main class="grow">
-    <main class="pt-6 pb-8 bg-white lg:pb-16 dark:bg-gray-900">
-        <div class="flex justify-between px-4 mx-auto max-w-8xl">
-            <div class="hidden mb-6 xl:block lg:w-80">
-                <div class="sticky top-36">
-                    <aside>
-
-                        <div class="p-6 mb-6 font-medium text-gray-500 bg-white rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
-                            <h4 class="mb-4 font-bold text-gray-900 uppercase dark:text-white">Votre Espace de publication </h4>
-
-                            <aside class="sticky top-16 divide-y divide-skin-base">
-                                <div class="py-8">
-                                    <div class="group px-2 py-1.5 flex items-center text-base font-medium text-skin-inverted-muted/80 hover:text-skin-inverted rounded-md font-sans">
-                                        <a  href="" class="group px-2 py-1.5 flex items-center text-base font-medium text-skin-inverted-muted/80 hover:text-skin-inverted rounded-md font-sans">
-                                            <svg class="w-5 h-5" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
-                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="text-blue-600">
-                                                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
-                                            </svg>
-                                                 </svg>
-                                                      <span class="truncate ml-1.5">Dashboard</span>
-                                            </a>
-                                    </div>
-
-                                    <div class="group px-2 py-1.5 flex items-center text-base font-medium text-skin-inverted-muted/80 hover:text-skin-inverted rounded-md font-sans">
-                                        <a  href="{{route('article.index')}}" class="group px-2 py-1.5 flex items-center text-base font-medium text-skin-inverted-muted/80 hover:text-skin-inverted rounded-md font-sans">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="text-pink-500" style="height:30px">
-                                                <path fill-rule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clip-rule="evenodd"></path>
-                                                <path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z"></path>
-                                            </svg>
-                                         <span class="truncate ml-1.5">Mes Articles </span>
-                                            </a>
-                                    </div>
+ <main>
+    <section class="pt-5 pb-5">
+        <div class="container">
+            <!-- User info -->
+            <div class="row align-items-center">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+                    <!-- Bg -->
+                    <div class="rounded-top" style="background: url(../assets/images/background/profile-bg.jpg) no-repeat; background-size: cover; height: 100px"></div>
+                    <div class="card px-4 pt-2 pb-4 shadow-sm rounded-top-0 rounded-bottom-0 rounded-bottom-md-2">
+                        <div class="d-flex align-items-end justify-content-between">
+                            <div class="d-flex align-items-center">
+                                <div class="me-2 position-relative d-flex justify-content-end align-items-end mt-n5">
+                                    <img src="../assets/images/avatar/avatar-1.jpg" class="avatar-xl rounded-circle border border-4 border-white position-relative" alt="avatar">
+                                    <a href="#" class="position-absolute top-0 end-0" data-bs-toggle="tooltip" data-placement="top" aria-label="Verified" data-bs-original-title="Verified">
+                                        <img src="../assets/images/svg/checked-mark.svg" alt="checked" height="30" width="30">
+                                    </a>
                                 </div>
-                            </aside>
+                                <div class="lh-1">
+                                    <h2 class="mb-0">{{Auth::user()->name}}</h2>
 
-
+                                </div>
+                            </div>
+                            <div>
+                                <a href="add-course.html" class="btn btn-primary d-none d-md-block">Create New Course</a>
+                            </div>
                         </div>
-                        <div class="p-6 mb-6 text-gray-500 bg-white rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
-                            <h4 class="mb-4 font-bold text-gray-900 uppercase dark:text-white">Prendre contact </h4>
-                            <p class="mb-2 text-sm text-gray-500 dark:text-gray-400">
-                                Prendre contact avec nous
-                            </p>
-                            <p class="mb-4 text-sm text-gray-500 dark:text-gray-400">
-                                kgs informatique l'avenir et le futur dans le présent
-                            </p>
-                            <a class="text-white block text-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 w-full" href="#">C'est parti </a>
-                        </div>
-                    </aside>
+                    </div>
                 </div>
             </div>
-            <div class="w-full max-w-2xl mx-auto">
-                <div class="pb-5 border-b border-skin-base">
-                    <h1 class="text-3xl leading-8 font-extrabold text-skin-inverted font-heading">Tableau de bord </h1>
 
+            <!-- Content -->
+
+            <div class="row mt-0 mt-md-4">
+                <div class="col-lg-3 col-md-4 col-12">
+                    <!-- User profile -->
+                   @include('dashboard.slidebar')
                 </div>
-
-                <div class="divide-y divide-gray-200 dark:divide-gray-700 mt-5">
-
-                </div>
+                <div class="col-lg-9 col-md-8 col-12">
+                    @include('dashboard.statistique')
 
 
-                <div class="flex items-center justify-center mt-6">
-
-
-                <nav aria-label="Page navigation example">
-                    <ul class="inline-flex -space-x-px text-sm">
-
-                    </ul>
-                </nav>
-
-
-                </div>
-
-            </div>
-            <aside class="hidden lg:block lg:w-80" aria-labelledby="sidebar-label">
-                <div class="sticky top-36">
-                    <h3 id="sidebar-label" class="sr-only">Sidebar</h3>
-                    <div class="lg:ml-auto">
-
-                    </div>
-                    <div class="p-6 pb-4 mt-6 mb-6 font-medium text-gray-500 bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
-                        <h4 class="mb-4 font-bold text-gray-900 uppercase dark:text-white">Categorie </h4>
-                        <div class="flex flex-wrap">
-                            <a class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 hover:bg-blue-200 dark:hover:bg-blue-300 dark:text-blue-800 mb-2" href="#">#Alpine.js</a>
-                            <a class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 hover:bg-blue-200 dark:hover:bg-blue-300 dark:text-blue-800 mb-2" href="#">#Angular</a>
-                            <a class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 hover:bg-blue-200 dark:hover:bg-blue-300 dark:text-blue-800 mb-2" href="#">#Flowbite</a>
-                            <a class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 hover:bg-blue-200 dark:hover:bg-blue-300 dark:text-blue-800 mb-2" href="#">#Laravel</a>
-                            <a class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 hover:bg-blue-200 dark:hover:bg-blue-300 dark:text-blue-800 mb-2" href="#">#Next.js</a>
-                            <a class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 hover:bg-blue-200 dark:hover:bg-blue-300 dark:text-blue-800 mb-2" href="#">#Tailwind CSS</a>
+                    <div class="card mb-4">
+                        <!-- Card header -->
+                        <div class="card-header">
+                            <h3 class="h4 mb-0">Mes recents articles</h3>
+                        </div>
+                        <!-- Table -->
+                        <div class="table-responsive">
+                            <table class="table mb-0 table-hover table-centered text-nowrap">
+                                <!-- Table Head -->
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Courses</th>
+                                        <th>Sales</th>
+                                        <th>Amount</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <!-- Table Body -->
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="../assets/images/course/course-laravel.jpg" alt="course" class="rounded img-4by3-lg">
+                                                    <h5 class="ms-3 text-primary-hover mb-0">Building Scalable APIs with GraphQL</h5>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>34</td>
+                                        <td>$3,145.23</td>
+                                        <td>
+                                            <span class="dropdown dropstart">
+                                                <a class="btn-icon btn btn-ghost btn-sm rounded-circle" href="#" role="button" id="courseDropdown1" data-bs-toggle="dropdown" data-bs-offset="-20,20" aria-expanded="false">
+                                                    <i class="fe fe-more-vertical"></i>
+                                                </a>
+                                                <span class="dropdown-menu" aria-labelledby="courseDropdown1">
+                                                    <span class="dropdown-header">Setting</span>
+                                                    <a class="dropdown-item" href="#">
+                                                        <i class="fe fe-edit dropdown-item-icon"></i>
+                                                        Edit
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <i class="fe fe-trash dropdown-item-icon"></i>
+                                                        Remove
+                                                    </a>
+                                                </span>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="../assets/images/course/course-sass.jpg" alt="course" class="rounded img-4by3-lg">
+                                                    <h5 class="ms-3 text-primary-hover mb-0">HTML5 Web Front End Development</h5>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>30</td>
+                                        <td>$2,611.82</td>
+                                        <td>
+                                            <span class="dropdown dropstart">
+                                                <a class="btn-icon btn btn-ghost btn-sm rounded-circle" href="#" role="button" id="courseDropdown2" data-bs-toggle="dropdown" data-bs-offset="-20,20" aria-expanded="false">
+                                                    <i class="fe fe-more-vertical"></i>
+                                                </a>
+                                                <span class="dropdown-menu" aria-labelledby="courseDropdown2">
+                                                    <span class="dropdown-header">Setting</span>
+                                                    <a class="dropdown-item" href="#">
+                                                        <i class="fe fe-edit dropdown-item-icon"></i>
+                                                        Edit
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <i class="fe fe-trash dropdown-item-icon"></i>
+                                                        Remove
+                                                    </a>
+                                                </span>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="../assets/images/course/course-vue.jpg" alt="course" class="rounded img-4by3-lg">
+                                                    <h5 class="ms-3 text-primary-hover mb-0">Learn JavaScript Courses from Scratch</h5>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>26</td>
+                                        <td>$2,372.19</td>
+                                        <td>
+                                            <span class="dropdown dropstart">
+                                                <a class="btn-icon btn btn-ghost btn-sm rounded-circle" href="#" role="button" id="courseDropdown3" data-bs-toggle="dropdown" data-bs-offset="-20,20" aria-expanded="false">
+                                                    <i class="fe fe-more-vertical"></i>
+                                                </a>
+                                                <span class="dropdown-menu" aria-labelledby="courseDropdown3">
+                                                    <span class="dropdown-header">Setting</span>
+                                                    <a class="dropdown-item" href="#">
+                                                        <i class="fe fe-edit dropdown-item-icon"></i>
+                                                        Edit
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <i class="fe fe-trash dropdown-item-icon"></i>
+                                                        Remove
+                                                    </a>
+                                                </span>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="../assets/images/course/course-react.jpg" alt="course" class="rounded img-4by3-lg">
+                                                    <h5 class="ms-3 text-primary-hover mb-0">Get Started: React Js Courses</h5>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>20</td>
+                                        <td>$1,145.23</td>
+                                        <td>
+                                            <span class="dropdown dropstart">
+                                                <a class="btn-icon btn btn-ghost btn-sm rounded-circle" href="#" role="button" id="courseDropdown4" data-bs-toggle="dropdown" data-bs-offset="-20,20" aria-expanded="false">
+                                                    <i class="fe fe-more-vertical"></i>
+                                                </a>
+                                                <span class="dropdown-menu" aria-labelledby="courseDropdown4">
+                                                    <span class="dropdown-header">Setting</span>
+                                                    <a class="dropdown-item" href="#">
+                                                        <i class="fe fe-edit dropdown-item-icon"></i>
+                                                        Edit
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <i class="fe fe-trash dropdown-item-icon"></i>
+                                                        Remove
+                                                    </a>
+                                                </span>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-                    <div class="p-6 mb-6 font-medium text-gray-500 bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
-                        <h4 class="mb-4 font-bold text-gray-900 uppercase dark:text-white">Disuction populaire</h4>
-                        <ul class="space-y-4 text-gray-500 dark:text-gray-400">
-                            <li>
-                                <a class="flex items-start" href="#">
-                                    <div class="mr-3 shrink-0">
-                                        <img class="w-6 h-6 mt-1 rounded-full" src="http://localhost:8000/logo-j2code_povnzd.png" alt="#">
-                                    </div>
-                                    <div class="mr-3">
-                                        <span class="block font-medium text-gray-900 dark:text-white">KGS Informatique</span>
-                                        <span class="text-sm">Fondateur de la plateforme kgs informatique .</span>
-                                    </div>
-                                </a>
-                            </li>
-
-                        </ul>
-                    </div>
                 </div>
-            </aside>
+            </div>
         </div>
-    </main>
+    </section>
 </main>
 
 

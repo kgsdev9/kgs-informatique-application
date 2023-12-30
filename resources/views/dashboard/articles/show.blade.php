@@ -13,7 +13,7 @@
                         <span class="mb-3 d-inline-block">4 min read</span>
                     </div>
                     <!-- Media -->
-                  
+
                 </div>
             </div>
 
@@ -22,7 +22,7 @@
                     <!-- Descriptions -->
                     <div>
                         <div class="mb-4">
-                            <p class="lead">{!! $ressource->description !!}</p>
+                            <h1 class="lead">{!! $ressource->description !!}</h1>
                         </div>
                     </div>
 

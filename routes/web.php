@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Article\ArticleController;
 use App\Http\Controllers\Auth\AuthController;
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\Home\HomeController;
 use App\Http\Controllers\Provider\ProviderController;
 use App\Livewire\ArticleRessource;
@@ -20,7 +21,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::resources([
- 'article' => ArticleController::class
+ 'article' => ArticleController::class,
+ 'category' => CategoryController::class,
 ]);
 
 
@@ -62,4 +64,3 @@ Route::get('/forums', [HomeController::class, 'topic'])->name('topic.index');
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
