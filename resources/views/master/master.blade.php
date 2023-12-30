@@ -1,178 +1,215 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
+<!doctype html>
+<html lang="en" style="overflow-x: hidden">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/libs/odometer/themes/odometer-theme-default.css">
+        <!-- Required meta tags -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="Codescandy" />
 
-        <title>Bienvenue sur KGS INFORMATIQUE </title>
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="{{asset('css.css')}}">
-        <link href="https://cdn.jsdelivr.net/npm/tom-select/dist/css/tom-select.css" rel="stylesheet" />
+<!-- Favicon icon-->
+<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon/favicon.ico" />
 
-        <script src="https://cdn.tiny.cloud/1/ewnwdlukikfd20zuefy426z7slixkeng4g2wsxxikjsyfa5k/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
-    </head>
-    <body class="antialiased" >
-        <header class="sticky top-0 z-40 flex-none mx-auto w-full bg-white dark:bg-gray-900 ">
-            <div id="banner" tabindex="-1" class="z-50 flex justify-center w-full px-4 py-3 border border-b border-gray-200 bg-gray-50 dark:border-gray-600 lg:py-4 dark:bg-gray-700">
-                <div class="items-center md:flex">
-                    <p class="text-sm font-medium text-gray-900 md:my-0 dark:text-white">
-                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 hidden md:inline">Important</span>
-                        Etat d'avancement de la plateforme 80/100 commencer à naviger entre les pages
-                        <a class="inline-flex items-center ml-2 text-sm font-medium text-blue-600 md:ml-2 dark:text-blue-500 hover:underline" href="#">
-                            KGS Cordialement
-                            <svg class="w-3 h-3 ml-1.5 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"></path>
-                            </svg>
-                        </a>
-                    </p>
+<!-- darkmode js -->
+<script src="{{asset('assets/js/vendors/darkMode.js')}}"></script>
+
+<!-- Libs CSS -->
+<link rel="stylesheet" href="{{asset('assets/fonts/feather/feather.css')}}">
+<link rel="stylesheet" href="{{asset('assets/libs/bootstrap-icons/font/bootstrap-icons.min.css')}}">
+<link rel="stylesheet" href="{{asset('assets/libs/simplebar/dist/simplebar.min.css')}}">
+<!-- Theme CSS -->
+
+<link rel="stylesheet" href="{{asset('assets/css/theme.min.css')}}">
+<link rel="canonical" href="kgsinformatique.tech">
+<title>Bienvenue sur kgs informatique</title>
+@livewireStyles
+</head>
+
+    <body class="bg-white overflow-hidden">
+        <!-- Navbar -->
+        <!-- navbar login -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid px-0">
+                <div class="d-flex">
+                    <a class="navbar-brand text-dark" href="#" >
+                        KGS INFORMATIQUE
+                      </a>
+
                 </div>
-            </div>
-            <div class="w-full px-3 py-3 mx-auto lg:flex lg:justify-between max-w-8xl lg:px-3">
-                <div class="flex justify-between">
-                    <div class="flex items-center">
-                        <a class="flex items-center justify-between" href="/">
+                <div class="order-lg-3">
+                    <div class="d-flex align-items-center">
+                        <div class="dropdown">
+                            <button class="btn btn-light btn-icon rounded-circle d-flex align-items-center" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+                                <i class="bi theme-icon-active"><i class="bi theme-icon bi-sun-fill"></i></i>
+                                <span class="visually-hidden bs-theme-text">Toggle theme</span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bs-theme-text">
+                                <li>
+                                    <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light" aria-pressed="true">
+                                        <i class="bi theme-icon bi-sun-fill"></i>
+                                        <span class="ms-2">Blanc</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                                        <i class="bi theme-icon bi-moon-stars-fill"></i>
+                                        <span class="ms-2">Noir</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                                        <i class="bi theme-icon bi-circle-half"></i>
+                                        <span class="ms-2">Auto</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
 
-                            <span class="self-center ml-3 text-2xl font-semibold whitespace-nowrap dark:text-white">KGS</span>
-                        </a>
-
-                    </div>
-                    <div class="flex items-center lg:hidden">
-
-                        <button type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 w-10 h-10 inline-flex items-center justify-center">
-                            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
-                                <path d="M17.8 13.75a1 1 0 0 0-.859-.5A7.488 7.488 0 0 1 10.52 2a1 1 0 0 0 0-.969A1.035 1.035 0 0 0 9.687.5h-.113a9.5 9.5 0 1 0 8.222 14.247 1 1 0 0 0 .004-.997Z"></path>
-                            </svg>
-                        </button>
-                        <a class="inline-flex items-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ml-1 md:ml-3" href="/login/">
-                            <span class="md:hidden">Connexion</span>
-
-                            <svg class="hidden w-3 h-3 ml-2 xl:inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"></path>
-                            </svg>
-                        </a>
-                        <button class="ml-1 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center justify-center w-10 h-10">
-                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"></path>
-                            </svg>
+                        <a href="#" class="btn btn-outline-warning ms-2 d-none d-lg-block">Mon Compte</a>
+                        <!-- Button -->
+                        <button class="navbar-toggler collapsed ms-2 ms-lg-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="icon-bar top-bar mt-0"></span>
+                            <span class="icon-bar middle-bar"></span>
+                            <span class="icon-bar bottom-bar"></span>
                         </button>
                     </div>
                 </div>
-                <div class="flex items-center w-full lg:w-auto">
-                    <ul class="flex flex-col py-2 lg:py-0 lg:flex-row lg:self-center collapse w-full lg:w-auto collapsed">
-                        <li><a class="block py-2 text-sm font-medium text-gray-900 lg:px-3 lg:py-0 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-500" href="{{URL('/')}}">Accueil</a></li>
-                        <li><a class="block py-2 text-sm font-medium text-gray-900 lg:px-3 lg:py-0 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-500" href="{{route('articles.index')}}">Articles</a></li>
-                        <li><a class="block py-2 text-sm font-medium text-gray-900 lg:px-3 lg:py-0 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-500" href="{{url('/forums')}}">Forum</a></li>
-                        <li><a class="block py-2 text-sm font-medium text-gray-900 lg:px-3 lg:py-0 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-500" href="#">Formations </a></li>
-                        <li><a class="block py-2 text-sm font-medium text-gray-900 lg:px-3 lg:py-0 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-500" href="#">Histoires</a></li>
+
+                <!-- Collapse -->
+                <div class="collapse navbar-collapse" id="navbar-default">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarLanding" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Accueil</a>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Articles</a>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Réalisations</a>
+
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Forum</a>
+
+                        </li>
+
+                        <li class="nav-item dropdown dropdown-fullwidth">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Algorithme</a>
+
+                        </li>
 
                     </ul>
-                    <div class="lg:self-center flex items-center mb-4 lg:mb-0 collapse collapsed">
-                        <div class="items-center hidden mr-3 lg:flex">
-                            <a href="#" class="hidden xl:inline-flex items-center justify-center w-10 h-10 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1">
-                                <svg class="w-[1.1rem] h-[1.1rem] " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"></path>
+                </div>
+            </div>
+        </nav>
+
+
+        @yield('content')
+        <!-- footer -->
+        <!-- footer -->
+<footer class="pt-lg-8 pt-5 footer bg-white">
+    <div class="container mt-lg-2">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+                <!-- about company -->
+                <div class="mb-4">
+                        KGS INFORMATIQUE
+                    <div class="mt-4">
+                        <p>Kgs informatique est une plateforme de partage de connaisssance et de contenus .</p>
+                        <!-- social media -->
+                        <div class="fs-4 mt-4">
+                            <!--Facebook-->
+                            <a href="#" class="me-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                </svg>
+                            </a>
+                            <!--Twitter-->
+                            <a href="#" class="me-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
                                 </svg>
                             </a>
 
-                            <a href="#" class="hidden xl:inline-flex items-center justify-center w-10 h-10 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1">
-                                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 14">
-                                    <path fill-rule="evenodd" d="M19.7 3.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.84c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.84A4.225 4.225 0 0 0 .3 3.038a30.148 30.148 0 0 0-.2 3.206v1.5c.01 1.071.076 2.142.2 3.206.094.712.363 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.15 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965c.124-1.064.19-2.135.2-3.206V6.243a30.672 30.672 0 0 0-.202-3.206ZM8.008 9.59V3.97l5.4 2.819-5.4 2.8Z" clip-rule="evenodd"></path>
+                            <!--GitHub-->
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
                                 </svg>
                             </a>
-                            <button type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 w-10 h-10 inline-flex items-center justify-center">
-                                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
-                                    <path d="M17.8 13.75a1 1 0 0 0-.859-.5A7.488 7.488 0 0 1 10.52 2a1 1 0 0 0 0-.969A1.035 1.035 0 0 0 9.687.5h-.113a9.5 9.5 0 1 0 8.222 14.247 1 1 0 0 0 .004-.997Z"></path>
-                                </svg>
-                            </button>
-
-                            @guest
-                            <a class="inline-flex items-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ml-1 md:ml-3" href="/login/">
-                                <span class="hidden md:inline">Connexion</span>
-                                <svg class="hidden w-3 h-3 ml-2 xl:inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"></path>
-                                </svg>
-                            </a>
-                            @else
-
-                           <a href="{{URL('/dashboard')}}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"></a>
-                            @endguest
-
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
-
-
-
-
-           @yield('content')
-
-           <footer class="justify-self-end pt-16 pb-8 lg:pt-24 lg:pb-10">
-            <div class="px-4 mx-auto max-w-8xl lg:px-4">
-                <div class="grid gap-12 lg:grid-cols-6 lg:gap-18">
-                    <div class="col-span-2">
-                        <a class="flex mb-6" href="/">
-
-                            <span class="self-center ml-3 text-2xl font-semibold text-gray-900 dark:text-white">KGS INFORMATIQUE</span>
-                        </a>
-                        <p class="text-gray-600 dark:text-gray-400">
-                          KGS Informatique est une plateforme de d'informaticien et  développeurs informatique pour l'entraide
-                        </p>
-                    </div>
-                    <div>
-                        <h3 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">Resources</h3>
-                        <ul>
-                            <li class="mb-4"><a href="#" class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Politique</a></li>
-                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="#">Forums</a></li>
-                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="#">Astuces</a></li>
-                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="#">Articles</a></li>
-                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="#">Discutions </a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">Associations </h3>
-                        <ul>
-                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="#">GDG COCODY </a></li>
-                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="#">DJANGO GIRL </a></li>
-                            <li class="mb-4 flex items-center">
-                                <a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="#">EHUB</a>
-                                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ml-2">JOURNNE DU CODE </span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">NOS PAGES </h3>
-                        <ul>
-                            <li class="mb-4"><a href="#" rel="noreferrer nofollow" class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Discord</a></li>
-                            <li class="mb-4"><a href="#" rel="noreferrer nofollow" class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Github</a></li>
-                            <li class="mb-4"><a href="#" rel="noreferrer nofollow" class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Twitter</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">Legal</h3>
-                        <ul>
-                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="#">Politique d'utilisation</a></li>
-                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="#">A propos de nous </a></li>
-                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="#">Termes &amp; conditions</a></li>
-                            <li class="mb-4"><a class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline" href="#">Contact</a></li>
-                        </ul>
-                    </div>
+            <div class="offset-lg-1 col-lg-2 col-md-3 col-6">
+                <div class="mb-4">
+                    <!-- list -->
+                    <h3 class="fw-bold mb-3">Ressources</h3>
+                    <ul class="list-unstyled nav nav-footer flex-column nav-x-0">
+                        <li><a href="#" class="nav-link">Articles</a></li>
+                        <li><a href="#" class="nav-link">Réalisations</a></li>
+                        <li><a href="#" class="nav-link">Algorithme</a></li>
+                    </ul>
                 </div>
-                <hr class="my-8 border-gray-200 dark:border-gray-700 lg:my-12">
-                <span class="block font-normal text-center text-gray-600 dark:text-gray-400">© 2022-2023 KGS INFORMATIQUE™ est une marque déposée. Tous droits réservés.</span>
             </div>
-        </footer>
-         @livewireScripts
-         <script>
-            tinymce.init({
-              selector: 'textarea',
-              plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
-              toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
-            });
-          </script>
-           @stack('script')
-    </body>
+            <div class="col-lg-2 col-md-3 col-6">
+                <div class="mb-4">
+                    <!-- list -->
+                    <h3 class="fw-bold mb-3">Support</h3>
+                    <ul class="list-unstyled nav nav-footer flex-column nav-x-0">
+                        <li><a href="#" class="nav-link">FAQ’s</a></li>
+                        <li><a href="#" class="nav-link">Qui sommes-nous ?</a></li>
+                        <li><a href="#" class="nav-link">Contact</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12">
+                <!-- contact info -->
+                <div class="mb-4">
+                    <h3 class="fw-bold mb-3">Contact</h3>
+                    <p>kgs informatique</p>
+                    <p class="mb-1">
+                        Email:
+                        <a href="#">kgsdev8@gmail.com</a>
+                    </p>
+                    <p>
+                        Phone:
+                        <span class="text-dark fw-semibold">(+225) ++</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+
+        <!-- Scroll top -->
+        <div class="btn-scroll-top">
+    <svg class="progress-square svg-content" width="100%" height="100%" viewBox="0 0 40 40">
+        <path d="M8 1H32C35.866 1 39 4.13401 39 8V32C39 35.866 35.866 39 32 39H8C4.13401 39 1 35.866 1 32V8C1 4.13401 4.13401 1 8 1Z" />
+    </svg>
+</div>
+
+        <!-- Scripts -->
+        <!-- Libs JS -->
+<script src="{{asset('assets/libs/@popperjs/core/dist/umd/popper.min.js')}}"></script>
+<script src="{{asset('assets/libs/bootstrap/dist/js/bootstrap.min.js')}}"></script>
+<script src="{{asset('assets/libs/simplebar/dist/simplebar.min.js')}}"></script>
+<!-- Theme JS -->
+<script src="{{asset('assets/js/theme.min.js')}}"></script>
+<script src="{{asset('assets/libs/odometer/odometer.min.js')}}"></script>
+
+@livewireScripts
+</body>
 </html>

@@ -3,187 +3,126 @@
 @section('content')
 
 <div>
-    <main class="grow">
-        <main class="pt-6 pb-8 bg-white lg:pb-16 dark:bg-gray-900">
-            <div class="flex justify-between px-4 mx-auto max-w-8xl">
-                <div class="hidden mb-6 xl:block lg:w-80">
-                    <div class="sticky top-36">
-                        <aside>
-                            <div class="p-6 mb-6 font-medium text-gray-500 bg-white rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
-                                <h1 class="mb-2 font-bold text-gray-900 uppercase dark:text-white">KGS INFORMATIQUE
-                                </h1>
-                                <p class="text-sm text-gray-500 dark:text-gray-400">
-
-                                  Nos Articles sont récommandés, scrutés et sans bug.
-                                </p>
-                            </div>
-                            <div class="p-6 mb-6 text-gray-500 border border-gray-200 rounded-lg dark:border-gray-700 dark:text-gray-400">
-                                <a href="#" class="flex items-center mb-4">
-                                    <div class="mr-3 shrink-0">
-                                        <img class="w-8 h-8 mt-1 rounded-full" src="{{asset('kgs.jpg')}}" alt="KGS">
-                                    </div>
-                                    <div class="mr-3">
-                                        <span class="block font-medium text-gray-900 dark:text-white">Guy Stephane Kahouo </span>
-                                    </div>
-                                </a>
-                                <p class="mb-4 text-sm text-gray-500 dark:text-gray-400">
-                                   Informaticien développeur d'application Senior
-                                </p>
-                                <dl>
-                                    <div class="mb-4">
-                                        <dt class="mb-2 text-sm font-bold text-gray-900 uppercase dark:text-white">
-                                            Localisation
-                                        </dt>
-                                        <dd class="inline-flex items-center text-sm text-gray-500 dark:text-gray-400">
-                                            <svg aria-hidden="true" class="w-3 h-3 mr-2 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
-                                            </svg>
-                                           Abidjan, Cote d'ivoire
-                                        </dd>
-                                    </div>
-
-                                    <div class="mb-4">
-                                        <dt class="mb-2 text-sm font-bold text-gray-900 uppercase dark:text-white">
-                                            Contact
-                                        </dt>
-                                        <dd class="inline-flex items-center text-sm text-gray-500 dark:text-gray-400">
-                                            <svg aria-hidden="true" class="w-3 h-3 mr-2 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
-                                            </svg>
-                                          Telephone :  +225 07 68 36 58 66 <br>
-                                           Email: kahouoguystephane@gmail.com
-                                        </dd>
-                                    </div>
-
-
-                                    <div class="mb-4">
-                                        <dt class="mb-2 text-sm font-bold text-gray-900 uppercase dark:text-white">
-                                           Suivre sur  Twitter
-                                        </dt>
-                                        <dd class="text-sm text-gray-500 dark:text-gray-400 hover:underline">
-                                            <a href="https://twitter.com/@guystephanekahouo" class="inline-flex items-center">
-                                                <svg aria-hidden="true" class="w-3 h-3 mr-2 text-gray-500 dark:text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
-                                                </svg>
-                                                @guystephanekahouo
-                                            </a>
-                                        </dd>
-                                    </div>
-                                    <dt class="mb-2 text-sm font-bold text-gray-900 uppercase dark:text-white">
-                                        Site web
-                                    </dt>
-                                    <dd class="text-sm text-gray-500 dark:text-gray-400 hover:underline">
-                                        <a href="https://kgsinformatique.tech/" rel="nofollow noreferrer" class="inline-flex items-center">
-                                            <svg aria-hidden="true" class="w-3 h-3 mr-2 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" d="M4.083 9h1.946c.089-1.546.383-2.97.837-4.118A6.004 6.004 0 004.083 9zM10 2a8 8 0 100 16 8 8 0 000-16zm0 2c-.076 0-.232.032-.465.262-.238.234-.497.623-.737 1.182-.389.907-.673 2.142-.766 3.556h3.936c-.093-1.414-.377-2.649-.766-3.556-.24-.56-.5-.948-.737-1.182C10.232 4.032 10.076 4 10 4zm3.971 5c-.089-1.546-.383-2.97-.837-4.118A6.004 6.004 0 0115.917 9h-1.946zm-2.003 2H8.032c.093 1.414.377 2.649.766 3.556.24.56.5.948.737 1.182.233.23.389.262.465.262.076 0 .232-.032.465-.262.238-.234.498-.623.737-1.182.389-.907.673-2.142.766-3.556zm1.166 4.118c.454-1.147.748-2.572.837-4.118h1.946a6.004 6.004 0 01-2.783 4.118zm-6.268 0C6.412 13.97 6.118 12.546 6.03 11H4.083a6.004 6.004 0 002.783 4.118z" clip-rule="evenodd"></path>
-                                            </svg>
-                                            https://kgsinformatique.tech/
-                                        </a>
-                                    </dd>
-                                </dl>
-                            </div>
-
-                            <div class="p-6 mb-6 text-gray-500 bg-white rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
-                                <h4 class="mb-4 font-bold text-gray-900 uppercase dark:text-white">Publier un article </h4>
-                                <p class="mb-2 text-sm text-gray-500 dark:text-gray-400">
-                                    Voulez-vous contribuer en écrivant des articles invités sur ce blog ?
-                                </p>
-                                <p class="mb-4 text-sm text-gray-500 dark:text-gray-400">
-                                    Personnellement je suis une personne exigence, donc assurez que vous publier quelque chose de pro
-                                </p>
-                                <a class="text-white block text-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 w-full" href="{{route('article.create')}}">C'est parti </a>
-                            </div>
-                        </aside>
+    <section class="py-7 py-lg-8">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-8 col-md-12 col-12 mb-2">
+                    <div class="text-center mb-4">
+                        <a href="#" class="fs-5 fw-semibold d-block mb-4 text-primary">Courses</a>
+                        <h1 class="display-3 fw-bold mb-4">Getting Started The Web Development JavaScript in 2020</h1>
+                        <span class="mb-3 d-inline-block">4 min read</span>
                     </div>
+                    <!-- Media -->
+                  
                 </div>
-                <div class="w-full max-w-2xl mx-auto">
-                    <h1 class="mb-2 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">{{$ressource->title}}</h1>
-                    <div class="flex flex-wrap mb-4"><a class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 hover:bg-blue-200 dark:hover:bg-blue-300 dark:text-blue-800 mb-2" href="#">
-                        @foreach ($ressource->articletags as  $tag)
-                            #{{$tag->name}}
-                        @endforeach
-
-                    </a></div>
-                    <div class="flex items-center justify-between">
-                        <aside aria-label="Share social media">
-                            <a href="https://twitter.com/intent/tweet?text={{$url}}" class="inline-flex items-center px-3 py-2 mr-2 text-xs font-medium text-gray-900 no-underline bg-white border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
-                                <svg class="w-4 h-4 mr-2" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
-                                </svg>
-                                 Tweet
-                            </a>
-                            <a href="https://www.facebook.com/sharer/sharer.php?u=#{{$url}}" target="_blank" class="inline-flex items-center px-3 py-2 mr-2 text-xs font-medium text-gray-900 no-underline bg-white border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
-                                <svg class="w-4 h-4 mr-2" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path>
-                                </svg>
-                                 Share
-                            </a>
-                            <button type="button" class="inline-flex items-center px-3 py-2 text-xs font-medium text-gray-900 no-underline bg-white border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" class="w-4 h-4 mr-2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
-                                </svg>
-                                Copy URL
-                            </button>
-                        </aside>
-                    </div>
-
-                    <article class="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
-                        <p class="lead">{!! $ressource->description !!}</p>
-                    </article>
-                </div>
-                <aside class="hidden lg:block lg:w-80" aria-labelledby="sidebar-label">
-                    <div class="sticky top-36">
-                        <h3 id="sidebar-label" class="sr-only">Sidebar</h3>
-                        <div class="lg:ml-auto">
-                          
-                        </div>
-                        <div class="p-6 pb-4 mt-6 mb-6 font-medium text-gray-500 bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
-                            <h4 class="mb-4 font-bold text-gray-900 uppercase dark:text-white">Catégories Récommandés </h4>
-                            <div class="flex flex-wrap">
-                                @foreach ($allTags as $categorie)
-                                <a class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 hover:bg-blue-200 dark:hover:bg-blue-300 dark:text-blue-800 mb-2" href="{{route('article.tag', $categorie->id)}}">#{{$categorie->name}}</a>
-                                @endforeach
-                            </div>
-                        </div>
-
-                        <div class="p-6 mb-6 font-medium text-gray-500 bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
-                            <h4 class="mb-4 font-bold text-gray-900 uppercase dark:text-white">Article </h4>
-                            @php
-                            $next = $ressource->nextArticle();
-                            $previous = $ressource->previousArticle();
-                            @endphp
-                             @if($next || $previous)
-                            <ul class="space-y-4 text-gray-500 dark:text-gray-400">
-                                @if($next)
-                                <li>
-                                    <a class="flex items-start" href="{{route('article.show', $next)}}">
-
-                                        <div class="mr-3">
-                                            <span class="block font-medium text-gray-900 dark:text-white">Suivant </span>
-                                            <span class="text-sm">{{ $next->title }}</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                @endif
-                                @if($previous)
-                                <li>
-                                    <a class="flex items-start" href="{{route('article.show', $previous)}}">
-
-                                        <div class="mr-3">
-                                            <span class="block font-medium text-gray-900 dark:text-white">Précedent </span>
-                                            <span class="text-sm">{{ $previous->title }}</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                @endif
-                            </ul>
-                            @endif
-                        </div>
-                    </div>
-                </aside>
             </div>
-        </main>
-    </main>
+
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-8 col-md-12 col-12 mb-2">
+                    <!-- Descriptions -->
+                    <div>
+                        <div class="mb-4">
+                            <p class="lead">{!! $ressource->description !!}</p>
+                        </div>
+                    </div>
+
+
+                    <!-- Subscribe to Newsletter -->
+                    <div class="py-lg-8 py-6">
+                        <div class="text-center mb-6">
+                            <h2 class="display-4 fw-bold">Sign up for our Newsletter</h2>
+                            <p class="mb-0 lead">Join our newsletter and get resources, curated content, and design inspiration delivered straight to your inbox.</p>
+                        </div>
+                        <!-- Form -->
+                        <form class="row px-md-8 mx-md-8 gx-2 needs-validation" novalidate="">
+                            <div class="col">
+                                <input type="email" class="form-control" placeholder="Email Address" required="">
+                                <div class="invalid-feedback">Please enter valid Email Address</div>
+                            </div>
+                            <div class="col-auto">
+                                <button class="btn btn-primary" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Container -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+                    <div class="my-5">
+                        <h2>Related Post</h2>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+                    <!-- Card -->
+                    <div class="card mb-4 shadow-lg card-lift">
+                        <a href="blog-single.html"><img src="../assets/images/blog/blogpost-3.jpg" class="card-img-top" alt="blogpost "></a>
+                        <!-- Card body -->
+                        <div class="card-body">
+                            <a href="#" class="fs-5 fw-semibold d-block mb-3 text-primary">Workshop</a>
+                            <a href="blog-single.html">
+                                <h3>The Best DevOps Tools for Your Application Lifecycle</h3>
+                            </a>
+                            <p>Inventore pariatur veritatis maxime fugiat sint dolorem officiis nemo quis!</p>
+                            <!-- Media content -->
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+                    <!-- Card -->
+                    <div class="card mb-4 shadow-lg card-lift">
+                        <a href="blog-single.html"><img src="../assets/images/blog/blogpost-6.jpg" class="card-img-top" alt="blogpost "></a>
+                        <!-- Card body -->
+                        <div class="card-body">
+                            <a href="#" class="fs-5 fw-semibold d-block mb-3 text-info">Courses</a>
+                            <h3><a href="blog-single.html" class="text-inherit">How to become modern Stack Developer in 2020</a></h3>
+                            <p>At beatae non sit dicta simili quepers lem piciatis facilis veritatis quam. corrupti?</p>
+                            <div class="row align-items-center g-0 mt-4">
+                                <div class="col-auto">
+                                    <img src="../assets/images/avatar/avatar-2.jpg" alt="avatar" class="rounded-circle avatar-sm me-2 ">
+                                </div>
+                                <div class="col lh-1">
+                                    <h5 class="mb-1">Sia Port</h5>
+                                    <p class="fs-6 mb-0">September 10, 2020</p>
+                                </div>
+                                <div class="col-auto">
+                                    <p class="fs-6 mb-0">10 Min Read</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+                    <!-- Card -->
+                    <div class="card mb-4 shadow-lg card-lift">
+                        <a href="blog-single.html"><img src="../assets/images/blog/blogpost-5.jpg" class="card-img-top" alt="blogpost "></a>
+                        <!-- Card body -->
+                        <div class="card-body">
+                            <a href="#" class="fs-5 fw-semibold d-block mb-3 text-warning">Warning</a>
+                            <h3><a href="blog-single.html" class="text-inherit">How to Become a Data Scientist?</a></h3>
+                            <p>Nulla voluptate in facere saepe est alias et iste, accusantium sint enim!</p>
+                            <!-- Media content -->
+                            <div class="row align-items-center g-0 mt-4">
+                                <div class="col-auto">
+                                    <img src="../assets/images/avatar/avatar-3.jpg" alt="avatar" class="rounded-circle avatar-sm me-2 ">
+                                </div>
+                                <div class="col lh-1">
+                                    <h5 class="mb-1">Miron Sulla</h5>
+                                    <p class="fs-6 mb-0">September 11, 2020</p>
+                                </div>
+                                <div class="col-auto">
+                                    <p class="fs-6 mb-0">14 Min Read</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </div>
 
