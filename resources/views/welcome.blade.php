@@ -15,8 +15,8 @@
 
                         </h1>
                         <p class="mb-6 h2 text-dark">Une communauté nouvelle et riche en connaissance téchnique </p>
-                        <a href="../pricing.html" class="btn btn-dark me-2">Nos Applications</a>
-                        <a href="../sign-up.html" class="btn btn-outline-warning">Articles</a>
+                        <a href="{{route('home.app')}}" class="btn btn-dark me-2">Nos Applications</a>
+                        <a href="{{route('articles.index')}}" class="btn btn-outline-warning">Articles</a>
 
                     </div>
                 </div>
@@ -55,13 +55,13 @@
                                 <div class="card mb-4 card-hover">
                                     <div class="d-flex justify-content-between align-items-center p-4">
                                         <div class="d-flex">
-                                            <a href="course-path-single.html">
+                                            <a href="#">
                                                 <!-- Img -->
                                                 <img src="{{Storage::url($category->image)}}" alt="bootstrap" class="avatar-md">
                                             </a>
                                             <div class="ms-3">
                                                 <h4 class="mb-1">
-                                                    <a href="course-path-single.html" class="text-inherit">{{$category->name}}</a>
+                                                    <a href="{{route('tag.article', $category->id)}}" class="text-inherit">{{$category->name}}</a>
                                                 </h4>
                                                 <p class="mb-0 fs-6">
                                                     <span class="me-2">
@@ -137,15 +137,13 @@
                             <p>{{$article->mini_description}}</p>
                             <!-- Media content -->
                             <div class="row align-items-center g-0 mt-4">
-                                <div class="col-auto">
-                                    <img src="../assets/images/avatar/avatar-7.jpg" alt="avatar" class="rounded-circle avatar-sm me-2 ">
-                                </div>
+
                                 <div class="col lh-1">
                                     <h5 class="mb-1">{{$article->owner->name}}</h5>
                                     <p class="fs-6 mb-0">{{$article->created_at}}</p>
                                 </div>
                                 <div class="col-auto">
-                                   <button class="btn btn-dark">Consulter</button>
+                                  <a href="{{route('article.show', $article->id)}}" class="btn btn-dark">Consulter</a>
                                 </div>
                             </div>
                         </div>
@@ -155,9 +153,7 @@
                 <!-- Button -->
                 <div class="col-xl-12 col-lg-12 col-md-12 col-12 text-center mt-6">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-12 text-center mt-4">
-                        <a href="#" class="btn btn-outline-secondary">
-                            Charger plus
-                        </a>
+                                  <!-- button de paginatioon dynamique -->
                     </div>
                 </div>
             </div>

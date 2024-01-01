@@ -29,6 +29,7 @@ Route::get('/articles', [HomeController::class ,'article'])->name('articles.inde
 Route::get('/forums', [HomeController::class,'topic'])->name('topic.index');Route::get('/application/app', [HomeController::class, 'application'])->name('home.application');
 Route::get('/application/app', [HomeController::class,'application'])->name('home.app');
 Route::get('/application/app/{slug}', [HomeController::class, 'showApplication'])->name('view.app');
+Route::get('/article-tag/{id}', [HomeController::class, 'articleTag'])->name('tag.article');
 
 Route::resources([
     'article' => ArticleController::class,

@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Home;
 use App\Http\Controllers\Controller;
 use App\Models\Application;
 use App\Models\Article;
+use App\Models\Tag;
 use App\Services\ArticleService;
 use App\Services\TagService;
 use App\Traits\ImplementeServiceExterne;
@@ -24,6 +25,14 @@ class HomeController extends Controller
 
      public function article() {
             return view('home.article.article');
+     }
+
+     public function articleTag($id) {
+        $tag = Tag::where('id', $id)->first();
+        return view('home.articlecategory.index',[
+            'articleTag'=> $tag->articletags()->get(),
+            'tag'=> $tag
+        ]);
      }
 
      public function showApplication($slug) {
@@ -68,9 +77,7 @@ class HomeController extends Controller
     }
 
 
-    public function articleTag($id) {
-       $ressource =  Article::where('slug', '=',$id)->get();
-    }
+
 
 
 }

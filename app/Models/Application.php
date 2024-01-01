@@ -14,8 +14,7 @@ class Application extends Model
         'slug',
         'image',
         'url',
-        'description'
+        'description',
     ];
-
 
 }

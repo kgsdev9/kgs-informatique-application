@@ -1,13 +1,11 @@
 
 <!doctype html>
 <html lang="en" style="overflow-x: hidden">
-    <head>
-        <link rel="stylesheet" href="assets/libs/odometer/themes/odometer-theme-default.css">
-        <!-- Required meta tags -->
+<head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="" />
-<meta name="keywords" content="" />
+<meta name="description" content="kgs informatique" />
+<meta name="keywords" content="kgsinformatique" />
 <meta name="author" content="kgsinformatique" />
 <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon/favicon.ico" />
 
