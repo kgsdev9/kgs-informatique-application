@@ -56,10 +56,13 @@
                                                         <i class="fe fe-edit dropdown-item-icon"></i>
                                                         Edition
                                                     </a>
-                                                    <a class="dropdown-item" href="#">
-                                                        <i class="fe fe-trash dropdown-item-icon"></i>
-                                                        Supprimer
-                                                    </a>
+
+                                                    <form action="{{route('application.destroy', $application->id)}}" method="POST">
+                                                        @method('DELETE')
+                                                        @csrf
+                                                        <button class="btn btn-danger" type="submit" onclick="return confirm('voulez-vous vraiment supprimer ?')">Supprimer</button>
+                                                    </form>
+
                                                 </span>
                                             </span>
                                         </td>

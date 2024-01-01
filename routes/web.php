@@ -21,14 +21,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::resources([
- 'article' => ArticleController::class,
- 'category' => CategoryController::class,
- 'application'=> ApplicationController::class
-]);
 
-
+//mes pages visiteurs
 Route::get('/', [HomeController::class ,'index'])->name('home');
+Route::get('/articles', [HomeController::class ,'article'])->name('articles.index');
+Route::get('/forums', [HomeController::class,'topic'])->name('topic.index');Route::get('/application/app', [HomeController::class, 'application'])->name('home.application');
+Route::get('/application/app', [HomeController::class,'application'])->name('home.app');
+Route::get('/application/app/{slug}', [HomeController::class, 'showApplication'])->name('view.app');
+
+Route::resources([
+    'article' => ArticleController::class,
+    'category' => CategoryController::class,
+    'application'=> ApplicationController::class
+   ]);
 
 Route::get('/home', function () {
     return view('home');
@@ -36,33 +41,17 @@ Route::get('/home', function () {
 
 Route::get('/login', [AuthController::class, 'login'])->name('login')->middleware('guest');
 Route::get('/articles/{id}', [HomeController::class, 'show'])->name('article.detail');
-
-
 Route::get('/auth/{provider}/redirect', [ProviderController::class, 'redirect']);
 Route::get('/auth/{provider}/callback', [ProviderController::class, 'callback']);
-
-
-
 Route::get('/dashboard', function() {
     return view('dashboard.index');
 });
-
 
 Route::get('/discutions', function() {
     return view('discution');
 });
 
 Route::get('/article-ressource', ArticleRessource::class);
-
-
 Route::get('/get-article-by-tag/{id}', [HomeController::class, 'articleTag'])->name('article.tag');
-
-
-//mes pages visiteurs
-Route::get('/articles', [HomeController::class ,'article'])->name('articles.index');
-Route::get('/forums', [HomeController::class, 'topic'])->name('topic.index');
-
-
-
 Auth::routes();
 

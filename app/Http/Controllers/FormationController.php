@@ -14,7 +14,7 @@ class FormationController extends Controller
     public function index()
     {
         return view('dashboard.Formation.liste', [
-            'allFormation'=> Formation::all()
+            'allFormation'=> Formation::orderByDesc('created_at')->get()
         ]);
     }
     /**

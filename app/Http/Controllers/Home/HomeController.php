@@ -3,18 +3,15 @@
 namespace App\Http\Controllers\Home;
 
 use App\Http\Controllers\Controller;
+use App\Models\Application;
 use App\Models\Article;
-use App\Models\Topic;
 use App\Services\ArticleService;
 use App\Services\TagService;
 use App\Traits\ImplementeServiceExterne;
-use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-
     use ImplementeServiceExterne;
-
 
     protected $tagService;
     protected $articleService;
@@ -27,6 +24,21 @@ class HomeController extends Controller
 
      public function article() {
             return view('home.article.article');
+     }
+
+     public function showApplication($slug) {
+
+
+        return view('home.application.detail', [
+            'detailApp'=> Application::where('slug', $slug)->first(),
+            'otherApplication'=> Application::where('slug','!=', $slug)->inRandomOrder()->orderByDesc('created_at')->paginate(10)
+        ]);
+     }
+
+     public function application() {
+        return view('home.application.application', [
+            'allApplication'=> Application::orderByDesc('created_at')->get()
+        ]);
      }
     /**
      * Display a listing of the resource.
@@ -51,7 +63,6 @@ class HomeController extends Controller
         ]);
     }
 
-
     public function show($id)  {
         $this->countView($id);
     }
@@ -59,7 +70,6 @@ class HomeController extends Controller
 
     public function articleTag($id) {
        $ressource =  Article::where('slug', '=',$id)->get();
-       dd($ressource);
     }
 
 

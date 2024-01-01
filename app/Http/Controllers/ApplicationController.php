@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ApplicationRequest;
 use App\Models\Application;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -14,7 +15,7 @@ class ApplicationController extends Controller
     public function index()
     {
         return view('dashboard.application.liste', [
-            'allApplication'=> Application::all()
+            'allApplication'=> Application::orderByDesc('created_at')->get()
         ]);
     }
     /**
@@ -30,7 +31,7 @@ class ApplicationController extends Controller
      * Store a newly created resource in storage.
      */
 
-     public function store(Request $request)
+     public function store(ApplicationRequest $request)
      {
          $image = $request->file('image')->store('public');
              Application::create([
@@ -44,16 +45,9 @@ class ApplicationController extends Controller
      }
 
 
-
-
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
-    {
-        $ressource = Application::find($id);
-        return view('ass', compact('ressource'));
-    }
 
     /**
      * Show the form for editing the specified resource.
@@ -66,7 +60,7 @@ class ApplicationController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(ApplicationRequest $request, string $id)
     {
         $ressource = Application::find($id);
         if ($request->hasFile('image')) {
@@ -75,7 +69,7 @@ class ApplicationController extends Controller
         }
         $ressource->title= $request->title;
         $ressource->slug = \Str::limit($request->title);
-        $ressource->title= $request->url;
+        $ressource->url= $request->url;
         $ressource->description= $request->description;
         $ressource->update();
         return redirect()->route('application.index', ['edited'=> true]);

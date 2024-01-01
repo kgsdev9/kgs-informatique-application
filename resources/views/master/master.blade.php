@@ -95,7 +95,7 @@
 
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="#">Réalisations</a>
+                            <a class="nav-link" href="{{route('home.app')}}">Réalisations</a>
 
                         </li>
 
