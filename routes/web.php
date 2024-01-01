@@ -4,6 +4,7 @@ use App\Http\Controllers\ApplicationController;
 use App\Http\Controllers\Article\ArticleController;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Home\HomeController;
 use App\Http\Controllers\Provider\ProviderController;
 use App\Livewire\ArticleRessource;
@@ -43,9 +44,7 @@ Route::get('/login', [AuthController::class, 'login'])->name('login')->middlewar
 Route::get('/articles/{id}', [HomeController::class, 'show'])->name('article.detail');
 Route::get('/auth/{provider}/redirect', [ProviderController::class, 'redirect']);
 Route::get('/auth/{provider}/callback', [ProviderController::class, 'callback']);
-Route::get('/dashboard', function() {
-    return view('dashboard.index');
-});
+Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
 
 Route::get('/discutions', function() {
     return view('discution');

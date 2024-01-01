@@ -19,9 +19,9 @@
                 </li>
                 <!-- Nav item -->
                 <li class="nav-item">
-                    <a class="nav-link" href="instructor-courses.html">
+                    <a class="nav-link" href="">
                         <i class="fe fe-book nav-icon"></i>
-                        Disuctions
+                        Forums
                     </a>
                 </li>
                 <!-- Nav item -->
@@ -33,7 +33,7 @@
                 </li>
                 <!-- Nav item -->
                 <li class="nav-item">
-                    <a class="nav-link" href="instructor-earning.html">
+                    <a class="nav-link" href="#">
                         <i class="fe fe-pie-chart nav-icon"></i>
                        Formations
                     </a>
@@ -41,7 +41,7 @@
 
                  <!-- Nav item -->
                  <li class="nav-item">
-                    <a class="nav-link" href="">
+                    <a class="nav-link" href="#">
                         <i class="fe fe-help-circle nav-icon"></i>
                        Algorthme
                     </a>
