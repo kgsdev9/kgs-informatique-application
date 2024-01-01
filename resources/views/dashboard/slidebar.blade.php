@@ -41,7 +41,7 @@
 
                  <!-- Nav item -->
                  <li class="nav-item">
-                    <a class="nav-link" href="instructor-quiz-result.html">
+                    <a class="nav-link" href="">
                         <i class="fe fe-help-circle nav-icon"></i>
                        Algorthme
                     </a>
@@ -49,7 +49,7 @@
 
                 <!-- Nav item -->
                 <li class="nav-item">
-                    <a class="nav-link" href="instructor-quiz-result.html">
+                    <a class="nav-link" href="{{route('application.index')}}">
                         <i class="fe fe-help-circle nav-icon"></i>
                         Applications
                     </a>

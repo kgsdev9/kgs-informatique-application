@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('forums', function (Blueprint $table) {
             $table->id();
+            $table->steing('title');
+            $table->string('slug')->unique();
+            $table->steing('description');
             $table->timestamps();
         });
     }

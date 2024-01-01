@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ApplicationController;
 use App\Http\Controllers\Article\ArticleController;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\CategoryController;
@@ -23,6 +24,7 @@ use Illuminate\Support\Facades\Route;
 Route::resources([
  'article' => ArticleController::class,
  'category' => CategoryController::class,
+ 'application'=> ApplicationController::class
 ]);
 
 
