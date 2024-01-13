@@ -16,7 +16,7 @@ class Tag extends Model
     }
 
     public function courses() {
-        return  $this->hasMany(Tag::class);
+        return  $this->hasMany(Course::class);
     }
 
 }
