@@ -24,7 +24,6 @@ class ApplicationRequest extends FormRequest
         return [
             'title'=> 'required|string|max:225',
             'description' => 'required',
-
             'url' => 'required|url'
         ];
     }

@@ -2,12 +2,14 @@
 
 use App\Http\Controllers\ApplicationController;
 use App\Http\Controllers\Article\ArticleController;
-use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ConfereneController;
+use App\Http\Controllers\CourseController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\EpisdoeController;
+use App\Http\Controllers\ForumController;
 use App\Http\Controllers\Home\HomeController;
 use App\Http\Controllers\Provider\ProviderController;
-use App\Livewire\ArticleRessource;
 use Illuminate\Support\Facades\Route;
 
 
@@ -24,34 +26,32 @@ use Illuminate\Support\Facades\Route;
 
 
 //mes pages visiteurs
+Auth::routes();
+
 Route::get('/', [HomeController::class ,'index'])->name('home');
 Route::get('/articles', [HomeController::class ,'article'])->name('articles.index');
-Route::get('/forums', [HomeController::class,'topic'])->name('topic.index');Route::get('/application/app', [HomeController::class, 'application'])->name('home.application');
+Route::get('/forums', [HomeController::class,'forum'])->name('home.forums');
+Route::get('/application/app', [HomeController::class, 'application'])->name('home.application');
 Route::get('/application/app', [HomeController::class,'application'])->name('home.app');
-Route::get('/application/app/{slug}', [HomeController::class, 'showApplication'])->name('view.app');
-Route::get('/article-tag/{id}', [HomeController::class, 'articleTag'])->name('tag.article');
-
+Route::get('/application/detail/{slug}', [HomeController::class, 'showApplication'])->name('view.app');
+Route::get('/article-tag/{slug}', [HomeController::class, 'articleTag'])->name('tag.article');
+Route::get('/podcasts', [HomeController::class, 'podCasts'])->name('podcasts.index');
+Route::get('/all-courses', [HomeController::class, 'courses'])->name('all.courses');
+Route::get('/articles/detail/{slug}', [HomeController::class, 'show'])->name('article.detail');
+Route::get('/auth/{provider}/redirect', [ProviderController::class, 'redirect']);
+Route::get('/auth/{provider}/callback', [ProviderController::class, 'callback']);
+Route::get('/contact', function() {
+    return view('contact');
+});
+//pages d'administration du sites
 Route::resources([
     'article' => ArticleController::class,
     'category' => CategoryController::class,
-    'application'=> ApplicationController::class
+    'application'=> ApplicationController::class,
+    'conference'  => ConfereneController::class,
+    'course'=> CourseController::class,
+    'episode' => EpisdoeController::class,
+    'forum'=> ForumController::class,
    ]);
-
-Route::get('/home', function () {
-    return view('home');
-})->middleware('guest');
-
-Route::get('/login', [AuthController::class, 'login'])->name('login')->middleware('guest');
-Route::get('/articles/{id}', [HomeController::class, 'show'])->name('article.detail');
-Route::get('/auth/{provider}/redirect', [ProviderController::class, 'redirect']);
-Route::get('/auth/{provider}/callback', [ProviderController::class, 'callback']);
 Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
-
-Route::get('/discutions', function() {
-    return view('discution');
-});
-
-Route::get('/article-ressource', ArticleRessource::class);
 Route::get('/get-article-by-tag/{id}', [HomeController::class, 'articleTag'])->name('article.tag');
-Auth::routes();
-

@@ -1,32 +1,37 @@
-<div class="row">
-    <div class="col-lg-4 col-md-12 col-12">
-        <!-- Card -->
-        <div class="card mb-4">
-            <div class="p-4">
-                <span class="fs-6 text-uppercase fw-semibold">Mes articles</span>
-                <h2 class="mt-4 fw-bold mb-1 d-flex align-items-center h1 lh-1">{{$article}}</h2>
-
-            </div>
-        </div>
+<div class="col-lg-9 col-md-8">
+    <div class="mb-4">
+       <h1 class="mb-0 h3">Hey, Bienvenue {{Auth::user()->name}}</h1>
     </div>
 
-    <div class="col-lg-4 col-md-12 col-12">
-        <!-- Card -->
-        <div class="card mb-4">
-            <div class="p-4">
-                <span class="fs-6 text-uppercase fw-semibold">Mes Disuctions</span>
-                <h2 class="mt-4 fw-bold mb-1 d-flex align-items-center h1 lh-1">{{$article}}</h2>
+    <div class="row mb-5 g-4">
+       <div class="col-lg-4 col-md-6">
+          <div class="card border-0 shadow-sm">
+             <div class="card-body">
+                <span>Forums</span>
+                <h3 class="mb-0 mt-4">0 </h3>
+             </div>
+          </div>
+       </div>
+       <div class="col-lg-4 col-md-6">
+          <div class="card border-0 shadow-sm">
+             <div class="card-body">
+                <span>Articles</span>
+                <h3 class="mb-0 mt-4">0</h3>
+             </div>
+          </div>
+       </div>
+       <div class="col-lg-4 col-md-6">
+          <div class="card border-0 shadow-sm">
+             <div class="card-body">
+                <span>Réactions</span>
+                <h3 class="mb-0 mt-4">0</h3>
+             </div>
+          </div>
+       </div>
+    </div>
 
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-4 col-md-12 col-12">
-        <!-- Card -->
-        <div class="card mb-4">
-            <div class="p-4">
-                <span class="fs-6 text-uppercase fw-semibold">Mes Reactions</span>
-                <h2 class="mt-4 fw-bold mb-1 d-flex align-items-center h1 lh-1">0</h2>
-            </div>
-        </div>
-    </div>
-</div>
+
+
+ </div>
+
+

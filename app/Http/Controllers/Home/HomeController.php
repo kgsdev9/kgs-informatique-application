@@ -27,12 +27,21 @@ class HomeController extends Controller
             return view('home.article.article');
      }
 
-     public function articleTag($id) {
-        $tag = Tag::where('id', $id)->first();
+     public function articleTag($slug) {
+        $tag = Tag::where('slug', $slug)->first();
         return view('home.articlecategory.index',[
             'articleTag'=> $tag->articletags()->get(),
             'tag'=> $tag
         ]);
+     }
+
+     public function courses() {
+        return view('home.formation.index', [
+            'allTags'=> Tag::all()
+        ]);
+     }
+     public function podCasts() {
+        return view('home.podCasts.index');
      }
 
      public function showApplication($slug) {
@@ -61,9 +70,9 @@ class HomeController extends Controller
         ]);
     }
 
-    public function topic() {
+    public function forum() {
 
-        return view('home.sujets.sujet');
+        return view('forums.index');
     }
 
     public function articles() {
@@ -72,12 +81,16 @@ class HomeController extends Controller
         ]);
     }
 
-    public function show($id)  {
-        $this->countView($id);
+    public function show($slug)  {
+      $resssource =   Article::where('slug', $slug)->first();
+      if($resssource) {
+        $this->countView($slug);
+        return view('home.article.detail', [
+            'ressource'=> $resssource
+        ]);
+
+      } else{
+        return redirect()->route('home');
     }
-
-
-
-
-
+}
 }

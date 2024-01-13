@@ -11,9 +11,11 @@ class Forum extends Model
 
     protected $fillable = [
         'title',
+        'slug',
         'description',
-        'status',
-        'categoryforum_id',
         'user_id',
+        'tag_id'
     ];
+
+    
 }

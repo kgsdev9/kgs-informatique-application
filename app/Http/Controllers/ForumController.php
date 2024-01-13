@@ -6,16 +6,7 @@ use Illuminate\Http\Request;
 
 class ForumController extends Controller
 {
-    <?php
 
-    namespace App\Http\Controllers;
-
-    use App\Models\Formation;
-    use Illuminate\Http\Request;
-    use Illuminate\Support\Facades\Storage;
-
-    class FormationController extends Controller
-    {
             /**
          * Display a listing of the resource.
          */
@@ -105,6 +96,6 @@ class ForumController extends Controller
             }
            return redirect()->route('Formation.index', ['deleted'=>true]);
         }
-    }
+    
 
 }

@@ -1,164 +1,167 @@
 @extends('master.master')
-
 @section('content')
 <main>
-    <!-- Page Content -->
-
-    <section class="py-8 bg-auto bg-light hero-graphics">
-        <div class="container my-lg-8">
-            <!-- Hero Section -->
-            <div class="row justify-content-center">
-                <div class="col-xl-7 col-lg-9 col-md-12">
-                    <div class="text-center">
-                        <h1 class="display-2 fw-bold mb-3 text-primary">
-                            <span class="text-dark px-3 px-md-0">Bienvenue sur KGS Informatique</span>
-
-                        </h1>
-                        <p class="mb-6 h2 text-dark">Une communauté nouvelle et riche en connaissance téchnique </p>
-                        <a href="{{route('home.app')}}" class="btn btn-dark me-2">Nos Applications</a>
-                        <a href="{{route('articles.index')}}" class="btn btn-outline-warning">Articles</a>
-
-                    </div>
+    <!--hero section start-->
+    <section class=" bg-primary pb-10 pt-4" data-cue="fadeIn">
+       <div class="container">
+          <div class="row">
+             <div class="col-lg-8 offset-lg-2 col-md-12 position-relaive">
+                <div class="text-white-stable text-center position-relaive my-lg-8 my-6" data-cue="zoomIn">
+                   <span class="fw-medium fs-4">Bienvenue sur KGS informatique</span>
+                   <h1 class="text-white-stable display-3 mt-3 mb-3">La marque des pro c'est l'adaptation </h1>
+                   <p class="mb-0 pb-8 px-lg-7 text-opacity-75 lead">
+                     Développeur  web/mobile  avec plus de 03 ans d'experience je vous partage mes conaissances et mes réalisations.
+                   </p>
+                   <a href="#openPosition" class="btn btn-outline-light me-2">Réalisations</a>
+                   <a href="#!" class="btn btn-outline-warning">Articles</a>
                 </div>
-            </div>
-        </div>
+             </div>
+          </div>
+       </div>
     </section>
+    <section class="container py-lg-8 py-5" data-cue="fadeIn" data-show="true" style="animation-name: fadeIn; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+        <div class="row justify-content-center mb-8">
+           <div class="col-xl-6 col-lg-10 col-12">
+              <div class="text-center d-flex flex-column gap-4">
 
-    <!-- Client logo -->
+                 <div class="d-flex flex-column gap-3 mx-lg-8 mt-6">
+                    <h1 class="mb-0">Commencer l'aventure avec kgs informatique</h1>
+                    <p class="mb-0">Les réalisations parlent en notre faveur .</p>
+                 </div>
+              </div>
+           </div>
+        </div>
+        <div class="row gy-4 gy-md-6">
+           <div class="col-lg-4 col-md-6 col-12 flex-column d-flex gap-4 gap-md-6 mt-lg-8" data-cue="slideInLeft" data-show="true" style="animation-name: slideInLeft; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+              <div class="card bg-light card-lift">
+                 <div class="card-body text-body">
+                    <p class="mb-0">“j'ai connu Stéphane dans une groupe informatique en 2020 nommé Programmons comme les pros je suivais ces posts sur la programmation j'ai vraiment aimé ces réalisations. tout simplement merci”</p>
+                    <div class="mt-4 d-flex align-items-center">
+                       <img src="assets/images/avatar/avatar-1.jpg" alt="" class="avatar avatar-lg rounded-circle border p-1 bg-white">
+                       <div class="ms-3 lh-1">
+                          <h5 class="mb-0">ERIC NOEL KOUAKOU</h5>
+                          <small>Développeur web </small>
+                       </div>
+                    </div>
+                 </div>
+                 <a href="#" class="stretched-link"></a>
+              </div>
+              <div class="card bg-light card-lift">
+                 <div class="card-body text-body">
+                    <p class="mb-0">“Une personne m'a récommandé stephane pour concevoir le site web de notre entreprise digitale en ligne je ne regrette pas .”</p>
+                    <div class="mt-4 d-flex align-items-center">
+                       <img src="assets/images/avatar/avatar-2.jpg" alt="" class="avatar avatar-lg rounded-circle border p-1 bg-white">
+                       <div class="ms-3 lh-1">
+                          <h5 class="mb-0">NEGOCE BUSSNESS ENTREPRISE</h5>
+                          <small>ENTREPRISE</small>
+                       </div>
+                    </div>
+                 </div>
+                 <a href="#" class="stretched-link"></a>
+              </div>
+           </div>
+           <div class="col-lg-4 col-md-6 col-12 flex-column d-flex gap-4 gap-md-6" data-cue="zoomIn" data-show="true" style="animation-name: zoomIn; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+              <div class="card bg-light card-lift">
+                 <div class="card-body text-body">
+                    <p class="mb-0">“J'ai sollicité Guy Stéphane pour concevoir une application de gestion de tontine , aujourd'hui je gere mes tontines de facon professionelle sans trop me prendre la téte .</p>
+                    <div class="mt-4 d-flex align-items-center">
+                       <img src="assets/images/avatar/avatar-4.jpg" alt="" class="avatar avatar-lg rounded-circle border p-1 bg-white">
+                       <div class="ms-3 lh-1">
+                          <h5 class="mb-0">Andrea N'cho Stéphane</h5>
+                          <small>Administratrice d'une tontine en ligne </small>
+                       </div>
+                    </div>
+                 </div>
+                 <a href="#" class="stretched-link"></a>
+              </div>
+              <div class="card bg-light card-lift">
+                 <div class="card-body text-body">
+                    <p class="mb-0">“J'ai eu a collaborer avec Guy Stephane pendant plus de 04 mois j'ai été vraiment satisfait par ses talents. ca été une experience vraiment enrichissante ”</p>
+                    <div class="mt-4 d-flex align-items-center">
+                       <img src="assets/images/avatar/avatar-3.jpg" alt="" class="avatar avatar-lg rounded-circle border p-1 bg-white">
+                       <div class="ms-3 lh-1">
+                          <h5 class="mb-0">LANDRY ABRO</h5>
+                          <small>CEO PROXIMITI</small>
+                       </div>
+                    </div>
+                 </div>
+                 <a href="#" class="stretched-link"></a>
+              </div>
+           </div>
+           <div class="col-lg-4 col-md-12 col-12 flex-column flex-md-row flex-lg-column d-flex gap-4 gap-md-6 mt-lg-8" data-cue="slideInRight" data-show="true" style="animation-name: slideInRight; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 200ms; animation-direction: normal; animation-fill-mode: both;">
+              <div class="card bg-light card-lift">
+                 <div class="card-body text-body">
+                    <p class="mb-0">“J'etais a la recherche d'un developpeur pour concevoir le site de mon etablissement et des applications de gestion en interne aujourd'hui j'ai tout digitalité je suis vraiment satisifait Merci Fils Stephane”</p>
+                    <div class="mt-4 d-flex align-items-center">
+                       <img src="assets/images/avatar/avatar-6.jpg" alt="" class="avatar avatar-lg rounded-circle border p-1 bg-white">
+                       <div class="ms-3 lh-1">
+                          <h5 class="mb-0">HERVE BRICE TIE</h5>
+                          <small>FONDATEUR INSTITUT ROOSEVELT </small>
+                       </div>
+                    </div>
+                 </div>
+                 <a href="#" class="stretched-link"></a>
+              </div>
+              <div class="card bg-light card-lift">
+                 <div class="card-body text-body">
+                    <p class="mb-0">“Merci mon fils pour ton apport et ton soutien technique et tes efforts congugués aujoud'hui, merci pour le partage de tes connaissances. Bonne carriere à toi ”</p>
+                    <div class="mt-4 d-flex align-items-center">
+                       <img src="assets/images/avatar/avatar-5.jpg" alt="" class="avatar avatar-lg rounded-circle border p-1 bg-white">
+                       <div class="ms-3 lh-1">
+                          <h5 class="mb-0">Jean N'dri Charles </h5>
+                          <small>Développeur Sénior HKMS GROUP SERVICE SARL  </small>
+                       </div>
+                    </div>
+                 </div>
+                 <a href="#" class="stretched-link"></a>
+              </div>
+           </div>
 
-    <section class="bg-white py-8">
-        <!-- container -->
+        </div>
+     </section>
 
+
+
+     <section class="mb-xl-9 my-5">
         <div class="container">
             <div class="row">
-                <!-- col -->
-
-                <div class="offset-xl-1 col-xl-10 col-md-12 col-12">
-                    <div class="row text-center">
-                        <div class="col-md-12 px-lg-8 mb-8 mt-6">
-                            <!-- text -->
-
-                            <span class="text-uppercase text-dark fw-semibold ls-md">Explorer nos catégories</span>
-                            <!-- heading -->
-
-                            <h2 class="h1 fw-bold mt-3"></h2>
-                            <!-- text -->
-
-                            <p class="mb-0 fs-4">Consulter les  differentes téchnologies pour voir des sujets traités!</p>
-                        </div>
-                    </div>
-                    <section class="container">
-                        <div class="row">
-                            @foreach ($allCategories as $category)
-                            <div class="col-xl-4 col-lg-6 col-md-6 col-12">
-                                <!-- Card -->
-                                <div class="card mb-4 card-hover">
-                                    <div class="d-flex justify-content-between align-items-center p-4">
-                                        <div class="d-flex">
-                                            <a href="#">
-                                                <!-- Img -->
-                                                <img src="{{Storage::url($category->image)}}" alt="bootstrap" class="avatar-md">
-                                            </a>
-                                            <div class="ms-3">
-                                                <h4 class="mb-1">
-                                                    <a href="{{route('tag.article', $category->id)}}" class="text-inherit">{{$category->name}}</a>
-                                                </h4>
-                                                <p class="mb-0 fs-6">
-                                                    <span class="me-2">
-                                                        <span class="text-dark fw-medium">{{count($category->articletags)}}</span>
-                                                       Articles
-                                                    </span>
-
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            @endforeach
-
-                        </div>
-                    </section>
+                <div class="col-lg-6 offset-lg-3 col-md-12 col-12">
+                   <div class="text-center mb-7">
+                      <h2>Articles récemments publiés .</h2>
+                      <p class="mb-0">Aidons nous mutuellement à progresser et faire comprendre les les concepts selon notre expetise .</p>
+                   </div>
                 </div>
-            </div>
+             </div>
+           <div class="row g-5">
+            @foreach ($articlesTake as $article)
+              <div class="col-lg-4 col-md-6">
+                 <div class="card border-0 shadow-sm h-80 card-lift">
+                    <figure>
+                       <a href="{{route('article.detail', $article->slug)}}">
+                          <img src="assets/images/event/event-img-2.jpg" alt="event" class="card-img-top">
+                       </a>
+                    </figure>
+
+                    <div class="card-body h-100 d-flex align-items-start flex-column border rounded-bottom-3 border-top-0">
+                       <div class="mb-5">
+                        @foreach ($article->articletags as $tag)
+                          <small class="text-uppercase fw-semibold ls-md">  {{$tag->name}}</small>
+                          @endforeach
+                          <h4 class="my-2"><a href="{{route('article.detail', $article->slug)}}" class="text-reset">{{$article->title}}</a></h4>
+                         <p>{{Str::limit($article->mini_description, 30)}}</p>
+                       </div>
+                       <div class="d-flex justify-content-between w-100 mt-auto">
+                          <small>{{$article->created_at}}</small>
+                          <a href="{{route('article.detail', $article->slug)}}" class="btn btn-outline-dark">Consulter</a>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+
+              @endforeach
+           </div>
         </div>
-    </section>
+     </section>
 
-    <section class="py-8 bg-gray-200" style="background: url(../../assets/images/background/course-graphics.svg) no-repeat; background-size: cover; background-position: top center">
-        <div class="container my-lg-8">
-            <!-- row -->
-            <div class="row justify-content-center text-center">
-                <div class="col-md-9 col-12">
-                    <!-- heading -->
-                    <h2 class="display-4">Rejoindre kgs informatique c'est participer </h2>
-                    <p class="lead px-lg-8 mb-6">aux forums, réagir avec notre communauté .</p>
-                    <!-- button -->
-                    <div class="d-grid d-md-block">
-                        <a href="../sign-up.html" class="btn btn-outline-primary mb-2 mb-md-0">Consulter le forum</a>
-                        <a href="../sign-up.html" class="btn btn-info">Articles</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="py-8">
-        <div class="container">
-            <div class="row">
-                <div class="offset-xl-2 col-xl-8 offset-lg-1 col-lg-10 col-md-12 col-12">
-                    <div class="text-center mb-5">
-                        <h2 class="h1 fw-bold mt-3">les articles recemments publiés</h2>
-
-                    </div>
-                    <!-- Form -->
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <section class="pb-8">
-        <div class="container">
-            <div class="row">
-
-                @foreach ($articlesTake as $article)
-
-
-                <div class="col-xl-4 col-lg-4 col-md-6 col-12">
-                    <!-- Card -->
-                    <div class="card mb-4 shadow-lg card-lift">
-
-                        <!-- Card body -->
-                        <div class="card-body">
-                            <a href="#" class="fs-5 fw-semibold d-block mb-3 text-danger">Tutorial</a>
-                            <h3>
-                                <a href="blog-single.html" class="text-inherit">{{$article->title}}</a>
-                            </h3>
-                            <p>{{$article->mini_description}}</p>
-                            <!-- Media content -->
-                            <div class="row align-items-center g-0 mt-4">
-
-                                <div class="col lh-1">
-                                    <h5 class="mb-1">{{$article->owner->name}}</h5>
-                                    <p class="fs-6 mb-0">{{$article->created_at}}</p>
-                                </div>
-                                <div class="col-auto">
-                                  <a href="{{route('article.show', $article->id)}}" class="btn btn-dark">Consulter</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                @endforeach
-                <!-- Button -->
-                <div class="col-xl-12 col-lg-12 col-md-12 col-12 text-center mt-6">
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-12 text-center mt-4">
-                                  <!-- button de paginatioon dynamique -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
-
+ </main>
 @endsection

@@ -73,9 +73,6 @@ return [
         public_path('storage') => storage_path('app/public'),
     ],
 
-    'links' => [
-        public_path('tags') => storage_path('app/tags'),
-    ],
 
 
 ];

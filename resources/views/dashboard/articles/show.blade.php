@@ -1,27 +1,24 @@
 @extends('master.master')
 @section('content')
-<div>
-    <section class="py-7 py-lg-8">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-8 col-lg-8 col-md-12 col-12 mb-2">
-                    <div class="text-center mb-4">
-                        <h1 class="display-3 fw-bold mb-4">{{ $ressource->title}}</h1>
-                    </div>
+<main>
+    <div class="pattern-square"></div>
+    <div class="py-xl-9 py-4">
+       <div class="container">
+          <div class="row">
+             <article class="col-lg-8 offset-lg-2">
+                <h1>{{$ressource->title}}</h1>
+                <div class="d-flex align-items-center mt-lg-6 mt-4">
+                   <div class="me-5">
+                      <span class="fs-6">Publié par  {{$ressource->owner->name}}  <span> vue  </span> </span>
+                   </div>
                 </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-xl-8 col-lg-8 col-md-12 col-12 mb-2">
-                    <div>
-                        <div class="mb-4">
-                            <h2 class="lead text-white">{!! $ressource->description !!}</h2>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
+                <p>
+                    {!! $ressource->description !!}
+                </p>
+             </article>
+          </div>
+       </div>
+    </div>
+ </main>
 @endsection
 

@@ -1,16 +1,16 @@
 <?php
 namespace App\Traits;
 
-use Illuminate\Support\Facades\DB;
 use Session;
+use App\Models\Article;
+use Illuminate\Support\Facades\DB;
 
 trait ImplementeServiceExterne {
 
-public function countView($id){
-        $Key = 'key_' . $id;
+public function countView($slug){
+        $Key = 'key_' . $slug;
         if (!Session::has($Key)) {
-            DB::table('articles')
-            ->where('id', $id)->increment('view', 1);
+           Article::where('slug', $slug)->increment('view', 1);
             Session::put($Key, 1);
         }
     }

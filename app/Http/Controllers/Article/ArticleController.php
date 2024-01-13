@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Article;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\ArticleRequest;
 use App\Models\Article;
 use App\Models\Tag;
 use Illuminate\Http\Request;
@@ -41,17 +42,20 @@ class ArticleController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(ArticleRequest $request)
     {
 
+        if ($request->hasFile('image')) {
+            $image = $request->file('image')->store('public');
+        }
        $article  = Article::create([
             'title'=> $request->input('title')?? 'le resultat',
             'slug' => \Str::slug($request->input('title')),
             'mini_description' => $request->input('mini_description'),
             'description'=> $request->input('description'),
-            'user_id' => Auth::user()->id
+            'user_id' => Auth::user()->id,
+            'image' => $image
         ]);
-
         $article->articletags()->sync($request->tag_id);
         return redirect()->route('article.index', ['success' => true]);
 
@@ -79,10 +83,14 @@ class ArticleController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(ArticleRequest $request, string $id)
     {
-
         $ressource = Article::find($id);
+
+        if ($request->hasFile('image')) {
+            $image = $request->file('image')->store('public');
+            $ressource->update(['image' => $image]);
+        }
         $ressource->title = $request->input('title');
         $ressource->mini_description = $request->input('mini_description');
         $ressource->description = $request->input('description');

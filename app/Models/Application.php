@@ -15,6 +15,7 @@ class Application extends Model
         'image',
         'url',
         'description',
+        'preview',
     ];
 
 }

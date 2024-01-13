@@ -1,83 +1,68 @@
 @extends('master.master')
  @section('content')
-
  <main>
-    <section class="pt-5 pb-5">
-        <div class="container">
-            <div class="row mt-0 mt-md-4">
-                <div class="col-lg-3 col-md-4 col-12">
-                    <!-- User profile -->
-                   @include('dashboard.slidebar')
-                </div>
-                <div class="col-lg-9 col-md-8 col-12">
-                    <div class="card mb-4">
-                        <!-- Card header -->
-                        <div class="card-header">
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <h3 class="h4 mb-0">Liste des mes applications</h3>
-                                </div>
-                                <div class="col-lg-9">
-                                    <a href="{{route('application.create')}}" class="btn btn-primary">Nouvel Application</a>
-                                </div>
+    <section class="py-lg-7 py-5 bg-light-subtle">
+       <div class="container">
+          <div class="row">
+            @include('dashboard.slidebar')
+            <div class="col-lg-9 col-md-8">
+                <div class="card border-0 mb-4 shadow-sm">
+                   <div class="card-body p-lg-5">
+                      <div class="mb-5">
+                        <div class="row">
+                            <div class="col-lg-9">
+                                <h4 class="mb-1">Liste des applications </h4>
                             </div>
-
+                            <div class="col-lg-3">
+                             <a class="btn btn-outline-dark" href="{{route('application.create')}}"><i class=" bx bx-user-plus"></i> Enregistrer</a>
+                            </div>
                         </div>
-                        <!-- Table -->
-                        <div class="table-responsive">
-                            <table class="table mb-0 table-hover table-centered text-nowrap">
-                                <!-- Table Head -->
-                                <thead class="table-light">
-                                    <tr>
-                                        <th>Title</th>
-                                        <th>Image</th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                <!-- Table Body -->
-                                <tbody>
-                                    @foreach ($allApplication as $application)
-                                    <tr>
-                                        <td>
-                                            <a href="#">
-                                                <div class="d-flex align-items-center">
-                                                    <h5 class="ms-3 text-primary-hover mb-0">{{Str::limit($application->title,30)}}</h5>
-                                                </div>
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <span class="dropdown dropstart">
-                                                <a class="btn-icon btn btn-ghost btn-sm rounded-circle" href="#" role="button" id="courseDropdown1" data-bs-toggle="dropdown" data-bs-offset="-20,20" aria-expanded="false">
-                                                    <i class="fe fe-more-vertical"></i>
-                                                </a>
-                                                <span class="dropdown-menu" aria-labelledby="courseDropdown1">
-                                                    <span class="dropdown-header">Setting</span>
-                                                    <a class="dropdown-item" href="{{route('application.edit', $application->id)}}">
-                                                        <i class="fe fe-edit dropdown-item-icon"></i>
-                                                        Edition
-                                                    </a>
+                      </div>
+                      <div class="table-responsive">
+                         <table class="table table-centered td table-centered th table-lg text-nowrap">
+                            <thead>
+                               <tr>
+                                  <th scope="col">
+                                     <div class="fs-6 text-dark fw-semibold">Libellé</div>
+                                  </th>
 
-                                                    <form action="{{route('application.destroy', $application->id)}}" method="POST">
-                                                        @method('DELETE')
-                                                        @csrf
-                                                        <button class="btn btn-danger" type="submit" onclick="return confirm('voulez-vous vraiment supprimer ?')">Supprimer</button>
-                                                    </form>
+                                  <th scope="col">
+                                     <div class="fs-6 text-dark fw-semibold">Action</div>
+                                  </th>
+                               </tr>
+                            </thead>
+                            <tbody>
+                                @foreach ($allApplication as $application)
+                               <tr>
+                                  <td>
+                                     <div class="d-flex align-items-center">
+                                        <img src="{{Storage::url($application->image)}}" alt="avatar" class="avatar avatar-lg rounded-circle">
+                                        <div class="ms-3">
+                                           <div class="fs-5 fw-semibold text-dark"> {{$application->title}}</div>
+                                           <small> <a href="{{$application->url}}" class="text-dark" target="_blank">{{$application->url}}</a></small>
+                                        </div>
+                                     </div>
+                                  </td>
+                                  <td>
+                                    <a href="{{route('application.edit', $application->id)}}" class="btn btn-sm btn-dark me-2">Editer</a>
 
-                                                </span>
-                                            </span>
-                                        </td>
-                                    </tr>
-                                    @endforeach
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+                                    <form action="{{route('application.destroy', $application->id)}}" method="POST">
+                                        @method('DELETE')
+                                        @csrf
+                                        <button class="btn btn-sm btn-light" type="submit" onclick="return confirm('voulez-vous vraiment supprimer ?')">Supprimer</button>
+                                    </form>
+                                 </td>
+                               </tr>
+                               @endforeach
+                            </tbody>
+                         </table>
+                      </div>
+                   </div>
                 </div>
-            </div>
-        </div>
+             </div>
+       </div>
     </section>
-</main>
-
+ </main>
 
 @endsection
 

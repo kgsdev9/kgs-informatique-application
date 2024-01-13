@@ -1,83 +1,74 @@
 @extends('master.master')
  @section('content')
-
  <main>
-    <section class="pt-5 pb-5">
-        <div class="container">
-            <div class="row mt-0 mt-md-4">
-                <div class="col-lg-3 col-md-4 col-12">
-                    <!-- User profile -->
-                   @include('dashboard.slidebar')
-                </div>
-                <div class="col-lg-9 col-md-8 col-12">
-                    <div class="card mb-4">
-                        <!-- Card header -->
-                        <div class="card-header">
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <h3 class="h4 mb-0">Mes recents articles</h3>
-                                </div>
-                                <div class="col-lg-9">
-                                    <a href="{{route('article.create')}}" class="btn btn-primary">Nouvel article</a>
-                                </div>
+    <section class="py-lg-7 py-5 bg-light-subtle">
+       <div class="container">
+          <div class="row">
+            @include('dashboard.slidebar')
+            <div class="col-lg-9 col-md-8">
+                <div class="card border-0 mb-4 shadow-sm">
+                   <div class="card-body p-lg-5">
+                      <div class="mb-5">
+                        <div class="row">
+                            <div class="col-lg-9">
+                                <h4 class="mb-1">Liste des articles </h4>
                             </div>
-
+                            <div class="col-lg-3">
+                             <a class="btn btn-outline-dark" href="{{route('article.create')}}"><i class=" bx bx-user-plus"></i> Enregistrer</a>
+                            </div>
                         </div>
-                        <!-- Table -->
-                        <div class="table-responsive">
-                            <table class="table mb-0 table-hover table-centered text-nowrap">
-                                <!-- Table Head -->
-                                <thead class="table-light">
-                                    <tr>
-                                        <th>Title</th>
-                                        <th>Tag</th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                <!-- Table Body -->
-                                <tbody>
-                                    @foreach ($allArticleForUser as $article)
-                                    <tr>
-                                        <td>
-                                            <a href="#">
-                                                <div class="d-flex align-items-center">
-                                                    <h5 class="ms-3 text-primary-hover mb-0">{{Str::limit($article->title,30)}}</h5>
-                                                </div>
-                                            </a>
-                                        </td>
-                                        @foreach ($article->articletags as $tag)
-                                        <td>{{$tag->name}}</td>
-                                        @endforeach
-                                        <td>
-                                            <span class="dropdown dropstart">
-                                                <a class="btn-icon btn btn-ghost btn-sm rounded-circle" href="#" role="button" id="courseDropdown1" data-bs-toggle="dropdown" data-bs-offset="-20,20" aria-expanded="false">
-                                                    <i class="fe fe-more-vertical"></i>
-                                                </a>
-                                                <span class="dropdown-menu" aria-labelledby="courseDropdown1">
-                                                    <span class="dropdown-header">Setting</span>
-                                                    <a class="dropdown-item" href="{{route('article.edit', $article->id)}}">
-                                                        <i class="fe fe-edit dropdown-item-icon"></i>
-                                                        Edition
-                                                    </a>
-                                                    <a class="dropdown-item" href="#">
-                                                        <i class="fe fe-trash dropdown-item-icon"></i>
-                                                        Supprimer
-                                                    </a>
-                                                </span>
-                                            </span>
-                                        </td>
-                                    </tr>
+                      </div>
+                      <div class="table-responsive">
+                         <table class="table table-centered td table-centered th table-lg text-nowrap">
+                            <thead>
+                               <tr>
+                                  <th scope="col">
+                                     <div class="fs-6 text-dark fw-semibold">Libellé</div>
+                                  </th>
+                                  <th scope="col">
+                                    <div class="fs-6 text-dark fw-semibold">Tag</div>
+                                 </th>
+                                  <th scope="col">
+                                     <div class="fs-6 text-dark fw-semibold">Action</div>
+                                  </th>
+                               </tr>
+                            </thead>
+                            <tbody>
+                                @foreach ($allArticleForUser as $article)
+                               <tr>
+                                  <td>
+                                     <div class="d-flex align-items-center">
+                                        <img src="{{Storage::url($article->image)}}" alt="avatar" class="avatar avatar-lg rounded-circle">
+                                        <div class="ms-3">
+                                           <div class="fs-5 fw-semibold text-dark">{{Str::limit($article->title,30)}}</div>
+                                           <small>{{$article->owner->name}}</small>
+                                        </div>
+                                     </div>
+                                  </td>
+
+                                  <td>@foreach ($article->articletags as $tag)
+                                    <span>{{$tag->name}}</span>
                                     @endforeach
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+                                </td>
+                                  <td>
+                                    <a href="{{route('article.edit', $article->id)}}" class="btn btn-sm btn-dark me-2">Editer</a>
+                                    <form action="{{route('article.destroy', $article->id)}}" method="POST">
+                                        @csrf
+                                        @method('delete')
+                                          <button type="submit" class="btn btn-sm btn-light">Supprimer</button>
+                                     </form>
+                                 </td>
+                               </tr>
+                               @endforeach
+                            </tbody>
+                         </table>
+                      </div>
+                   </div>
                 </div>
-            </div>
-        </div>
+             </div>
+       </div>
     </section>
-</main>
-
+ </main>
 
 @endsection
 
