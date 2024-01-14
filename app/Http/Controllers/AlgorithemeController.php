@@ -6,17 +6,8 @@ use Illuminate\Http\Request;
 
 class AlgorithemeController extends Controller
 {
-    <?php
 
-    namespace App\Http\Controllers;
-
-    use App\Models\Formation;
-    use Illuminate\Http\Request;
-    use Illuminate\Support\Facades\Storage;
-
-    class FormationController extends Controller
-    {
-            /**
+    /**
          * Display a listing of the resource.
          */
         public function index()
@@ -105,6 +96,6 @@ class AlgorithemeController extends Controller
             }
            return redirect()->route('Formation.index', ['deleted'=>true]);
         }
-    }
+    
 
 }
