@@ -16,7 +16,7 @@
           <div class="row">
              <div class="col-lg-7 col-md-12">
                 <figure>
-                   <img src="{{Storage::url($ressource->image)}}" class="img-fluid rounded-3 shadow-sm" alt="{{$ressource->title}}">
+                   <img src="{{asset('podcast.png')}}" class="img-fluid rounded-3 shadow-sm" alt="{{$ressource->title}}">
                 </figure>
 
                 <p class="mt-6">{{$ressource->description}}.</p>

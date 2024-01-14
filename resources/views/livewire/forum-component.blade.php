@@ -20,7 +20,7 @@
                           </div>
                           <div class="col-lg-6 col-md-6 col-12">
                              <label for="categoryList" class="form-label visually-hidden">Selectionner une catégorie</label>
-                             <select class="form-select" wire:click="filterTag($event.target.value)">
+                             <select class="form-select" wire:change="filterTag($event.target.value)">
                                 <option value="">Choisir un tag</option>
                                 @foreach ($allTags as $key  => $tag)
                                 <option value="{{$key}}">{{$tag->name}}</option>

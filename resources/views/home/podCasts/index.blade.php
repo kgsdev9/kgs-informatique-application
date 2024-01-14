@@ -24,7 +24,7 @@
                 <div class="card border-0 shadow-sm h-100 card-lift">
                    <figure>
                       <a href="{{route('podcast.show', $conference->slug)}}">
-                         <img src="{{Storage::url($conference->image)}}" alt="event" class="card-img-top">
+                         <img src="{{asset('podcast.png')}}" alt="event" class="card-img-top">
                       </a>
                    </figure>
 

@@ -15,6 +15,16 @@
 
                        </div>
                        <form class="row g-3 needs-validation" novalidate="" method="POST" action="{{route('article.store')}}" enctype="multipart/form-data">
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+
                         @csrf
                           <div class="col-lg-12 col-md-12">
                              <label for="profileFirstNameInput" class="form-label">Title de l'article</label>

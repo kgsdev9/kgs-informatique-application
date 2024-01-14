@@ -37,11 +37,15 @@ class ConfereneController extends Controller
      }
 
      public function  store(PodcastRequest $request) {
-        $image = $request->file('image')->store('public');
-         Podcats::create($request->validated() + [
+        if ($request->hasFile('image')) {
+            $image = $request->file('image')->store('public');
+        }
+       $podcast =   Podcats::create($request->validated() + [
             'image'=> $image,
             'slug'=> Str::slug($request->title)
          ]);
+
+
          return redirect()->route('conference.index', ['succes' => true]);
      }
 }

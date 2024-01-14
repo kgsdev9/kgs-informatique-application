@@ -6,10 +6,10 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ConfereneController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\EpisdoeController;
 use App\Http\Controllers\ForumController;
 use App\Http\Controllers\Home\HomeController;
 use App\Http\Controllers\Provider\ProviderController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -52,8 +52,8 @@ Route::resources([
     'application'=> ApplicationController::class,
     'conference'  => ConfereneController::class,
     'course'=> CourseController::class,
-    'episode' => EpisdoeController::class,
     'forum'=> ForumController::class,
+    'user' =>UserController::class
    ]);
 Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
 Route::get('/get-article-by-tag/{id}', [HomeController::class, 'articleTag'])->name('article.tag');

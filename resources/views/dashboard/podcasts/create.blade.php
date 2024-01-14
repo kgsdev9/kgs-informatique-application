@@ -21,7 +21,7 @@
 
                           <div class="col-lg-12 col-md-12">
                             <label for="title" class="form-label">Image </label>
-                             <input id="title" name="image"  class="form-control" type="file" placeholder="Title de l'article">
+                             <input  type="file" name="image"  class="form-control" placeholder="Title de l'article">
                           </div>
 
 

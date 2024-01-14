@@ -1,5 +1,5 @@
 @extends('master.master')
-@section('title', 'Bienvenuee - Sur |  KGS INFORMATIQUE')
+@section('title', 'Bienvenue - Sur |  KGS INFORMATIQUE')
 @section('content')
 <main >
     <!--hero section start-->
