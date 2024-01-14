@@ -43,7 +43,7 @@
              </a>
           </li>
           <li class="nav-item">
-             <a class="nav-link" aria-current="page" href="#">
+             <a class="nav-link" aria-current="page" href="{{route('forum.index')}}">
                 <i class="align-bottom bx bx-lock-alt"></i>
                 <span class="ms-2">Forums</span>
              </a>
@@ -76,11 +76,10 @@
              </a>
           </li>
 
-
           <li class="nav-item">
-             <a class="nav-link" href="#">
+             <a class="nav-link" href="{{route('conference.index')}}">
                 <i class="align-bottom bx bx-time"></i>
-                <span class="ms-2">Activités</span>
+                <span class="ms-2"> PodCasts</span>
              </a>
           </li>
           <li class="nav-item">

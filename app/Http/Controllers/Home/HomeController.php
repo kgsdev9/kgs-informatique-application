@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers\Home;
 
-use App\Http\Controllers\Controller;
-use App\Models\Application;
-use App\Models\Article;
 use App\Models\Tag;
-use App\Services\ArticleService;
+use App\Models\Forum;
+use App\Models\Article;
+use App\Models\Application;
 use App\Services\TagService;
+use App\Services\ArticleService;
+use App\Http\Controllers\Controller;
+use App\Models\Podcats;
 use App\Traits\ImplementeServiceExterne;
 
 class HomeController extends Controller
@@ -40,8 +42,19 @@ class HomeController extends Controller
             'allTags'=> Tag::all()
         ]);
      }
+
+     public function showTopic($slug) {
+      $forum = Forum::where('slug', $slug)->first();
+      if($forum) {
+        return view('forums.detail', [
+            'topic'=> $forum
+        ]);
+      }
+     }
      public function podCasts() {
-        return view('home.podCasts.index');
+        return view('home.podCasts.index', [
+            'allPodcasts'=> Podcats::all()
+        ]);
      }
 
      public function showApplication($slug) {
@@ -51,6 +64,17 @@ class HomeController extends Controller
             'detailApp'=> Application::where('slug', $slug)->first(),
             'otherApplication'=> Application::where('slug','!=', $slug)->inRandomOrder()->orderByDesc('created_at')->paginate(10)
         ]);
+     }
+
+     public function showPodcast($slug)  {
+        $resssource =  Podcats::where('slug', $slug)->first();
+        if($resssource) {
+          return view('home.podCasts.detail', [
+              'ressource'=> $resssource
+          ]);
+        } else{
+          return redirect()->route('home');
+      }
      }
 
      public function application() {

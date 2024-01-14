@@ -22,7 +22,9 @@ class ForumRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'title'=> 'required|string|max:225',
+            'tag_id'=> 'required|exists:tags,id',
+            'description' => 'required',
         ];
     }
 }

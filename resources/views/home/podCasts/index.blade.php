@@ -2,352 +2,48 @@
 @section('content')
 <main>
     <div class="pattern-square"></div>
-    <!--Pageheader start-->
     <section class="py-5 py-lg-8">
        <div class="container">
           <div class="row">
              <div class="col-lg-6 offset-lg-3 col-12">
                 <div class="text-center">
-                   <h1 class="mb-3">Worldwide conferences, meetups, events, and webinars</h1>
-                   <p class="mb-0">Meet our tech or business teams to talk about the freedom to build infinitely composable content.</p>
+                   <h1 class="mb-3">Conférences, rencontres, événements et webinaires mondiaux</h1>
+                   <p class="mb-0">Rencontrez nos équipes tech ou business pour parler de la liberté de créer du contenu infiniment composable.</p>
                 </div>
              </div>
           </div>
        </div>
     </section>
-    <!--Pageheader end-->
-    <!--Online start-->
-
     <section class="mb-xl-9 my-5">
        <div class="container">
-          <div class="row">
-             <div class="col-lg-12">
-                <div class="swiper sliderSwiper swiper-initialized swiper-horizontal swiper-backface-hidden">
-                   <div class="swiper-wrapper pb-7" id="swiper-wrapper-3d4b2e1c5210b07d2" aria-live="off" style="transition-duration: 0ms; transform: translate3d(-744px, 0px, 0px); transition-delay: 0ms;">
-
-
-
-                   <div class="swiper-slide swiper-slide-next" role="group" aria-label="3 / 3" data-swiper-slide-index="2" style="width: 372px;">
-                         <div class="card shadow-sm overflow-hidden">
-                            <div class="row g-0">
-                               <div class="col-xl-6 col-md-6">
-                                  <div class="card-body h-100 d-flex align-items-start flex-column p-lg-7">
-                                     <div class="mb-4">
-                                        <small class="text-uppercase fw-semibold ls-md">Online</small>
-                                        <h2 class="mb-0 mt-3"><a href="#" class="text-reset">React - Next.js developers events and meetup</a></h2>
-                                     </div>
-                                     <div class="mb-5">
-                                        <small class="me-2">June 22, 2024</small>
-                                        <small>1:00PM EDT</small>
-                                     </div>
-                                     <div class="mt-auto">
-                                        <a href="event-single.html" class="icon-link icon-link-hover card-link">
-                                           Mode Details
-                                           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
-                                           </svg>
-                                        </a>
-                                     </div>
-                                  </div>
-                               </div>
-                               <div class="col-md-6" style="
-                                     background-image: url(assets/images/event/event-img-3.jpg);
-                                     background-size: cover;
-                                     background-repeat: no-repeat;
-                                     background-position: center;
-                                     min-height: 15rem;
-                                  ">
-                                  <!-- for mobile img-->
-                               </div>
-                            </div>
-                         </div>
-                      </div><div class="swiper-slide swiper-slide-prev" role="group" aria-label="1 / 3" data-swiper-slide-index="0" style="width: 372px;">
-                         <div class="card shadow-sm overflow-hidden">
-                            <div class="row g-0">
-                               <div class="col-xl-6 col-md-6">
-                                  <div class="card-body h-100 d-flex align-items-start flex-column p-lg-7">
-                                     <div class="mb-3">
-                                        <small class="text-uppercase fw-semibold ls-md">Online</small>
-                                        <h2 class="mb-0 mt-3"><a href="#" class="text-reset">React - Next.js developers events and meetup</a></h2>
-                                     </div>
-                                     <div class="mb-5">
-                                        <small class="me-2">June 22, 2024</small>
-                                        <small>1:00PM EDT</small>
-                                     </div>
-                                     <div class="mt-auto">
-                                        <a href="event-single.html" class="icon-link icon-link-hover card-link">
-                                           Mode Details
-                                           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
-                                           </svg>
-                                        </a>
-                                     </div>
-                                  </div>
-                               </div>
-                               <div class="col-md-6" style="
-                                     background-image: url(assets/images/event/event-img-1.jpg);
-                                     background-size: cover;
-                                     background-repeat: no-repeat;
-                                     background-position: center;
-                                     min-height: 15rem;
-                                  ">
-                                  <!-- for mobile img-->
-                               </div>
-                            </div>
-                         </div>
-                      </div><div class="swiper-slide swiper-slide-active" role="group" aria-label="2 / 3" data-swiper-slide-index="1" style="width: 372px;">
-                         <div class="card shadow-sm overflow-hidden">
-                            <div class="row g-0">
-                               <div class="col-xl-6 col-md-6">
-                                  <div class="card-body h-100 d-flex align-items-start flex-column p-lg-7">
-                                     <div class="mb-4">
-                                        <small class="text-uppercase fw-semibold ls-md">Online</small>
-                                        <h2 class="mb-0 mt-3"><a href="#" class="text-reset">React - Next.js developers events and meetup</a></h2>
-                                     </div>
-                                     <div class="mb-5">
-                                        <small class="me-2">June 22, 2024</small>
-                                        <small>1:00PM EDT</small>
-                                     </div>
-                                     <div class="mt-auto">
-                                        <a href="event-single.html" class="icon-link icon-link-hover card-link">
-                                           Mode Details
-                                           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
-                                           </svg>
-                                        </a>
-                                     </div>
-                                  </div>
-                               </div>
-                               <div class="col-md-6" style="
-                                     background-image: url(assets/images/event/event-img-2.jpg);
-                                     background-size: cover;
-                                     background-repeat: no-repeat;
-                                     background-position: center;
-                                     min-height: 15rem;
-                                  ">
-                                  <!-- for mobile img-->
-                               </div>
-                            </div>
-                         </div>
-                      </div></div>
-
-                   <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 2" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
-                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-             </div>
-          </div>
-       </div>
-    </section>
-    <!--Online end-->
-
-    <!--All events start-->
-    <section class="mb-xl-9 my-5">
-       <div class="container">
-          <div class="row mb-4">
-             <div class="col-lg-12">
-                <div class="mb-4">
-                   <h3 class="mb-4">All Events</h3>
-                </div>
-             </div>
-             <div class="col-lg-6 col-md-10 col-12">
-                <div class="row g-3 align-items-center">
-                   <div class="col-lg-6 col-md-6 col-12">
-                      <label for="eventList" class="form-label visually-hidden">Search Category</label>
-                      <select class="form-select" id="eventList">
-                         <option selected="" disabled="" value="">Type of event</option>
-                         <option value="Conferences">Conferences</option>
-                         <option value="Online">Online</option>
-                         <option value="Livestream">Livestream</option>
-                         <option value="Video">Video</option>
-                      </select>
-                   </div>
-                </div>
-             </div>
-          </div>
 
           <div class="row g-5">
-             <div class="col-md-6">
-                <div class="card shadow-sm h-100 border-0 card-lift overflow-hidden">
-                   <div class="row h-100 g-0">
-                      <a href="event-single.html" class="col-lg-5 col-md-12" style="
-                            background-image: url(assets/images/event/event-img-2.jpg);
-                            background-size: cover;
-                            background-repeat: no-repeat;
-                            background-position: center;
-                            min-height: 13rem;
-                         "></a>
-                      <div class="col-lg-7 col-md-12">
-                         <div class="card-body h-100 d-flex align-items-start flex-column border rounded-end-lg-3 rounded-bottom-3 rounded-top-0 rounded-start-lg-0 border-start-lg-0 border-top-0 border-top-lg">
-                            <div class="mb-5">
-                               <small class="text-uppercase fw-semibold ls-md">Conference</small>
-                               <h4 class="my-2"><a href="event-single.html" class="text-reset">How to build a blog with Astro and Contentful</a></h4>
-                               <small>July 2, 2024</small>
-                            </div>
-                            <div class="mt-auto">
-                               <small class="me-2">9:00AM EDT</small>
-                               <small>Germany</small>
-                            </div>
-                         </div>
+            @foreach ($allPodcasts as $conference)
+             <div class="col-lg-4 col-md-6">
+                <div class="card border-0 shadow-sm h-100 card-lift">
+                   <figure>
+                      <a href="{{route('podcast.show', $conference->slug)}}">
+                         <img src="{{Storage::url($conference->image)}}" alt="event" class="card-img-top">
+                      </a>
+                   </figure>
+
+                   <div class="card-body h-100 d-flex align-items-start flex-column border rounded-bottom-3 border-top-0">
+                      <div class="mb-5">
+                         <small class="text-uppercase fw-semibold ls-md">En ligne</small>
+                         <h4 class="my-2"><a href="{{route('podcast.show', $conference->slug)}}" class="text-reset">{{$conference->title}}</a></h4>
+                         <small>{{$conference->created_at}}</small>
+                      </div>
+                      <div class="d-flex justify-content-between w-100 mt-auto">
+                         <small>Date de conference</small>
+                         <small>Abidjan</small>
                       </div>
                    </div>
                 </div>
              </div>
-             <div class="col-md-6">
-                <div class="card shadow-sm h-100 border-0 card-lift overflow-hidden">
-                   <div class="row g-0 h-100">
-                      <a href="event-single.html" class="col-lg-5 col-md-12" style="
-                            background-image: url(assets/images/event/event-img-3.jpg);
-                            background-size: cover;
-                            background-repeat: no-repeat;
-                            background-position: center;
-                            min-height: 13rem;
-                         "></a>
-                      <div class="col-lg-7 col-md-12">
-                         <div class="card-body h-100 d-flex align-items-start flex-column border rounded-end-lg-3 rounded-bottom-3 rounded-top-0 rounded-start-lg-0 border-start-lg-0 border-top-0 border-top-lg">
-                            <div class="mb-5">
-                               <small class="text-uppercase fw-semibold ls-md">Conference</small>
-                               <h4 class="my-2"><a href="event-single.html" class="text-reset">A look at building with Astro template</a></h4>
-                               <small>June 28, 2024</small>
-                            </div>
-                            <div class="mt-auto">
-                               <small class="me-2">9:00AM EDT</small>
-                               <small>India</small>
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-             </div>
-             <div class="col-md-6">
-                <div class="card shadow-sm h-100 border-0 card-lift overflow-hidden">
-                   <div class="row h-100 g-0">
-                      <a href="event-single.html" class="col-lg-5 col-md-12" style="
-                            background-image: url(assets/images/event/event-img-4.jpg);
-                            background-size: cover;
-                            background-repeat: no-repeat;
-                            background-position: center;
-                            min-height: 13rem;
-                         "></a>
-                      <div class="col-lg-7 col-md-12">
-                         <div class="card-body h-100 d-flex align-items-start flex-column border rounded-end-lg-3 rounded-bottom-3 rounded-top-0 rounded-start-lg-0 border-start-lg-0 border-top-0 border-top-lg">
-                            <div class="mb-5">
-                               <small class="text-uppercase fw-semibold ls-md">Online</small>
-                               <h4 class="my-2"><a href="event-single.html" class="text-reset">Make a blog with Next.js, React, and Sanity</a></h4>
-                               <small>June 26, 2024</small>
-                            </div>
-                            <div class="mt-auto">
-                               <small class="me-2">9:00AM EDT</small>
-                               <small>Dubai</small>
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-             </div>
-             <div class="col-md-6">
-                <div class="card shadow-sm h-100 border-0 card-lift overflow-hidden">
-                   <div class="row g-0 h-100">
-                      <a href="event-single.html" class="col-lg-5 col-md-12" style="
-                            background-image: url(assets/images/event/event-img-5.jpg);
-                            background-size: cover;
-                            background-repeat: no-repeat;
-                            background-position: center;
-                            min-height: 13rem;
-                         "></a>
-                      <div class="col-lg-7 col-md-12">
-                         <div class="card-body h-100 d-flex align-items-start flex-column border rounded-end-lg-3 rounded-bottom-3 rounded-top-0 rounded-start-lg-0 border-start-lg-0 border-top-0 border-top-lg">
-                            <div class="mb-5">
-                               <small class="text-uppercase fw-semibold ls-md">Livestream</small>
-                               <h4 class="my-2"><a href="event-single.html" class="text-reset">Using Contentful CMS with Next.js</a></h4>
-                               <small>June 22, 2024</small>
-                            </div>
-                            <div class="mt-auto">
-                               <small class="me-2">9:00AM EDT</small>
-                               <small>London</small>
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-             </div>
+             @endforeach
+
           </div>
        </div>
     </section>
-    <!--All events end-->
-    <!--Webinar start-->
-    <section class="mb-xl-9 my-5">
-       <div class="container">
-          <div class="row">
-             <div class="col-lg-6">
-                <h3 class="mb-4">Webinar Video on-demand</h3>
-             </div>
-          </div>
-          <div class="row g-5">
-             <div class="col-lg-4 col-md-6">
-                <div class="card border-0 shadow-sm h-100 card-lift">
-                   <figure>
-                      <a href="event-single.html">
-                         <img src="assets/images/event/event-img-2.jpg" alt="event" class="card-img-top">
-                      </a>
-                   </figure>
-
-                   <div class="card-body h-100 d-flex align-items-start flex-column border rounded-bottom-3 border-top-0">
-                      <div class="mb-5">
-                         <small class="text-uppercase fw-semibold ls-md">Webinar</small>
-                         <h4 class="my-2"><a href="event-single.html" class="text-reset">How to build a blog with Astro and Contentful</a></h4>
-                         <small>June 22, 2024</small>
-                      </div>
-                      <div class="d-flex justify-content-between w-100 mt-auto">
-                         <small>9:00AM EDT</small>
-                         <small>Germany</small>
-                      </div>
-                   </div>
-                </div>
-             </div>
-             <div class="col-lg-4 col-md-6">
-                <div class="card border-0 shadow-sm h-100 card-lift">
-                   <figure>
-                      <a href="event-single.html">
-                         <img src="assets/images/event/event-img-5.jpg" alt="event" class="card-img-top">
-                      </a>
-                   </figure>
-
-                   <div class="card-body h-100 d-flex align-items-start flex-column border rounded-bottom-3 border-top-0">
-                      <div class="mb-5">
-                         <small class="text-uppercase fw-semibold ls-md">Webinar</small>
-                         <h4 class="my-2"><a href="event-single.html" class="text-reset">Astro components &amp; the basic building blocks</a></h4>
-                         <small>June 22, 2024</small>
-                      </div>
-                      <div class="d-flex justify-content-between w-100 mt-auto">
-                         <small>9:00AM EDT</small>
-                         <small>Germany</small>
-                      </div>
-                   </div>
-                </div>
-             </div>
-             <div class="col-lg-4 col-md-6">
-                <div class="card border-0 shadow-sm h-100 card-lift">
-                   <figure>
-                      <a href="event-single.html">
-                         <img src="assets/images/event/event-img-4.jpg" alt="event" class="card-img-top">
-                      </a>
-                   </figure>
-
-                   <div class="card-body h-100 d-flex align-items-start flex-column border rounded-bottom-3 border-top-0">
-                      <div class="mb-5">
-                         <small class="text-uppercase fw-semibold ls-md">Webinar</small>
-                         <h4 class="my-2"><a href="event-single.html" class="text-reset">Using Contentful CMS with Next.js</a></h4>
-                         <small>June 22, 2024</small>
-                      </div>
-                      <div class="d-flex justify-content-between w-100 mt-auto">
-                         <small>9:00AM EDT</small>
-                         <small>Germany</small>
-                      </div>
-                   </div>
-                </div>
-             </div>
-          </div>
-       </div>
-    </section>
-    <!--Webinar end-->
  </main>
 @endsection

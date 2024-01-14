@@ -1,23 +1,20 @@
 <div>
 
-    <main>
-        <div ></div>
-        <!--Pageheader start-->
+    <main class="bg-light">
+
         <section class="py-5 py-lg-8">
            <div class="container">
               <div class="row">
                  <div class="col-lg-12 col-md-12 col-12">
                     <div class="text-center">
                        <h1 class="mb-3">Tous les articles récemment publiés.</h1>
-                       <p class="mb-0">Blog sidebar layout we write stuff from time to time that might be interesting 🤷‍</p>
+                       <p class="mb-0">Ces articles font l'objet d'une vérification avant d'etre publié , le pourcentage de trouvé un bug est quasi nul 🤷‍</p>
                     </div>
                  </div>
               </div>
            </div>
         </section>
-        <!--Pageheader end-->
-
-        <section class="bg-light py-5 py-lg-8 bg-opacity-50">
+        <section class=" py-5 py-lg-8 bg-opacity-50">
             <div class="container">
                <div class="row">
                   <div class="text-center">
@@ -36,40 +33,33 @@
          </section>
         <section class="mb-xl-9 my-4">
             <div class="container">
-
                <div class="row gy-lg-7 gy-5">
                 @foreach ($articles as $article)
-                  <article class="col-lg-4 col-md-6 col-12">
+                <div class="col-lg-4 col-md-6">
+                    <div class="bg-white d-flex position-relative gap-3 rounded-3 shadow-sm overflow-hidden">
+                        <div class="w-100">
+                            <div class="p-3">
+                                <h5 class="mb-2 text-black d-flex align-items-center">
+                                    <h3 class="h5 m-0 fw-bold ">{{$article->title}}</h3>
 
-                    <div class="card border-0 shadow-sm h-80 card-lift">
-                        <figure>
-                           <a href="{{route('article.detail', $article->slug)}}">
-                              <img src="{{Storage::url($article->image)}}" alt="event" class="card-img-top">
-                           </a>
-                        </figure>
+                                    @foreach ($article->articletags as $tag)
+                                    <span class="badge bg-success ms-auto small">{{$tag->name}}</span>
+                                    @endforeach
+                                </h5>
 
-                        <div class="card-body h-100 d-flex align-items-start flex-column border rounded-bottom-3 border-top-0">
-                           <div class="mb-5">
-                            @foreach ($article->articletags as $tag)
-                              <small class="text-uppercase fw-semibold ls-md">  {{$tag->name}}</small>
-                              @endforeach
-                              <h4 class="my-2"><a href="{{route('article.detail', $article->slug)}}" class="text-reset">{{$article->title}}</a></h4>
-                             <p>{{Str::limit($article->mini_description, 100)}}</p>
-                           </div>
-                           <div class="d-flex justify-content-between w-100 mt-auto">
-                              <small>{{$article->created_at}}</small>
-                              <a href="{{route('article.detail', $article->slug)}}" class="btn btn-outline-dark">Consulter</a>
-                           </div>
+                                <p class="mt-5">{{Str::limit($article->mini_description, 225)}}.</p>
+                            </div>
+                            <div class="border-top d-flex align-items-center w-100">
+                                <small class="me-auto px-3">
+
+                                        {{$article->created_at}}
+                                </small>
+                                <a href="{{route('article.detail', $article->slug)}}" class="btn btn-primary btn-sm shadow-sm rounded-0"><span>Lire plus </span></a>
+                            </div>
                         </div>
-                     </div>
-
-
-
-                  </article>
+                    </div>
+                </div>
                   @endforeach
-
-
-
                   <div class="col-lg-12 text-center">
                      <div class="mt-xl-7 mt-3">
                         <a class="btn btn-outline-primary" href="#!">
@@ -81,13 +71,5 @@
                </div>
             </div>
          </section>
-
-
-
-        <!--Blog sidebar end-->
-
-
      </main>
-
-
 </div>

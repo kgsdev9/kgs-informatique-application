@@ -37,7 +37,7 @@
                  <div class="card-body text-body">
                     <p class="mb-0">“j'ai connu Stéphane dans une groupe informatique en 2020 nommé Programmons comme les pros je suivais ces posts sur la programmation j'ai vraiment aimé ces réalisations. tout simplement merci”</p>
                     <div class="mt-4 d-flex align-items-center">
-                       <img src="assets/images/avatar/avatar-1.jpg" alt="" class="avatar avatar-lg rounded-circle border p-1 bg-white">
+                       <img src="{{asset('homeavatar.png')}}" alt="" class="avatar avatar-lg rounded-circle border p-1 bg-white">
                        <div class="ms-3 lh-1">
                           <h5 class="mb-0">ERIC NOEL KOUAKOU</h5>
                           <small>Développeur web </small>
@@ -50,7 +50,7 @@
                  <div class="card-body text-body">
                     <p class="mb-0">“Une personne m'a récommandé stephane pour concevoir le site web de notre entreprise digitale en ligne je ne regrette pas .”</p>
                     <div class="mt-4 d-flex align-items-center">
-                       <img src="assets/images/avatar/avatar-2.jpg" alt="" class="avatar avatar-lg rounded-circle border p-1 bg-white">
+                       <img src="{{asset('homeavatar.png')}}" alt="" class="avatar avatar-lg rounded-circle border p-1 bg-white">
                        <div class="ms-3 lh-1">
                           <h5 class="mb-0">NEGOCE BUSSNESS ENTREPRISE</h5>
                           <small>ENTREPRISE</small>
@@ -65,9 +65,9 @@
                  <div class="card-body text-body">
                     <p class="mb-0">“J'ai sollicité Guy Stéphane pour concevoir une application de gestion de tontine , aujourd'hui je gere mes tontines de facon professionelle sans trop me prendre la téte .</p>
                     <div class="mt-4 d-flex align-items-center">
-                       <img src="assets/images/avatar/avatar-4.jpg" alt="" class="avatar avatar-lg rounded-circle border p-1 bg-white">
+                       <img src="{{asset('femmeavatar.jpg')}}" alt="" class="avatar avatar-lg rounded-circle border p-1 bg-white">
                        <div class="ms-3 lh-1">
-                          <h5 class="mb-0">Andrea N'cho Stéphane</h5>
+                          <h5 class="mb-0">Andrea N'cho Stéphanie</h5>
                           <small>Administratrice d'une tontine en ligne </small>
                        </div>
                     </div>
@@ -78,7 +78,7 @@
                  <div class="card-body text-body">
                     <p class="mb-0">“J'ai eu a collaborer avec Guy Stephane pendant plus de 04 mois j'ai été vraiment satisfait par ses talents. ca été une experience vraiment enrichissante ”</p>
                     <div class="mt-4 d-flex align-items-center">
-                       <img src="assets/images/avatar/avatar-3.jpg" alt="" class="avatar avatar-lg rounded-circle border p-1 bg-white">
+                       <img src="{{asset('homeavatar.png')}}" alt="" class="avatar avatar-lg rounded-circle border p-1 bg-white">
                        <div class="ms-3 lh-1">
                           <h5 class="mb-0">LANDRY ABRO</h5>
                           <small>CEO PROXIMITI</small>
@@ -93,7 +93,7 @@
                  <div class="card-body text-body">
                     <p class="mb-0">“J'etais a la recherche d'un developpeur pour concevoir le site de mon etablissement et des applications de gestion en interne aujourd'hui j'ai tout digitalité je suis vraiment satisifait Merci Fils Stephane”</p>
                     <div class="mt-4 d-flex align-items-center">
-                       <img src="assets/images/avatar/avatar-6.jpg" alt="" class="avatar avatar-lg rounded-circle border p-1 bg-white">
+                       <img src="{{asset('homeavatar.png')}}" alt="" class="avatar avatar-lg rounded-circle border p-1 bg-white">
                        <div class="ms-3 lh-1">
                           <h5 class="mb-0">HERVE BRICE TIE</h5>
                           <small>FONDATEUR INSTITUT ROOSEVELT </small>
@@ -106,7 +106,7 @@
                  <div class="card-body text-body">
                     <p class="mb-0">“Merci mon fils pour ton apport et ton soutien technique et tes efforts congugués aujoud'hui, merci pour le partage de tes connaissances. Bonne carriere à toi ”</p>
                     <div class="mt-4 d-flex align-items-center">
-                       <img src="assets/images/avatar/avatar-5.jpg" alt="" class="avatar avatar-lg rounded-circle border p-1 bg-white">
+                       <img src="{{asset('homeavatar.png')}}" alt="" class="avatar avatar-lg rounded-circle border p-1 bg-white">
                        <div class="ms-3 lh-1">
                           <h5 class="mb-0">Jean N'dri Charles </h5>
                           <small>Développeur Sénior HKMS GROUP SERVICE SARL  </small>

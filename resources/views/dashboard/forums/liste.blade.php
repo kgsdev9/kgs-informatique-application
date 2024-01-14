@@ -1,75 +1,99 @@
 @extends('master.master')
  @section('content')
-
  <main>
-    <section class="pt-5 pb-5">
-        <div class="container">
-            <div class="row mt-0 mt-md-4">
-                <div class="col-lg-3 col-md-4 col-12">
-                    <!-- User profile -->
-                   @include('dashboard.slidebar')
-                </div>
-                <div class="col-lg-9 col-md-8 col-12">
-                    <div class="card mb-4">
-                        <!-- Card header -->
-                        <div class="card-header">
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <h3 class="h4 mb-0">Mes Tags</h3>
-                                </div>
-                                <div class="col-lg-9">
-                                    <a href="{{route('category.create')}}" class="btn btn-primary">Nouveau tag</a>
-                                </div>
+    <section class="py-lg-7 py-5 bg-light-subtle">
+       <div class="container">
+          <div class="row">
+            @include('dashboard.slidebar')
+            <div class="col-lg-9 col-md-8">
+                <div class="card border-0 mb-4 shadow-sm">
+                   <div class="card-body p-lg-5">
+                      <div class="mb-5">
+                        <div class="row">
+                            <div class="col-lg-9">
+                                <h4 class="mb-1">Liste des sujets crées  </h4>
+                            </div>
+                            <div class="col-lg-3">
+                             <a class="btn btn-outline-dark" href="{{route('forum.create')}}"><i class=" bx bx-user-plus"></i> Enregistrer</a>
                             </div>
                         </div>
-                        <!-- Table -->
-                        <div class="table-responsive">
-                            <table class="table mb-0 table-hover table-centered text-nowrap">
-                                <!-- Table Head -->
-                                <thead class="table-light">
-                                    <tr>
-                                        <th>Title</th>
-                                        <th>Slug</th>
+                      </div>
+                      <div class="table-responsive">
+                         <table class="table table-centered td table-centered th table-lg text-nowrap">
+                            <thead>
+                               <tr>
+                                  <th scope="col">
+                                     <div class="fs-6 text-dark fw-semibold">Libellé</div>
+                                  </th>
 
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                <!-- Table Body -->
-                                <tbody>
-                                    @foreach ($category as $tag)
-                                    <tr>
-                                        <td>
-                                            <a href="#">
-                                                <div class="d-flex align-items-center">
-                                                    <img src="{{Storage::url($tag->image)}}" alt="course" class="avatar-md">
-                                                    <h5 class="ms-3 text-primary-hover mb-0">{{Str::limit($tag->name,30)}}</h5>
-                                                </div>
-                                            </a>
-                                        </td>
-                                        <td>
-                                            {{$tag->slug}}
-                                        </td>
-                                        <td>
-                                            <a class="btn btn-warning" href="{{route('category.edit', $tag->id)}}">Editer</a>
+                                  <th scope="col">
+                                    <div class="fs-6 text-dark fw-semibold">Tag</div>
+                                 </th>
 
-                                            <form action="{{route('category.destroy', $tag->id)}}" method="POST">
-                                                @csrf
-                                                @method('delete')
-                                                  <button type="submit" class="btn btn-danger">Supprimer</button>
-                                             </form>
+                                 <th scope="col">
+                                    <div class="fs-6 text-dark fw-semibold">Status</div>
+                                 </th>
 
-                                        </td>
-                                    </tr>
-                                    @endforeach
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+                                  <th scope="col">
+                                     <div class="fs-6 text-dark fw-semibold">Action</div>
+                                  </th>
+                               </tr>
+                            </thead>
+                            <tbody>
+                                @foreach ($allForums as $tag)
+                               <tr>
+                                  <td>
+                                     <div class="d-flex align-items-center">
+                                        <div class="ms-3">
+                                           <div class="fs-5 fw-semibold text-dark">{{Str::limit($tag->title,100)}}</div>
+                                        </div>
+                                     </div>
+                                  </td>
+
+                                  <td>
+                                    <div class="d-flex align-items-center">
+                                       <div class="ms-3">
+                                          <div class="fs-5 fw-semibold text-dark">{{ $tag->tag->name}}</div>
+                                       </div>
+                                    </div>
+                                 </td>
+
+                                 <td>
+                                    @if($tag->status == 0)
+                                    <a href="#" class="btn btn-sm btn-outline-danger">Non résolu</a>
+                                    @else
+                                    <a href="#" class="btn btn-sm btn-outline-success">Résolu</a>
+                                    @endif
+                                 </td>
+
+
+                                  <td>
+                                    <a href="{{route('forum.edit', $tag->id)}}" class="btn btn-sm btn-dark me-2">Editer</a>
+                                    <form action="{{route('forum.destroy', $tag->id)}}" method="POST">
+                                        @csrf
+                                        @method('delete')
+                                          <button type="submit" class="btn btn-sm btn-light" onclick="return confirm('Voulez-vous vraiment supprimer?')">Supprimer</button>
+                                     </form>
+
+                                     <a href="{{route('forum.show', $tag->id)}}">Consulter</a>
+                                 </td>
+                               </tr>
+                               @endforeach
+                            </tbody>
+                         </table>
+                      </div>
+                   </div>
                 </div>
-            </div>
-        </div>
+             </div>
+       </div>
     </section>
-</main>
+ </main>
+
+
+
+
+
+
 
 
 @endsection

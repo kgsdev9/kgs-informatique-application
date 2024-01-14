@@ -17,5 +17,9 @@ class Forum extends Model
         'tag_id'
     ];
 
-    
+    public function tag() {
+        return $this->belongsTo(Tag::class, 'tag_id');
+    }
+
+
 }

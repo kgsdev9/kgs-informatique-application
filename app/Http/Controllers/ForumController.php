@@ -2,7 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Tag;
+use App\Models\Forum;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use App\Http\Requests\ForumRequest;
+
+use Illuminate\Support\Facades\Auth;
 
 class ForumController extends Controller
 {
@@ -12,8 +18,8 @@ class ForumController extends Controller
          */
         public function index()
         {
-            return view('dashboard.Formation.liste', [
-                'allFormation'=> Formation::all()
+            return view('dashboard.forums.liste', [
+                'allForums'=> Forum::where('user_id', Auth::user()->id)->get()
             ]);
         }
         /**
@@ -21,7 +27,8 @@ class ForumController extends Controller
          */
         public function create()
         {
-            return view('dashboard.Formation.create', [
+            return view('dashboard.forums.create', [
+             'allTags'=> Tag::all()
             ]);
         }
 
@@ -29,55 +36,45 @@ class ForumController extends Controller
          * Store a newly created resource in storage.
          */
 
-         public function store(Request $request)
+         public function store(ForumRequest $request)
          {
-             $image = $request->file('image')->store('public');
-                 Formation::create([
-                     'title'=> $request->title,
-                     'slug' => \Str::slug($request->title),
-                     'image' => $image,
-                     'url'=> $request->url,
-                     'description'=> $request->description
-                 ]);
-                 return redirect()->route('Formation.index', ['succes'=> true]);
+           Forum::create($request->validated() + [
+                'slug'=> Str::slug($request['title']),
+                'user_id' => Auth::user()->id
+          ]);
+           return redirect()->route('forum.index', ['succes'=> true]);
          }
-
-
-
 
         /**
          * Display the specified resource.
          */
         public function show(string $id)
         {
-            $ressource = Formation::find($id);
-            return view('ass', compact('ressource'));
+
         }
 
         /**
          * Show the form for editing the specified resource.
          */
-        public function edit(string $id)
+        public function edit(Forum $forum)
         {
-            $ressource = Formation::find($id);
-            return view('dashboard.Formation.edit', compact('ressource'));
+            return view('dashboard.forums.edit', [
+               'ressourceForum' => $forum,
+               'allTags'=> Tag::all()
+            ]);
         }
         /**
          * Update the specified resource in storage.
          */
-        public function update(Request $request, string $id)
+        public function update(ForumRequest $request, string $id)
         {
-            $ressource = Formation::find($id);
-            if ($request->hasFile('image')) {
-                $image = $request->file('image')->store('public');
-                $ressource->update(['image' => $image]);
-            }
+            $ressource = Forum::find($id);
             $ressource->title= $request->title;
             $ressource->slug = \Str::limit($request->title);
-            $ressource->title= $request->url;
+            $ressource->tag_id= $request->tag_id;
             $ressource->description= $request->description;
             $ressource->update();
-            return redirect()->route('Formation.index', ['edited'=> true]);
+            return redirect()->route('forum.index', ['edited'=> true]);
 
         }
 
@@ -86,16 +83,10 @@ class ForumController extends Controller
          */
         public function destroy(string $id)
         {
-            $ressource = Formation::find($id);
-            if($ressource) {
-               Storage::url($ressource->image);
-               if($ressource->image) {
-                Storage::delete($ressource->image);
-               }
+            $ressource = Forum::find($id);
                $ressource->delete();
-            }
-           return redirect()->route('Formation.index', ['deleted'=>true]);
-        }
-    
+               return redirect()->route('Formation.index', ['deleted'=>true]);
+         }
+
 
 }
