@@ -44,7 +44,7 @@
                     <div class="card border-0 shadow-sm h-80 card-lift">
                         <figure>
                            <a href="{{route('article.detail', $article->slug)}}">
-                              <img src="assets/images/event/event-img-2.jpg" alt="event" class="card-img-top">
+                              <img src="{{Storage::url($article->image)}}" alt="event" class="card-img-top">
                            </a>
                         </figure>
 

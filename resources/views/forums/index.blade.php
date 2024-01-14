@@ -1,8 +1,7 @@
 @extends('master.master')
 @section('content')
-<main>
-    <div class="pattern-square"></div>
-    <!--Featured start-->
+<main class="bg-light-subtle">
+
     <section class="py-5 py-lg-8">
        <div class="container">
 
@@ -16,7 +15,7 @@
              </div>
           </div>
 
-          <div class="row">
+          <div class="row ">
             <div class="row mb-5">
                 <div class="col-lg-5 col-md-7 col-12">
                    <div class="row g-2 g-sm-3 align-items-center">
@@ -41,113 +40,213 @@
 
              <div class="col-lg-12 col-12 mt-4">
                 <div class="row gy-4 mb-lg-8 mb-6">
-                   <div class="col-md-4">
-                      <a href="integration-single.html" class="card h-100 card-lift bg-gray-100">
-                         <div class="card-body">
-                            <span class="badge badge bg-success-subtle">Résolu</span>
-                            <div class="mb-4">
-                               <img src="assets/images/integration-logo/integration-logo-17.svg" alt="integration">
+
+                    <div class="col-md-4">
+                        <div class="bg-white d-flex position-relative gap-3 rounded-3 shadow-sm overflow-hidden">
+                            <div class="w-100">
+                                <div class="p-3">
+                                    <h5 class="mb-2 text-black d-flex align-items-center">
+                                        <span class="h5 m-0 fw-bold text-primary">UI/UX Designer</span>
+                                        <span class="badge bg-success ms-auto small">Open</span>
+                                    </h5>
+                                    <div class="fs-7 mb-0 d-flex small align-items-center">
+                                        <i class="icofont-briefcase me-1"></i>
+                                         Job Type: Halftime
+                                        <div class="mx-2"></div>
+                                        <i class="icofont-badge me-1"></i>
+                                         Experience: 2 - 3 Years
+                                    </div>
+                                </div>
+                                <div class="border-top d-flex align-items-center w-100">
+                                    <small class="me-auto px-3">
+                                        <i class="icofont-pin me-1"></i>
+                                         Remote - US (San Francisco, CA)
+                                    </small>
+                                    <a href="#job-form" class="btn btn-primary btn-sm shadow-sm rounded-0"><span>APPLY NOW</span></a>
+                                </div>
                             </div>
-                            <h4>Quand j'installe laravel on me dire que la version de mon php est incomptible avec composer  </h4>
-                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti veritatis deserunt reprehenderit nostrum aspernatur sint voluptates minima ipsam laboriosam excepturi maxime qui explicabo, fugiat labore porro, perferendis, expedita omnis quidem..</p>
-                         </div>
-                      </a>
-                   </div>
-
-                   <div class="col-md-4">
-                    <a href="integration-single.html" class="card h-100 card-lift bg-gray-100">
-                       <div class="card-body">
-                          <span class="badge badge bg-success-subtle">Résolu</span>
-                          <div class="mb-4">
-                             <img src="assets/images/integration-logo/integration-logo-17.svg" alt="integration">
-                          </div>
-                          <h4>Quand j'installe laravel on me dire que la version de mon php est incomptible avec composer  </h4>
-                          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti veritatis deserunt reprehenderit nostrum aspernatur sint voluptates minima ipsam laboriosam excepturi maxime qui explicabo, fugiat labore porro, perferendis, expedita omnis quidem..</p>
-                       </div>
-                    </a>
-                 </div>
-
-                 <div class="col-md-4">
-                    <a href="integration-single.html" class="card h-100 card-lift bg-gray-100">
-                       <div class="card-body">
-                          <span class="badge badge bg-success-subtle">Résolu</span>
-                          <div class="mb-4">
-                             <img src="assets/images/integration-logo/integration-logo-17.svg" alt="integration">
-                          </div>
-                          <h4>Quand j'installe laravel on me dire que la version de mon php est incomptible avec composer  </h4>
-                          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti veritatis deserunt reprehenderit nostrum aspernatur sint voluptates minima ipsam laboriosam excepturi maxime qui explicabo, fugiat labore porro, perferendis, expedita omnis quidem..</p>
-                       </div>
-                    </a>
-                 </div>
-
-                 <div class="col-md-4">
-                    <a href="integration-single.html" class="card h-100 card-lift bg-gray-100">
-                       <div class="card-body">
-                          <span class="badge badge bg-success-subtle">Résolu</span>
-                          <div class="mb-4">
-                             <img src="assets/images/integration-logo/integration-logo-17.svg" alt="integration">
-                          </div>
-                          <h4>Quand j'installe laravel on me dire que la version de mon php est incomptible avec composer  </h4>
-                          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti veritatis deserunt reprehenderit nostrum aspernatur sint voluptates minima ipsam laboriosam excepturi maxime qui explicabo, fugiat labore porro, perferendis, expedita omnis quidem..</p>
-                       </div>
-                    </a>
-                 </div>
+                        </div>
+                    </div>
 
 
-                 <div class="col-md-4">
-                    <a href="integration-single.html" class="card h-100 card-lift bg-gray-100">
-                       <div class="card-body">
-                          <span class="badge badge bg-success-subtle">Résolu</span>
-                          <div class="mb-4">
-                             <img src="assets/images/integration-logo/integration-logo-17.svg" alt="integration">
-                          </div>
-                          <h4>Quand j'installe laravel on me dire que la version de mon php est incomptible avec composer  </h4>
-                          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti veritatis deserunt reprehenderit nostrum aspernatur sint voluptates minima ipsam laboriosam excepturi maxime qui explicabo, fugiat labore porro, perferendis, expedita omnis quidem..</p>
-                       </div>
-                    </a>
-                 </div>
+
+                    <div class="col-md-4">
+                        <div class="bg-white d-flex position-relative gap-3 rounded-3 shadow-sm overflow-hidden">
+                            <div class="w-100">
+                                <div class="p-3">
+                                    <h5 class="mb-2 text-black d-flex align-items-center">
+                                        <span class="h5 m-0 fw-bold text-primary">UI/UX Designer</span>
+                                        <span class="badge bg-success ms-auto small">Open</span>
+                                    </h5>
+                                    <div class="fs-7 mb-0 d-flex small align-items-center">
+                                        <i class="icofont-briefcase me-1"></i>
+                                         Job Type: Halftime
+                                        <div class="mx-2"></div>
+                                        <i class="icofont-badge me-1"></i>
+                                         Experience: 2 - 3 Years
+                                    </div>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim iure exercitationem cum eligendi voluptate aut. Dicta quisquam asperiores sint cumque sit sunt debitis ea distinctio, eius vel autem repellat! Quibusdam.</p>
+                                </div>
+                                <div class="border-top d-flex align-items-center w-100">
+                                    <small class="me-auto px-3">
+                                        <i class="icofont-pin me-1"></i>
+                                         Remote - US (San Francisco, CA)
+                                    </small>
+                                    <a href="#job-form" class="btn btn-primary btn-sm shadow-sm rounded-0"><span>APPLY NOW</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
 
-                 <div class="col-md-4">
-                    <a href="integration-single.html" class="card h-100 card-lift bg-gray-100">
-                       <div class="card-body">
-                          <span class="badge badge bg-success-subtle">Résolu</span>
-                          <div class="mb-4">
-                             <img src="assets/images/integration-logo/integration-logo-17.svg" alt="integration">
-                          </div>
-                          <h4>Quand j'installe laravel on me dire que la version de mon php est incomptible avec composer  </h4>
-                          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti veritatis deserunt reprehenderit nostrum aspernatur sint voluptates minima ipsam laboriosam excepturi maxime qui explicabo, fugiat labore porro, perferendis, expedita omnis quidem..</p>
-                       </div>
-                    </a>
-                 </div>
+
+                    <div class="col-md-4">
+                        <div class="bg-white d-flex position-relative gap-3 rounded-3 shadow-sm overflow-hidden">
+                            <div class="w-100">
+                                <div class="p-3">
+                                    <h5 class="mb-2 text-black d-flex align-items-center">
+                                        <span class="h5 m-0 fw-bold text-primary">UI/UX Designer</span>
+                                        <span class="badge bg-success ms-auto small">Open</span>
+                                    </h5>
+                                    <div class="fs-7 mb-0 d-flex small align-items-center">
+                                        <i class="icofont-briefcase me-1"></i>
+                                         Job Type: Halftime
+                                        <div class="mx-2"></div>
+                                        <i class="icofont-badge me-1"></i>
+                                         Experience: 2 - 3 Years
+                                    </div>
+                                </div>
+                                <div class="border-top d-flex align-items-center w-100">
+                                    <small class="me-auto px-3">
+                                        <i class="icofont-pin me-1"></i>
+                                         Remote - US (San Francisco, CA)
+                                    </small>
+                                    <a href="#job-form" class="btn btn-primary btn-sm shadow-sm rounded-0"><span>APPLY NOW</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
 
-                 <div class="col-md-4">
-                    <a href="integration-single.html" class="card h-100 card-lift bg-gray-100">
-                       <div class="card-body">
-                          <span class="badge badge bg-success-subtle">Résolu</span>
-                          <div class="mb-4">
-                             <img src="assets/images/integration-logo/integration-logo-17.svg" alt="integration">
-                          </div>
-                          <h4>Quand j'installe laravel on me dire que la version de mon php est incomptible avec composer  </h4>
-                          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti veritatis deserunt reprehenderit nostrum aspernatur sint voluptates minima ipsam laboriosam excepturi maxime qui explicabo, fugiat labore porro, perferendis, expedita omnis quidem..</p>
-                       </div>
-                    </a>
-                 </div>
 
 
-                 <div class="col-md-4">
-                    <a href="integration-single.html" class="card h-100 card-lift bg-gray-100">
-                       <div class="card-body">
-                          <span class="badge badge bg-success-subtle">Résolu</span>
-                          <div class="mb-4">
-                             <img src="assets/images/integration-logo/integration-logo-17.svg" alt="integration">
-                          </div>
-                          <h4>Quand j'installe laravel on me dire que la version de mon php est incomptible avec composer  </h4>
-                          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti veritatis deserunt reprehenderit nostrum aspernatur sint voluptates minima ipsam laboriosam excepturi maxime qui explicabo, fugiat labore porro, perferendis, expedita omnis quidem..</p>
-                       </div>
-                    </a>
-                 </div>
+                    <div class="col-md-4">
+                        <div class="bg-white d-flex position-relative gap-3 rounded-3 shadow-sm overflow-hidden">
+                            <div class="w-100">
+                                <div class="p-3">
+                                    <h5 class="mb-2 text-black d-flex align-items-center">
+                                        <span class="h5 m-0 fw-bold text-primary">UI/UX Designer</span>
+                                        <span class="badge bg-success ms-auto small">Open</span>
+                                    </h5>
+                                    <div class="fs-7 mb-0 d-flex small align-items-center">
+                                        <i class="icofont-briefcase me-1"></i>
+                                         Job Type: Halftime
+                                        <div class="mx-2"></div>
+                                        <i class="icofont-badge me-1"></i>
+                                         Experience: 2 - 3 Years
+                                    </div>
+                                </div>
+                                <div class="border-top d-flex align-items-center w-100">
+                                    <small class="me-auto px-3">
+                                        <i class="icofont-pin me-1"></i>
+                                         Remote - US (San Francisco, CA)
+                                    </small>
+                                    <a href="#job-form" class="btn btn-primary btn-sm shadow-sm rounded-0"><span>APPLY NOW</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-md-4">
+                        <div class="bg-white d-flex position-relative gap-3 rounded-3 shadow-sm overflow-hidden">
+                            <div class="w-100">
+                                <div class="p-3">
+                                    <h5 class="mb-2 text-black d-flex align-items-center">
+                                        <span class="h5 m-0 fw-bold text-primary">UI/UX Designer</span>
+                                        <span class="badge bg-success ms-auto small">Open</span>
+                                    </h5>
+                                    <div class="fs-7 mb-0 d-flex small align-items-center">
+                                        <i class="icofont-briefcase me-1"></i>
+                                         Job Type: Halftime
+                                        <div class="mx-2"></div>
+                                        <i class="icofont-badge me-1"></i>
+                                         Experience: 2 - 3 Years
+                                    </div>
+                                </div>
+                                <div class="border-top d-flex align-items-center w-100">
+                                    <small class="me-auto px-3">
+                                        <i class="icofont-pin me-1"></i>
+                                         Remote - US (San Francisco, CA)
+                                    </small>
+                                    <a href="#job-form" class="btn btn-primary btn-sm shadow-sm rounded-0"><span>APPLY NOW</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-md-4">
+                        <div class="bg-white d-flex position-relative gap-3 rounded-3 shadow-sm overflow-hidden">
+                            <div class="w-100">
+                                <div class="p-3">
+                                    <h5 class="mb-2 text-black d-flex align-items-center">
+                                        <span class="h5 m-0 fw-bold text-primary">UI/UX Designer</span>
+                                        <span class="badge bg-success ms-auto small">Open</span>
+                                    </h5>
+                                    <div class="fs-7 mb-0 d-flex small align-items-center">
+                                        <i class="icofont-briefcase me-1"></i>
+                                         Job Type: Halftime
+                                        <div class="mx-2"></div>
+                                        <i class="icofont-badge me-1"></i>
+                                         Experience: 2 - 3 Years
+                                    </div>
+                                </div>
+                                <div class="border-top d-flex align-items-center w-100">
+                                    <small class="me-auto px-3">
+                                        <i class="icofont-pin me-1"></i>
+                                         Remote - US (San Francisco, CA)
+                                    </small>
+                                    <a href="#job-form" class="btn btn-primary btn-sm shadow-sm rounded-0"><span>APPLY NOW</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-md-4">
+                        <div class="bg-white d-flex position-relative gap-3 rounded-3 shadow-sm overflow-hidden">
+                            <div class="w-100">
+                                <div class="p-3">
+                                    <h5 class="mb-2 text-black d-flex align-items-center">
+                                        <span class="h5 m-0 fw-bold text-primary">UI/UX Designer</span>
+                                        <span class="badge bg-success ms-auto small">Open</span>
+                                    </h5>
+                                    <div class="fs-7 mb-0 d-flex small align-items-center">
+                                        <i class="icofont-briefcase me-1"></i>
+                                         Job Type: Halftime
+                                        <div class="mx-2"></div>
+                                        <i class="icofont-badge me-1"></i>
+                                         Experience: 2 - 3 Years
+                                    </div>
+                                </div>
+                                <div class="border-top d-flex align-items-center w-100">
+                                    <small class="me-auto px-3">
+                                        <i class="icofont-pin me-1"></i>
+                                         Remote - US (San Francisco, CA)
+                                    </small>
+                                    <a href="#job-form" class="btn btn-primary btn-sm shadow-sm rounded-0"><span>APPLY NOW</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
 
                 </div>
 

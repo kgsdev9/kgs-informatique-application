@@ -1,6 +1,6 @@
 @extends('master.master')
 @section('content')
-<main>
+<main  >
     <!--hero section start-->
     <section class=" bg-primary pb-10 pt-4" data-cue="fadeIn">
        <div class="container">
@@ -134,30 +134,30 @@
              </div>
            <div class="row g-5">
             @foreach ($articlesTake as $article)
-              <div class="col-lg-4 col-md-6">
-                 <div class="card border-0 shadow-sm h-80 card-lift">
-                    <figure>
-                       <a href="{{route('article.detail', $article->slug)}}">
-                          <img src="assets/images/event/event-img-2.jpg" alt="event" class="card-img-top">
-                       </a>
-                    </figure>
+            <div class="col-lg-4 col-md-6">
+                <div class="bg-white d-flex position-relative gap-3 rounded-3 shadow-sm overflow-hidden">
+                    <div class="w-100">
+                        <div class="p-3">
+                            <h5 class="mb-2 text-black d-flex align-items-center">
 
-                    <div class="card-body h-100 d-flex align-items-start flex-column border rounded-bottom-3 border-top-0">
-                       <div class="mb-5">
-                        @foreach ($article->articletags as $tag)
-                          <small class="text-uppercase fw-semibold ls-md">  {{$tag->name}}</small>
-                          @endforeach
-                          <h4 class="my-2"><a href="{{route('article.detail', $article->slug)}}" class="text-reset">{{$article->title}}</a></h4>
-                         <p>{{Str::limit($article->mini_description, 30)}}</p>
-                       </div>
-                       <div class="d-flex justify-content-between w-100 mt-auto">
-                          <small>{{$article->created_at}}</small>
-                          <a href="{{route('article.detail', $article->slug)}}" class="btn btn-outline-dark">Consulter</a>
-                       </div>
+                                <h3>{{$article->title}}</h3>
+                                @foreach ($article->articletags as $tag)
+                                <span class="badge bg-success ms-auto small">{{$tag->name}}</span>
+                                @endforeach
+                            </h5>
+
+                            <p class="mt-5">{{Str::limit($article->mini_description, 225)}}.</p>
+                        </div>
+                        <div class="border-top d-flex align-items-center w-100">
+                            <small class="me-auto px-3">
+
+                                    {{$article->created_at}}
+                            </small>
+                            <a href="{{route('article.detail', $article->slug)}}" class="btn btn-primary btn-sm shadow-sm rounded-0"><span>Lire plus </span></a>
+                        </div>
                     </div>
-                 </div>
-              </div>
-
+                </div>
+            </div>
               @endforeach
            </div>
         </div>
