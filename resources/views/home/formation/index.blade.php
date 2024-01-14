@@ -1,4 +1,5 @@
 @extends('master.master')
+@section('title', 'Formations')
 @section('content')
 <main>
     <div class="pattern-square"></div>

@@ -17,6 +17,7 @@ class Article extends Model
         'image',
         'mini_description',
         'user_id',
+        'view'
     ];
 
 

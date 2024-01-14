@@ -2,7 +2,7 @@
 
 <div class="col-lg-3 col-md-4">
     <div class="d-flex align-items-center mb-4 justify-content-center justify-content-md-start">
-       <img src="assets/images/avatar/avatar-1.jpg" alt="avatar" class="avatar avatar-lg rounded-circle">
+      
        <div class="ms-3">
           <h5 class="mb-0">{{Auth::user()->name}}</h5>
           <small>Mon compte</small>
@@ -48,6 +48,8 @@
                 <span class="ms-2">Forums</span>
              </a>
           </li>
+          @can('administrator')
+
 
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="{{route('category.index')}}">
@@ -88,7 +90,7 @@
                 <span class="ms-2">Compte</span>
              </a>
           </li>
-
+          @endcan
           <li class="nav-item">
              <a class="nav-link" href="#">
                 <i class="align-bottom bx bx-log-out"></i>

@@ -1,4 +1,5 @@
 @extends('master.master')
+@section('title', 'Contact développeur')
 @section('content')
     <section class="my-lg-9 my-5">
         <div class="container">
@@ -37,7 +38,7 @@
                              <img src="{{asset('avatar.jpeg')}}" alt="avatar" class="avatar avatar-xl rounded-circle" />
                           </div>
 
-                          <h3 class="mb-0">KGS INFORMATIQUE</h3>
+                          <h3 class="mb-0">KGS INFORMATIQUE (Mon petit non choco)</h3>
                           <small>Informaticien développeur</small>
                        </div>
                        <div class="d-flex mb-4">

@@ -1,4 +1,5 @@
 @extends('master.master')
+@section('title', $detailApp->slug)
 @section('content')
 <main>
 

@@ -107,8 +107,9 @@ class HomeController extends Controller
 
     public function show($slug)  {
       $resssource =   Article::where('slug', $slug)->first();
+
       if($resssource) {
-        $this->countView($slug);
+        $this->countView($resssource->id);
         return view('home.article.detail', [
             'ressource'=> $resssource
         ]);

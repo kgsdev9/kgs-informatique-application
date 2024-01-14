@@ -1,4 +1,5 @@
 @extends('master.master')
+@section('title', $ressource->slug)
 @section('content')
 <main>
 
@@ -17,7 +18,11 @@
                 <figure>
                    <img src="{{Storage::url($ressource->image)}}" class="img-fluid rounded-3 shadow-sm" alt="{{$ressource->title}}">
                 </figure>
+
+                <p class="mt-6">{{$ressource->description}}.</p>
              </div>
+
+
              <div class="col-lg-4 offset-lg-1 col-md-12">
                 <div class="d-flex pt-4 pt-lg-0 pb-5">
                    <div class="icon-md icon-shape rounded-circle bg-body-tertiary bg-opacity-50 border mb-3 flex-shrink-0">

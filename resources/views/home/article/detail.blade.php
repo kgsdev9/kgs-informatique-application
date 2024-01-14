@@ -1,4 +1,5 @@
 @extends('master.master')
+@section('title', $ressource->slug)
 @section('content')
 <main class="">
 

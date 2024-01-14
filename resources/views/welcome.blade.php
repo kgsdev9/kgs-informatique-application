@@ -1,6 +1,7 @@
 @extends('master.master')
+@section('title', 'Bienvenuee - Sur |  KGS INFORMATIQUE')
 @section('content')
-<main  >
+<main >
     <!--hero section start-->
     <section class=" bg-primary pb-10 pt-4" data-cue="fadeIn">
        <div class="container">

@@ -1,4 +1,5 @@
 @extends('master.master')
+@section('title', $topic->slug)
 @section('content')
 
     <div class="container mt-4 text-center ">

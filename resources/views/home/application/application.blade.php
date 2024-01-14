@@ -1,8 +1,7 @@
 @extends('master.master')
+@section('title', 'Nos applications')
 @section('content')
 <main>
-
-
     <section class="mb-xl-9 my-5">
         <div class="container">
             <div class="row">
