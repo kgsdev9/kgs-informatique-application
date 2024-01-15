@@ -18,7 +18,7 @@ return new class extends Migration
             $table->text('description');
             $table->string('image')->nullable();
             $table->string('mini_description')->nullable();
-            $table->integer('view')->nullable();
+            $table->integer('view')->default('200');
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();

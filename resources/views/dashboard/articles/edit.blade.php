@@ -22,7 +22,7 @@
                           </div>
                       @endif
                        </div>
-                       <form method="post" action="{{route('article.update', $ressource->id)}}">
+                       <form method="post" action="{{route('articles.update', $ressource->id)}}">
                         @method('PATCH')
                         @csrf
                           <div class="col-lg-12 col-md-12">
@@ -55,7 +55,7 @@
                             <input type="file" name="image" class="form-control">
 
                          </div>
-                         
+
                           <div class="col-lg-12">
                              <label for="profileAddressInput" class="form-label">Démontrer </label>
                            <textarea name="description" id="request" cols="30" rows="2">{{$ressource->description}}</textarea>

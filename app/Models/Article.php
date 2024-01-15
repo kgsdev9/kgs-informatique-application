@@ -20,7 +20,6 @@ class Article extends Model
         'view'
     ];
 
-
     public function owner() {
         return $this->belongsTo(User::class ,'user_id');
     }

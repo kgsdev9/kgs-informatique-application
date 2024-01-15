@@ -37,10 +37,21 @@ class HomeController extends Controller
         ]);
      }
 
+     public function viewPost($slug) {
+        $this->countView($slug);
+          return view('home.blog.show', [
+              'ressource'=>  Article::where('slug', $slug)->first()
+          ]);
+     }
+
      public function courses() {
         return view('home.formation.index', [
             'allTags'=> Tag::all()
         ]);
+     }
+
+     public function blog() {
+        return view('home.blog.index');
      }
 
      public function showTopic($slug) {
@@ -105,17 +116,5 @@ class HomeController extends Controller
         ]);
     }
 
-    public function show($slug)  {
-      $resssource =   Article::where('slug', $slug)->first();
 
-      if($resssource) {
-        $this->countView($resssource->id);
-        return view('home.article.detail', [
-            'ressource'=> $resssource
-        ]);
-
-      } else{
-        return redirect()->route('home');
-    }
-}
 }

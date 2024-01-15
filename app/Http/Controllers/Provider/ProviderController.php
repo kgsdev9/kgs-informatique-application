@@ -24,7 +24,6 @@ class ProviderController extends Controller
     public function callback($provider)
     {
         $githubUser = Socialite::driver($provider)->user();
-
         $user = User::updateOrCreate([
             'provider_id' => $githubUser->id,
             'provider' => $provider,
@@ -35,9 +34,8 @@ class ProviderController extends Controller
         ]);
 
         Auth::login($user);
-        notify()->success('Welcome to Laravel Notify ⚡️');
-        return redirect('/home');
-
+        notify()->success(' Notify ⚡️');
+        return redirect()->route('home');
 
     }
 

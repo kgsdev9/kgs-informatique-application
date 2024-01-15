@@ -29,8 +29,8 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/', [HomeController::class ,'index'])->name('home');
-Route::get('/articles', [HomeController::class ,'article'])->name('articles.index');
 Route::get('/forums', [HomeController::class,'forum'])->name('home.forums');
+Route::get('/blog', [HomeController::class, 'blog'])->name('home.blog');
 Route::get('/application/app', [HomeController::class, 'application'])->name('home.application');
 Route::get('/detail/forum/{slug}', [HomeController::class, 'showTopic'])->name('show.topic');
 Route::get('/application/app', [HomeController::class,'application'])->name('home.app');
@@ -39,7 +39,7 @@ Route::get('/article-tag/{slug}', [HomeController::class, 'articleTag'])->name('
 Route::get('/podcasts', [HomeController::class, 'podCasts'])->name('podcasts.index');
 Route::get('/podcasts/detail/{slug}', [HomeController::class , 'showPodcast'])->name('podcast.show');
 Route::get('/all-courses', [HomeController::class, 'courses'])->name('all.courses');
-Route::get('/articles/detail/{slug}', [HomeController::class, 'show'])->name('article.detail');
+Route::get('/articles/detail/{slug}', [HomeController::class, 'viewPost'])->name('blog.show');
 Route::get('/auth/{provider}/redirect', [ProviderController::class, 'redirect']);
 Route::get('/auth/{provider}/callback', [ProviderController::class, 'callback']);
 Route::get('/contact', function() {
@@ -47,7 +47,7 @@ Route::get('/contact', function() {
 });
 //pages d'administration du sites
 Route::resources([
-    'article' => ArticleController::class,
+    'articles' => ArticleController::class,
     'category' => CategoryController::class,
     'application'=> ApplicationController::class,
     'conference'  => ConfereneController::class,

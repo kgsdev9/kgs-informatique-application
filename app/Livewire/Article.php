@@ -42,9 +42,6 @@ class Article extends Component
           })->get();
 
             }
-
-
-
          return view('livewire.article', [
             'articles'=> $articles->paginate(10),
             'tags' => $tags,

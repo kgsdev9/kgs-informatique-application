@@ -2,7 +2,7 @@
 
 <div class="col-lg-3 col-md-4">
     <div class="d-flex align-items-center mb-4 justify-content-center justify-content-md-start">
-      
+
        <div class="ms-3">
           <h5 class="mb-0">{{Auth::user()->name}}</h5>
           <small>Mon compte</small>
@@ -66,7 +66,7 @@
          </li>
 
           <li class="nav-item">
-             <a class="nav-link" href="{{route('article.index')}}" >
+             <a class="nav-link" href="{{route('articles.index')}}" >
                 <i class="align-bottom bx bx-credit-card-front"></i>
                 <span class="ms-2">Articles</span>
              </a>

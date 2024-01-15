@@ -57,7 +57,7 @@ class ArticleController extends Controller
             'image' => $image
         ]);
         $article->articletags()->sync($request->tag_id);
-        return redirect()->route('article.index', ['success' => true]);
+        return redirect()->route('articles.index', ['success' => true]);
 
     }
 
@@ -96,7 +96,7 @@ class ArticleController extends Controller
         $ressource->description = $request->input('description');
         $ressource->articletags()->sync($request->tag_id);
         $ressource->update();
-        return redirect()->route('article.index', ['edited' => true]);
+        return redirect()->route('articles.index', ['edited' => true]);
     }
 
     /**
@@ -108,6 +108,6 @@ class ArticleController extends Controller
         $article = Article::find($id);
         $article->articletags()->detach();
         $article->delete();
-        return redirect()->route('article.index', ['deleted'=> true]);
+        return redirect()->route('articles.index', ['deleted'=> true]);
     }
 }

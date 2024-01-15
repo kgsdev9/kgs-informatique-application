@@ -14,7 +14,7 @@
                                 <h4 class="mb-1">Liste des articles </h4>
                             </div>
                             <div class="col-lg-3">
-                             <a class="btn btn-outline-dark" href="{{route('article.create')}}"><i class=" bx bx-user-plus"></i> Enregistrer</a>
+                             <a class="btn btn-outline-dark" href="{{route('articles.create')}}"><i class=" bx bx-user-plus"></i> Enregistrer</a>
                             </div>
                         </div>
                       </div>
@@ -51,8 +51,8 @@
                                     @endforeach
                                 </td>
                                   <td>
-                                    <a href="{{route('article.edit', $article->id)}}" class="btn btn-sm btn-dark me-2">Editer</a>
-                                    <form action="{{route('article.destroy', $article->id)}}" method="POST">
+                                    <a href="{{route('articles.edit', $article->id)}}" class="btn btn-sm btn-dark me-2">Editer</a>
+                                    <form action="{{route('articles.destroy', $article->id)}}" method="POST">
                                         @csrf
                                         @method('delete')
                                           <button type="submit" class="btn btn-sm btn-light">Supprimer</button>

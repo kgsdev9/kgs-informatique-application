@@ -14,7 +14,7 @@
                           <h4 class="mb-1">Novelle article </h4>
 
                        </div>
-                       <form class="row g-3 needs-validation" novalidate="" method="POST" action="{{route('article.store')}}" enctype="multipart/form-data">
+                       <form class="row g-3 needs-validation" novalidate="" method="POST" action="{{route('articles.store')}}" enctype="multipart/form-data">
                         @if ($errors->any())
                             <div class="alert alert-danger">
                                 <ul>

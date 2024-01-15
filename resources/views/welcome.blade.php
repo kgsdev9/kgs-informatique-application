@@ -154,7 +154,7 @@
 
                                     {{$article->created_at}}
                             </small>
-                            <a href="{{route('article.detail', $article->slug)}}" class="btn btn-primary btn-sm shadow-sm rounded-0"><span>Lire plus </span></a>
+                            <a href="{{route('blog.show', $article->slug)}}" class="btn btn-primary btn-sm shadow-sm rounded-0"><span>Lire plus </span></a>
                         </div>
                     </div>
                 </div>
