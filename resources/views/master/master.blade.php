@@ -14,12 +14,13 @@
         <link rel="stylesheet" href="{{asset('assets/libs/scrollcue/scrollCue.css')}}">
       <!-- Box icons -->
 
-    <link rel="stylesheet" href="{{asset('assets/fonts/css/boxicons.min.css')}}">
-    <link href='https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css' rel='stylesheet' type='text/css' />
-      <!-- Theme CSS --><script type='text/javascript' src='https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js'></script>
+        <link rel="stylesheet" href="{{asset('assets/fonts/css/boxicons.min.css')}}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/4.0.13/css/froala_editor.pkgd.min.css">
+
         <link rel="stylesheet" href="{{asset('assets/css/theme.min.css')}}">
       <title>@yield('title')</title>
       @livewireStyles
+      @stack('css')
    </head>
    <body>
       <!-- Navbar -->
@@ -261,28 +262,13 @@
       <script src="{{asset('assets/libs/scrollcue/scrollCue.min.js')}}"></script>
       <script src="{{asset('assets/js/vendors/scrollcue.js')}}"></script>
       @stack('scripts')
-        <script>
-        new FroalaEditor('#request', {
-        // Set custom buttons.
-        toolbarButtons: {
-            saveParam: 'content',
-            saveURL: 'http://localhost:8000/article/create',
-            saveMethod: 'POST',
-                'moreText': {
-                    'buttons': ['bold', 'italic', 'underline', 'strikeThrough', 'subscript', 'superscript', 'fontFamily', 'fontSize', 'textColor', 'backgroundColor', 'inlineClass', 'inlineStyle', 'clearFormatting']
-                },
-                'moreParagraph': {
-                    'buttons': ['alignLeft', 'alignCenter', 'formatOLSimple', 'alignRight', 'alignJustify', 'formatOL', 'formatUL', 'paragraphFormat', 'paragraphStyle', 'lineHeight', 'outdent', 'indent', 'quote']
-                },
-                'moreRich': {
-                    'buttons': ['insertLink', 'insertImage', 'insertVideo', 'insertTable', 'emoticons', 'fontAwesome', 'specialCharacters', 'embedly', 'insertFile', 'insertHR']
-                },
-                'moreMisc': {
-                    'buttons': ['undo', 'redo', 'fullscreen', 'print', 'getPDF', 'spellChecker', 'selectAll', 'html', 'help']
-                }
-                },
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/4.0.13/js/froala_editor.pkgd.min.js"></script>
+      <script>
+        $(document).ready(function() {
+            var editor = new FroalaEditor('#request');
         });
-         </script>
+    </script>
           @livewireScripts
    </body>
 </html>

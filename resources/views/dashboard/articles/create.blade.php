@@ -1,7 +1,10 @@
 
-
 @extends('master.master')
  @section('content')
+ @push('css')
+ 
+
+ @endpush
  <main>
     <section class="py-lg-7 py-5 bg-light-subtle">
        <div class="container">
@@ -12,7 +15,6 @@
                     <div class="card-body p-lg-5">
                        <div class="mb-5">
                           <h4 class="mb-1">Novelle article </h4>
-
                        </div>
                        <form class="row g-3 needs-validation" novalidate="" method="POST" action="{{route('articles.store')}}" enctype="multipart/form-data">
                         @if ($errors->any())
