@@ -18,7 +18,7 @@
                  <div class="card border-0 shadow-sm h-80 card-lift">
                     <figure>
                        <a href="#">
-                          <img src="{{Storage::url($application->image)}}"" alt="event" class="card-img-top">
+                          <img src="{{asset('application/'.$application->image)}}" alt="event" class="card-img-top">
                        </a>
                     </figure>
                     <div class="card-body h-100 d-flex align-items-start flex-column border rounded-bottom-3 border-top-0">
