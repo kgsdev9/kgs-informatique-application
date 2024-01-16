@@ -13,8 +13,8 @@
                    <p class="mb-0 pb-8 px-lg-7 text-opacity-75 lead">
                      Développeur  web/mobile  avec plus de 03 ans d'experience je vous partage mes conaissances et mes réalisations.
                    </p>
-                   <a href="#openPosition" class="btn btn-outline-light me-2">Réalisations</a>
-                   <a href="#!" class="btn btn-outline-warning">Articles</a>
+                   <a href="{{route('home.app')}}" class="btn btn-outline-light me-2">Réalisations</a>
+                   <a href="{{route('home.blog')}}" class="btn btn-outline-warning">Articles</a>
                 </div>
              </div>
           </div>

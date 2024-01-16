@@ -49,7 +49,7 @@ Route::get('/contact', function() {
 Route::resources([
     'articles' => ArticleController::class,
     'category' => CategoryController::class,
-    'application'=> ApplicationController::class,
+    'applications'=> ApplicationController::class,
     'conference'  => ConfereneController::class,
     'course'=> CourseController::class,
     'forum'=> ForumController::class,

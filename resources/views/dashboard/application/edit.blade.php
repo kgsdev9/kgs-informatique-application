@@ -11,7 +11,7 @@
                 </div>
                 <div class="col-lg-9 col-md-8 col-12">
                     <h1>Modifier application  </h1>
-                     <form action="{{route('application.update', $ressource->id)}}" method="POST" enctype="multipart/form-data">
+                     <form action="{{route('applications.update', $ressource->id)}}" method="POST" enctype="multipart/form-data">
                         @csrf
                         @method('PATCH')
                         <div class="card-body">

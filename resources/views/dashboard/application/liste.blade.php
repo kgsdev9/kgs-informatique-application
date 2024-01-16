@@ -14,7 +14,7 @@
                                 <h4 class="mb-1">Liste des applications </h4>
                             </div>
                             <div class="col-lg-3">
-                             <a class="btn btn-outline-dark" href="{{route('application.create')}}"><i class=" bx bx-user-plus"></i> Enregistrer</a>
+                             <a class="btn btn-outline-dark" href="{{route('applications.create')}}"><i class=" bx bx-user-plus"></i> Enregistrer</a>
                             </div>
                         </div>
                       </div>
@@ -36,7 +36,7 @@
                                <tr>
                                   <td>
                                      <div class="d-flex align-items-center">
-                                        <img src="{{Storage::url($application->image)}}" alt="avatar" class="avatar avatar-lg rounded-circle">
+                                        <img src="{{asset('application/'.$application->image)}}" alt="avatar" class="avatar avatar-lg rounded-circle">
                                         <div class="ms-3">
                                            <div class="fs-5 fw-semibold text-dark"> {{$application->title}}</div>
                                            <small> <a href="{{$application->url}}" class="text-dark" target="_blank">{{$application->url}}</a></small>
@@ -44,9 +44,9 @@
                                      </div>
                                   </td>
                                   <td>
-                                    <a href="{{route('application.edit', $application->id)}}" class="btn btn-sm btn-dark me-2">Editer</a>
+                                    <a href="{{route('applications.edit', $application->id)}}" class="btn btn-sm btn-dark me-2">Editer</a>
 
-                                    <form action="{{route('application.destroy', $application->id)}}" method="POST">
+                                    <form action="{{route('applications.destroy', $application->id)}}" method="POST">
                                         @method('DELETE')
                                         @csrf
                                         <button class="btn btn-sm btn-light" type="submit" onclick="return confirm('voulez-vous vraiment supprimer ?')">Supprimer</button>

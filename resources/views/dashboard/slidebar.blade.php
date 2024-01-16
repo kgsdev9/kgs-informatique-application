@@ -59,7 +59,7 @@
          </li>
 
          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="{{route('application.index')}}">
+            <a class="nav-link" aria-current="page" href="{{route('applications.index')}}">
                <i class="align-bottom bx bx-lock-alt"></i>
                <span class="ms-2">Applications</span>
             </a>

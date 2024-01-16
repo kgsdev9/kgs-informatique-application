@@ -11,7 +11,7 @@
                 </div>
                 <div class="col-lg-9 col-md-8 col-12">
                     <h1>Nouvelle application  </h1>
-                     <form action="{{route('application.store')}}" method="POST" enctype="multipart/form-data">
+                     <form action="{{route('applications.store')}}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="card-body">
                             <div class="mb-3">
