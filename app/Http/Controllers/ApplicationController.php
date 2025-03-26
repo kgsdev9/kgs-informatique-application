@@ -109,6 +109,6 @@ class ApplicationController extends Controller
     {
         $ressource = Application::find($id);
            $ressource->delete();
-       return redirect()->route('application.index', ['deleted'=>true]);
+       return redirect()->route('applications.index', ['deleted'=>true]);
     }
 }

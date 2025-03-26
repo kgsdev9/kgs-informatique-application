@@ -56,21 +56,10 @@
 
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link " href="{{route('home.forums')}}" role="button">
-                                <svg fill="#000000" width="20px" height="15px" viewBox="0 0 16 16" id="forum-16px" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="Path_101" data-name="Path 101" d="M-7.5,16a.48.48,0,0,1-.158-.026L-10,15.193A5.971,5.971,0,0,1-13,16a6.006,6.006,0,0,1-6-6,6.006,6.006,0,0,1,6-6,6.006,6.006,0,0,1,6,6,5.976,5.976,0,0,1-.807,3l.782,2.345a.5.5,0,0,1-.121.512A.5.5,0,0,1-7.5,16ZM-13,5a5.006,5.006,0,0,0-5,5,5.006,5.006,0,0,0,5,5,4.984,4.984,0,0,0,2.668-.777.5.5,0,0,1,.426-.052l1.616.538-.539-1.615a.5.5,0,0,1,.052-.426A4.982,4.982,0,0,0-8,10,5.006,5.006,0,0,0-13,5Zm-9.342,7.974,3-1a.5.5,0,0,0,.317-.632.5.5,0,0,0-.633-.316l-2.051.683L-20.94,9.4a.5.5,0,0,0-.073-.454,4.96,4.96,0,0,1,.478-6.485A4.966,4.966,0,0,1-17,1a4.966,4.966,0,0,1,3.535,1.464.5.5,0,0,0,.707,0,.5.5,0,0,0,0-.707A5.959,5.959,0,0,0-17,0a5.959,5.959,0,0,0-4.242,1.757,5.948,5.948,0,0,0-.727,7.569l-1.006,3.016a.5.5,0,0,0,.121.512A.5.5,0,0,0-22.5,13,.48.48,0,0,0-22.342,12.974Z" transform="translate(23)"></path> </g></svg>
-                                Forums</a>
-
-                         </li>
+                      
 
 
-
-                        <li class="nav-item">
-                            <a class="nav-link " href="{{route('all.courses')}}">
-                                <svg  width="20px" height="15px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title></title> <g fill="none" fill-rule="evenodd" id="页面-1" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"> <g id="导航图标" stroke="#212121" stroke-width="1.5" transform="translate(-28.000000, -272.000000)"> <g id="学术" transform="translate(28.000000, 272.000000)"> <g id="编组" transform="translate(1.000000, 4.000000)"> <polygon id="路径" points="0 2.75 11 0 22 2.75 11 5.5"></polygon> <path d="M4.95,4.4 L4.95,9.88383 C4.95,9.88383 7.7,11.55 11,11.55 C14.3,11.55 17.05,9.88383 17.05,9.88383 L17.05,4.4" id="路径"></path> <line id="路径" x1="1.65" x2="1.65" y1="3.3" y2="15.4"></line> <rect height="3.3" id="矩形" width="3.3" x="0" y="14.3"></rect> </g> </g> </g> </g> </g></svg>
-                                Formations</a>
-
-                         </li>
+                     
 
                          <li class="nav-item">
 
